@@ -1,0 +1,117 @@
+.f_mont {
+    font-family: 'Montserrat';
+}
+.f_zcool {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+/*common css*/
+* {
+    box-sizing: border-box
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, input, textarea, p, select, blockquote, th, td, img, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+html, body {
+    font-size: 16px;
+    background: #fff
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden !important
+}
+body.layer_open {
+    overflow: hidden;
+}
+html.active {
+    overflow-y: hidden
+}
+
+body.active {
+    overflow-y: hidden
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #333
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a:active {
+    text-decoration: none
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    display: block;
+    border: 0
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none
+}
+
+input, select, textarea {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    outline: none;
+    text-indent: 5px;
+}
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/*header*/
+.header_wra {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 4.5em;
+}
+.header_area {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1.45em;
+}
+.gnb {
+    display: flex;
+    justify-content: center;
+}
+.gnb li {
+     margin: 0 1.5em;
+ }
+.gnb li a {
+    font-size: 1.25em;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+

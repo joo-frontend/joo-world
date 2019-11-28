@@ -1,0 +1,10 @@
+/* IE 10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .panel_col100 .panel_info .desc_panel span {
+        line-height: 1.5 !important;
+        float: right;
+    }
+    .panel_col100 .panel_info .desc_panel2 {
+        text-align: center;
+    }
+}

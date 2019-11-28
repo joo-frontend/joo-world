@@ -1,0 +1,76 @@
+/*common css*/
+* {
+    box-sizing: border-box
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, input, textarea, p, select, blockquote, th, td, img, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'AvenirNext', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+html, body {
+    font-size: 16px;
+    background: #fff
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden !important
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #333
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a:active {
+    text-decoration: none
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    display: block;
+    border: 0
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none
+}
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+.f_avenir {
+    font-family: 'AvenirNext', sans-serif;
+}
+.f_spoqa {
+    font-family: 'Spoqa Han Sans', sans-serif;
+}
+.rps_tb, .rps_mb {
+    display: none;
+}

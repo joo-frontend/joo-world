@@ -1,0 +1,40 @@
+@media not tv {
+    @font-face {
+        font-family: 'Breeze Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url('BreezeSans-Regular.woff') format('woff');
+    }
+
+
+    @font-face {
+        font-family: 'Breeze Sans';
+        font-style: normal;
+        font-weight: 200;
+        src: url('BreezeSans-Thin.woff') format('woff');
+    }
+
+
+    @font-face {
+        font-family: 'Breeze Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url('BreezeSans-Light.woff') format('woff');
+    }
+
+
+    @font-face {
+        font-family: 'Breeze Sans';
+        font-style: normal;
+        font-weight: 500;
+        src: url('BreezeSans-Medium.woff') format('woff');
+    }
+
+
+    @font-face {
+        font-family: 'Breeze Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url('BreezeSans-Bold.woff') format('woff');
+    }
+}

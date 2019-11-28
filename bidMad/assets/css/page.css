@@ -1,0 +1,517 @@
+/* nav */
+nav {
+    padding: 0.938em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #000;
+}
+.menu_icon, .bg_black {
+    display: none;
+}
+.menu_list {
+    z-index: 20;
+    display: block;
+    transition: all 0.2s;
+    position: fixed;
+    left: -65%;
+    width: 65%;
+    height: 100%;
+    background: #000;
+}
+.nav_area {
+    max-width: 1680px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 84px;
+}
+nav.active {
+    /* transition: all 0.2s;
+    padding: 1.313em 0;
+    background: rgba(0,0,0,0.3); */
+}
+.nav_area .logo_top {
+    float: left;
+}
+.nav_area .logo_top img {
+    width: 15.875em;
+}
+.nav_area .gnb {
+    float: right;
+}
+.nav_area .gnb li {
+    float: left;
+    margin-left: 2em;
+}
+.nav_area .gnb li a {
+    font-weight: 700;
+    color: #fff;
+    padding-top: 4px;
+    font-size: 0.813em;
+    display: inline-block;
+    line-height: 1.7em;
+}
+.nav_area .gnb li.focus a {
+    border-bottom: 4px solid #fff;
+}
+.wrapper {
+    padding: 0 84px;
+}
+.main_page1 {
+    background: url('../images/bg-top.png') center center no-repeat;
+    background-size: cover;
+    padding-bottom: 8.250em;
+    position: relative;
+}
+.main_page1:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 37.75em;
+    left: 0;
+    bottom: 0;
+    background: url('../images/bg-gradiant.png') bottom left no-repeat;
+    background-size: cover;
+}
+.title_main { 
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.6);
+    font-size: 3.125em;
+    line-height: 1.480em;
+    font-weight: 700;
+    margin-bottom: 11.063rem;
+}
+.main_page1 .wrapper {
+    padding-top: 15.625em;
+}
+.feature_list {
+    position: relative;
+    z-index: 2;
+    max-width: 1032px;
+    width: 100%;
+    margin: 0 auto;
+}
+.feature_list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.feature_list ul li {
+    width: 20em;
+}
+.feature_list .circle_info {
+    border-radius: 50%;
+    width: 16.5em;
+    height: 16.5em;
+    margin: 0 auto 2.25em;
+    text-align: center;
+    padding: 6.2em 0 0;
+    background: rgba(234, 232, 251, 0.95);
+}
+/* .feature_list .circle_info:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+} */
+.feature_list .circle_info p {
+    /* display: inline-block;
+    vertical-align: middle; */
+    color: #333333;
+}
+.feature_list .summary {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 6px;
+    width: calc(100% - 1px);
+    font-weight: 700;
+}
+.feature_list .sub {
+    font-size: 0.938em;
+    word-break: keep-all;
+    word-wrap: wrap;
+}
+.feature_list .box_info {
+    text-align: center;
+}
+.feature_list .box_info p {
+    color: #fff;
+}
+.feature_list .box_info .summary {
+    margin-bottom: 0.933em;
+}
+.feature_list .box_info .sub {
+    font-family: 'Spoqa Han Sans', sans-serif;
+}
+.main_page2 .wrapper {
+    /* max-width: 1333px;
+    width: 100%; */
+    padding: 8.250em 84px 9.750em;
+    margin: 0 auto;
+    text-align: center;
+}
+.main_page2 .txt1 {
+    color: #999999;
+    font-size: 2.25em;
+    margin-bottom: 2.333em;
+    font-weight: 700;
+}
+.main_page2 .txt1 span {
+    color: #666666;
+}
+.main_page2 .txt2 {
+    color: #9045d3;
+    margin-bottom: 0.667em;
+    font-size: 3.375em;
+    font-weight: 700;
+}
+.main_page2 .txt3 {
+    color: #666666;
+    font-size: 1.125em;
+    margin-bottom: 5.333em;
+}
+.whatwedo_img {
+    margin-bottom: 1.5em;
+    width: 69.4%;
+    margin: 0 auto;
+}
+.whatwedo_img .img1 {
+    width: 78%;
+    float: left;
+}
+.whatwedo_img .img2 {
+    float: right;
+    width: 18%;
+    margin-top: 2%;
+}
+.main_page3 {
+    margin-bottom: 9.75em;
+}
+.area_method_title {
+    text-align: center;
+}
+.area_method_title .mtd_no {
+    color: #fff;
+    font-size: 1.25em;
+    margin-bottom: 6px;
+    font-weight: 700;
+    padding: 0 1em;
+    line-height: 1.8em;
+    display: inline-block;
+    background: #1f6fcc;
+}
+.area_method_title .mtd_title {
+    font-weight: 700;
+    font-size: 2.25em;
+    margin-bottom: 1em;
+}
+.area_method_title .mtd_desc {
+    color: #666666;
+    font-size: 1.125em;
+    line-height: 1.556em;
+}
+.area_static_img {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 5.250em;
+}
+.area_static_img img {
+    width: 39.2%;
+    margin: 0 1.5em;
+}
+.area_ad_info ul {
+    display: flex;
+    justify-content: center;
+}
+.area_ad_info ul li {
+    margin: 0 2.5em;
+}
+.area_ad_info .img_ad {
+    text-align: center;
+    height: 6.938em;
+}
+.area_ad_info .img_ad img {
+    margin: 0 auto;
+}
+.area_ad_info li:nth-child(1) img {
+    width: 6.875em;
+}
+.area_ad_info li:nth-child(2) img {
+    width: 5.938em;
+}
+.area_ad_info li:nth-child(3) img {
+    width: 4.5em;
+}
+.area_ad_info li:nth-child(4) img {
+    width: 6.875em;
+}
+.area_ad_info .txt_ad {
+    font-size: 1.125em;
+    text-align: center;
+    color: #1f6fcc;
+    font-weight: 700;
+    margin-bottom: 1.333em;
+}
+.area_ad_info .desc_ad {
+    font-size: 0.844em;
+    color: #666666;
+    line-height: 1.63em;
+    padding-left: 0.9em;
+}
+.main_page4 {
+    margin-bottom: 9.75em;
+}
+.area_method_title .mtd_no.clr2 {
+   background: #590cb2; 
+}
+.area_app_marketing ul {
+    display: flex;
+    justify-content: center;
+}
+.area_app_marketing ul li {
+    margin: 0 3.75em;
+}
+.area_app_marketing dt {
+    height: 14.938em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.75em;
+}
+.area_app_marketing dt img {
+    width: 19.875em;
+    margin: 0 auto;
+}
+.area_app_marketing dd {
+    text-align: center;
+}
+.area_app_marketing dd .marketing_title {
+    font-size: 1.25em;
+    color: #9045d3;
+    margin-bottom: 0.7em;
+    line-height: 1.2em;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    font-weight: 500;
+}
+.area_app_marketing dd .marketing_desc {
+    font-size: 0.938em;
+    line-height: 1.333em;
+    color: #666;
+    font-family: 'Spoqa Han Sans', sans-serif;
+}
+.main_page5 {
+    margin-bottom: 9.75em; 
+}
+.area_method_title .mtd_no.clr3 {
+    background: #9045d3; 
+}
+.area_method_title .mtd_desc b {
+    color: #9045d3;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.area_adMob {
+    padding-top: 4.5em;
+}
+.area_adMob img {
+    margin: 0 auto;
+    width: 66.688em;
+}
+.adMob_bottom_txt {
+    text-align: center;
+    font-size: 0.875em;
+    color: #590cb2;
+    padding-top: 1.5em;
+    font-weight: 500;
+}
+.partner {
+    margin-bottom: 8.250em;
+}
+.partner .wrapper {
+    padding: 0 3.750em;
+}
+.title_partner {
+    color: #333;
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.333em;
+}
+.partner .swiper-container {
+    /* padding: 0 1em; */
+}
+.partner .swiper-slide img {
+    width: 9.125em;
+}
+.partner .swiper-button-next,
+.partner .swiper-button-prev {
+    width: 0.5em;
+    height: 1.125em;
+    margin-top: -0.562em;
+}
+.partner .swiper-button-next {
+    right: 0;
+    background: url('../images/btn-arrow-able.png') 0 0 no-repeat;
+    background-size: 0.5em 1.125em;
+}
+.partner .swiper-button-prev {
+    left: 0;
+    background: url('../images/btn-arrow-able2.png') 0 0 no-repeat;
+    background-size: 0.5em 1.125em;
+}
+.partner .swiper-button-prev:after, .partner .swiper-container-rtl .swiper-button-next:after,
+.partner .swiper-button-next:after, .partner .swiper-container-rtl .swiper-button-prev:after {
+    display: none;
+}
+.contact {
+    padding: 5.625em 84px 3.438em;
+    background: url('../images/bg-contact-us.png') center center no-repeat;
+    background-size: cover;
+}
+.contact .wrapper {
+    max-width: 1320px;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.contact_title {
+    text-align: center;
+}
+.contact_title .title {
+    color: #333333;
+    font-weight: 700;
+    font-size: 2.25em;
+    margin-bottom: 0.667em;
+}
+.contact_title .sub {
+    font-size: 0.938em;
+    color: #666666;
+    margin-bottom: 3.2em;
+}
+.area_form_contact {
+    width: 56%;
+    float: right;
+}
+.textbox, .selectbox {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #dddddd;
+    font-size: 0.938em;
+    color: #333333;
+    padding-left: 0.8em;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    height: 2.4em;
+    line-height: 2.4em;
+    background: #fff;
+    border-radius: 4px;
+}
+.selectbox {
+    background: url('../images/arrow.png') center right 10px no-repeat #fff;
+    background-size: 8px 6px;
+}
+.line_form {
+    margin-bottom: 0.938em;
+}
+.line_form .textbox,
+.line_form .selectbox {
+    float: left;
+    width: calc(50% - 0.8em);
+}
+.line_form .textbox:first-child {
+    margin-right: 1.6em;
+}
+.txtarea {
+    border: 1px solid #dddddd;
+    font-size: 0.938em;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    color: #333333;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 16em;
+    resize: none;
+    border-radius: 4px;
+    padding: 0.8em;
+}
+.textbox::-webkit-input-placeholder,
+.selectbox::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+.textbox:-ms-input-placeholder,
+.selectbox:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.txtarea::-webkit-input-placeholder,
+.selectbox::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+.txtarea:-ms-input-placeholder,
+.selectbox:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.btn_send {
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 0.938em;
+    font-weight: 700;
+    color: #fff;
+    height: 2.4em;
+    background: #333333;
+    border-radius: 2px;
+    width: 24em;
+}
+.company_info {
+    padding: 3.125em 84px;
+}
+.company_info .wrapper {
+    position: relative;
+    max-width: 1320px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+.com_name {
+    font-size: 1.125em;
+    color: #333333;
+    font-weight: 700;
+    line-height: 1.556em;
+    margin-bottom: 0.667em;
+}
+.com_intro {
+    color: #999999;
+    font-size: 0.75em;
+}
+.link_intro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 0.938em;
+    font-weight: 700;
+    width: 12em;
+    line-height: 2.4em;
+    text-align: center;
+    background: #333;
+}
+footer {
+    background: #333;
+    padding: 0 84px;
+}
+.copyright {
+    color: #eee;
+    padding: 1.750em 0;
+    text-align: center;
+    font-size: 0.75em;
+
+}
+.copyright br {
+    display: none;
+}

@@ -1,0 +1,547 @@
+@media all and (min-width: 1600px) {
+    html, body {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1500px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1400px) {
+    html, body {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1300px) {
+    html, body {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1200px) {
+    html, body {
+        font-size: 11px;
+    }
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+    html, body {
+        font-size: 10px;
+    }
+    nav {
+        padding: 18px 0 7px;
+    }
+    .nav_area {
+        display: block;
+    }
+    .nav_area .logo_top {
+        float: none;
+    }
+    .nav_area .gnb {
+        padding-top: 14px;
+        width: 100%;
+        float: none;
+    }
+    .nav_area .gnb li {
+        height: 20px;
+        margin: 0 3em 11px 0;
+    }
+    .rps_pc {
+        display: none;
+    }
+    .rps_tb {
+        display: block;
+    }
+    .nav_area .logo_top img {
+        width: 129px;
+    }
+    .nav_area .gnb li a {
+        line-height: 1.45em;
+    }
+    .nav_area .gnb li.focus a {
+        font-size: 10px;
+        border-bottom: 2px solid #fff;
+    }
+    .wrapper {
+        max-width: 906px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .title_main {
+        font-size: 25px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    .main_page1 {
+        padding-top: 91px;
+        padding-bottom: 39px;
+    }
+    .main_page1:after {
+        height: 100%;
+        background: url('../images/bg-gradiant-tb@2x.png') bottom left no-repeat;
+        background-size: 100%;
+    }
+    .main_page1 .wrapper {
+        padding-top: 84px;  
+    }
+    .feature_list ul li {
+        width: 220px;
+    }
+    .feature_list .circle_info {
+        width: 180px;
+        height: 180px;
+    }
+    .feature_list .circle_info p, .feature_list .box_info .summary {
+        font-size: 15px;
+    }
+    .feature_list .circle_info p.sub,
+    .feature_list .box_info .sub {
+        font-size: 12px;
+    }
+    .feature_list .box_info .sub br {
+        display: none;
+    }
+    .main_page2 .wrapper {
+        padding: 72px 20px;
+    }
+    .main_page2 .txt1 {
+        font-size: 21px;
+        margin-bottom: 48px;
+    }
+    .main_page2 .txt2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .main_page2 .txt3 {
+        font-size: 12px;
+        margin-bottom: 48px;
+    }
+    .whatwedo_img {
+        width: 100%;
+    }
+    .whatwedo_img .group_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .whatwedo_img .group_img img {
+        width: 32%;
+        margin: 0 30px;
+        margin-bottom: 36px;
+    }
+    .whatwedo_img .center_img img {
+        margin: 0 auto;
+    }
+    .whatwedo_img .center_img img:first-child {
+        width: 92px;
+        margin-bottom: 48px;
+    }
+    .whatwedo_img .center_img img:last-child {
+        width: 139px;
+    }
+    .area_method_title .mtd_no {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .area_method_title .mtd_title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .area_method_title .mtd_desc {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .area_static_img {
+        display: block;
+        padding-bottom: 32px;
+    }
+    .area_static_img img {
+        width: 80%;
+        margin: 0 auto 16px;
+    }
+    .main_page4, .main_page5 {
+        margin-bottom: 72px;
+    }
+    .area_ad_info ul {
+        flex-wrap: wrap;
+        padding-top: 24px;
+    }
+    .area_ad_info ul li {
+        width: 240px;
+    }
+    .area_ad_info .txt_ad {
+        font-size: 15px;
+        word-wrap: break-word;
+        word-break: keep-all;
+    }
+    .area_ad_info .txt_ad br {
+        display: none;
+    }
+    .area_ad_info .desc_ad {
+        font-size: 12px;
+    }
+    .area_ad_info .img_ad {
+        height: auto;
+        margin-bottom: 13px;
+    }
+    .area_ad_info li:nth-child(3) .img_ad,
+    .area_ad_info li:nth-child(4) .img_ad {
+        margin-top: 36px;
+    }
+    .area_app_marketing ul {
+        flex-wrap: wrap;
+        align-item: center;
+    }
+    .area_app_marketing ul li {
+        width: 40%;
+        margin: 0 16px 36px;
+    }
+    .area_app_marketing dd .marketing_title {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .area_app_marketing dd .marketing_desc,
+    .main_page5 .area_method_title .mtd_desc {
+        font-size: 12px;
+    }
+    .main_page5 .area_method_title .mtd_title {
+        font-size: 20px;
+    }
+    .main_page5 .area_method_title .mtd_desc span {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .adMob_bottom_txt {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .area_adMob img {
+        width: 435px;
+    }
+    .partner .wrapper {
+        padding: 0 0 0 20px;
+    }
+    .partner .swiper-slide img {
+        width: 87px;
+    }
+    .partner .swiper-button-next, .partner .swiper-button-prev {
+        display: none;
+    }
+    .contact {
+        padding: 24px 84px 36px;
+        background: url('../images/bg-contact-us-tb@2x.png') center center no-repeat;
+        background-size: cover;
+    }
+    .area_form_contact {
+        float: none;
+        width: 100%;
+    }
+    .line_form {
+        margin-bottom: 25px;
+    }
+    .textbox, .selectbox {
+        font-size: 12px;
+        height: 36px;
+        padding-left: 12px;
+    }
+    .txtarea {
+        font-size: 12px;
+        height: 180px;
+        padding: 12px;
+    }
+    .btn_send {
+        font-size: 15px;
+        width: 300px;
+    }
+    .company_info {
+        padding: 36px 84px;
+    }
+    .com_name {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    .contact_title .title {
+        font-size: 20px;
+    }
+    .contact_title .sub {
+        font-size: 12px;
+    }
+    .com_intro {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .link_intro {
+        display: none;
+    }
+    .copyright {
+        font-size: 10px;
+        padding: 15px 0;
+    }
+    .copyright br {
+        display: block;
+    } 
+}
+/* mobile */
+@media (max-width: 600px) {
+    .rps_pc_tb {
+        display: none;
+    }
+    .rps_mb {
+        display: block;
+    }
+    .wrapper {
+        padding: 0 30px;
+    }
+    nav {
+        padding: 15px 0;
+    }
+    .menu_icon {
+        width: 18px;
+        height: 12px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        left: 24px;
+        top: 19px;
+    }
+    .menu_icon span {
+        display: block;
+        height: 2px;
+        background: #fff;
+    }
+    nav.open .bg_black {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.6);
+    }
+    nav.open .menu_list {
+        transition: all 0.2s;
+        left: 0;
+    }
+    nav.open .menu_list .close_menu_list {
+        position: absolute;
+        top: 0;
+        right: -25px;
+        color: #fff;
+        font-size: 30px;
+    }
+    .menu_list ul {
+        padding: 36px;
+    }
+    .menu_list li {
+        margin-bottom: 30px;
+    }
+    .menu_list li a {
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .nav_area .logo_top {
+        float: none;
+        margin: 0 auto;
+    }
+    .nav_area .logo_top img {
+        margin: 0 auto;
+    }
+    .nav_area .gnb {
+        display: none;
+    }
+    .main_page1 {
+        padding-top: 30px;
+        background: url('../images/bg-top-mobile@3x.png') top left no-repeat;
+        background-size: 100%;
+        margin-bottom: 0;
+    }
+    .main_page1:after {
+        background: url('../images/bg-gradiant-mobile@3x.png') bottom left no-repeat;
+        background-size: 100% 55%;
+    }
+    .main_page1 .wrapper {
+        padding-top: 77px;
+    }
+    .title_main {
+        margin-bottom: 43px;
+        font-size: 20px;
+        line-height: 30px;  
+    }
+    .feature_list ul {
+        display: block;
+    }
+    .feature_list ul li {
+        margin: 0 auto 48px;
+        width: 200px;
+    }
+    .feature_list .circle_info {
+        padding: 6.8em 0 0;
+        margin-bottom: 18px;
+    }
+    .feature_list .box_info .summary {
+        margin-bottom: 6px;
+    }
+    .feature_list p.sub,
+    .feature_list .box_info .sub {
+        font-size: 10px;
+    }
+    .main_page2 .wrapper {
+        padding: 41px 30px 60px; 
+    }
+    .main_page2 .txt1 {
+        line-height: 1.6em;
+        font-size: 15px;
+    }
+    .main_page2 .txt2 {
+        font-size: 20px;
+    }
+    .main_page2 .txt3 {
+        line-height: 18px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+    .whatwedo_img .group_img {
+        display: block;
+        margin-bottom: 36px;
+    }
+    .whatwedo_img .group_img img {
+        margin: 0 auto 42px;
+        width: 206px;
+    }
+    .area_method_title .mtd_no {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .area_method_title .mtd_title {
+        font-size: 20px;
+        margin-bottom: 36px;
+    }
+    .area_method_title .mtd_desc {
+        font-size: 12px;
+    }
+    .area_static_img img {
+        width: 90%;
+    }
+    .area_ad_info ul li {
+        margin: 0 auto 36px;
+
+    }
+    .area_ad_info .img_ad {
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .area_ad_info li:nth-child(1) img,
+    .area_ad_info li:nth-child(4) img {
+        width: 84px;
+    }
+    .area_ad_info li:nth-child(2) img {
+        width: 78px;
+    }
+    .area_ad_info li:nth-child(3) img {
+        width: 60px;
+    }
+    .area_ad_info .txt_ad {
+        margin-bottom: 12px;
+    }
+    .area_ad_info .desc_ad {
+        padding-left: 1.7em;
+    }
+    .area_ad_info li:nth-child(2) .txt_ad br {
+        display: block;
+    }
+    .area_app_marketing ul {
+        display: block;
+    }
+    .area_app_marketing ul li {
+        width: 288px;
+        margin: 0 auto 36px;
+    }
+    .area_app_marketing dd .marketing_desc,
+    .area_method_title .mtd_desc {
+        line-height: 18px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+    .area_method_title .mtd_desc b {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .area_adMob img.rps_tb {
+        display: none;
+    }
+    .area_adMob img.rps_mb {
+        max-width: 348px;
+        width: 98%;
+    }
+    .contact {
+        padding: 24px 30px;
+        background: url('../images/bg-contact-us-mobile@3x.png') center center no-repeat;
+        background-size: cover;
+    }
+    .line_form {
+        margin-bottom: 0;
+    }
+    .line_form .textbox, .line_form .selectbox {
+        float: none;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .btn_form {
+        padding-top: 18px;
+    }
+    .btn_send {
+        width: 100%;
+    }
+    .company_info {
+        padding: 24px 30px;
+    }
+    .com_name {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    .com_intro {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 24px;
+    }
+    .link_intro {
+        display: block;
+        margin: 0 auto;
+        position: static;
+        width: 150px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+    footer {
+        padding: 0 30px;
+    }
+    .copyright {
+        text-align: left;
+        padding: 21px 0;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+    .copyright br {
+        display: none;
+    }
+}
+@media (max-width: 330px) {
+    .wrapper, footer {
+        padding: 0 20px;
+    }
+    .contact, .company_info {
+        padding: 24px 20px;
+    }
+    .main_page1:after {
+        background-size: 100% 61%;
+    }
+    
+}
