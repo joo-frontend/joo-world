@@ -1,0 +1,311 @@
+@media (max-width: 1024px) {
+    /*header*/
+    .header_wra {
+        height: 60px;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+        top: 16px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .gnb,
+    .section_icon_menu a.mypage {
+        display: none;
+    }
+    .section_member_menu {
+        display: none;
+    }
+    .section_member_menu a {
+        font-size: 18px;
+    }
+    .section_icon_menu a.searchM img.focus_off, .section_icon_menu a.searchM.focus img.focus_on {
+
+    }
+    /*side menu*/
+    .section_icon_menu {
+        padding-right: 3em;
+    }
+    .mb_menu_icon {
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        right: 2em;
+        top: 50%;
+        transform: translate(0,-50%);
+        width: 22px;
+        height: 19px;
+    }
+    .mb_menu_icon span {
+        height: 2px;
+        display: block;
+        width: 100%;
+        background: #424242;
+        position: absolute;
+        left: 0;
+    }
+    .mb_menu_icon span:nth-child(1) {
+        top: 0;
+    }
+    .mb_menu_icon span:nth-child(2) {
+        top: 50%;
+        margin-top: -1px;
+    }
+    .mb_menu_icon span:nth-child(3) {
+        top: 100%;
+    }
+    .side_menuM.active {
+        display: block;
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #ffffff;
+    }
+    .active + .bg_black_menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0,0,0,0.8);
+        z-index: 190;
+    }
+    .top_my_profile {
+        padding: 4em;
+        position: relative;
+    }
+
+    .top_my_profile .intro {
+        color: #282828;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .delivery_info_my {
+        color: #282828;
+        font-weight: 200;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .delivery_info_my span {
+        font-weight: 400;
+    }
+    .delivery_info_my span.line {
+        text-decoration: underline;
+    }
+    .link_my_account a,
+    .link_my_account p {
+        font-size: 13px;
+        text-align: center;
+        height: 42px;
+        line-height: 42px;
+        width: calc(46% - 2px);
+        margin-right: 4%;
+        color: #ffffff;
+        background: #4f4f4f;
+        display: inline-block;
+    }
+    .link_my_account p.link_long {
+        width: 100%;
+    }
+    .alarm_my {
+        position: absolute;
+        top: 4em;
+        right: 4em;
+    }
+    .alarm_my.new:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #f65b4f;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .list_menu {
+    }
+    .list_menu li {
+        padding-left: 4em;
+    }
+    .list_menu li.focus {
+        background: #ffd055;
+    }
+    .list_menu li a {
+        display: block;
+        line-height: 48px;
+        color: #282828;
+        font-size: 16px;
+        font-weight: 200;
+    }
+    .list_menu li.focus a {
+        font-weight: 400;
+    }
+    .bottom_icon_menu {
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid rgba(28,28,28,0.3);
+        height: 75px;
+    }
+    .bottom_icon_menu a {
+        padding: 2em 0;
+    }
+    /*footer*/
+    .footer_wra {
+        height: 210px;
+    }
+    .footer_area {
+        max-width: 620px;
+        padding: 2em 0 0;
+    }
+    .desc_company {
+        padding: 2em 0 0 0;
+    }
+    .delete_msg_box .desc {
+        font-size: 14px;
+    }
+}
+@media (max-width: 650px) {
+    /*header*/
+    .header_wra {
+        height: 50px;
+    }
+    .logo {
+        top: 13px;
+        width: 6em;
+        margin-left: -30px;
+    }
+    .section_member_menu {
+        display: none;
+    }
+    .section_icon_menu {
+        padding-right: 2.9em;
+    }
+    .section_icon_menu a.searchM,
+    .section_icon_menu a.cartM {
+        display: none;
+    }
+    .mb_menu_icon {
+        width: 20px;
+        height: 16px;
+        transform: translate(0,-58%);
+    }
+    .section_icon_menu a.searchM img.focus_off, .section_icon_menu a.searchM.focus img.focus_on {
+        width: 20px;
+    }
+    .section_icon_menu a.cartM img {
+        width: 26px;
+    }
+    .mb_menu_icon span:nth-child(2) {
+        margin-top: 0;
+    }
+
+    /*side menu*/
+    .side_menuM.active {
+        width: 70%;
+    }
+    .top_my_profile {
+        padding: 3em 2em;
+    }
+    .alarm_my {
+        top: 3em;
+        right: 2em;
+    }
+    .alarm_my img {
+        width: 20px;
+    }
+    .top_my_profile .intro {
+        font-size: 14px;
+    }
+    .delivery_info_my {
+        font-size: 10px;
+    }
+    .link_my_account a {
+        height: 25px;
+        line-height: 25px;
+        font-size: 11px;
+    }
+    .list_menu li {
+        padding-left: 2em;
+    }
+    .list_menu li a {
+        line-height: 33px;
+        font-size: 10px;
+    }
+    .bottom_icon_menu {
+        height: 46px;
+    }
+    .bottom_icon_menu a {
+        padding: 1.2em 0;
+    }
+    .bottom_icon_menu img {
+        width: 22px;
+    }
+    /*footer*/
+    .footer_wra {
+        height: 72px;
+    }
+    .footer_area {
+        padding: 1.4em 0 0;
+    }
+    .logo_footer,
+    .desc_company,.msg_company {
+        display: none;
+    }
+    .customer_menu {
+        display: flex;
+        justify-content: center;
+    }
+    .mb_copyright {
+        display: block;
+        font-size: 10px;
+        color: #b7b7b7;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+
+    .footer_mb_wra {
+        display: none;
+    }
+    /*cloud pop*/
+    .list_cloud_file .tb_files td {
+        font-size: 10px;
+    }
+    .list_cloud_file .tb_files td:nth-child(1) {
+        padding-left: 0;
+    }
+    .list_cloud_file .tb_files td:nth-child(2) {
+        width: 42%;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .list_cloud_file .tb_files td .name {
+        display: block;
+    }
+    .delete_msg_box {
+        width: 100%;
+        height: auto;
+        padding: 4rem 2em;
+    }
+    .delete_msg_box .desc {
+        font-size: 10px;
+    }
+    .btn_group_pop .btn {
+        height: 35px;
+        line-height: 35px;
+    }
+    .alarm_my.new:after {
+        width: 4px;
+        height: 4px;
+    }
+}

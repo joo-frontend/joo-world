@@ -1,0 +1,335 @@
+/*font*/
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+/*all*/
+* {
+    box-sizing: border-box
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, input, textarea, p, select, blockquote, th, td, img, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    color: #000
+}
+html, body {
+    font-size: 16px
+}
+html {
+    width: 100%;
+}
+body {
+    width: 100%;
+    height: 100%
+}
+
+body.active {
+    overflow-y: hidden
+}
+
+li {
+    list-style: none
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none
+}
+a:active {
+    text-decoration: none
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+img {
+    display: block;
+    border: 0
+}
+
+button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+input, select, textarea {
+    border: 1px solid #aaa;
+    outline: none;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear:both;
+}
+.f_mont {
+    font-family: "Montserrat",sans-serif;
+}
+.f_ubun {
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    padding-top: 4.688em;
+}
+/*header*/
+.header_wra {
+    padding: 0 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 180;
+    height: 4.688em;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+.header_area {
+    max-width: 1180px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+}
+.logo {
+    width: 8em;
+}
+
+.mb_menu_icon,.bg_black_menu,.side_menuM {
+    display: none;
+}
+.gnb,.logo  {
+    display: table-cell;
+    vertical-align: middle;
+}
+.gnb li {
+    float: left;
+    margin-right: 1.8em;
+}
+.gnb li a {
+    font-size: 0.875em;
+    color: #282828;
+}
+.right_menu {
+    float: right;
+    height: 100%;
+    display: table;
+}
+.section_member_menu, .section_icon_menu {
+    display: table-cell;
+    vertical-align: middle;
+}
+.section_member_menu a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.875em;
+    padding: 0 1em;
+    color: #282828;
+}
+.section_member_menu a + a {
+    border-left: 1px solid #282828;
+}
+.section_icon_menu {
+    padding-left: 1em;
+}
+.section_icon_menu a {
+    margin-left: 0.6em;
+    display: inline-block;
+}
+.section_icon_menu a.searchM img,
+.section_icon_menu a.searchM img.focus_on,
+.section_icon_menu a.searchM.focus img.focus_off {
+    display: none;
+}
+.section_icon_menu a.searchM img.focus_off,
+.section_icon_menu a.searchM.focus img.focus_on {
+    display: inline-block;
+}
+/*검색결과*/
+.bg_black {
+    display: none;
+}
+.bg_black.active {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 198;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.2);
+}
+.bg_black.bg_search {
+    height: calc(100% - 4.688em);
+    top: 4.688em;
+}
+.search_wra {
+    display: none;
+    position: fixed;
+    z-index: 199;
+    left: 0;
+    top: 4.688em;
+    background: #ffffff;
+    width: 100%;
+}
+.search_area {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5em 2em;
+    position: relative;
+}
+.search_txt {
+    width: 612px;
+    margin: 0 auto;
+    position: relative;
+}
+.search_textbox {
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+    padding: 0.5em 3.5em 0.5em 1em;
+    border-bottom: 1px solid #adadad;
+    font-size: 0.875em;
+}
+.search_btn {
+    position: absolute;
+    right: 0.6em;
+    top: 0;
+}
+.search_btn img {
+    width: 1.625em;
+}
+.close_search {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0.8em;
+}
+/*search result*/
+.search_result_wra {
+    min-height: calc(100vh - 4.688em - 230px);
+    padding: 3em 2em 6em;
+}
+.search_result_txt {
+    text-align: center;
+    color: #444444;
+    font-size: 1.125em;
+    margin-bottom: 3.5em;
+    font-weight: 200;
+}
+.search_result_txt span {
+    color: #f65b4f;
+    font-weight: 400;
+}
+.result_contents {
+    max-width: 1294px;
+    width: 100%;
+    margin: 0 auto;
+}
+.result_contents .title_box {
+    position: relative;
+    border-bottom: 1px solid #f65b4f;
+    padding-bottom: 0.7em;
+}
+.result_contents .title_box .title {
+    font-size: 1em;
+    color: #f65b4f;
+}
+.result_contents .title_box .title span {
+    color: #000;
+    font-size: 0.750em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.25em 0 0 1.5em;
+}
+.result_contents .title_box .more_result {
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    font-size: 0.688em;
+    color: #878787;
+}
+.result_contents .title_box .more_result img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.list_result li {
+    padding: 0.8em 1em;
+    border-bottom: 1px solid rgba(34,34,34,0.2);
+}
+.list_result li:last-child {
+    border-bottom: 0;
+}
+.list_result li a {
+    font-size: 0.875em;
+}
+/*footer*/
+.footer_wra {
+    height: 230px;
+    padding: 0 2em;
+    border-top: 1px solid #b7b7b7;
+}
+.logo_footer {
+    position: absolute;
+    right: 0;
+    top: 1em;
+}
+.logo_footer img {
+    width: 4.625em;
+}
+.footer_area {
+    position: relative;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.6em 0 0;
+}
+.customer_menu a {
+    color: #b7b7b7;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #b7b7b7;
+    font-size: 0.750em;
+    line-height: 1;
+    padding: 0 0.65em;
+}
+.customer_menu a:first-child {
+    border-left: 0;
+}
+.customer_menu a:hover {
+    color: #000;
+}
+.desc_company {
+    padding: 1.5em 0 0 0;
+}
+.desc_company p {
+    color: #b7b7b7;
+    font-weight: 200;
+    font-size: 10px;
+}
+.desc_company p span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+    height: 1em;
+    line-height: 1;
+    border-right: 1px solid #b7b7b7;
+}
+.msg_company {
+    padding: 1.5em 0 0;
+}
+.msg_company p {
+    font-size: 10px;
+    color: #b7b7b7;
+    font-weight: 200;
+    line-height: 1.8em;
+}
+.mb_copyright {
+    display: none;
+}

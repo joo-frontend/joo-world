@@ -1,0 +1,351 @@
+.capacity_box {
+    display: none;
+}
+.cloud_bottom_notice {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 200;
+    color: #686868;
+    padding: 0 0 20px;
+}
+.m_cloud_nav {
+    width: 100%;
+    display: none;
+}
+.m_cloud_nav ul {
+    display: flex;
+    justify-content: center;
+}
+.m_cloud_nav ul li {
+    display: flex;
+    text-align: center;
+    width: 35%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    background-color: #4F4F4F;
+    color: #fff;
+    margin: 0 5px;
+    line-height: 1;
+}
+
+.new_create_btn {
+    border: 1px solid #E2E2E2;
+    width: 200px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #000;
+    background-color: #FFD255;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.new_create_box {
+    display: none;
+    margin-bottom: 100px;
+}
+
+.item_file {
+
+}
+.cloud_list_line {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #BCBCBC;
+    font-weight: 300;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+.cloud_list_line .cloud_cell {
+    padding: 10px 0;
+    line-height: 1;
+}
+.cloud_list_head .cloud_cell {
+    font-size: 0.875rem;
+    color: #BCBCBC;
+    font-weight: 300;
+}
+.cloud_list_body .cloud_cell {
+    font-size: 0.75rem;
+    color: #000;
+    font-weight: 200;
+}
+.cloud_list_line .cloud_col1 {
+    width: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloud_list_line .cloud_col6 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cloud_list_line .cloud_col2 {
+    width: 50%;
+}
+.cloud_list_line .cloud_col3 {
+    width: 50%;
+}
+.cloud_list_line .cloud_col4 {
+    width: 10%;
+    text-align: center;
+}
+.cloud_list_line .cloud_col5 {
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+.cloud_list_line .cloud_col5 img {
+    margin: 0 auto;
+    cursor: pointer;
+}
+.cloud_list_line:hover {
+    background-color: #FFD255;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .cloud_area {
+        height: 100%;
+    }
+    .m_cloud_nav {
+        display: block;
+    }
+    .cloud_area .left_content {
+        display: none;
+    }
+    .cloud_area .right_content {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .section_file_list .list_files.active {
+        height: auto;
+    }
+    .capacity_box {
+        width: 100px;
+        display: block;
+        font-size: 0.875rem;
+        color: #B5B5B5;
+    }
+    .title_folder .file_manage_menu {
+        right: -7.8em;
+    }
+    .file_manage_menu.active {
+        width: 9rem;
+    }
+    .manage_file_box.active {
+        width: 7rem;
+        right: 5px;
+    }
+    .pop_add_folder .popup, .pop_edit_folder .popup {
+        width: 400px;
+    }
+    .btn_group_pop {
+        justify-content: space-between;
+    }
+    .btn_group_pop .btn {
+        width: 49%;
+        height: 40px;
+    }
+    .add_folder_area {
+        padding: 4rem 0;
+        height: 200px;
+    }
+    .delete_msg_box {
+        padding: 4rem 0;
+        height: 200px;
+    }
+    .app_install_mainSection .mainSection_right img {
+        width: 80%;
+    }
+    .search_cloud {
+        margin:2rem 0;
+    }
+    .capacity_box {
+        position: absolute;
+        bottom: 5em;
+    }
+}
+
+@media (max-width: 650px) {
+    .cloud_wra {
+        width: 100%;
+        padding: 0;
+    }
+    .new_create_box {
+        display: block;
+        text-align: center;
+    }
+    .new_create_btn {
+        width: 150px;
+        color: #fff;
+        border: none;
+    }
+    .cloud_area .right_content {
+        padding: 0;
+    }
+    .m_cloud_nav {
+        margin-bottom: 25px;
+    }
+    .cloud_textbox {
+        background: url("/assets/images/mypage/cloud_sh.png") center left 0.6em no-repeat #fff;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border-bottom: 2px solid #EDEDED;
+    }
+
+
+    .cloud_bottom_notice {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .capacity_box {
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+    }
+    .menu_txt.capacity_box span {
+        width: 85px;
+    }
+    .capacity_box .bar_save {
+        margin:0 2px;
+    }
+    .files_type_album ul, .files_type_each ul{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .item_album_file {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .item_file_each {
+        width: 45%;
+        margin: 0 auto;
+        height: 14rem;
+        padding: 0;
+    }
+    .item_file_each:nth-child(2n-1) {
+        margin: 2% 2% 2% 3%;
+    }
+    .item_file_each:nth-child(2n) {
+        margin: 2% 3% 2% 2%;
+    }
+    .title_file_type {
+        display: none;
+    }
+    .item_album_file .preview img {
+         height: 100%;
+    }
+    .item_album_file .info_album {
+        position: static;
+    }
+    .item_album_file .info_album .volume_file {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+    .item_file_each .name_file {
+        position: static;
+    }
+    .item_file_each .name_file .volume {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+    }
+    .item_file_each .date_file {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        top: auto;
+    }
+    .item_file_each .preview {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .item_file_each .name_file .name {
+        font-size: 10px;
+        position: absolute;
+        bottom: 25px;
+        left: 10px;
+    }
+    .cloud_folder_name {
+        border: none;
+        padding: 2.2em 0 1em;
+    }
+    .cloud_folder_name .title_folder {
+        display: none;
+
+    }
+
+    .cloud_list_head {
+        display: none;
+    }
+    .cloud_list_line:hover .cloud_col4:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 100%;
+        background-color: #4F4F4F;
+        background-position: 13%;
+        background-image: url(/assets/images/mypage/trashCan_icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .cloud_list_line .cloud_col4 {
+        color: #BCBCBC;
+    }
+    .cloud_list_line .cloud_col5 {
+        display: none;
+    }
+    .cloud_list_line .cloud_col6 {
+        height: 50px;
+    }
+    .cloud_list_line .cloud_col2 {
+        position: absolute;
+        top: 0;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .cloud_list_line .cloud_col3 {
+        position: absolute;
+        bottom: 0;
+    }
+    .cloud_list_line .cloud_col4 {
+        width: 20%;
+    }
+    .cloud_list_line .cloud_col1 {
+        width: 15%;
+    }
+    .cloud_bottom_notice {
+        display: block;
+    }
+    .pop_add_folder .popup, .pop_edit_folder .popup {
+        width: 80%;
+    }
+    .add_folder_area {
+        width: 80%;
+    }
+}

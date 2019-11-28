@@ -1,0 +1,12 @@
+<svg version="1.1" id="main_item_linkCaption" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+<style type="text/css">.main_linkCaption_item{fill:#E95A4E;}</style>
+<g>
+	<g>
+		<path class="main_linkCaption_item" d="M22.5,44.5c-12.1,0-22-9.9-22-22s9.9-22,22-22s22,9.9,22,22S34.6,44.5,22.5,44.5z M22.5,1.5
+			c-11.6,0-21,9.4-21,21s9.4,21,21,21s21-9.4,21-21S34.1,1.5,22.5,1.5z"/>
+	</g>
+	<g>
+		<polygon class="main_linkCaption_item" points="19.7,31 19,30.3 26.8,22.5 19,14.7 19.7,14 28.2,22.5 		"/>
+	</g>
+</g>
+</svg>

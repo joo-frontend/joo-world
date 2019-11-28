@@ -1,0 +1,522 @@
+@media (max-width: 1024px) {
+    .container {
+        padding-top: 60px;
+    }
+    /*album*/
+    .title_best_d {
+        font-size: 26px;
+        margin-bottom: 1em;
+    }
+    .desc_best_d {
+        display: block;
+    }
+    .btn_profile_d a,
+    .desc_best_d .notice_detail {
+        font-size: 15px;
+    }
+    .detail_pf_d .item_info_d .name span {
+        font-size: 16px;
+    }
+    .detail_pf_d .item_info_d .detail span {
+        font-size: 16px;
+    }
+    .profile_d {
+        padding: 2em 0;
+    }
+    .profile_d p {
+        width: 90px;
+        height: 90px;
+    }
+    .slide_best_album .slide_section,
+    .best_designer_section {
+        max-width: 700px;
+    }
+    .selectType {
+        font-size: 15px;
+        width: 200px;
+    }
+    .album_type_box {
+        padding: 3.2em 0;
+    }
+    .album_type_box .select_type {
+        margin-bottom: 2.5em;
+    }
+    .album_type_box .menu_type p {
+        font-size: 15px;
+    }
+    .album_type_box .menu_type li {
+        width: 7.5rem;
+    }
+    .album_type_box .menu_type li:after {
+        top: 0.9em;
+    }
+    .title_best_album p {
+        font-size: 26px;
+    }
+    .info_book {
+        top: 13.7em;
+    }
+    .info_book p {
+        font-size: 20px;
+    }
+    .info_book p.possible_pic {
+        font-size: 15px;
+    }
+    .swiper-container-horizontal.slideBestAlbum>.swiper-pagination-bullets, .slideBestAlbum .swiper-pagination-custom, .slideBestAlbum .swiper-pagination-fraction {
+        top: 9.3em;
+    }
+    .cover_img {
+        text-align: right;
+        padding-right: 15em;
+    }
+    .slideBestAlbum .swiper-button-prev.prev_gray, .slideBestAlbum .swiper-container-rtl .swiper-button-next {
+        left: 39%;
+    }
+    .slideBestAlbum .swiper-button-next.next_gray, .slideBestAlbum .swiper-container-rtl .swiper-button-prev {
+        right: 10%;
+    }
+    .slide_best_album {
+        padding: 4em 2em;
+    }
+    .order_list a {
+        font-size: 15px;
+    }
+    .info_book .more_book {
+        font-size: 14px;
+        width: 109px;
+        height: 39px;
+        line-height: 39px;
+        border-radius: 20px;
+    }
+    .pagination .page {
+        font-size: 18px;
+    }
+    .order_list {
+        padding-top: 2.8em;
+        margin-bottom: 4em;
+    }
+    .slideBestAlbum .info_book {
+        padding-bottom: 6em;
+    }
+    .slideBestAlbum .info_book .more_book {
+        display: block;
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .list_ai_album .cover_img {
+        padding-right: 0;
+        text-align: center;
+    }
+    /*pop*/
+    .pop_detail_designer .popup {
+        width: 90%;
+    }
+    .left_detail .profile .img {
+        width: 100px;
+        height: 100px;
+    }
+    .left_detail .profile .name {
+        font-size: 16px;
+    }
+    .item_act {
+        padding: 1.5em 0 1.5em 15%;
+    }
+    .item_act .lb {
+        font-size: 13px;
+    }
+    .item_act .act {
+        font-size: 25px;
+    }
+    .qna_title img {
+        width: 144px;
+    }
+    .qna_title {
+        height: 12em;
+    }
+    .qna_title .txt {
+        font-size: 20px;
+    }
+    .qna_contents .question {
+        margin-bottom: 1em;
+    }
+    .qna_contents .question p {
+        font-size: 13px;
+    }
+    .qna_contents .answer p {
+        font-size: 11px;
+    }
+    .area_detail_d .right_detail {
+        padding: 6.5em 4em 8em;
+    }
+    .more_pf_d {
+        font-size: 13px;
+    }
+    /*detail album*/
+    .photo_album_top {
+        padding: 5em 2em;
+    }
+    .photo_album_title {
+        font-size: 13px;
+        margin-bottom: 1em;
+    }
+    .photo_album_contents .desc {
+        font-size: 12px;
+    }
+    .slide_preview .cover_img {
+        padding-right: 0;
+    }
+    .photo_album_section {
+        max-width: 700px;
+    }
+    .slide_preview .slidePreview {
+        padding: 0 7em;
+    }
+    .slidePreview .swiper-slide .cover_img img {
+        height: 142px;
+    }
+    .option_book .lb,
+    .title_img_add span {
+        font-size: 13px;
+    }
+    .option_book .option {
+        font-size: 15px;
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+    }
+    .title_img_add .possible_pic,
+    .title_img_add .possible_pic span,
+    .price_album_box .item_info_ai .lb,.price_album_box .item_info_ai .txt,
+    .photo_album_section .total_price p {
+        font-size: 15px;
+    }
+    .get_photo button {
+        font-size: 15px;
+        width: 200px;
+        height: 48px;
+        background: #d0d0d0;
+    }
+    .choice_photo .num_current {
+        font-size: 12px;
+    }
+    .price_album_box .item_info_ai {
+        min-width: 28.75em;
+        margin: 0.35em 0;
+    }
+    .price_album_box .item_info_ai .lb {
+        width: 11.25rem;
+    }
+    .photo_album_section .total_price p span {
+        font-size: 30px;
+        vertical-align: middle;
+    }
+    .btn_group_deatil_album button {
+        font-size: 15px;
+        width: 40%;
+        height: 55px;
+    }
+    .photo_album_section .total_price {
+        padding: 2em 2em 6em;
+    }
+    .pop_cloud .popup {
+        padding: 3.5em 10px 3em;
+    }
+    .cloud_pop_box li {
+        width: 25%;
+    }
+
+}
+@media (max-width: 720px) {
+    .cloud_pop_box li {
+        width: 33.3%;
+    }
+}
+@media (max-width: 650px) {
+    .container {
+        padding-top: 50px;
+    }
+    .title_best_d {
+        font-size: 16px;
+    }
+    .desc_best_d {
+        position: relative;
+    }
+    .desc_best_d .notice_detail {
+        font-size: 10px;
+        -ms-word-break: keep-all;
+        word-break: keep-all;
+        position: absolute;
+        top: -1em;
+        left: 107px;
+        width: 60%;
+    }
+    .profile_d p {
+        width: 57px;
+        height: 57px;
+    }
+    .detail_pf_d .item_info_d .name {
+        display: block;
+        margin-bottom: 1em;
+    }
+    .detail_pf_d .item_info_d .name span {
+        font-size: 11px;
+    }
+    .detail_pf_d .item_info_d .detail span {
+        font-size: 11px;
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    .detail_pf_d .item_info_d {
+        position: relative;
+    }
+    .btn_profile_d {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .btn_profile_d a {
+        font-size: 11px;
+        margin-top: 0;
+    }
+    .selectType {
+        font-size: 10px;
+        width: 100px;
+        height: 28px;
+        line-height: 28px;
+    }
+    .selectType.focus {
+        background: url(/assets/images/list/drop.png) center right 0.8em no-repeat;
+        -webkit-background-size: 1.063em 0.563em;
+        background-size: 1.063em 0.563em;
+    }
+    .album_type_box .menu_type ul.active {
+        display: block;
+        overflow-x: auto;
+        max-width: 100%;
+        white-space: nowrap;
+    }
+    .album_type_box .menu_type li {
+        display: inline-block;
+        width: 6rem;
+    }
+    .album_type_box .menu_type p {
+        font-size: 11px;
+    }
+    .album_type_box .menu_type {
+        padding-left: 0;
+    }
+    .slide_section .title_best_album {
+        position: static;
+    }
+    .title_best_album p {
+        font-size: 16px;
+    }
+    .cover_img {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 1em;
+    }
+    .swiper-container-horizontal.slideBestAlbum>.swiper-pagination-bullets, .slideBestAlbum .swiper-pagination-custom, .slideBestAlbum .swiper-pagination-fraction {
+        top: 0.3em;
+    }
+    .slideBestAlbum .swiper-button-next.next_gray, .slideBestAlbum .swiper-button-prev.prev_gray {
+        top: 30%;
+    }
+    .info_book {
+        padding: 0 3em;
+        position: static;
+    }
+    .info_book p {
+        font-size: 13px;
+    }
+    .info_book p.title {
+        display: inline-block;
+    }
+    .info_book p.price {
+        float: right;
+    }
+    .info_book p.possible_pic {
+        font-size: 10px;
+        margin-top: 1em;
+    }
+    .cover_img img {
+        height: 168px;
+    }
+    .slideBestAlbum .swiper-button-prev.prev_gray, .slideBestAlbum .swiper-container-rtl .swiper-button-next {
+        left: 4%;
+    }
+    .slideBestAlbum .swiper-button-next.next_gray, .slideBestAlbum .swiper-container-rtl .swiper-button-prev {
+        right: 4%;
+    }
+    .slideBestAlbum .info_book {
+        padding-bottom: 0;
+    }
+    .slideBestAlbum .info_book .more_book {
+        margin: 0 auto 2em;
+        position: static;
+    }
+    .info_book .more_book {
+        font-size: 10px;
+        width: 81px;
+        height: 27px;
+        line-height: 27px;
+    }
+    .order_list {
+        padding-top: 1.8em;
+        margin-bottom: 2em;
+    }
+    .order_list a {
+        font-size: 11px;
+    }
+    .list_ai_album li {
+        width: 100%;
+        float: none;
+    }
+    .pagination .page {
+        font-size: 14px;
+    }
+    /*pop*/
+    .pop_detail_designer .popup {
+        width: 100%;
+    }
+    .left_detail .profile .img {
+        width: 39px;
+        height: 39px;
+    }
+    .item_act .lb,
+    .left_detail .profile .name {
+        font-size: 10px;
+    }
+    .item_act .act {
+        font-size: 11px;
+    }
+    .item_act {
+        padding: 1em 0 1em 15%;
+    }
+    .left_detail .profile {
+        padding: 2.4em 0 0 15%;
+        margin-bottom: 1em;
+    }
+    .area_detail_d .right_detail {
+        padding: 3.2em 2em 7em;
+    }
+    .qna_title {
+        height: 7em;
+    }
+    .qna_title img {
+        width: 112px;
+    }
+    .qna_title .txt,.more_pf_d,
+    .qna_contents .question p, .qna_contents .answer p{
+        font-size: 10px;
+    }
+    .qna_section {
+        height: calc(100% - 8em);
+    }
+    .pop_detail_designer .popup .close_pop {
+        top: -3em;
+    }
+    /*detail album*/
+    .photo_album_title,
+    .photo_album_contents .desc,
+    .option_book .lb, .title_img_add span,
+    .title_img_add .possible_pic,
+    .title_img_add .possible_pic span,
+    .choice_photo .num_current,
+    .price_album_box .item_info_ai .lb,
+    .price_album_box .item_info_ai .txt,
+    .photo_album_section .total_price p {
+        font-size: 10px;
+    }
+    .photo_album_title {
+        padding-left: 2em;
+    }
+    .photo_album_contents .desc,
+    .option_book .lb {
+        padding-left: 7px;
+    }
+    .title_img_add {
+        padding: 2em 0 1em 2em;
+    }
+    .photo_album_contents,.get_photo {
+        padding-left: 2em;
+    }
+    .photo_album_pop_box .photo_album_title,
+    .photo_album_pop_box .photo_album_contents {
+        padding-left: 0;
+    }
+    .photo_album_pop_box .info_album_summary {
+        padding: 2em 0;
+    }
+    .photo_album_pop_box .photo_album_section .total_price {
+        padding: 2em 0 6em;
+    }
+    .choice_photo {
+        padding: 0 2em;
+    }
+    .option_book .option {
+        font-size: 12px;
+        margin: 0 0.5rem 0.5rem 0;
+        width: 72px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .detail_ai_album .preview_img img {
+        height: 170px;
+    }
+    .slidePreview .swiper-slide .cover_img img {
+        height: 82px;
+    }
+    .get_photo button {
+        font-size: 10px;
+        width: 113px;
+        height: 25px;
+    }
+    .photo_album_detail {
+        padding: 3em 0 3rem;
+    }
+    .photo_album_section .total_price p span {
+        font-size: 16px;
+        float: right;
+    }
+    .btn_group_deatil_album {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn_group_deatil_album button {
+        font-size: 12px;
+        width: 45%;
+        height: 50px;
+        margin: 0 3px;
+    }
+    .photo_album_top {
+        padding: 3em 2em;
+    }
+    .detail_ai_album .info_book {
+        padding: 0 0 3em;
+    }
+    .photo_album_top .photo_album_title {
+        padding-left: 0;
+    }
+    .dropzone.dropzoneCustom {
+        min-height: auto;
+        width: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .dropzone.dropzoneCustom .dz-preview {
+        margin: 0 1em 0 0;
+    }
+    .cloud_pop_box li {
+        width: 50%;
+    }
+    .cloud_pop_box .tb_files {
+        table-layout: fixed;
+    }
+}

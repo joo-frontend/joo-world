@@ -1,0 +1,2825 @@
+@media (max-width: 1650px) {
+    html,body {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1560px) {
+    html,body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1420px) {
+    html,body {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1380px) {
+    html,body {
+        font-size: 12px;
+    }
+    .card_agency .img_cardA {
+        height: 31.5em;
+    }
+}
+@media (max-width: 1280px) {
+    html,body {
+        font-size: 11px;
+    }
+}
+@media (max-width: 1024px) {
+    html,body {
+        font-size: 10px;
+    }
+    /*header*/
+    .header_wra {
+        height: 70px;
+    }
+    .header_area{
+        position: relative;
+    }
+    .right_menu_header {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+        display: table-cell;
+        vertical-align: middle;
+        padding-top: 0;
+    }
+    .logo {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 1.7rem;
+        font-size: 30px;
+        width: auto;
+        transform: translate(-50%,0);
+    }
+    .sh_menu {
+        float: right;
+    }
+    .sh_menu img {
+        width: 35px;
+    }
+    .side_open_menu {
+        float: left;
+        width: 35px;
+        height: 26px;
+        margin-top: 4px;
+    }
+    .side_open_menu span {
+        right: inherit;
+        left: 0;
+    }
+    .side_open_menu span:nth-child(2) {
+        width: 80%;
+    }
+    .right_menu_header .location {
+        position: absolute;
+        right: 6em;
+        top: 1.8em;
+    }
+    .right_menu_header .location span {
+        font-size: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /*main*/
+    .main_area {
+        display: block;
+        top: 10%;
+    }
+    .main_txt_box {
+        text-align: center;
+        padding-top: 0;
+    }
+    .main_txt_box .txt_main {
+        display: none;
+    }
+    .main_txt_box .txt_main.txt_main_mb {
+        display: block;
+    }
+    .go_estimate {
+        bottom: 6em;
+        right: 6em;
+    }
+    .main_txt_box .txt_main {
+        font-size: 24px;
+    }
+    .main_txt_box .logo_zipgo {
+        font-size: 50px;
+    }
+    .selectmain {
+        font-size: 15px;
+    }
+    .desc_local span.txt {
+        font-size: 14px;
+    }
+    .main_menu_box {
+        margin: 4em auto 0;
+        width: 400px;
+    }
+    .menu_zipgo {
+        width: 200px;
+        height: 200px;
+        padding: 2em;
+        -webkit-background-size: 80px;
+        background-size: 80px;
+    }
+    .menu_zipgo span.menu {
+        font-size: 30px;
+    }
+    .menu_zipgo span.menu_eng {
+        font-size: 14px;
+    }
+    .menu_zipgo:last-child {
+        -webkit-background-size: 77px 87px;
+        background-size: 77px 87px;
+    }
+    /*side menu*/
+    .pop_full {
+        width: 75%;
+    }
+    .pop_login_box,.pop_profile_box {
+        position: relative;
+        top: 0;
+        transform: translate(0,0);
+        max-width: none;
+        height: 100%;
+        margin: 0 auto;
+        width: 100%;
+        padding: 70px 40px 0;
+    }
+    .close_pop {
+        right: 2em;
+        top: 2em;
+    }
+    .pop_login_box .msg_login {
+        text-align: left;
+    }
+    .pop_login_box .msg_login p.desc {
+        font-size: 25px;
+    }
+    .pop_login_box .msg_login p.etc {
+        font-size: 15px;
+    }
+    .member_btn {
+        padding-top: 4em;
+    }
+    .member_btn button,.logout_btn button {
+        font-size: 15px;
+        width: 90%;
+    }
+    .mb_gnb {
+        margin-top: 5em;
+        display: block;
+    }
+    .mb_gnb ul {
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+    .mb_gnb li {
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .mb_gnb li a {
+        padding: 1em 5px;
+        display: block;
+        color: #9b9b9b;
+        font-size: 22px;
+    }
+    .footer_wra {
+        display: none;
+    }
+    .logout_btn {
+        display: block;
+        position: absolute;
+        bottom: 4em;
+        width: calc(100% - 80px);
+    }
+    .profile_preview {
+        padding: 0 0 2em;
+        border-bottom: 0;
+    }
+    .profile_preview .name_box .pf_img {
+        width: 50px;
+        height: 50px;
+    }
+    .profile_preview .name_box .txt {
+        font-size: 16px;
+    }
+    .project_status {
+        justify-content: flex-start;
+    }
+    .project_status .status_item .lb {
+        font-size: 15px;
+    }
+    .project_status .status_item .num {
+        font-size: 45px;
+    }
+    .project_status .status_item:after {
+        height: 3em;
+        bottom: 1.1em;
+    }
+    .profile_preview .link_my {
+        padding-top: 1.1em;
+    }
+    .profile_preview .link_my a {
+        font-size: 15px;
+        border-radius: 6px;
+        width: 9.75rem;
+        height: 2.875rem;
+        line-height: 2.875rem;
+    }
+    .gnb_left {
+        display: none;
+    }
+    /*member login*/
+    .member_wra {
+        padding-top: 70px;
+    }
+    .member_section .member_title_box p {
+        font-size: 20px;
+    }
+    .member_section .member_title_box p.sub_title {
+        font-size: 13px;
+    }
+    .type_login span {
+        font-size: 16px;
+    }
+    .member_section .member_title_box {
+        margin-bottom: 5.3em;
+        padding-top: 6.6em;
+    }
+    .member_input .lb,
+    .member_input .btn_gray,
+    .sns_login .desc,
+    .sns_login a {
+        font-size: 14px;
+    }
+    .textbox_gray,.chkbox + label,
+    .mb_manage .find_pw,
+    .info_join .desc,.selectbox_gray {
+        font-size: 13px;
+    }
+    .info_join .title {
+        font-size: 20px;
+        -webkit-background-size: 69px;
+        background-size: 69px;
+    }
+    .company .info_join .title {
+        -webkit-background-size: 68px;
+        background-size: 68px;
+    }
+    .input_sm_box .member_input {
+        height: 27.938rem;
+    }
+    /*join*/
+    .join_wra {
+        padding-top: 70px;
+    }
+    .join_title_area {
+        padding: 4em 0;
+    }
+    .join_title_area p {
+        font-size: 20px;
+    }
+    .lb_join_type {
+        padding: 1em 0 1em 0.7em;
+    }
+    .lb_join_type p {
+        font-size: 13px;
+    }
+    .item_join {
+        padding: 1.6em 0;
+    }
+    .item_join .lb {
+        font-size: 15px;
+        padding-top: 1.2rem;
+        width: 10rem;
+    }
+    .item_join .lb.lb_big {
+        width: 15.25rem;
+    }
+    .item_join .frm_txt {
+        width: calc(100% - 10rem);
+    }
+    .item_join .lb.lb_big + .frm_txt {
+        width: calc(100% - 15.25rem);
+    }
+    .chk_frm_msg {
+        font-size: 11px;
+    }
+    .btn_certify, .btn_upload, .btn_address {
+        font-size: 13px;
+    }
+    .field_job .type_field_job {
+        font-size: 14px;
+        width: 9.438rem;
+    }
+    .field_job .option_box {
+        width: calc(100% - 9.438rem - 4px);
+    }
+    .field_job .option_box .chkbox + label {
+        font-size: 12px;
+    }
+    .dropzone.drop_customC .dz-preview .dz-remove {
+        bottom: 0.5em;
+    }
+    .submit_btn button {
+        font-size: 14px;
+    }
+    /*join complete*/
+    .page_link_box .title_complete {
+        font-size: 25px;
+        margin-bottom: 2em;
+    }
+    .page_link_box a {
+        font-size: 14px;
+    }
+    /*search*/
+    .search_area.active {
+        top: 69px;
+    }
+    .search_frm_header {
+        padding: 8em 0;
+    }
+    .searchbox {
+        font-size: 14px;
+    }
+    .sh_top_menu .msg {
+        font-size: 20px;
+    }
+    .gnb_sh li p {
+        font-size: 14px;
+    }
+    .gnb_sh li {
+        width: 14.5em;
+        margin-right: 2em;
+    }
+    .sh_section  {
+        max-width: 720px;
+    }
+    .sh_result_area .build_list,
+    .sh_result_area .agency_sh_list {
+        max-width: 680px;
+    }
+    .build_list .pf_agency .title_build,
+    .sh_result_area .title_sh,
+    .pf_agency .name_agency {
+        font-size: 15px;
+    }
+    .build_list li {
+        width: 49%;
+    }
+    .build_list .img_rc {
+        height: 23.625em;
+    }
+    .pf_agency .img_agency {
+        width: 45px;
+        height: 45px;
+    }
+    .sh_agency_item {
+        height: 13.5em;
+        position: relative;
+    }
+    .count_agency .item_count .num {
+        font-size: 26px;
+    }
+    .intro_agency .our_field p,
+    .sh_agency_item .desc_field p {
+        font-size: 13px;
+    }
+    .sh_agency_item .icon_p {
+        position: absolute;
+        left: 2em;
+        bottom: 2em;
+    }
+    .sh_agency_item .count_agency .item_count:first-child:after, .info_list_agency .count_agency .item_count:first-child:after, .info_best_agency .count_agency .item_count:first-child:after {
+        height: 1.7em;
+        top: 2.6em;
+    }
+    .sh_result_area .agency_sh_list {
+        padding-bottom: 4em;
+    }
+    /*review*/
+    .review_wra {
+        padding-top: 70px;
+    }
+    .repre_review_area {
+        height: 496px;
+    }
+    .slide_review_box {
+        padding: 0 40px;
+    }
+    .slide_review_box .bg_slide img {
+        width: auto;
+        height: 100%;
+    }
+    .slide_preview .title_review {
+        padding-top: 7rem;
+    }
+    .card_review {
+        bottom: inherit;
+        top: 7em;
+        width: 31em;
+    }
+    .card_review .pf_company {
+        padding: 4em 1.8em 3.4em;
+    }
+    .card_review .pf_company .img_pf {
+        width: 45px;
+        height: 45px;
+    }
+    .card_review .pf_company .name_pf {
+        font-size: 15px;
+    }
+    .chkLike + label {
+        font-size: 12px;
+    }
+    .item_info_i span {
+        font-size: 15px;
+    }
+    .manage_slide {
+        bottom: 6em;
+        right: 5.8em;
+        width: 26.375em;
+    }
+    .detail_link {
+        font-size: 12px;
+        float: right;
+    }
+    .center_info .detail_link {
+        float: none;
+    }
+
+    .repre_review_area .review_link_estm {
+        display: none;
+    }
+    .popular_review_area {
+        padding: 6em 0;
+    }
+    .popular_title_box {
+        padding-left: 4em;
+    }
+    .popular_img_box {
+        height: 500px;
+    }
+
+    .popular_info_box {
+        width: 240px;
+        height: 240px;
+    }
+    .popular_info_box .info_post,
+    .pf_agency .title_build {
+        font-size: 15px;
+    }
+    .link_post {
+        font-size: 12px;
+    }
+    .popular_review_area .title_popular {
+        left: 40px;
+    }
+    .title_popular p.title {
+        font-size: 25px;
+    }
+    .title_popular p.sub {
+        font-size: 16px;
+    }
+    .arrow_slide {
+        padding-top: 8em;
+    }
+    .arrow_slide a {
+        width: 30px;
+        height: 30px;
+        padding-top: 0.9em;
+    }
+    .detail_i_agency .post_title {
+        font-size: 15px;
+    }
+    .slidePopularReview .layout_left {
+        padding-top: 13em;
+    }
+    .filter_option .desc,.field_type span {
+        font-size: 13px;
+    }
+    .list_recommend_review .title_rc {
+        padding: 0 40px;
+    }
+    .option_choice_box {
+        padding: 0 40px 3em;
+    }
+    .list_recommend_review .title_rc p {
+        font-size: 25px;
+    }
+    .list_recommend_review .title_rc {
+        top: -5em;
+    }
+    .list_recommend_review li {
+        width: 49%;
+    }
+    .chk_filter span,
+    .chk_filter.chk_filter_color span {
+        width: 13em;
+    }
+    .chk_filter.chk_filter_style span, .chk_filter.chk_filter_price span {
+        width: 32%;
+    }
+    .chk_filter br {
+        display: none;
+    }
+    /*review detail*/
+    .review_detail_top {
+        padding: 5em 0 0 10%;
+    }
+    .fav_agency_btn {
+        font-size: 13px;
+    }
+    .post_agency {
+        top: 25px;
+    }
+    .post_agency a {
+        height: 50px;
+        width: 50px;
+    }
+    .post_agency_info {
+        padding: 3.6em 2em 2.6em;
+    }
+    .post_agency_info .info_left .name {
+        font-size: 15px;
+    }
+    .review_detail_img img {
+        width: 100%;
+    }
+    .post_agency_box .info_left {
+        width: 14em;
+    }
+    .post_agency_interior .info_left .concept {
+        font-size: 16px;
+    }
+    /*agency*/
+    .agency_wra {
+        padding-top: 70px;
+    }
+    .agency_premium_area .bg_img {
+        height: 250px;
+    }
+    .agency_premium_title {
+        left: 4em;
+    }
+    .agency_info_section {
+        left: 3em;
+        top: -6em;
+        width: 50%;
+    }
+    .count_agency .item_count .lb {
+        font-size: 13px;
+    }
+    .count_agency .item_count .num {
+        font-size: 50px;
+    }
+    .desc_field p {
+        font-size: 14px;
+    }
+    .btn_group_slide {
+        bottom: 7em;
+        right: 4em;
+        width: 14.875em;
+    }
+    .pagination_line {
+        width: 9.813em;
+    }
+    .best_agency_title {
+        top: -5em;
+        padding-left: 40px;
+    }
+    .best_agency_title p {
+        font-size: 25px;
+    }
+    .agency_best_slide {
+        padding: 0 0 4em;
+    }
+    .slide_best_agency .pf_agency {
+        margin-bottom: 3em;
+    }
+    .info_best_agency .count_agency .item_count .num,
+    .agency_list_area .count_agency .item_count .num {
+        font-size: 25px;
+    }
+    .agency_list_area {
+        padding: 5em 2em;
+        max-width: 680px;
+    }
+    .agency_list_area li:nth-child(3n-1) {
+        top: 0;
+    }
+    .agency_list_area li {
+        width: 43%;
+    }
+    .agency_list_area li:nth-child(2n) {
+        top: 8em;
+    }
+    .card_agency .img_cardA {
+        height: 37.5em;
+    }
+    .info_best_agency .count_agency {
+        right: 1em;
+    }
+    .agency_img_circle .detail_link {
+        float: none;
+    }
+    /*agency detail*/
+    .agency_pf_card {
+        padding: 2em 4em;
+        width: 100%;
+    }
+    .agency_contact {
+        padding: 2em 4em;
+        display: block;
+    }
+    .agency_work_info .item_work .lb {
+        font-size: 13px;
+    }
+    .agency_work_info .item_work .num {
+        font-size: 25px;
+    }
+    .agency_work_info .item_work {
+        width: 9.2em;
+    }
+    .btn_agency_group {
+        justify-content: center;
+    }
+    .btn_agency_group button {
+        width: 35%;
+        margin: 0 5px;
+        font-size: 14px;
+    }
+    .agency_contact .contact_box {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 3em;
+    }
+    .agency_contact .lb {
+        font-size: 14px;
+    }
+    .agency_contact .tel {
+        font-size: 21px;
+    }
+    .agency_contact .homepage {
+        font-size: 14px;
+    }
+    .gnb_agency p {
+        font-size: 15px;
+    }
+    .build_list .like_post {
+        right: 1.5em;
+        top: 1.5em;
+    }
+    .txt_qna .txtarea {
+        font-size: 14px;
+    }
+    .write_qna,.manage_q a,.comment_txt button {
+        font-size: 13px;
+    }
+    .agency_contents .img_user {
+        width: 30px;
+        height: 30px;
+    }
+    .agency_contents .name {
+        font-size: 15px;
+    }
+    .q_user {
+        font-size: 14px;    line-height: 1.5em;
+    }
+    .qna_list {
+        padding: 0 4em 4em;
+    }
+    .gnb_agency {
+        background: #ffffff;
+        padding-bottom: 0;
+    }
+    .agency_contents {
+        padding-top: 4em;
+    }
+    .write_review button {
+        font-size: 13px;
+    }
+    .info_build_ask .lb {
+        font-size: 15px;
+        width: 15%;
+        line-height: 1.7em;
+    }
+    .score_txt {
+        font-size: 23px;
+    }
+    .info_build_ask .desc {
+        font-size: 15px;
+    }
+    .info_build_ask .score_box,
+    .info_build_ask .desc {
+        width: calc(85% - 4px);
+    }
+    .item_user_review {
+        padding: 2em 4em;
+    }
+    .agency_contents .item_user_review .pf_user {
+        margin-bottom: 2.5em;
+    }
+    .sub_score {
+        font-size: 17px;
+    }
+    .type_score p {
+        font-size: 12px;
+    }
+    .type_score span {
+        font-size: 13px;
+    }
+    .sub_score span {
+        font-size: 13px;
+    }
+    .type_score {
+        padding: 0.7em;
+        width: 13em;
+        height: 4.3em;
+    }
+    .item_review_txt .lb,
+    .user_score .lb_score{
+        font-size: 15px;
+    }
+    .user_score .score_txt {
+        font-size: 22px;
+    }
+    .item_review_txt_line .user_score .score_txt {
+        font-size: 30px;
+    }
+    /*review write*/
+    .review_list .write_txt {
+        font-size: 12px;
+
+    }
+    .user_score .lb_score {
+        padding-top: 0.2em;
+    }
+
+    .item_review_txt .lb {
+        width: 7.6rem;
+    }
+    .item_review_txt .user_score, .item_review_txt .user_txt {
+        width: calc(100% - 7.6rem - 4px);
+    }
+    .item_review_txt .user_score {
+        padding-top: 1.1em;
+    }
+    .user_score .lb_score {
+        width: 6.25rem;
+         }
+    .user_score .score_txt {
+        padding-top: 0;
+    }
+    .txtarea,.item_review_register button {
+        font-size: 13px;
+    }
+    .find_address {
+        font-size: 13px;
+        vertical-align: middle;
+    }
+    .user_total_score {
+        right: 1.5em;
+    }
+    .user_total_score img {
+        width: 50px;
+    }
+    /*견적신청*/
+    .estimate_wra {
+        padding-top: 11em;
+        padding: 8.6em 20px 40px;
+    }
+    .estimate_section {
+        max-width: 650px;
+    }
+    .top_estimate_title .cate {
+        font-size: 13px;
+    }
+    .top_estimate_title .title {
+        font-size: 22px;
+    }
+    .pf_info_choice span {
+        font-size: 14px;
+    }
+    .item_type_estm .link_step {
+        font-size: 16px;
+    }
+    .item_type_estm .desc_type {
+        font-size: 16px;
+    }
+    .estimate_contents .type_estm {
+        padding-top: 25%;
+    }
+    .step_paper {
+        padding: 4em 3em 5em;
+        min-height: 46em;
+        width: 100%;
+    }
+    .step_btn_group {
+        position: static;
+        padding: 5em 0 0;
+        text-align: center;
+        width: auto;
+    }
+    .agency_pf_box {
+        margin: 0 1.2em 0.8em 0;
+    }
+    .agency_pf_box .img_agency {
+        width: 40px;
+        height: 40px;
+    }
+    .step_btn_group .page {
+        font-size: 18px;
+    }
+    .step_paper .detail_estm .lb {
+        font-size: 16px;
+        width: 10.2rem;
+    }
+    .step_paper .detail_estm .lb.lb_a {
+        margin-bottom: 1em;
+    }
+
+    .step_paper .detail_estm .lb.lb_block {
+        width: 100%;
+    }
+    .detail_estm {
+        padding: 1.6em 0;
+    }
+    .detail_estm .txtbox {
+        width: calc(100% - 4px - 10.2rem);
+    }
+    .step_paper_area.active {
+        padding-top: 8%;
+    }
+    .top_estimate_title {
+        height: 11.5em;
+    }
+    .ask_title, .attach_title {
+        font-size: 15px;
+    }
+    .btn_call {
+        font-size: 13px;
+    }
+    .desc_call {
+        font-size: 12px;
+    }
+    .sub_save_title {
+        font-size: 11px;
+    }
+    .agency_pf_box .premium_agency img {
+        width: 5em;
+    }
+    .file_desktop .dropzone.drop_custom .dz-preview {
+        height: 80px;
+    }
+    .file_desktop .dropzone.drop_custom .dz-preview .dz-image {
+        width: 80px;
+        height: 80px;
+    }
+    .apply_estm_btn {
+        font-size: 14px;
+    }
+    .ask_title {
+        margin-top: 0;
+    }
+    .apply_estm_btn_box {
+        padding: 0 3em;
+    }
+    .popup_save .pop {
+        width: 650px;
+    }
+    .popup .pop .close_pop {
+        top: -3.2em;
+    }
+    .save_pop_title {
+        font-size: 13px;
+    }
+    .popup_save .pop_head {
+        height: 13em;
+    }
+    .ui-widget-content, .search_save_box .textbox_gray {
+        width: 510px;
+        font-size: 13px;
+    }
+    .popup_save .agency_pf_box {
+        width: calc(49% - 4px);
+    }
+    .popup_save .pop_body {
+        height: calc(100% - 21em);
+    }
+    .popup_save .pop_footer button {
+        font-size: 14px;
+        width: 100%;
+    }
+    .popup_save .pop_footer {
+        padding-top: 0;
+    }
+    .type_rebuild.active .img_type {
+        display: none;
+    }
+    .type_chk .chkbox + label {
+        font-size: 15px;
+    }
+    .rebuild_type .type_chk {
+        width: 32%;
+        padding: 1.5em 1em;
+    }
+    /*견적 신청 완료*/
+    .pageWrap {
+        padding-top: 70px;
+    }
+    .msg_end {
+        font-size: 20px;
+    }
+    .msg_end_sub {
+        font-size: 14px;
+    }
+    .link_my_p {
+        font-size: 13px;
+    }
+    .complete_wra2 .top_complete_area {
+        height: 25em;
+    }
+    .apply_frm {
+        width: 650px;
+    }
+    .title_frm_p p,
+    .detail_estm .lb,
+    .detail_estm.detail_estm_type2 .txtbox .name_agency,
+    .detail_estm .txtbox .txt,
+    .detail_estm .txtbox .name_agency {
+        font-size: 13px;
+    }
+    .detail_estm.detail_estm_type2 .lb {
+        padding-top: 1em;
+    }
+    .detail_estm .txtbox .img_agency {
+        width: 40px;
+        height: 40px;
+    }
+    .detail_estm .txtbox .premium_agency img {
+        width: 5.875em;
+    }
+    .detail_estm .sub_lb {
+        font-size: 11px;
+    }
+    .ex_estm {
+        width: 31%;
+    }
+    .mark_img img {
+        width: 9.063em;
+    }
+    .apply_frm_area.apply_frm2_area:before {
+        height: 6.5em;
+    }
+    /*마이페이지*/
+    .my_profile_area {
+        padding: 0;
+    }
+    .my_profile_top {
+        max-width: none;
+    }
+    .info_pf_box {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 4em 0;
+    }
+    .name_pf {
+        font-size: 15px;
+    }
+    .multi_info .name_pf {
+        font-size: 13px;
+    }
+    .preview_end_estm .multi_info, .preview_end_estm .list_item_estm p {
+        height: auto;
+    }
+    .list_item_estm .multi_info .lb {
+        padding-top: 0.92em;
+        font-size: 13px;
+    }
+    .list_item_estm .multi_info .item {
+        font-size: 13px;
+    }
+    .photo_pf {
+        width: 45px;
+        height: 45px;
+    }
+    .my_gnb ul {
+        display: flex;
+        justify-content: center;
+    }
+    .my_gnb li {
+        width: calc(20% - 4px);
+        height: auto;
+        margin: 0 2px;
+    }
+    .my_gnb li a {
+        font-size: 14px;
+    }
+    .my_build_area {
+        padding: 3em 0 4em;
+    }
+    .build_register button {
+        font-size: 15px;
+    }
+    .my_build_area .detail_link {
+        float: none
+    }
+    .build_contents {
+        padding: 3em 4em;
+    }
+    .item_bulid .lb {
+        font-size: 15px;
+    }
+    .textbox {
+        font-size: 13px;
+        height: 3.429em;
+    }
+    .build_field_type {
+        font-size: 13px;
+        width: 8.438rem;
+    }
+    .item_bulid .chk_filter.active {
+        width: calc(100% - 8.438rem - 4px);
+    }
+    .item_bulid .lb_sub,
+    .btn_group button {
+        font-size: 13px;
+    }
+    .repre_img_box,.other_img_box {
+        width: 80px;
+        height: 80px;
+    }
+    .item_bulid .dropzone.dz-clickable {
+        width: calc(100% - 90px);
+        min-height: 80px;
+    }
+    .btn_group button {
+        width: 10.075rem;
+        height: 4.388rem;
+    }
+    .item_bulid .dropzone.drop_custom .dz-preview .dz-image {
+        width: 65px;
+        height: 65px;
+    }
+    /*마이페이지 - 견적내역*/
+    .my_subgnb li a {
+        font-size: 15px;
+    }
+    .my_estimate_section {
+        max-width: 500px;
+    }
+    .list_estm li {
+        width: 100%;
+        float: none;
+    }
+    .type_estm .type {
+        font-size: 14px;
+    }
+    .more_detail_estm a {
+        font-size: 14px;
+        padding: 1.7rem 0;
+    }
+    .list_item_estm p {
+        padding: 0.9rem 1rem;
+    }
+    .list_item_estm p span {
+        font-size: 13px;
+    }
+    .preview_estm {
+        height: 28.65em;
+    }
+    .circle_step {
+        width: 75px;
+        height: 75px;
+    }
+    .step_status_box {
+        margin: 0 auto 5.5em;
+    }
+    .dotted_line {
+        padding-top: 3.7em;
+    }
+    .title_status, .step_item p {
+        font-size: 15px;
+    }
+    .step_status_txt_box .lb {
+        font-size: 15px;
+        width: 11rem;
+    }
+    .step_status_txt_box .status {
+        width: calc(100% - 4px - 11rem);
+    }
+    .step_status_txt_box .status .txt,
+    .step_status_txt_box .active .status .txt_active,
+    .detail_status {
+        font-size: 13px;
+    }
+    .detail_status {
+        top: -0.8em;
+    }
+    .step_status_txt_box li {
+        padding: 3em 1em;
+    }
+    /*견적신청서*/
+    .popup .pop {
+        width: 90%;
+    }
+    .popup.popup_estm_info .pop {
+        max-height: 85%;
+        padding-bottom: 2em;
+    }
+    .ex_estm .imgbox {
+        height: 13em;
+    }
+    .pop_head {
+        height: 6.375rem;
+    }
+    .title_pop {
+        padding-top: 2.4rem;
+        font-size: 15px;
+    }
+    .popup_estm_info .detail_estm .lb {
+        font-size: 15px;
+        width: 8.688rem;
+    }
+    .popup_estm_info .detail_estm .txtbox .txt {
+        font-size: 14px;
+    }
+    .popup_estm_info .detail_estm .lb.lb_big {
+        width: 15.688rem;
+    }
+    .popup_estm_info .detail_estm .lb.lb_block {
+        width: 100%;
+    }
+    .popup_estm_info .detail_estm .lb_big + .txtbox {
+        width: calc(100% - 4px - 15.688rem);
+        padding-top: 0.8em;
+    }
+    .sh_agency_item .count_agency .item_count .num {
+        font-size: 30px;
+    }
+    .save_container {
+        padding: 3em 0px 6em;
+    }
+    .save_box.agency_sh_list {
+        padding: 0 20px;
+    }
+    .leave_mb {
+        font-size: 13px;
+        right: 0.7em;
+        top: -0.3em;
+    }
+    .info_edit_area {
+        padding: 4em 20px;
+    }
+    /*프리미엄 서비스*/
+    .title_p_service p,
+    .item_feature_p .txt_feature .title {
+        font-size: 16px;
+    }
+    .item_feature_p {
+        padding: 2em 2.5em;
+    }
+    .item_feature_p .txt_feature .desc,
+    .apply_service_box button{
+        font-size: 14px;
+    }
+    .item_feature_p .img_feature {
+        width: 10em;
+    }
+    .item_feature_p .txt_feature {
+        width: calc(100% - 10em - 4px);
+    }
+    .item_join .filebox label, .file_trigger {
+        font-size: 13px;
+    }
+    .my_p_service_area  .item_join.last {
+        border-bottom: 0;
+    }
+    .apply_service_box {
+        padding: 2.6em 0 4em;
+    }
+    .top_complete_area {
+        height: 32%;
+    }
+    .apply_frm_area {
+        height: 68%;
+    }
+    .apply_frm_area .title_frm_p p {
+        font-size: 15px;
+    }
+    .apply_frm_area .detail_estm .lb {
+        font-size: 15px;
+        width: 10.2rem;
+    }
+    .apply_frm_area .detail_estm .lb.lb_big,
+    .apply_frm_area .detail_estm .lb.lb_block {
+        width: 100%;
+    }
+    .apply_frm_area .detail_estm .lb.lb_big {
+        margin-bottom: 8px;
+    }
+    .apply_frm_area .detail_estm .lb.lb_big + .txtbox {
+        width: 100%;
+    }
+    .apply_frm_area .detail_estm .txtbox .txt {
+        font-size: 15px;
+    }
+    .apply_frm_area .detail_estm {
+        padding: 2em 0;
+    }
+    .list_col .lb {
+        font-size: 12px;
+    }
+    .list_col .desc {
+        font-size: 13px;
+    }
+    .detail_form {
+        font-size: 13px;
+    }
+    .detail_form {
+        width: 9.643em;
+    }
+    .detail_estm .txt .price, .list_col .desc .price {
+        font-size: 25px;
+    }
+    /*서비스 결제*/
+    .popup_pay .pop_head {
+        height: 6.375rem;
+    }
+    .popup_pay .detail_estm .lb {
+        font-size: 15px;
+    }
+    .popup_pay .detail_estm .txtbox .txt {
+        font-size: 14px;
+    }
+    .btn_pay button {
+        font-size: 13px;
+    }
+    .radiobox + label {
+        font-size: 14px;
+    }
+    .radiobox + label:before {
+        width: 1.85rem;
+        height: 1.85rem;
+    }
+    .radiobox:checked + label:after {
+        top: 0.3em;
+        left: 0.3em;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .agency_premium_list {
+        padding-top: 100px;
+    }
+    .local_item {
+        font-size: 13px;
+    }
+    .local_item img {
+        width: 16px;
+    }
+}
+@media (max-width: 650px) {
+    /*header*/
+    .header_wra {
+        height: 50px;
+        padding: 0 15px;
+    }
+    .side_open_menu {
+        width: 20px;
+        height: 18px;
+        margin-top: 3px;
+    }
+    .sh_menu img {
+        width: 27px;
+    }
+    .logo {
+        top: 1.4rem;
+        font-size: 20px;
+    }
+    /*main*/
+    .main_txt_box .txt_main {
+        font-size: 11px;
+    }
+    .main_txt_box .logo_zipgo {
+        font-size: 22px;
+    }
+    .desc_local span.txt {
+        font-size: 10px;
+    }
+    .desc_local span img {
+        width: 13px;
+        padding-top: 0.5em;
+    }
+    .selectmain {
+        font-size: 10px;
+    }
+    .main_menu_box {
+        width: 200px;
+    }
+    .menu_zipgo {
+        width: 100px;
+        height: 100px;
+        padding: 1em;
+        -webkit-background-size: 35px;
+        background-size: 35px;
+    }
+    .menu_zipgo:hover {
+        -webkit-background-size: 35px;
+        background-size: 35px;
+    }
+    .menu_zipgo:last-child {
+        -webkit-background-size: 36px 41px;
+        background-size: 36px 41px;
+    }
+    .menu_zipgo span.menu {
+        font-size: 14px;
+    }
+    .menu_zipgo span.menu_eng {
+        font-size: 10px;
+    }
+    .go_estimate {
+        bottom: 2em;
+        right: 2em;
+    }
+    .go_estimate img {
+        width: 80px;
+    }
+    /*side menu*/
+    .pop_full {
+        width: 80%;
+    }
+    .pop_profile_box {
+        padding: 40px 20px 0;
+    }
+    .pop_login_box {
+        padding: 40% 20px 0;
+
+    }
+
+    .pop_login_box .msg_login {
+        text-align: center;
+    }
+    .pop_login_box .msg_login p.desc {
+        font-size: 13px;
+    }
+    .pop_login_box .msg_login p.etc {
+        font-size: 10px;
+        word-break: keep-all;
+    }
+    .member_btn button, .logout_btn button {
+        font-size: 10px;
+    }
+    .pop_login_box .mb_gnb {
+        display: none;
+    }
+    .close_pop img {
+        width: 18px;
+    }
+    .mb_gnb li a {
+        font-size: 13px;
+    }
+    .logout_btn {
+        width: calc(100% - 40px);
+    }
+    .profile_preview .name_box .pf_img {
+        width: 22px;
+        height: 22px;
+    }
+    .project_status .status_item .lb,
+    .profile_preview .name_box .txt {
+        font-size: 10px;
+    }
+    .profile_preview .link_my {
+        float: none;
+    }
+    .profile_preview .link_my a {
+        font-size: 10px;
+        border-radius: 4px;
+        width: 7.75rem;
+        height: 2.475rem;
+        line-height: 2.475rem;
+    }
+    .project_status {
+        padding-top: 0;
+    }
+    .project_status .status_item .num {
+        font-size: 18px;
+    }
+    .project_status .status_item:after {
+        height: 1.7em;
+        bottom: 0.4em;
+    }
+    .mb_gnb {
+        margin-top: 3em;
+    }
+    /*member login*/
+    .member_wra {
+        padding-top: 50px;
+    }
+    .right_menu_header .location {
+        right: 4em;
+        top: 1.5em;
+    }
+    .right_menu_header .location img {
+        width: 14px;
+    }
+    .right_menu_header .location span {
+        font-size: 11px;
+    }
+    .member_section .member_title_box p {
+        font-size: 13px;
+    }
+    .member_section .member_title_box p.sub_title,.selectbox_gray,
+    .type_login span,.textbox_gray, .chkbox + label, .mb_manage .find_pw, .info_join .desc,
+    .member_input .lb, .member_input .btn_gray, .sns_login .desc, .sns_login a{
+        font-size: 10px;
+    }
+    .info_join .desc {
+        word-break: keep-all;
+        margin-bottom: 0;
+    }
+    .info_join .desc br {
+        display: none;
+    }
+    .member_bg_img {
+        height: 15.688em;
+    }
+    .member_section .member_title_box {
+        margin-bottom: 3em;
+        padding-top: 3.6em;
+    }
+    .sns_login a {
+        padding: 1em 0 1em 25%;
+    }
+    .info_join {
+        text-align: center;
+    }
+    .info_join .title {
+        font-size: 13px;
+        padding-top: 64px;
+        background: url(/assets/images/member/icon.png) top center no-repeat;
+        -webkit-background-size: 50px;
+        background-size: 50px;
+    }
+    .company .info_join .title {
+        background: url(/assets/images/member/icon2.png) top center no-repeat;
+        -webkit-background-size: 55px;
+        background-size: 55px;
+        padding-top: 80px;
+    }
+    .input_pw_box .member_input {
+        height: 20.5em;
+    }
+    /*join*/
+    .join_wra {
+        padding-top: 50px;
+    }
+    .join_title_area p {
+        font-size: 13px;
+    }
+    .lb_join_type p {
+        font-size: 10px;
+    }
+    .item_join {
+        position: relative;
+    }
+    .item_join .lb {
+        font-size: 10px;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .item_join .frm_txt {
+        width: 100%;
+    }
+    .chk_frm_msg {
+        display: none;
+    }
+    .item_join .lb .chk_frm_msg {
+        font-size: 10px;
+        padding-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .btn_certify, .btn_upload, .btn_address {
+        font-size: 10px;
+    }
+    .field_job .option_box {
+        width: 100%;
+    }
+    .field_job .option_box .chkbox + label {
+        font-size: 10px;
+    }
+    .field_job {
+        padding: 0;
+    }
+    .field_job:first-of-type {
+        padding-bottom: 1.5em;
+    }
+    .field_job .type_field_job {
+        font-size: 10px;
+        width: 9.438rem;
+        padding: 0 0 1em;
+    }
+    .field_job .option_box span {
+        width: 33.3%;
+    }
+    .agree_join {
+        padding: 1.6em 0em;
+    }
+    .item_join .lb.lb_big + .frm_txt {
+        width: 100%;
+    }
+    .lb_join_type {
+        padding: 1em 0;
+    }
+    .submit_btn button {
+        width: 100%;
+        font-size: 13px;
+    }
+    .frm_email {
+        display: flex;
+        justify-content: space-between;
+    }
+    .frm_email .bar {
+        padding-top: 8px;
+    }
+    .textbox_gray.box_lgth_sm,
+    .textbox_gray.box_lgth1 {
+        width: 100%;
+    }
+    .frm_email .textbox_gray.box_lgth_sm {
+        flex-grow: 2;
+        width: auto;
+    }
+    .frm_email .selectbox_gray {
+        flex-grow: 2;
+    }
+    .frm_email .bar {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .page_link_box .title_complete {
+        font-size: 15px;
+    }
+    .page_link_box a {
+        font-size: 10px;
+        width: 80%;
+        margin: 0 auto 1em;
+    }
+    /*search*/
+    .search_area.active {
+        top: 49px;
+    }
+    .search_frm_header .close_search img {
+        width: 16px;
+    }
+    .search_frm_header {
+        padding: 6em 0;
+    }
+    .search_box {
+        max-width: 260px;
+    }
+    .searchbox {
+        font-size: 10px;
+    }
+    .search_frm_header button img {
+        width: 20px;
+    }
+    .sh_section {
+        padding: 0 20px;
+    }
+    .gnb_sh li {
+        width: 9em;
+        margin-right: 1em;
+    }
+    .gnb_sh li:last-of-type {
+        margin: 0;
+    }
+    .gnb_sh li p,.sh_result_area .title_sh,.sh_top_menu .msg {
+        font-size: 10px;
+    }
+    .sh_result_area .title_sh {
+        padding-left: 20px;
+    }
+    .sh_result_area {
+        padding: 0;
+    }
+    .build_list .pf_agency .title_build {
+        font-size: 11px;
+    }
+    .build_list li {
+        width: 100%;
+    }
+    .build_list .img_rc {
+        height: 22.625em;
+    }
+    .sh_result_area .agency_sh_list {
+        padding: 0 20px 3em;
+    }
+    .sh_result_area .agency_sh_list .title_sh {
+        padding-left: 0;
+    }
+    .pf_agency .name_agency {
+        font-size: 11px;
+    }
+    .intro_agency .our_field p, .sh_agency_item .desc_field p {
+        font-size: 10px;
+    }
+    .sh_agency_item .icon_p {
+        bottom: inherit;
+        left: inherit;
+        top: 1em;
+        right: 1em;
+    }
+    .sh_agency_item {
+        height: 15.5em;
+        padding: 2.3em 1em 0;
+    }
+    .sh_agency_item .col_box.col1 {
+        width: 50%;
+        height: auto;
+    }
+    .sh_agency_item .col_box.col2 {
+        width: 50%;
+        height: auto;
+    }
+    .sh_agency_item .col_box.col3 {
+        width: 100%;
+        margin: 1em 0 0;
+        height: auto;
+    }
+    .sh_agency_item .icon_p img {
+        width: 40px;
+    }
+    .sh_agency_item .count_agency {
+        padding-top: 0.6em;
+    }
+    .desc_field {
+        padding: 0.9em 0 0 1em;
+    }
+    .count_agency .item_count .num {
+        font-size: 20px;
+    }
+    .pf_agency .img_agency {
+        width: 26px;
+        height: 26px;
+    }
+    .sh_top_menu {
+        padding-top: 7em;
+    }
+    /*review*/
+    .review_wra {
+        padding-top: 50px;
+    }
+    .swiper-container.slideReview {
+        /*overflow: visible;*/
+    }
+    .repre_review_area {
+        height: 396px;
+        margin-bottom: 0;
+    }
+    .slide_review_box:after {
+        content: '';
+        height: 5em;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #ffffff;
+        z-index: 100;
+    }
+    .card_review {
+        top: inherit;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 101;
+    }
+    .card_review .pf_company {
+        padding: 1.5em 2em;
+    }
+    .card_review .pf_company .name_pf,
+    .chkLike + label,
+    .item_info_i span,.detail_link {
+        font-size: 10px;
+    }
+    .detail_i_agency .post_title {
+        font-size: 11px;
+    }
+    .card_review .pf_company .premium img {
+        width: 50px;
+    }
+    .card_review .pf_company .img_pf {
+        width: 27px;
+        height: 27px;
+    }
+    .slide_review_box {
+        padding: 0 20px;
+    }
+    .slide_preview .title_review {
+        font-size: 15px;
+        padding-top: 14rem;
+    }
+    .info_interior {
+        height: auto;
+        padding: 1em 2em 5em;
+        position: relative;
+    }
+    .detail_link {
+        position: absolute;
+        right: 2em;
+        top: 2.5em;
+    }
+    .manage_slide {
+        bottom: -2em;
+        right: 50%;
+        margin-right: -13.187em;
+        width: 26.375em;
+    }
+    .manage_slide .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        margin-top: 1px;
+    }
+    .title_popular p.sub,
+    .popular_info_box .info_post,.link_post {
+        font-size: 10px;
+    }
+    .title_popular p.title {
+        font-size: 15px;
+    }
+    .pf_agency .title_build {
+        font-size: 11px;
+    }
+    .popular_img_box {
+        float: none;
+        width: 100%;
+        height: 350px;
+    }
+    .item_slide_popular {
+        position: relative;
+    }
+    .slidePopularReview .layout_left {
+        padding-top: 8em;
+        margin-bottom: 3em;
+        width: 100%;
+    }
+    .popular_info_box {
+        position: absolute;
+        top: 16em;
+        padding: 2em 1.5em;
+        right: 0;
+    }
+    .arrow_slide {
+        padding-top: 0;
+        position: absolute;
+        top: 13em;
+        right: 0;
+    }
+
+    .popular_title_box {
+        padding-left: 2em;
+    }
+    .popular_info_box {
+        width: 180px;
+        height: 180px;
+    }
+    .popular_review_area .title_popular {
+        left: 20px;
+    }
+    .option_choice_box {
+        padding: 0 0 2em 2em;
+    }
+    .option_choice_box ul {
+        overflow-x: auto;
+        padding-bottom: 5px;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .option_choice_box li {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .filter_option .desc, .field_type span {
+        font-size: 10px;
+    }
+    .list_recommend_review {
+        margin-top: 3em;
+    }
+    .list_recommend_review .title_rc {
+        padding: 0 20px;
+        top: -3em;
+    }
+    .list_recommend_review .title_rc p {
+        font-size: 15px;
+    }
+    .list_recommend_review li {
+        width: 100%;
+    }
+    .popular_review_area {
+        padding: 6em 0 0;
+    }
+    /*review detail*/
+    .review_detail_top {
+        padding: 2em 0 0 2em;
+    }
+    .title_review_detail {
+        font-size: 15px;
+    }
+    .fav_agency_btn,
+    .post_agency_info .info_left .name {
+        font-size: 10px;
+    }
+    .post_agency_info {
+        padding: 3em 2em 2em;
+    }
+    .post_agency {
+        top: 20px;
+    }
+    .post_agency a {
+        height: 40px;
+        width: 40px;
+    }
+    .post_agency_interior {
+        padding: 1.5em 2em;
+    }
+    .post_agency_interior .info_left .concept {
+        font-size: 12px;
+    }
+    .post_agency_box .info_left {
+        width: 100%;
+        margin-bottom: 1.2em;
+    }
+    .post_agency_box .info_right .item_info_i {
+        padding: 0 0 0.7em;
+    }
+    .post_agency_info .info_left .name,
+    .post_agency_box .info_left .premium {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        margin-right: 0.5em;
+    }
+    .post_agency_box .info_left .premium img {
+        width: 50px;
+    }
+
+    .post_agency_info .detail_link {
+        bottom: inherit;
+        top: 1em;
+        right: 2em;
+        left: inherit;
+    }
+    /*agency*/
+    .agency_wra {
+        padding-top: 50px;
+    }
+    .agency_premium_title {
+        left: 0;
+        top: 3em;
+    }
+    .agency_premium_title .icon img {
+        width: 50px;
+    }
+    .agency_premium_title .title_txt {
+        font-size: 16px;
+    }
+    .agency_premium_list li:nth-child(-n+2),
+    .agency_premium_list li:last-of-type {
+        display: none;
+    }
+    .agency_premium_list {
+        padding-top: 9em;
+        padding-bottom: 3em;
+    }
+
+    .agency_premium_area .bg_img {
+        height: 190px;
+    }
+    .agency_premium_list li.focus {
+        width: 21em;
+        height: 21em;
+    }
+    .agency_premium_list li.focus .agency_img_circle {
+        padding: 1em;
+    }
+    .agency_info_section .agency_info .pf_agency {
+        padding-left: 1em;
+    }
+    .agency_info_section {
+        left: 0;
+        top: -1.5em;
+        width: 100%;
+    }
+    .btn_group_slide {
+        bottom: 0;
+        right: 50%;
+        width: 14.875em;
+        margin-right: -7.437em;
+    }
+    .agency_info .pf_agency .img_agency {
+        width: 36px;
+        height: 36px;
+    }
+    .agency_info .pf_agency .name_agency {
+        font-size: 11px;
+        display: block;
+        margin: 1em 0 0.5em;
+    }
+    .agency_best_area .option_choice_box {
+        padding: 0 2em 2em;
+        text-align: center;
+    }
+    .agency_best_area .option_choice_box li {
+        margin-right: 0;
+    }
+    .slide_best_agency.active,
+    .slide_best_agency {
+        overflow: visible;
+        position: relative;
+    }
+    .info_best_agency,.img_bestA {
+        float: none;
+        width: 100%;
+    }
+    .info_best_agency .arrow_slide {
+        top: -10em;
+    }
+    .detail_i_agency {
+        padding: 2.5em 3em;
+    }
+    .info_best_agency .detail_i_agency {
+        top: -7em;
+    }
+    .info_best_agency:first-of-type {
+        margin-bottom: 3em;
+    }
+    .best_agency_title {
+        padding-left: 20px;
+        top: -3em;
+    }
+    .best_agency_title p {
+        font-size: 15px;
+    }
+    .info_best_agency .pf_agency .img_agency {
+        width: 36px;
+        height: 36px;
+    }
+    .agency_list_area .count_agency .item_count .num,
+    .info_best_agency .count_agency .item_count .num {
+        font-size: 20px;
+    }
+    .desc_field p,.count_agency .item_count .lb {
+        font-size: 10px;
+        margin-bottom: 0.6em;
+    }
+    .info_best_agency:last-of-type {
+        position: absolute;
+        right: 0;
+        bottom: -17em;
+        width: 80%;
+    }
+    .agency_best_slide {
+        padding: 0;
+    }
+    .agency_list_area {
+        padding: 16em 0 0;
+        max-width: 320px;
+    }
+    .agency_list_area li {
+        width: 100%;
+    }
+    .agency_list_area li:nth-child(2n) {
+        top: 0;
+    }
+    .card_agency {
+        margin-bottom: 5em;
+    }
+    .card_agency .img_cardA {
+        height: 47.5em;
+    }
+    .slide_best_agency .intro_agency {
+        padding: 0 1.5em;
+    }
+    /*agency detail*/
+    .agency_pf_card {
+        padding: 2em;
+    }
+    .agency_pf_card .icon_premium {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+    }
+    .agency_work_info {
+        position: static;
+        margin-top: 2em;
+    }
+    .agency_work_info .item_work .lb {
+        font-size: 10px;
+    }
+    .icon_premium img {
+        width: 50px;
+    }
+    .btn_agency_group button {
+        width: 45%;
+        font-size: 10px;
+    }
+    .agency_contact {
+        padding: 2em;
+    }
+    .agency_contact .contact_box {
+        width: 100%;
+        margin: 0;
+    }
+    .agency_contact .contact_box:first-of-type {
+        border-bottom: 1px solid #bfbfbf;
+        padding-bottom: 1.6em;
+        margin-bottom: 1.6em;
+    }
+    .agency_contact .lb {
+        font-size: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .agency_contact .tel {
+        font-size: 17px;
+        float: right;
+    }
+    .agency_contact .tel img {
+        vertical-align: middle;
+    }
+    .agency_contact .homepage {
+        float: right;
+        font-size: 10px;
+    }
+    .gnb_agency {
+        display: flex;
+        justify-content: space-between;
+    }
+    .gnb_agency p {
+        font-size: 11px;
+        width: 33%;
+        padding: 0 0.5em 0.5em;
+        margin: 0;
+    }
+    .agency_contents {
+        padding-top: 2em;
+    }
+    .qna_list {
+        padding: 0 1em 4em;
+    }
+    .txt_qna .txtarea {
+        height: 7.462em;
+        font-size: 13px;
+    }
+    .write_qna, .manage_q a,.comment_txt button,
+    .agency_contents .name {
+        font-size: 11px;
+    }
+    .partner_user_qna .qna_box {
+        padding: 1em 0 4em 1em;
+    }
+    .qna_box.active {
+        padding: 1em;
+    }
+    .write_review button {
+        font-size: 11px;
+    }
+    .count_score {
+        flex-wrap: wrap;
+    }
+    .type_score {
+        width: 35%;
+        height: 3.8em;
+        margin-bottom: 1em;
+    }
+    .type_score p,
+    .type_score span {
+        font-size: 10px;
+    }
+    .type_score span {
+        top: 1.3em;
+    }
+    .type_score img {
+        width: 26px;
+    }
+    .item_user_review {
+        padding: 1.5em;
+    }
+    .info_build_ask .lb {
+        font-size: 10px;
+        width: 20%;
+    }
+    .info_build_ask .desc {
+        font-size: 10px;
+    }
+    .info_build_ask .score_box, .info_build_ask .desc {
+        width: calc(80% - 4px);
+    }
+    .score_txt {
+        font-size: 15px;
+        margin-bottom: 0.5em;
+    }
+    .sub_score,.sub_score span {
+        font-size: 10px;
+    }
+    .sub_score {
+        margin: 0 0.5em 0 0;
+    }
+    .info_etc_build img {
+        width: 28px;
+    }
+    .agency_work_info .item_work .num {
+        font-size: 20px;
+    }
+    .agency_work_info .item_work {
+        width: calc(33.3% - 4px);
+    }
+    .info_etc_build {
+        right: 2em;
+    }
+    .score_box br {
+        display: block;
+    }
+    .q_user {
+        font-size: 11px;
+    }
+    .agency_contents .img_user {
+        width: 26px;
+        height: 26px;
+    }
+    .txtarea, .item_review_register button {
+        font-size: 10px;
+    }
+    .item_review_txt .lb {
+        width: 100%;
+        font-size: 11px;
+        margin-bottom: 1em;
+    }
+    .user_score .lb_score {
+        font-size: 10px;
+        width: 4.25rem;
+    }
+    .find_address {
+        font-size: 10px;
+    }
+    .user_total_score img {
+        width: 30px;
+    }
+    .item_review_txt_line.item_review_txt .lb {
+        display: none;
+    }
+    .user_total_score {
+        bottom: 1em;
+    }
+    .frm_score_review {
+        padding: 2.5em 0 0;
+    }
+    .user_score .score_txt {
+        font-size: 14px;
+    }
+    .item_review_txt_line .user_score .score_txt {
+        font-size: 18px;
+    }
+    .item_review_txt .user_txt {
+        width: 100%;
+    }
+    .item_review_txt .user_txt .selectbox_gray {
+        width: 32%;
+    }
+    .adrs_rest .textbox_gray {
+        width: 100%;
+    }
+    /*견적신청*/
+    .estimate_wra {
+        padding: 7em 20px 34px;
+    }
+    .top_estimate_title {
+        height: 9em;
+    }
+    .top_estimate_title .cate {
+        font-size: 12px;
+    }
+    .top_estimate_title .title {
+        font-size: 13px;
+    }
+    .top_estimate_title .cate.cate_home {
+        margin-bottom: 1.6em;
+    }
+    .agency_pf_choice .pf_info_choice {
+        display: none;
+    }
+    .agency_pf_choice.active .pf_info_choice {
+        display: block;
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 2em;
+        position: relative;
+    }
+    .agency_pf_choice .cate {
+        display: none;
+    }
+    .agency_pf_choice .cate.detail_link {
+        display: block;
+        width: 75px;
+        font-size: 10px;
+        height: 24px;
+        margin: 0;
+        padding: 0.5em;
+        text-align: center;
+        top: 0;
+        right: 0;
+    }
+    .item_type_estm .link_step,
+    .item_type_estm .desc_type {
+        font-size: 10px;
+    }
+    .item_type_estm .img_type img {
+        width: 70px;
+    }
+    .agency_pf_choice .close_desc_pop {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .agency_pf_choice .close_desc_pop img {
+        width: 14px;
+    }
+    .pf_info_choice .imgbox {
+        background: #000;
+    }
+    .pf_info_choice span {
+        font-size: 10px;
+        color: #000;
+    }
+    .pf_info_choice .premium img {
+        width: 40px;
+    }
+    .step_paper {
+        padding: 2em;
+    }
+    .step_paper .detail_estm .lb {
+        margin-bottom: 10px;
+        font-size: 10px;
+        width: 100%;
+        padding-top: 0;
+    }
+    .detail_estm .txtbox,
+    .detail_estm .frm_txt.address {
+        width: 100%;
+    }
+    .btn_call {
+        font-size: 11px;
+    }
+    .desc_call {
+        font-size: 10px;
+        margin: 1em 0 0;
+        display: block;
+    }
+    .list_save_ex .ex_estm {
+        width: calc(49% - 4px);
+    }
+    .q_apply img {
+        width: 14px;
+    }
+    .step_btn_group .page {
+        font-size: 12px;
+    }
+    .step_btn_group {
+        padding-top: 3em;
+    }
+    .popup .pop {
+        padding: 0 2em;
+    }
+    .popup_save .pop {
+        width: 300px;
+        height: 554px;
+    }
+    .ask_title, .attach_title {
+        font-size: 11px;
+    }
+    .popup_save .list_save_ex .ex_estm {
+        width: calc(49% - 4px);
+    }
+    .popup_save .agency_pf_box {
+        width: 100%;
+    }
+    .popup_save .pop_footer button {
+        font-size: 10px;
+    }
+    .ui-widget-content, .search_save_box .textbox_gray {
+        width: 230px;
+        font-size: 10px;
+    }
+    .save_pop_title {
+        font-size: 12px;
+    }
+    .popup_save .pop_head {
+        height: 11em;
+    }
+    .popup_save .pop_body {
+        height: calc(100% - 16em);
+    }
+    .popup_save .pop_footer {
+        height: 5em;
+    }
+    .apply_estm_btn {
+        font-size: 10px;
+    }
+    .step_progress span {
+        height: 3px;
+    }
+    .type_rebuild .item_type_estm {
+        margin: 0 1.3em;
+    }
+    .item_type_estm .img_type {
+        margin-bottom: 0;
+        height: 100px;
+    }
+    .apply_estm_btn_box {
+        padding: 0 2em;
+    }
+    .select_estmbox .selectbox_gray {
+        width: 32%;
+    }
+    .rebuild_type .type_chk {
+        width: calc(50% - 0.6em);
+        padding: 1.2em 1em;
+    }
+    .type_chk .chkbox + label {
+        font-size: 10px;
+    }
+    .pop_desc.active {
+        right: -15.5em;
+        width: 15.125em;
+    }
+    /* 견적 신청 완료 */
+    .pageWrap {
+        padding-top: 50px;
+    }
+    .msg_end {
+        font-size: 13px;
+    }
+    .apply_frm_area.apply_frm2_area:before {
+        height: 5.3em;
+    }
+    .msg_end_sub,.link_my_p,
+    .detail_estm .txtbox .name_agency,
+    .detail_estm.detail_estm_type2 .txtbox .name_agency,
+    .detail_estm .txtbox .txt,.title_frm_p p {
+        font-size: 10px;
+    }
+    .detail_estm .txtbox .premium_agency img {
+        width: 3.875em;
+    }
+    .detail_estm .txtbox .img_agency {
+        width: 30px;
+        height: 30px;
+    }
+    .apply_frm {
+        width: 100%;
+        padding: 0 2em 5em;
+    }
+    .detail_estm.detail_estm_type2 .lb {
+        padding-top: 0.6em;
+    }
+    .detail_estm .lb {
+        font-size: 11px;
+    }
+    .estm_box .detail_estm .txtbox {
+        width: calc(100% - 4px - 7.188rem);
+    }
+    .estm_box .detail_estm.detail_estm_noline .txtbox {
+        width: 100%;
+    }
+    .mark_img img {
+        width: 5.063em;
+    }
+    .complete_wra2 .top_complete_area {
+        height: 19em;
+    }
+    .detail_estm {
+        padding: 1.2em 0;
+    }
+    .estm_box {
+        padding: 0;
+    }
+    .ex_estm {
+        width: calc(49% - 0.6rem);
+        margin: 0.3rem;
+    }
+    .popup.popup_estm_info .pop {
+        padding-bottom: 0;
+    }
+    .ex_estm .imgbox {
+        height: 9em;
+    }
+    .ex_estm .title {
+        padding: 0.6em;
+    }
+    /*마이페이지*/
+    .name_pf {
+        font-size: 10px;
+    }
+    .photo_pf {
+        width: 35px;
+        height: 35px;
+    }
+    .info_pf_box .detail_link {
+        position: static;
+        display: block;
+        float: none;
+        width: 70px;
+        margin-left: 0;
+    }
+    .info_pf_box {
+        padding: 2em 2em 3em;
+    }
+    .icon_premium {
+        float: right;
+        margin-top: 1.1em;
+    }
+    .my_gnb ul {
+        display: block;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .my_gnb li a,
+    .build_register button{
+        font-size: 10px;
+    }
+    .my_gnb li {
+        width: 32%;
+        white-space: nowrap;
+        display: inline-block;
+        float: none;
+        margin: 0;
+    }
+    .build_register {
+        margin-bottom: 2em;
+    }
+    .build_list .like_post {
+        right: 1em;
+        top: 1em;
+    }
+    .build_list .detail_link {
+        position: static;
+        float: none;
+    }
+    .my_build_area {
+        padding: 2em 0 0;
+    }
+    .build_contents {
+        padding: 1em 2em;
+    }
+    .item_bulid .lb,.textbox {
+        font-size: 10px;
+    }
+    .item_bulid.item_bulid_60,
+    .item_bulid.item_bulid_40 {
+        float: none;
+        width: 100%;
+    }
+    .build_field_type {
+        font-size: 10px;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .item_bulid .chk_filter.active {
+        width: 100%;
+    }
+    .repre_img_box, .other_img_box {
+        width: 65px;
+        height: 65px;
+    }
+    .item_bulid .dropzone.dz-clickable {
+        width: 100%;
+        min-height: 65px;
+        margin: 0.5em 0 1em;
+        overflow: hidden;
+    }
+    .item_bulid .dropzone.drop_custom .dz-preview .dz-image {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.7em;
+    }
+    .item_bulid .field_type_content:first-of-type {
+        padding-top: 0;
+    }
+    .chk_filter.chk_filter_style span {
+        width: 49%;
+    }
+    .chk_filter.chk_filter_color span {
+        width: 23%;
+    }
+    .item_bulid .lb_sub, .btn_group button {
+        font-size: 10px;
+    }
+    .item_bulid.last + .btn_group {
+        padding-top: 2em;
+        padding-bottom: 0.5em;
+    }
+    .btn_group button {
+        width: 100%;
+        height: 4.1rem;
+    }
+    /*마이페이지 견적내역*/
+    .my_subgnb li a,.type_estm .type,
+    .list_item_estm p span {
+        font-size: 11px;
+    }
+    .my_subgnb li {
+        width: 30%;
+    }
+    .my_subgnb li a {
+        width: 100%;
+    }
+    .list_estm li {
+        padding: 0 1.5em;
+    }
+    .preview_estm {
+        height: 25.05em;
+    }
+    .more_detail_estm a {
+        font-size: 13px;
+        padding: 1.4rem 0;
+    }
+    .circle_step {
+        width: 60px;
+        height: 60px;
+    }
+    .focus .circle_step img.img_on, .circle_step img.img_off {
+        transform: scale(0.8);
+    }
+    .title_status, .step_item p {
+        font-size: 10px;
+    }
+    .title_status {
+        padding: 0 0 2em;
+    }
+    .dotted_line{
+        width: 40px;
+        padding-top: 3.1em;
+    }
+    .step_status_txt_box li {
+        padding: 2em 3em;
+    }
+    .detail_status {
+        font-size: 10px;
+        top: -3.5em;
+    }
+    .step_status_txt_box .status {
+        width: 100%;
+    }
+    .step_status_txt_box .lb {
+        font-size: 11px;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    .step_status_txt_box .status .txt, .step_status_txt_box .active .status .txt_active {
+        font-size: 11px;
+    }
+    .my_status_area {
+        padding: 3em 0 4em;
+    }
+    .step_status_box {
+        padding: 0 3em;
+    }
+    /*견적신청서*/
+    .popup_estm_info .detail_estm .lb {
+        font-size: 11px;
+    }
+    .popup_estm_info .detail_estm .txtbox .txt {
+        font-size: 11px;
+    }
+    .pop_head {
+        height: 4.575rem;
+    }
+    .title_pop {
+        padding-top: 1.8rem;
+        font-size: 10px;
+    }
+    .popup_estm_info .detail_estm .lb_big + .txtbox {
+        width: 100%;
+    }
+    .sh_agency_item .count_agency .item_count .num {
+        font-size: 20px;
+    }
+    .save_container .pf_agency {
+        position: static;
+    }
+    .save_container .sh_agency_item .icon_p {
+        position: absolute;
+        left: inherit;
+        bottom: inherit;
+        top: 0.9em;
+        right: 1.1em;
+    }
+    .textbox_gray.box_lgth3 {
+        width: 100%;
+    }
+    /*프리미엄 서비스*/
+    .title_p_service p {
+        font-size: 12px;
+    }
+    .item_feature_p .txt_feature .title {
+        font-size: 11px;
+    }
+    .item_feature_p .txt_feature .desc,
+    .item_join .filebox label, .file_trigger{
+        font-size: 10px;
+    }
+    .apply_service_box button {
+        font-size: 13px;
+    }
+    .apply_frm_area .detail_estm {
+        padding: 1em 0;
+    }
+    .apply_frm_area .title_frm_p p {
+        font-size: 12px;
+    }
+    .apply_frm_area .detail_estm .lb {
+        font-size: 11px;
+    }
+    .apply_frm_area .detail_estm .lb.lb_mb_big,
+    .apply_frm_area .detail_estm .lb.lb_big,
+    .apply_frm_area .detail_estm .lb.lb_block {
+        width: 100%;
+        margin-bottom: 2px;
+    }
+    .apply_frm_area .detail_estm .lb.lb_mb_big + .txtbox,
+    .apply_frm_area .detail_estm .lb.lb_big + .txtbox {
+        width: 100%;
+    }
+    .estm_box .detail_estm .txtbox {
+        width: 100%;
+    }
+    .apply_frm_area .detail_estm .txtbox .txt {
+        font-size: 11px;
+    }
+    .apply_frm_area {
+        padding: 0 20px;
+    }
+    .apply_frm {
+        padding: 0 1.5em 2em;
+    }
+    .complete_wra2 .apply_frm {
+        padding: 0 1.5em 2em;
+    }
+    .top_complete_area {
+        height: 38%;
+    }
+    .apply_frm_area {
+        height: auto;
+        min-height: 62%;
+    }
+    .list_p_service {
+        border-bottom: 0;
+    }
+    .list_col {
+        float:none;
+        width: 100%;
+        margin-bottom: 1em;
+        overflow: hidden;
+    }
+    .list_col .lb {
+        font-size: 11px;
+        margin-bottom: 0;
+        line-height: 2.143em;
+        display: inline-block;
+        float: left;
+    }
+    .list_col .desc {
+        float: right;
+        display: inline-block;
+    }
+    .detail_form {
+        width: 100%;
+        font-size: 13px;
+    }
+    .list_col.col4 {
+        width: 100%;
+    }
+    /*결제 서비스*/
+    .my_p_apply_area .apply_service_box button {
+        width: 100%;
+    }
+    .popup_pay .pop_head {
+        height: 5.375rem;
+    }
+    .popup_pay .title_pop {
+        padding-top: 2.2rem;
+    }
+    .btn_pay button {
+        font-size: 12px;
+        width: 100%;
+    }
+    .title_p_service {
+        padding: 3em 0 1em;
+    }
+    .radiobox:checked + label:after {
+        top: 0.4em;
+        left: 0.4em;
+        width: 1.15rem;
+        height: 1.15rem;
+    }
+    .popup_pay .pop_body {
+        padding: 0 0 1.8em;
+    }
+    .popup_pay .detail_estm .lb {
+        font-size: 11px;
+        width: 20%;
+    }
+    .radiobox + label {
+        font-size: 11px;
+    }
+    .popup_pay .detail_estm .txtbox {
+        width: calc(80% - 4px);
+    }
+    .popup_pay .detail_estm .txtbox .txt {
+        font-size: 11px;
+    }
+    .list_item_estm .multi_info .lb,
+    .list_item_estm .multi_info .item,.multi_info .name_pf {
+        font-size: 11px;
+    }
+    .my_gnb_mb.my_gnb ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .my_gnb_mb.my_gnb li {
+        width: 33%;
+    }
+    .leave_mb {
+        font-size: 10px;
+        top: 0;
+    }
+    .info_edit_area {
+        padding: 2em;
+    }
+    .sh_agency_item .count_agency .item_count:first-child:after, .info_list_agency .count_agency .item_count:first-child:after, .info_best_agency .count_agency .item_count:first-child:after {
+        height: 1.3em;
+        top: 2.2em;
+    }
+    .local_item {
+        font-size: 11px;
+    }
+    .local_item img {
+        width: 12px;
+    }
+}
+@media (max-height: 600px) {
+    .main_area {
+        padding: 0 2em;
+    }
+    .main_menu_box {
+        margin: 2em auto 0;
+    }
+    .popup_save .pop {
+        width: 300px;
+        height: 474px;
+    }
+}
+@media (max-width: 360px) {
+    .gnb_sh li {
+        width: 8em;
+    }
+    .step_paper {
+        padding: 2em 1em;
+    }
+    .estm_box .detail_estm .lb {
+        width: 5.888rem;
+    }
+    .estm_box .detail_estm .txtbox {
+        width: calc(100% - 4px - 5.888rem);
+    }
+    .detail_estm .txtbox .name_agency {
+        margin-right: 0.4em;
+    }
+    .apply_frm {
+        padding: 0 1.5em 5em;
+    }
+    .step_status_txt_box li {
+        padding: 2em;
+    }
+    .top_complete_area {
+        padding: 2em 10px 5em;
+    }
+    .apply_frm {
+        top: -3em;
+    }
+    .agency_list_area {
+        max-width: 300px;
+    }
+    .chkbox + label:before {
+        margin-right: 0.2em;
+    }
+}

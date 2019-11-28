@@ -1,0 +1,30 @@
+.tos-wrap {
+    margin: 4.375rem auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.tos-section {
+    margin: 0 auto;
+}
+
+.tos-area {
+    margin-top: 2.5rem;
+}
+.tos-box {
+    margin-bottom: 3.125rem;
+}
+.tos-subtitle {
+
+}
+.tos-subtitle h2 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+.tos-content {
+    padding-top:  1.625rem;
+}
+.tos-content p {
+    font-size: 0.8125rem;
+    font-weight: 200;
+    line-height: 1.625rem;
+}
