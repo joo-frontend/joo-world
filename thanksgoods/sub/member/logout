@@ -1,0 +1,5 @@
+<?php 
+require_once('/DK/hosting_users/thanksgoods/www/_DK/hello.php');
+session_destroy();
+
+?>
