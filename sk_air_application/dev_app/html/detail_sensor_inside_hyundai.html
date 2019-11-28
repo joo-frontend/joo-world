@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Smart Air Manager</title>
+    <link rel="stylesheet" href="../css/ui/ui.style.css">
+</head>
+<body>
+<div class="wrap_header wrap_header_bd">
+    <h1>남정초등학교 1학년 1반</h1>
+    <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+    <input type="checkbox" class="icon_check check_class" checked>
+</div>
+<div class="wrap_contents wrap_contents_gray">
+    <div class="area_school_air bg_white">
+        <div class="slide_pager">
+            <p class="clearfix">
+                <span class="good focus"></span>
+                <span class="normal"></span>
+                <span class="bad"></span>
+                <span class="worse"></span>
+            </p>
+        </div>
+        <div class="slider">
+
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">실내센서</p>
+                    <p class="air_product_name">1-1 실내센서</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status good">
+                        <div class="circle circle_sensor">
+                            <p class="score">종합점수 85</p>
+                            <p class="status">좋음</p>
+                        </div>
+                    </div>
+                    <div class="box_btn">
+                        <button class="btn_report"><span class="sprite sprite_common sprite_icon_graph_statistic">아이콘</span>공기리포트
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">실내센서</p>
+                    <p class="air_product_name">1-2 실내센서</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status normal">
+                        <div class="circle circle_sensor">
+                            <p class="score">종합점수 65</p>
+                            <p class="status">보통</p>
+                        </div>
+                    </div>
+                    <div class="box_btn">
+                        <button class="btn_report"><span class="sprite sprite_common sprite_icon_graph_statistic">아이콘</span>공기리포트
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">실내센서</p>
+                    <p class="air_product_name">1-3 실내센서</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status worse">
+                        <div class="circle circle_sensor">
+                            <p class="score">종합점수 45</p>
+                            <p class="status">매우나쁨</p>
+                        </div>
+                    </div>
+                    <div class="box_btn">
+                        <button class="btn_report"><span class="sprite sprite_common sprite_icon_graph_statistic">아이콘</span>공기리포트
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box_air_all">
+            <ul class="clearfix">
+                <li>
+                    <p class="name">온도</p>
+                    <p class="index">25<em>℃</em></p>
+                    <span class="sprite sprite_status sprite_worse">아이콘</span>
+                </li>
+                <li>
+                    <p class="name">습도</p>
+                    <p class="index">45<em>%</em></p>
+                    <span class="sprite sprite_status sprite_bad">아이콘</span>
+                </li>
+                <li>
+                    <p class="name">미세먼지</p>
+                    <p class="index">128<em>㎍/㎥</em></p>
+                    <span class="sprite sprite_status sprite_good">아이콘</span>
+                </li>
+                <li>
+                    <p class="name">초미세먼지</p>
+                    <p class="index">128<em>㎍/㎥</em></p>
+                    <span class="sprite sprite_status sprite_normal">아이콘</span>
+                </li>
+                <li>
+                    <p class="name">화학물질</p>
+                    <p class="index">602<em>ppm</em></p>
+                    <span class="sprite sprite_status sprite_good">아이콘</span>
+                </li>
+                <li>
+                    <p class="name">이산화탄소</p>
+                    <p class="index none_index">-ppm</p>
+                    <span class="sprite sprite_status sprite_air_error">아이콘</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box_graph">
+            <div id="line_chart" class="graph_line"></div>
+            <div id="container" class="graph_line"></div>
+            <div class="legend">
+               <p> <span class="line"></span> <span>오늘</span></p>
+                <p><span class="dash"></span> <span>어제</span></p>
+            </div>
+            <div class="overlay-marker" style="display: none">
+                <div class="img">
+                    <img src="../images/icon_graph_good.png" alt="">
+                </div>
+            </div>
+            <div class="tooltip-marker-good" style="display: none">
+                <span>90</span>
+            </div>
+            <div class="tooltip-marker-bad" style="display: none">
+                <span>44</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="area_box_list" data-makernm="{{makerNm}}">
+        <div class="box_card">
+            <p class="card_title title_set">모드 설정</p>
+            <div class="box_setting">
+                <ul class="clearfix">
+                    <li class="focus"><a href="#">영유아</a></li>
+                    <li><a href="#">일반</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title title_alone"><a href="#">설정 <span
+                    class="sprite sprite_common sprite_more more_right">?</span></a></p>
+        </div>
+        <div class="box_card">
+            <p class="card_title"><a href="#">이력 및 알림 <span class="sprite sprite_common sprite_more">?</span></a></p>
+            <span class="sprite sprite_common sprite_new">new</span>
+            <!-- 알림 메세지 1줄일 경우 -->
+            <div class="alarm_txt">
+                <p>[1-1 공기청정기]의 동작을 시작합니다.</p>
+                <p class="etc">오전 7:52</p>
+            </div>
+            <!-- 알림 메세지 2줄일 경우 -->
+            <div class="alarm_txt">
+                <p>[1-1 공기청정기] 오전 7시 30분에 전원 동작을 예약하였습니다.</p>
+                <p class="etc">오전 7:52</p>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title"><a href="#">정보<span class="sprite sprite_common sprite_more">?</span></a></p>
+            <div class="info_product clearfix">
+                <div class="img">
+                    <img src="../images/default_img.png" alt=""></div>
+                <div class="info_desc">
+                    <p>현대통신 실내공기센서</p>
+                    <p>1-1 실내센서</p>
+                    <span>고객센터 1800-0212</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/lib/jquery-3.2.1.min.js"></script>
+<script src="../js/lib/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/annotations.js"></script>
+<script src="../js/lib/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            pager: false
+        });
+    });
+
+    $(function () {
+        var data = [10.5, 9, 11];
+
+        $('#line_chart').highcharts({
+            chart: {
+                type: 'spline',
+                spacingTop:0,
+                height: 200
+            },
+            credits: {
+                enabled: false
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                tyoe: 'time',
+
+                gridLineWidth: 0,
+                /*categories: ['01', '03', '05', '07', '09', '11', '13', '15', '17', '19', '21', '23']*/
+                tickInterval: 2,min:1
+            },
+            legend: {
+                enabled: false
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: null
+                },
+                gridLineWidth: 0,
+                minorGridLineWidth: 0, max: 120,
+                lineWidth:0,
+                labels: {
+                    enabled: false
+                }
+            },
+            tooltip: {
+                useHTML: true,
+                style: {
+                    zIndex: 100
+                }
+            },
+            allowHTML: true,
+            annotations: [{
+                labelOptions: {
+                    backgroundColor: '#47a2de',
+                    verticalAlign: 'bottom',
+                    padding:6,
+                    borderRadius: 12,
+                    borderColor:'rgba(0,0,0,0)',
+                   /* distance:30*/
+                    y:-15 //default y값 위치
+                },
+
+                labels: [{
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 3,
+                        y: 88
+                    },
+                    style: {
+                        fontSize: '12px'
+                    },
+                    text: '88 >'
+                }]
+            },{
+                labelOptions: {
+                    backgroundColor: '#df3e3e',
+                    verticalAlign: 'bottom',
+                    padding:6,
+                    borderRadius: 12,
+                    borderColor:'rgba(0,0,0,0)',
+                    distance:-42
+                },
+                labels: [{
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 6,
+                        y: 44
+                    },
+                    style: {
+                        fontSize: '12px'
+                    },
+                    text: '44 >'
+                }]
+            },{
+                labelOptions: {
+                    useHTML :true,
+                    format:''+'<div class="overlay_marker"><span><em class="good"></em></span></div>',
+                    backgroundColor: Highcharts.color('#f7f7f7').setOpacity(0).get(),
+                    borderWidth: 0,
+                    y:-5
+                }
+                ,labels:[{
+                    point: {
+                        xAxis: 0,
+                        yAxis: 0,
+                        x: 16,
+                        y: 75
+                    },
+                    style : {
+                        zIndex:1
+                    }
+                }]
+            }
+            ],
+            series: [{
+                type: 'areaspline',
+                name: '어제',
+                dashStyle: 'ShortDash',
+                color: '#d3d4d7',
+                fillColor: '#f6f7f9',
+                marker: {
+                    enabled: false
+                },
+                data: [45, 48, 55, 44, 60, 50, 60, 84, 75, 88, 80, 90, {
+                    y: 95, marker: {enabled: true}, color: '#727272', dataLabels: {
+                        enabled: true,
+                        y: 0,
+                        /* shadow: true,*/
+                        style: {
+                            fontWeight: 'bold',
+                            fontSize: 16,
+                            color: '#44a9f0'
+                        }
+                    }
+                },
+                    80, 84, 71, 80,60, 55, 60, {
+                        y: 38, marker: {enabled: true}, color: '#727272', dataLabels: {
+                            enabled: true,
+                            y: 35,
+                            /* shadow: true,*/
+                            style: {
+                                fontWeight: 'bold',
+                                fontSize: 16,
+                                color: '#dc3b38'
+                            }
+                        }
+                    }, 50, 55, 60]
+
+            }, {
+                name: '오늘',
+                color: '#68b0b1',
+                marker: {
+                    enabled: false
+                },
+                data: [50, 65, 57, {y: 88, marker: {enabled: true, 'symbol': 'circle'}, color: '#000000'}, 79, 52,
+                    {
+                        y: 44,
+                        marker: {enabled: true, 'symbol': 'circle'},
+                        color: '#000000'
+                    }, 56, 70, 80,66, 70, 60, 55, 75, 60,
+                    {y: 75, marker: {enabled: true, 'symbol': 'circle',radius: 7}, color: '#49a6e7'}]
+
+            }]
+        });
+    });
+</script>
+<!--<script type="text/javascript">
+    $(document).ready(function () {
+            google.charts.load('current', {'packages': ['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            /*google.charts.setOnLoadCallback(drawVisualization);*/
+            function drawChart() {
+
+                var data = new google.visualization.DataTable();
+                data.addColumn('number', 'Hours');
+                data.addColumn('number', '');
+                data.addColumn({type: 'string', role: 'style'});
+                data.addColumn({type: 'string', role: 'annotation'});
+                data.addColumn('number', '');
+                data.addColumn({type: 'string', role: 'style'});
+                data.addColumn({type: 'string', role: 'annotation'});
+
+                data.addRows([
+                    [1, 50, null, null, 60, null, null],
+                    [2, 40, null, null, 50, null, null],
+                    [3, 30, null, null, 65, null, null],
+                    [4, 40, null, null, 75, null, null],
+                    [5, 50, null, null, 70, null, null],
+                    [6, 40, null, null, 65, null, null],
+                    [7, 45, null, null, 44, 'point { size: 4; shape-type: circle; fill-color: #000000;;box-shadow:0;}', null],
+                    [8, 45, null, null, 47, null, null],
+                    [9, 35, null, null, 55, null, null],
+                    [10, 40, null, null, 65, null, null],
+                    [11, 25, 'point { size: 4; shape-type: circle;stroke-width:0; fill-color: #7b7b7b;box-shadow:0; color:#dc3e36;}', '25', 75, null, null],
+                    [12, 50, null, null, 65, null, null],
+                    [13, 70, null, null, 80, null, null],
+                    [14, 50, null, null, 90, 'point { size: 4; shape-type: circle; fill-color: #000000;;box-shadow:0;}', null],
+                    [15, 60, null, null, 80, null, null],
+                    [16, 50, null, null, 85, 'point { size: 8; shape-type: circle; fill-color: #45a5ea;;box-shadow:0;}', null],
+                    [17, 70, null, null, null, null, null],
+                    [18, 90, null, null, null, null, null],
+                    [19, 98, 'point { size: 4;  shape-type: circle;stroke-width:0; fill-color: #7b7b7b;box-shadow:0;color:#e03d3a;}', '98', null, null, null],
+                    [20, 70, null, null, null, null, null],
+                    [21, 50, null, null, null, null, null],
+                    [22, 50, null, null, null, null, null],
+                    [23, 60, null, null, null, null, null]
+                ]);
+
+                var options = {
+                    curveType: 'function',
+                    legend: 'none',
+                    /* color: ['red', '#994411'],*/
+                    backgroundColor: "transparent",
+                    chartArea: {width: "100%", height: "80%"},
+                    width: 360,
+                    height: 300,
+                    fontSize: 12,
+                    hAxis: {
+                        title: "(시간대 평균)",
+                        titleTextStyle: {
+                            color: '#7e7e7e',
+                            fontSize: 10,
+                            italic: false,
+                            textAlign: 'right'
+                        },
+                        baselineColor: 'transparent',
+                        gridlines: {
+                            count: 8,
+                            color: 'transparent'
+                        },
+                        viewWindow: {
+                            min: 0,
+                            max: 23
+                        },
+                        textStyle: {
+                            color: '#9c9d9f'
+                        }
+                    },
+                    vAxis: {
+                        baselineColor: '#dcdddf',
+                        gridlines: {
+                            color: 'transparent'
+                        }
+                    },
+                    tooltip: {
+                     display:"none",
+                        textStyle: {
+                            color: '#7e7e7e'
+                        }
+                    },
+                    annotations: {
+                        stem: {
+                            color: 'transparent',
+                            length: 5
+                        },
+                        textStyle: {
+                            fontSize: 13,
+                            color: '#46a6f1'
+                        }
+                    },
+                    pointSize: 0.1,
+                    series: {
+                        0: {
+                            color: '#d9d9db',
+                            lineDashStyle: [5, 2],
+                            axisBackgroundColor: '#f6f7f9',
+                            type: 'area',
+                            curveType: 'function',
+                            smoothLine: 'true'
+                        },
+                        1: {color: '#56a7a9', type: 'line'}
+                    }
+                };
+
+                function placeMarker(dataTable) {
+                    var cli = this.getChartLayoutInterface();
+                    var chartArea = cli.getChartAreaBoundingBox();
+                    document.querySelector('.overlay-marker').style.top = Math.floor(cli.getYLocation(dataTable.getValue(6, 2))) + 3 + "px";
+                    document.querySelector('.overlay-marker').style.left = Math.floor(cli.getXLocation(6)) + 130 + "px";
+                    document.querySelector('.overlay-marker').style.display = "block";
+                    document.querySelector('.tooltip-marker-good').style.top = Math.floor(cli.getYLocation(dataTable.getValue(5, 2))) + 30 + "px";
+                    document.querySelector('.tooltip-marker-good').style.left = Math.floor(cli.getXLocation(5)) + 124 + "px";
+                    document.querySelector('.tooltip-marker-bad').style.top = Math.floor(cli.getYLocation(dataTable.getValue(2, 2))) + 170 + "px";
+                    document.querySelector('.tooltip-marker-bad').style.left = Math.floor(cli.getXLocation(2)) + 63 + "px";
+                };
+                var chart = new google.visualization.ComboChart(document.getElementById('line_chart'));
+                google.visualization.events.addListener(chart, 'ready', placeMarker.bind(chart, data));
+                chart.draw(data, options);
+            }
+        }
+    );
+</script>-->
+
+</body>
+</html>

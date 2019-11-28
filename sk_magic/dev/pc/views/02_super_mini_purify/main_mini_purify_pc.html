@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body class="desktop">
+
+<!-- desktop_header -->
+<div class="desktop_header">
+
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <div class="title">슈퍼미니정수기</div>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+
+</div>
+<!-- //desktop_header -->
+
+<!-- desktop_contents -->
+<div class="desktop_contents clearfix">
+    <div class="desktop_col col2">
+        <div class="col_box">
+            <!-- section_main -->
+            <section class="section_main section_purify">
+                <div class="bg bg_mini_purify">
+                    <div class="area_title">
+                        <p>바로 만드는 새물! 탱크없는 슈퍼S 냉온정수기</p>
+                        <div class="box_title">
+                            <!-- wifi 강도 1,2,3에 따라 class 변경
+                             'wifi_01', 'wifi_02', 'wifi_03'
+                             -->
+                            <h1 class="title_wifi wifi_02">
+                    <span>My 슈퍼2 <button class="align_center sprite sprite_purify sprite_edit">
+                      <!--  <span class="sprite sprite_purify sprite_edit">편집</span>-->
+                    </button></span>
+                            </h1>
+                        </div>
+                        <!-- 코크살균중 -->
+                        <div class="box_remain" style="display: none;">
+                            <div class="img_purify img_mini_purify">
+                                <div class="cup_of_water">
+                                    <!-- 코크살균 컵안의 물 양 인라인 style의 height % 수치로 조절 -->
+                                    <span class="sprite sprite_mini_purify sprite_cup_of_water"
+                                          style="height: 100%;">?</span>
+                                </div>
+                            </div>
+                            <div class="txt_status">
+                                <p>코크 살균 중입니다.</p>
+                                <p>남은시간 10:00분</p>
+                            </div>
+                        </div>
+                        <!-- 코크살균대기중 -->
+                        <div class="box_remain">
+                            <div class="img_purify img_mini_purify_wait">
+                            </div>
+                            <div class="txt_status">
+                                <p>지금은 코크 살균<br>대기 중입니다</p>
+                            </div>
+                        </div>
+
+                        <!-- 취소하기 버튼 -->
+                        <!--<button class="btn_cancel sprite sprite_mini_purify"></button>-->
+
+                        <!-- 진행하기 버튼 -->
+                        <button class="btn_start sprite sprite_mini_purify"></button>
+                    </div>
+                    <div class="area_water_graph">
+                        <div class="box_section_title">
+                <span>사용자이름
+                    <button class="align_center sprite sprite_mini_purify sprite_weight">
+
+                    </button>
+                </span>
+                        </div>
+                        <div class="area_graph">
+                            <!-- 'bar_graph' div영역 -->
+                            <!-- 바그래프 높이 영역 styel의 height의 % 수치로 움직이기 -->
+                            <!-- height 0 일때 class 'bar_0' 추가 -->
+                            <div class="bar_graph" style="height: 30%;">
+
+                            </div>
+                            <p>80%</p>
+                        </div>
+                        <div class="box_graph_desc">
+                            <!-- 음용량,목표량 입력값없을 경우 (초기화면)일 때 span에 class 추가
+                            'sprite sprite_mini_purify sprite_double_bar'
+                            -->
+                            <p class="water_current">음용량</p><span>1200ml</span><br>
+                            <p class="water_aim">목표량</p><span>1400ml</span>
+                        </div>
+
+                        <a href="#" class="cup_150">
+                            <p>+</p>
+                            <p>한컵</p>
+                            <p>(150ml)</p>
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- //section_main -->
+        </div>
+    </div>
+    <div class="desktop_col col2">
+        <div class="col_box">
+            <!-- section_slide -->
+            <section class="section_function section_slide clearfix">
+                <div class="area_function">
+                    <span>밝기조절</span>
+                    <div>
+                        <div class="slide_toggle">
+                            <em class="line01"></em>
+                            <em class="line02"></em>
+                            <em class="line03"></em>
+                            <input type="radio" class="slide_radio" name=slide_radio" style="left:-10px;" checked>
+                            <input type="radio" class="slide_radio" name=slide_radio"
+                                   style="left:50%;margin-left: -10px;">
+                            <input type="radio" class="slide_radio" name=slide_radio" style="right:-10px;">
+                            <p class="txt01">OFF</p>
+                            <p class="txt02">약하게</p>
+                            <p class="txt03">강하게</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //section_slide -->
+
+            <!-- section_toggle -->
+            <section class="section_function section_toggle section_toggle_col_3">
+                <div class="area_toggle">
+                    <span>차일드락</span>
+                    <div>
+                        <input type="checkbox" class="checkbox_toggle" checked>
+                    </div>
+                </div>
+                <div class="area_toggle">
+                    <span>버튼음</span>
+                    <div>
+                        <input type="checkbox" class="checkbox_toggle ">
+                    </div>
+                </div>
+                <div class="area_toggle">
+                    <span class="toggle_line_2">코크 살균<br>알림 LED</span>
+                    <div>
+                        <input type="checkbox" class="checkbox_toggle ">
+                    </div>
+                </div>
+            </section>
+            <!-- //section_toggle -->
+
+            <!-- section_weather -->
+            <section class="section_weather" style="display: none;">
+                <div class="box_section_title">
+        <span>서울특별시 영등포구
+            <button class="align_center sprite sprite_weather sprite_position">
+
+            </button>
+            </span>
+                    <p>Update 16.03.27 12:00</p>
+                </div>
+                <div class="wrap_weather">
+                    <div class="box_weather">
+                        <!-- 날씨 아이콘 변경시 'sprite_sun' 대신 다른 클래스로 변경
+                        'sprite_sun_cloud', 'sprite_cloud', 'sprite_mist', 'sprite_rain_cloud', 'sprite_rain_sun', 'sprite_snow_cloud', 'sprite_snow_sun',
+                        'sprite_rain_snow_cloud', 'sprite_rain_snow_sun', 'sprite_rain', 'sprite_thunderstorm', 'sprite_snow', 'sprite_snow_rain'
+                        * 'sprite sprite_weather sprite_weather_all' 뒤에 추가로 붙여야 합니다. ((날씨종류 총 14개))
+                         -->
+                        <span class="sprite sprite_weather sprite_weather_all sprite_sun"></span>
+                        <span class="weather_desc">맑음 <strong>26</strong></span>
+                    </div>
+                </div>
+                <div class="box_air">
+                    <div>
+                        <p>습도</p>
+                        <p class="humidity">20</p>
+                    </div>
+                    <div>
+                        <p>미세먼지</p>
+                        <p class="dust">152</p>
+                    </div>
+                    <div>
+                        <p>초미세먼지</p>
+                        <p class="dust">107</p>
+                    </div>
+                </div>
+            </section>
+            <!-- //section_weather -->
+
+            <!-- 날씨정보 영역 에러시 -->
+            <section class="section_weather_msg section_main_weather_msg">
+                <div class="alert_weather_msg">
+                    <p>날씨정보를<br>표시 할 수 없습니다</p>
+                    <button class="btn btn_skyblue">새로고침</button>
+                    <span class="sprite sprite_common sprite_alert">?</span>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- //wrap_contents_area-->
+</div>
+</body>
+</html>

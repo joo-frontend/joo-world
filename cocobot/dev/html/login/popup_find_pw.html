@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/ui/ui.style.css">
+</head>
+<body>
+<div class="popup">
+    <div class="popup_header">
+        비밀번호 찾기 <a href="#" class="header_btn_right"><i class="sprite sprite_common sprite_icon_close "></i></a>
+    </div>
+    <div class="popup_body">
+        <p class="desc_find_pw">코코봇에 가입한 이메일 주소를 입력하시면<br>
+            임시 비밀번호를 전송해 드립니다. </p>
+        <div class="area_form">
+            <ul>
+                <li> <!-- 정보 맞을 시 info_success, 정보 틀릴 시 info_error 클래스 추가 -->
+                    <div class="box_sign_info">
+                        <span>이메일</span><input type="email" value="abcdefg@gmail.com">
+                        <p>등록된 이메일이 아닙니다. </p>
+                        <a href="#" class="btn_delete">지우기</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn_popup_pw">
+                <button class="btn btn_long btn_pink">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.page.js"></script>
+</body>
+</html>

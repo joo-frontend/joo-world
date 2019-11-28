@@ -1,0 +1,85 @@
+<div class="list_title">
+    <p>내 학교</p>
+    <a href="#" class="btn btn_round _moveMainPage"><span class="sprite sprite_common sprite_all_list"></span>전체학교</a>
+</div>
+<div class="list_school_card">
+    <ul class="card_school">
+        {{#each schList}}
+            {{#each clsList}}
+                {{#isClass lv}}
+                <li data-no="{{no}}" data-lv="{{lv}}" data-cls="{{cls}}" data-userSchId="{{userSchId}}">
+                    <div data-user-schId="{{userSchId}}">
+                        <span class="school_name">{{../schNm}}</span>
+                        <p class="school_title">{{cls}}</p>
+                        <ul id="deviceList" class="deviceList">
+                            {{#each senList}}
+                                <li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+                                    <a href="#" class="_moveToDetail" data-schNm="{{../../schNm}}" data-class="{{../cls}}" data-dvcid="{{dvcId}}" onclick="App.view.mySchool.setSchoolData(this.getAttribute('data-schNm'), this.getAttribute('data-class'))">
+                                        <i class="sprite sprite_common sprite_sensor">?</i>
+                                        {{senNm}}
+                                        <p class="{{airStateColor airGrd connStatYn controlStatus}}">{{responseAirGrd airGrd connStatYn controlStatus}}</p>
+                                    </a>
+                                </li>
+                            {{/each}}
+                            {{#each clnList}}
+                                <li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+                                    <a href="#" class="_moveToDetail" data-schNm="{{../../schNm}}" data-class="{{../cls}}" data-dvcid="{{dvcId}}" onclick="App.view.mySchool.setSchoolData(this.getAttribute('data-schNm'), this.getAttribute('data-class'))">
+                                        <i class="sprite sprite_common sprite_air_sensor"></i>
+                                        {{senNm}}
+                                        <p class="{{airStateColor airGrd connStatYn controlStatus}}">{{responseAirGrd airGrd connStatYn controlStatus}}</p>
+                                    </a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="school_air">
+                        <a href="#" class="_clickOutSensor" data-school-code="{{../schCd}}" data-school-name="{{../schNm}}">
+                            <i class="sprite sprite_status sprite_air_mid {{airStateColor ../airGrd ../connStatYn clnList.0.controlStatus}}">?</i>
+                            <p class="status {{airStateColor ../airGrd ../connStatYn }}">{{../airGrd}}</p>
+                            <p class="air_dust">
+                                미세먼지<span class="air_num">{{../pm10}}</span><span class="place"><em class="sprite sprite_common sprite_position"></em>{{../senLoc}}</span>
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                {{else}}
+                <li data-no="{{no}}" data-lv="{{lv}}" data-cls="{{cls}}" data-userSchId="{{userSchId}}">
+                    <div data-user-schId="{{userSchId}}">
+                        <span class="school_name">{{../schNm}}</span>
+                        <p class="school_title">{{lv}}학년 {{cls}}반</p>
+                        <ul id="deviceList" class="deviceList">
+                            {{#each senList}}
+                                <li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+                                    <a href="#" class="_moveToDetail" data-schNm="{{../../schNm}}" data-class="{{../lv}}학년 {{../cls}}반" data-dvcid="{{dvcId}}" data-schCd="{{../../schCd}}" onclick="App.view.mySchool.setSchoolData(this.getAttribute('data-schNm'), this.getAttribute('data-class'))">
+                                        <i class="sprite sprite_common sprite_sensor">?</i>
+                                        {{senNm}}
+                                        <p class="{{airStateColor airGrd connStatYn controlStatus}}">{{responseAirGrd airGrd connStatYn controlStatus}}</p>
+                                    </a>
+                                </li>
+                            {{/each}}
+                            {{#each clnList}}
+                                <li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+                                    <a href="#" class="_moveToDetail" data-schNm="{{../../schNm}}" data-class="{{../lv}}학년 {{../cls}}반" data-dvcid="{{dvcId}}" data-schCd="{{../../schCd}}" onclick="App.view.mySchool.setSchoolData(this.getAttribute('data-schNm'), this.getAttribute('data-class'))">
+                                        <i class="sprite sprite_common sprite_air_sensor"></i>
+                                        {{senNm}}
+                                        <p class="{{airStateColor airGrd connStatYn controlStatus}}" data-status="{{controlStatus}}">{{responseAirGrd airGrd connStatYn controlStatus}}</p>
+                                    </a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="school_air">
+                        <a href="#" class="_clickOutSensor" data-school-code="{{../schCd}}" data-school-name="{{../schNm}}">
+                            <i class="sprite sprite_status sprite_air_mid {{airStateColor ../airGrd clnList.0.controlStatus}}">?</i>
+                            <p class="status {{airStateColor ../airGrd ../connStatYn }}">{{../airGrd}}</p>
+                            <p class="air_dust">
+                                미세먼지<span class="air_num">{{../pm10}}</span><span class="place"><em class="sprite sprite_common sprite_position"></em>{{../senLoc}}</span>
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                {{/isClass}}
+            {{/each}}
+        {{/each}}
+    </ul>
+</div>

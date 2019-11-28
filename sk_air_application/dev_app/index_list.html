@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>페이지목록 | SK Smart Air Manager</title>
+    <link href="css/ui/ui.style.css" rel="stylesheet" type='text/css'>
+    <style type="text/css">
+        .logo {
+            margin:4px 0 0 30px;
+        }
+
+        h3.title {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .wrap_header .header {
+            margin: 0 auto;
+        }
+
+        .wrap_header {
+            background: #fff;
+        }
+
+        .table {
+            width: 95%;
+            margin: 0 auto 15px auto;
+            border: #ccc 1px solid;
+        }
+
+        .table thead th {
+            font-weight: 700;
+            border-bottom: #9d9d9d 2px solid;
+        }
+
+        .table td {
+            height: 30px;
+            border-bottom: #ddd 1px solid;
+            text-align: center;
+            background: #ffff;
+            font-size: 12px;
+        }
+
+        .table td:first-child {
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .table td a {
+            color: #ff9f3e;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .O {
+            color: #ff9f3e;
+        }
+
+        .X {
+            color: gray;
+        }
+
+    </style>
+    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div class="wrap_header" style="border-bottom:1px solid #cccccc">
+    <div class="header">
+        <div class="logo" style="width: 100px;">
+            <img src="images/img_logo.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="wrap_contents wrap_contents_gray">
+    <div class="section_contents">
+        <!--contents-->
+
+        <h3 class="title">가이드</h3>
+        <div>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 17%;">
+                    <col style="width: 13%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>화면명</th>
+                    <th>퍼블리싱</th>
+                    <th>Link</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>페이지 가이드</td>
+                    <td class="O">O</td>
+                    <td><a href="html/guide.html">Link</a></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="title">페이지</h3>
+        <div>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 17%;">
+                    <col style="width: 13%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>화면명</th>
+                    <th>퍼블리싱</th>
+                    <th>Link</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01-1-1 전체화면</td>
+                    <td class="O">O</td>
+                    <td><a href="html/all_map.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-1-2 학교선택</td>
+                    <td class="O">O</td>
+                    <td><a href="html/all_map_list.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-2-1 내학교</td>
+                    <td class="O">O</td>
+                    <td><a href="html/my_school.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-2-2 내학교 미등록시</td>
+                    <td class="O">O</td>
+                    <td><a href="html/my_school_no_list.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-3-1 학교리스트 : 지역선택</td>
+                    <td class="O">O</td>
+                    <td><a href="html/local_list.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-3-2 학교리스트</td>
+                    <td class="O">O</td>
+                    <td><a href="html/school_list.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 학교 정보 불러오지 못할 경우</td>
+                    <td class="O">O</td>
+                    <td><a href="html/school_no_list.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-4 학교상세</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_school.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-5 이력 및 알림</td>
+                    <td class="O">O</td>
+                    <td><a href="html/history_alarm.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-6-1 검색</td>
+                    <td class="O">O</td>
+                    <td><a href="html/search.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-6-1 검색 삭제팝업</td>
+                    <td class="O">O</td>
+                    <td><a href="html/popup_delete.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>01-6-2 검색 자동완성</td>
+                    <td class="O">O</td>
+                    <td><a href="html/searching.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>01-6-2 검색결과</td>
+                    <td class="O">O</td>
+                    <td><a href="html/search_result.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>01-6-3 검색결과 없음</td>
+                    <td class="O">O</td>
+                    <td><a href="html/search_no_result.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>01-6-4 검색 최근 검색 없음</td>
+                    <td class="O">O</td>
+                    <td><a href="html/search_no_recent.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>02 기기 못 불러올때 (error)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_error.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>02-1 실내센서 상세</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_sensor_inside.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 네트워크 오류 </td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_sensor_inside_error.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 현대통신 </td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_sensor_inside_hyundai.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 공기리포트 상세 페이지 </td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_report.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 정보 상세 페이지 </td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_information.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>02-2 공기청정기 상세</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 네트워크 오류시</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_error.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 전원 off</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_off.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 위닉스 (XG)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_winix_XQ.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 위닉스 (나이키)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_winix_nike.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 위닉스 (타이탄)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_winix_taitan.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 위닉스 (zeroplus)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_winix_zeroplus.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>ㄴ 대유위니아 (공기청정기)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_winia.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 대유위니아 (가습청정기)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_humidfy_winia.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>ㄴ LG전자 (G+)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_lg_G.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ LG전자 (몽블랑 S)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_lg_S.html">Link</a></td>
+                    <td>제공기능없음</td>
+                </tr>
+                <tr>
+                    <td>ㄴ LG전자 (몽블랑 D+)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_lg_D.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>ㄴ 청호나이스</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_chungho.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>ㄴ 삼성전자</td>
+                    <td class="O">O</td>
+                    <td><a href="html/detail_air_purify_samsung.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>02-2 팝업 타이머 설정 (시간)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/popup_timer_hours.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>02-2-3 팝업 타이머 설정 (시,분)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/popup_timer.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>02-2-4 공기청정기 이력 및 알림</td>
+                    <td class="O">O</td>
+                    <td><a href="html/device_history_alarm.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

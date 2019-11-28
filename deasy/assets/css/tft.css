@@ -1,0 +1,1357 @@
+/*tft step1*/
+.tft_wra {
+    padding: 4.938em 0 0 42%;
+    background: #377aef;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: padding 0.5s;
+}
+.tft_wra.tft_step2 {
+    padding: 4.938em 0 0 0;
+    transition: padding 0.5s;
+}
+.freelancer_area {
+    padding-top: 4.938em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 42%;
+    background: rgba(255,255,255,0.5);
+    transition: left 0.5s;
+}
+.tft_step2 .freelancer_area {
+    left: -42%;
+    transition: left 0.5s;
+}
+.type_request {
+    overflow: hidden;
+}
+.type_request li {
+    width: 50%;
+    background: #ffffff;
+    float: left;
+    text-align: center;
+}
+.type_request li a {
+    font-weight: 700;
+    padding: 1.171em 0;
+    color: #5c96ea;
+    display: block;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    font-size: 1.03em;
+}
+.type_request li.focus {
+    background: transparent;
+}
+.type_request li.focus a {
+    color: #ffffff;
+
+}
+.type_pjct_menu {
+    position: relative;
+    height: 5em;
+}
+.type_pjct_menu .arrow_menu {
+    position: absolute;
+    right: 1em;
+    bottom: 2em;
+}
+.type_pjct_menu .arrow_menu span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2em;
+}
+.type_pjct_menu ul {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1.2em 2em 0;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.type_pjct_menu li {
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+.type_pjct_menu li.focus {
+    border-bottom: 3px solid #ffffff;
+}
+.type_pjct_menu li p {
+    line-height: 2.4rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.938em;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+.type_pjct_menu li p.required {
+    font-size: 1em;
+}
+.type_pjct_menu li p.required .img_icon {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: -0.2em;
+}
+.type_pjct_menu li p.required .img_icon img {
+    width: 2em;
+}
+.type_pjct_menu li p .choice_num {
+    display: none;
+}
+.type_pjct_menu li p .choice_num.active {
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 0.6rem;
+    right: -2em;
+    background: #ff6b3e;
+    font-size: 0.750em;
+    border-radius: 50%;
+    font-weight: 700;
+    width: 1.188rem;
+    height: 1.188rem;
+    line-height: 1.188rem;
+}
+
+.pjct_people_list {
+    height: calc(100% - 13.2em);
+    padding: 1em 1em 0 2em;
+}
+.pjct_people_list ul {
+    display: none;
+}
+.pjct_people_list ul.active {
+    display: block;
+    padding: 0 1em 0 0;
+    overflow: auto;
+    height: 100%;
+}
+.pjct_people_list ul.active::-webkit-scrollbar {
+    width: 8px;
+}
+.pjct_people_list ul.active::-webkit-scrollbar-track {
+    background: transparent;
+}
+.pjct_people_list ul.active::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 5px;
+}
+.pjct_people_list ul.active::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+.pjct_people_list ul li {
+    margin-bottom: 2em;
+}
+.top_people_info {
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+    background: rgba(255,255,255,0.9);
+}
+.chk_team .chkTxt {
+    font-size: 1.313em;
+    color: #232323;
+    font-weight: 800;
+    margin-left: 0.6em;
+}
+.chk_team .chkTxt span {
+    font-family: 'Noto Sans',sans-serif;
+    font-weight: 200;
+    font-size: 0.875rem;
+}
+.right_info {
+    float: right;
+}
+.right_info .btn_pp {
+    color: #377aef;
+    border: 1px solid #377aef;
+    background: #ffffff;
+    height: 2.5em;
+    width: 6.333em;
+    cursor: pointer;
+    line-height: 2.3em;
+    text-align: center;
+    border-radius: 1.25em;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    font-size: 0.750em;
+}
+.right_info .range_work,
+.right_info .day_price {
+    display: inline-block;
+    vertical-align: middle;
+}
+.right_info .range_work {
+    font-size: 0.813rem;
+    font-weight: 300;
+}
+.right_info .range_work span {
+    font-weight: 200;
+    font-size: 0.875rem;
+
+}
+.right_info .day_price {
+    font-size: 0.813rem;
+    margin-left: 1em;
+}
+.right_info .day_price span {
+    color: #ff6b3e;
+    font-size: 0.875rem;
+    font-weight: 200;
+}
+.right_info .day_price strong {
+    font-size: 1.25em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.3em;
+    margin: 0 0.1em;
+}
+.detail_people_info {
+    padding: 0.8em 1em 0;
+    border-radius: 0 0 10px 10px;
+    background: #ffffff;
+}
+.year_people {
+    width: 20%;
+    margin-right: 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+.skill_people .lb,
+.year_people .lb {
+    padding: 0 0 0.5em 1.2em;
+    border-bottom: 1px solid rgba(30,30,30,0.15);
+    color: #1e1e1e;
+    font-size: 0.750em;
+    margin-bottom: 0.8em;
+}
+.year_people .lb {
+    margin-bottom: 2em;
+}
+.year_people img {
+    width: 5.625em;
+    margin: 0 auto;
+}
+.skill_people {
+    width: calc(80% - 1em - 4px);
+    display: inline-block;
+    vertical-align: top;
+}
+.graph_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8em;
+}
+.graph_section .graph_box {
+    width: 18%;
+    position: relative;
+}
+.graph_section .graph_box p {
+    color: #777777;
+    font-size: 10px;
+}
+.chart_percent {
+    color: #ffffff;
+    font-size: 1.438em;
+}
+.team_make_area {
+    padding: 4em 0 0;
+    height: 100%;
+}
+.title_team_box {
+    padding-left: 4em;
+    position: relative;
+}
+.tft_step2 .title_team_box {
+    padding-left: 9rem;
+    position: absolute;
+}
+.title_team_box p {
+    color: #ffffff;
+    font-size: 0.813rem;
+    font-weight: 200;
+}
+.title_team_box p.step1_txt {
+    font-size: 1.875em;
+    font-weight: 200;
+}
+.title_team_box p i {
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+.title_team_box p span {
+    font-weight: 400;
+}
+.table_team_section {
+    width: 34.750em;
+    margin: -1em auto 0;
+    padding-top: 0;
+}
+.tft_step2 .table_team_section {
+    padding-top: 0;
+    position: relative;
+    top: 5.6em;
+}
+.seat_pm,
+.seat_team {
+    background: rgba(255,255,255,0.1);
+    width: 7.375em;
+    height: 7.375em;
+    border-radius: 50%;
+    position: relative;
+}
+.table_line .table_contents {
+    position: relative;
+    height: 19em;
+}
+.table_line .seat_team {
+    margin: 1em 0;
+}
+.table_line .seat_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.table_team {
+    background: #ffffff;
+    width: 15.438em;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -7.719em;
+}
+.table_team:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.table_team .txt_table {
+    display: inline-block;
+    vertical-align: middle;
+}
+.table_team .txt_table p {
+    color: #377aef;
+    font-size: 0.813em;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0.3em;
+}
+.table_team .txt_table span {
+    color: #377aef;
+    font-size: 1.375em;
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+.table_team .txt_table span img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.15em 0.2em 0 0;
+}
+.table_team_section .seat_pm {
+    margin: 0 auto 1em;
+}
+.rest_seat {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.rest_seat .seat_team {
+    margin: 0 1em;
+}
+.price_team {
+    position: absolute;
+    right: 8em;
+    bottom: 2em;
+}
+.price_team .oneday_txt {
+    color: #ffffff;
+    font-size: 0.938em;
+    text-align: right;
+}
+.price_team .oneday_price {
+    color: #ffffff;
+    font-size: 1.125rem;
+}
+.price_team .oneday_price span {
+    font-size: 5.938rem;
+}
+.seat_team .pp_seat {
+    display: none;
+}
+.seat_pm.active .pp_seat,
+.seat_team.active .pp_seat {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+}
+.seat_pm.active .pp_seat {
+    cursor: default;
+}
+.seat_pm .pp_seat:before,
+.seat_team .pp_seat:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.seat_team .pp_seat span {
+    color: #1e1e1e;
+    font-size: 1em;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+}
+.seat_team .pp_seat:after {
+    content: '';
+    position: absolute;
+    top: -1.5em;
+    right: -1.3em;
+    width: 4.688em;
+    height: 4.750em;
+}
+.left.seat_team .pp_seat:after {
+    right: inherit;
+    left: -1.2em;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-background-size: 4.688em 4.750em;
+    background-size: 4.688em 4.750em;
+}
+.seat_team .pp_seat[data-year='year1']:after {
+    background-image: url("/assets/images/tft/year_1.png");
+}
+.seat_team .pp_seat[data-year='year2']:after {
+    background-image: url("/assets/images/tft/year_2.png");
+}
+.seat_team .pp_seat[data-year='year3']:after {
+    background-image: url("/assets/images/tft/year_3.png");
+}
+.seat_team .pp_seat[data-year='year4']:after {
+    background-image: url("/assets/images/tft/year_4.png");
+}
+.seat_team .pp_seat[data-year='year5']:after {
+    background-image: url("/assets/images/tft/year_5.png");
+}
+.seat_team .pp_seat[data-year='year6']:after {
+    background-image: url("/assets/images/tft/year_6.png");
+}
+.seat_team .pp_seat[data-year='year7']:after {
+    background-image: url("/assets/images/tft/year_7.png");
+}
+.seat_team .pp_seat[data-year='year8']:after {
+    background-image: url("/assets/images/tft/year_8.png");
+}
+.seat_team .pp_seat[data-year='year9']:after {
+    background-image: url("/assets/images/tft/year_9.png");
+}
+.seat_team .pp_seat[data-year='year10']:after {
+    background-image: url("/assets/images/tft/year_10.png");
+}
+.seat_team .pp_seat[data-year='year11']:after {
+    background-image: url("/assets/images/tft/year_11.png");
+}
+.seat_team .pp_seat[data-year='year12']:after {
+    background-image: url("/assets/images/tft/year_12.png");
+}
+.seat_team .pp_seat[data-year='year13']:after {
+    background-image: url("/assets/images/tft/year_13.png");
+}
+.seat_team .pp_seat[data-year='year14']:after {
+    background-image: url("/assets/images/tft/year_14.png");
+}
+.seat_team .pp_seat[data-year='year15']:after {
+    background-image: url("/assets/images/tft/year_15.png");
+}
+.seat_team .pp_seat[data-year='year16']:after {
+    background-image: url("/assets/images/tft/year_16.png");
+}
+.seat_team .pp_seat[data-year='year17']:after {
+    background-image: url("/assets/images/tft/year_17.png");
+}
+.seat_team .pp_seat[data-year='year18']:after {
+    background-image: url("/assets/images/tft/year_18.png");
+}
+.seat_team .pp_seat[data-year='year19']:after {
+    background-image: url("/assets/images/tft/year_19.png");
+}
+.seat_team .pp_seat[data-year='year20']:after {
+    background-image: url("/assets/images/tft/year_20.png");
+}
+
+.left .seat_team .pp_seat:after {
+    right: inherit;
+    left: -0.7em;
+}
+.port_btn {
+    display: none;
+}
+.active .port_btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: -1em;
+    right: -6.5em;
+}
+.left .port_btn {
+    left: -6.5em;
+    right: inherit;
+}
+.member_prtf {
+    display: none;
+    text-align: left;
+    padding: 0.8em 0.9em 2.938em;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 20px;
+    top: -5em;
+    left: 4.2em;
+    width: 14.5em;
+    z-index: 31;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    animation: opacityPop 0.8s;
+}
+.seat_pm .member_prtf {
+    padding: 0.8em 0.9em;
+}
+.port_btn.port_active + .member_prtf {
+    display: block;
+
+}
+@keyframes opacityPop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.tft_step2 .seat_mb.active.left .member_prtf {
+    left: inherit;
+    right: 14.2em;
+}
+.left .member_prtf {
+    left: inherit;
+    right: 4.2em;
+}
+.member_prtf .member_no {
+    color: #377aef;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.688em;
+    margin-bottom: 1em;
+}
+.close_mb_prtf {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.member_prtf .name {
+    font-weight: 800;
+    font-size: 1em;
+    color: #232323;
+}
+.member_prtf .detail_skill_mb {
+    padding-top: 1em;
+}
+.item_skill_mb {
+    margin-bottom: 0.5em;
+    overflow: hidden;
+}
+.item_skill_mb .lb {
+    color: #777777;
+    font-size: 10px;
+    width: 35%;
+    float: left;
+}
+.item_skill_mb .bar_skill {
+    float: left;
+    width: 65%;
+}
+.item_skill_mb .bar_skill p {
+    background: #e5e5e5;
+    height: 15px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.tft_step2 .active .member_prtf .item_skill_mb .bar_skill p span,
+.port_btn.port_active + .member_prtf .item_skill_mb .bar_skill p span {
+    -webkit-animation: barSkill 1s;
+    -o-animation: barSkill 1s;
+    animation: barSkill 1s;
+}
+.item_skill_mb .bar_skill p span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 10px;
+    height: 100%;
+    line-height: 1.5;
+    display: block;
+    padding-left: 10px;
+    width: 0;
+
+}
+.item_skill_mb .bar_skill.first p span {
+    background: #377aef;
+}
+.item_skill_mb .bar_skill.second p span {
+    background: #ff6b3e;
+}
+.item_skill_mb .bar_skill.third p span {
+    background: #ffc950;
+}
+.item_skill_mb .bar_skill.fourth p span {
+    background: #add154;
+}
+.item_skill_mb .bar_skill.fifth p span {
+    background: #846c62;
+}
+
+.item_skill_mb .bar_skill.second_pm p span {
+    background: #37bc88;
+}
+.item_skill_mb .bar_skill.third_pm p span {
+    background: #8cd8e5;
+}
+.item_skill_mb .bar_skill.fifth_pm p span {
+    background: #ed587c;
+}
+@keyframes barSkill {
+    0% {
+        width: 0;
+    }
+}
+.member_prtf .detail_work p {
+    font-size: 0.750rem;
+    color: #1e1e1e;
+    padding: 0.5em 0;
+}
+.member_prtf .detail_work p:first-child {
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+}
+.member_prtf .detail_work p span {
+    float: right;
+}
+.member_prtf .detail_work p span.work {
+    font-weight: 200;
+    font-size: 0.875rem;
+}
+.member_prtf .detail_work p span.price {
+    color: #ff6b3e;
+    font-weight: 200;
+    font-size: 0.875rem;
+}
+.member_prtf .detail_work p span.price strong {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.leave_team {
+    text-align: center;
+    color: #ffffff;
+    background: #232323;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.938em;
+    border-radius: 0 0 20px 20px;
+}
+.seat_team.seat_pm.active .pp_seat.focus {
+    background: #ffffff;
+}
+.seat_team.active .pp_seat.focus {
+    background: #ff6b3e;
+}
+.tft_wra .pop_pf_section {
+    width: 58%;
+    bottom: 0;
+    position: fixed;
+    padding: 1em 0;
+    z-index: 40;
+}
+.tft_wra.tft_step2 .pop_pf_section {
+    width: 100%;
+}
+.tft_wra .pf_contents {
+    width: 62%;
+    float: none;
+    margin: 0 auto;
+}
+.tft_wra .partner_pf_box .close_pf img {
+    width: 1.288em;
+    height: 1.288em;
+}
+.tft_step2 .partner_pf_box {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.tft_wra .desc_pf .type,
+.tft_wra .desc_pf .name .date,
+.tft_wra .partner_pf_box .title_pf {
+    font-size: 10px;
+}
+.tft_wra .desc_pf .name {
+    font-size: 0.688em;
+}
+.tft_wra .slide_pf .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    margin: 0 3px !important;
+}
+.tft_wra .partner_pf_box .title_pf {
+    padding: 0.5em 0 0 1em;
+}
+.tft_wra .slide_pf .swiper-button-next, .tft_wra .slide_pf .swiper-container-rtl .swiper-button-prev
+.tft_wra .slide_pf .swiper-button-next, .tft_wra .slide_pf .swiper-button-prev {
+    bottom: 2.488em;
+    width: 0.538em;
+    height: 1.01em;
+    -webkit-background-size: 0.538em 1.01em;
+    background-size: 0.538em 1.01em;
+}
+.tft_wra .desc_pf {
+    padding: 0.6em 0 1.2em 0.5em;
+}
+.title_team_box p.step2_txt {
+    display: none;
+    font-size: 1.875rem;
+}
+.title_team_box p.step2_txt i {
+    display: block;
+    margin-bottom: 1em;
+}
+.title_team_box .etc {
+    display: none;
+    font-size: 0.875em;
+    color: #ffffff;
+    margin-top: 2.5em;
+}
+.tft_step2 .title_team_box .etc {
+    display: block;
+}
+/*step2*/
+.pop_pf_pm .member_prtf,
+.tft_step2 .active .member_prtf {
+    display: block;
+    width: 28.250em;
+    padding: 0.8em 0;
+    overflow: hidden;
+    top: -1.4em;
+    left: 8.6em;
+}
+.pop_pf_pm .member_prtf,
+.tft_step2 .left .seat_mb.active .member_prtf {
+    right: 13.9em;
+    left: inherit;
+}
+.pop_pf_pm .member_prtf,
+.tft_step2 .seat_mb.active .member_prtf {
+    left: 13.9em;
+    padding: 0.8em 0;
+}
+.pop_pf_pm .mb_info,
+.tft_step2 .mb_info {
+    /*width: 6.25em;*/
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.tft_step2 .close_mb_prtf,
+.tft_step2 .leave_team {
+    display: none;
+}
+.pop_pf_pm .member_prtf .detail_skill_mb,
+.tft_step2 .member_prtf .detail_skill_mb {
+    width: 45%;
+    padding-top: 0;
+    float: left;
+}
+.pop_pf_pm .member_prtf .detail_work,
+.tft_step2 .member_prtf .detail_work {
+    width: 35%;
+    float: left;
+    padding: 0 1em;
+}
+.pop_pf_pm .member_prtf .detail_work p span ,
+.tft_step2 .member_prtf .detail_work p span {
+    display: block;
+    float: none;
+    margin-top: 0.5em;
+    text-align: right;
+}
+.pop_pf_pm .member_prtf .detail_work p ,
+.tft_step2 .member_prtf .detail_work p {
+    padding: 0;
+}
+.pop_pf_pm .member_prtf .detail_work p:first-child,
+.tft_step2 .member_prtf .detail_work p:first-child {
+    padding: 0 0 0.7em;
+    margin-bottom: 0.7em;
+
+}
+.tft_step3_wra {
+    background: #ffffff;
+    padding-top: 4.938em;
+    overflow: hidden;
+    height: 100%;
+}
+.calendar_tft_area {
+    width: 58%;
+    float: left;
+    padding-top: 5.5em;
+    height: 100%;
+}
+.time_tft_area {
+    width: 42%;
+    height: 100%;
+    float: left;
+    background: #377aef;
+}
+.tft_step3_wra .title_team_box {
+    text-align: left;
+    padding-left: 9rem;
+}
+.tft_step3_wra .title_team_box .step3_txt i {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 0.533em;
+}
+.tft_step3_wra .title_team_box .step3_txt {
+    color: #377aef;
+    font-size: 1.875em;
+    font-weight: 200;
+    display: inline-block;
+}
+.tft_step3_wra .title_team_box .step3_txt span {
+    font-weight: 400;
+}
+.pm_profile {
+    float: right;
+    padding: 0 9em 0 0;
+    position: relative;
+    margin: 3.7em 4.5em 0 0;
+}
+.pm_profile .name {
+    font-size: 0.875em;
+    font-weight: 200;
+    color: #1e1e1e;
+}
+.pm_profile .name strong {
+    font-size: 1.143em;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 1em;
+}
+.pm_profile .detail_btn_pf {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -0.5em;
+    color: #bcbcbc;
+    font-size: 0.813em;
+    font-weight: 200;
+    width: 9em;
+    text-align: center;
+    display: inline-block;
+    height: 2.462em;
+    line-height: 2.462em;
+    border-radius: 1.231em;
+    border: 1px solid #bcbcbc;
+}
+.tft_step2 .step_project .next.tftstep2,
+.tft_step1 .step_project .next.tftstep3 {
+    display: none;
+}
+.tft_step2 .step_project .next.tftstep3 {
+    display: block;
+}
+/*tft step3*/
+.dateSingle {
+    opacity: 0;
+}
+.calendar_meeting {
+    padding-top: 4em;
+    max-width: 835px;
+    width: 100%;
+    margin: 0 auto;
+    height: 36em;
+}
+.time_tft_area .title {
+    color: #ffffff;
+    font-size: 1.875em;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+.time_tft_area .title .bold {
+    font-weight: 400;
+}
+.time_tft_area .title .desc {
+    font-size: 0.938rem;
+    font-weight: 200;
+    margin-left: 0.5em;
+}
+.time_tft_area {
+    padding: 5.5em 4em 0;
+}
+.time_meeting {
+    padding-bottom: 3em;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    margin-bottom: 3em;
+}
+.time_meeting:last-of-type {
+    border-bottom: 0;
+}
+.time_meeting .title i {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 0.533em;
+}
+
+.customer_time {
+    margin-bottom: 1em;
+}
+.item_time_group {
+    display: inline-block;
+    vertical-align: middle;
+}
+.item_time_group p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+.meet_time {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+}
+.meet_time + label {
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    color: #232323;
+    font-size: 1.563em;
+    background: rgba(255,255,255,0.5);
+    width: 4.8em;
+    border-radius: 0.96em;
+    height: 1.920em;
+    line-height: 1.92em;
+    text-align: center;
+    display: inline-block;
+}
+.meet_time + label span {
+    font-size: 0.938rem;
+    font-weight: 200;
+    font-family: 'Noto Sans',sans-serif;
+}
+.meet_time:checked + label {
+    color: #ff6b3e;
+    background: #ffffff;
+}
+.customer_time .lb {
+    color: #ffffff;
+    font-size: 1.125em;
+    width: 3.4em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pop_pf_pm {
+    display: none;
+}
+.pop_pf_pm.active {
+    display: block;
+}
+.pop_pf_pm .pm {
+    color: #377aef;
+    font-size: 0.688em;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 1.7em;
+}
+.pop_pf_pm .member_prtf {
+    display: block;
+    padding: 1em 1.1em;
+    left: inherit;
+    right: 3em;
+    top: 7em;
+}
+.pop_pf_pm .mb_info img {
+    width: 3.313em;
+}
+.calendar_meeting {
+    position: relative;
+    max-width: 900px;
+   /* max-width: 81%;*/
+}
+.calendar_meeting .date-picker-wrapper {
+    position: absolute;
+    top: 20% !important;
+    left: 50% !important;
+    transform: translate(-49%,0);
+    width: 100% !important;
+}
+.calendar_meeting .info_cal {
+    margin: 2em 2em 0 0;
+}
+.calendar_meeting .date-picker-wrapper .month-wrapper table td.chkTd:before {
+    display: none;
+}
+.calendar_meeting .date-picker-wrapper .month-wrapper table {
+    width: 100%;
+}
+.calendar_meeting .date-picker-wrapper .month-wrapper table .day.checked.hovering .wrap-day,
+.calendar_meeting .date-picker-wrapper .month-wrapper table .day.checked .wrap-day {
+    background: #377aef !important;
+    padding: 1.3em 0.5em !important;
+    margin: 0 1.85em !important;
+}
+.date-picker-wrapper .month-wrapper table div.day .wrap-day {
+    padding: 1.1em 1em !important;
+    margin: 0 1.35em !important;
+}
+.calendar_meeting .date-picker-wrapper .month-wrapper table .real-today .wrap-day:after {
+    bottom: 6px;
+    left: 15%;
+    width: 70%;
+    height: 5px;
+}
+.calendar_meeting .date-picker-wrapper .month-wrapper table td {
+    height: 6.433em;
+}
+.calendar_meeting .date-picker-wrapper .month-wrapper table .caption th.month-name {
+    left: 4.1em;
+}
+.icon_gnb li.pm_step_btn a {
+    color: #ffffff;
+    font-size: 0.813em;
+    background: #377aef;
+    height: 3.231em;
+    padding: 0 1em;
+    border-radius: 1.615em;
+    display: block;
+    line-height: 3.231em;
+    margin-right: 2em;
+    margin-top: -0.3em;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+.header_blue_wra .icon_gnb li.pm_step_btn a {
+    background: #ffffff;
+    color: #377aef;
+}
+.icon_gnb li.logout_menu a {
+    padding-top: 0.2em;
+}
+.header_blue_wra .icon_gnb li.logout_menu a {
+    color: #000;
+    font-weight: 400;
+}
+.chart_txt {
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100%;
+    bottom: 40%;
+    font-size: 1.438rem;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 700;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+/*pm step2*/
+.tft_wra.pm_wra {
+    padding: 4.938em 20px 0;
+}
+.pm_wra .page_title_section {
+    position: absolute;
+    left: 7%;
+    top: 11em;
+}
+.pm_wra .freelancer_area {
+    background: transparent;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,0);
+}
+.pm_wra .pjct_people_list {
+    width: 42%;
+    margin: 4em auto 0;
+}
+.total_txt,.final_date_mbox {
+    display: none;
+}
+.btn_free,.pm_profile_m,
+.pm_profile_m + .pop_pf_pm.active,
+.responsive_area {
+    display: none;
+}
+.bottom_pm_info {
+    overflow: hidden;
+}
+/*tft 수정*/
+.pm_info_tft {
+    padding: 1em 2em 0;
+}
+.box_tft_pm {
+    border-radius: 10px;
+    background: #ffffff;
+    height: 2.813em;
+}
+.box_tft_pm .lb {
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    color: #ffffff;
+    display: inline-block;
+    width: 8.25rem;
+    height: 100%;
+    line-height: 2.813rem;
+    background: #000;
+    font-weight: 700;
+    font-size: 1.063em;
+}
+.box_tft_pm .info {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 1em;
+    width: calc(100% - 4px - 8.25rem);
+}
+.box_tft_pm .info .name {
+    color: #232323;
+    font-size: 1.063em;
+    display: inline-block;
+    font-weight: 800;
+}
+.box_tft_pm .info .name span {
+    font-family: "Noto Sans",sans-serif;
+    font-size: 0.824em;
+    font-weight: 200;
+}
+.box_tft_pm .info .role {
+    float: right;
+    margin-right: 1.4em;
+    font-weight: 200;
+    font-size: 0.875em;
+}
+.box_tft_pm .info .role span {
+    font-size: 0.95em;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 0.2em;
+}
+/*프로젝트 이름*/
+.pj_name_wra {
+    background: #377aef;
+    height: 100vh;
+    padding: 4.938em 20px 0;
+}
+.pj_name_area {
+    max-width: 1660px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7% 3em 0;
+    height: 100%;
+    position: relative;
+}
+.pj_name_area .page_title_section .page_title {
+    margin-bottom: 2.2em;
+}
+.pj_name_area .name_input_area {
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%,0);
+}
+.name_input_area {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.name_input_area:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1em;
+    display: inline-block;
+    width: 1.688em;
+    height: 6.313em;
+    background: url("/assets/images/project_new/box1.png") 0 0 no-repeat;
+    -webkit-background-size: 1.688em 6.313em;
+    background-size: 1.688em 6.313em;
+}
+.name_input_area:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -1em;
+    display: inline-block;
+    width: 1.688em;
+    height: 6.313em;
+    background: url("/assets/images/project_new/box2.png") 0 0 no-repeat;
+    -webkit-background-size: 1.688em 6.313em;
+    background-size: 1.688em 6.313em;
+}
+
+.dk_textbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #ffffff;
+    font-size: 2.5em;
+    padding-left: 2em;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    outline: none;
+}
+.dk_textbox::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.3);
+}
+.dk_textbox::-moz-placeholder {
+    color: rgba(255,255,255,0.3);
+}
+.dk_textbox:-ms-input-placeholder {
+    color: rgba(255,255,255,0.3);
+}
+.dk_textbox:-moz-placeholder {
+    color: rgba(255,255,255,0.3);
+}
+/*
+.dk_textbox:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.dk_textbox:focus:-moz-placeholder {
+    color: transparent;
+}
+.dk_textbox:focus::-moz-placeholder {
+    color: transparent;
+}
+.dk_textbox:focus:-ms-input-placeholder {
+    color: transparent;
+}*/
+
+.tooltip_info {
+    top: 0;
+    left: -14em;
+    position: absolute;
+    width: 12.438em;
+    height: 2.688em;
+    background: url("/assets/images/project_new/move.png") 0 0 no-repeat;
+    -webkit-background-size: 12.438em 2.688em;
+    background-size: 12.438em 2.688em;
+}
+.tooltip_info p {
+    text-align: center;
+    font-size: 0.951em;
+    font-weight: 200;
+    line-height: 2.6rem;
+    color: #191919;
+}
+.tooltip_info p span {
+    color: #377aef;
+    font-weight: 400;
+}
+.tft_step3_wra .btnMainBox a {
+    font-size: 1.25em;
+}
+.tft_step3_wra .ani_here {
+    right: 6%;
+    bottom: 8%;
+}
+/*agency*/
+.card_agency {
+    width: 18.875em;
+    margin-top: 2em;
+    display: none;
+}
+.tft_step2 .card_agency {
+    display: block;
+}
+
+.head_agency {
+    padding: 0.8em 1.7em;
+    border-radius: 10px 10px 0 0;
+    background: rgba(255,255,255,0.9);
+}
+.head_agency .name {
+    color: #232323;
+    font-size: 1.313em;
+    display: inline-block;
+    font-weight: 800;
+}
+.title_team_box .btn_agency_pp {
+    color: #377aef;
+    border: 1px solid #377aef;
+    background: #ffffff;
+    height: 2.5em;
+    width: 6.333em;
+    cursor: pointer;
+    line-height: 2.3em;
+    text-align: center;
+    border-radius: 1.25em;
+    float: right;
+    margin-top: -0.2em;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    font-size: 0.750em;
+}
+.body_agency {
+    background: #ffffff;
+    padding: 1em 1.2em;
+    border-radius: 0 0 10px 10px;
+}
+.info_body_agnecy {
+    margin-bottom: 2em;
+}
+.info_body_agnecy:last-of-type {
+    margin-bottom: 0;
+}
+.info_body_agnecy .lb {
+    font-size: 0.75em;
+    padding: 0 0 0.8em 1em;
+    color: #1e1e1e;
+    border-bottom: 1px solid rgba(30,30,30,0.15);
+}
+.contents_info {
+    padding-top: 1em;
+}
+.contents_info img {
+    margin: 0 auto;
+}
+
+.graph_field_box {
+    padding: 0 1em;
+    width: 33.3%;
+    float: left;
+}
+.graph_field_box .field {
+    color: #777777;
+    font-size: 10px;
+}
+.mb_partner_name {
+    display: none;
+}

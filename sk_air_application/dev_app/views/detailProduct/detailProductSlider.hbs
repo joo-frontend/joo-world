@@ -1,0 +1,55 @@
+<div class="slider">
+    {{#each userDeviceList}}
+    <div class="box_slide">
+        {{#deviceKindCode}}
+        <!-- 공기 청정기 일 경우 -->
+        <div>
+            <p class="air_product">공기청정기</p>
+            <p class="air_product_name">1-1 공기청정기</p>
+            <!--
+             good 좋음
+             normal 보통
+             bad 나쁨
+             worse 매우나쁨
+             -->
+            <div class="circle_air_status good">
+                <div class="circle">
+                    <p class="air">공기 상태</p>
+                    <p class="status">좋음</p>
+                    <p class="dust">초미세먼지</p>
+                    <p class="dust_num">10<em>㎍/㎥</em></p>
+                </div>
+            </div>
+            <div class="info_outside">
+                <p class="outside">실외</p>
+                <p class="degree">온도 27℃ / 습도 50%</p>
+            </div>
+        </div>
+        <!-- // 공기 청정기 일 경우 -->
+        {{else}}
+        <!-- 실내센서 일 경우 -->
+        <div>
+            <p class="air_product">실내센서</p>
+            <p class="air_product_name">1-1 실내센서</p>
+            <!--
+             good 좋음
+             normal 보통
+             bad 나쁨
+             worse 매우나쁨
+             -->
+            <div class="circle_air_status good">
+                <div class="circle circle_sensor">
+                    <p class="score">종합점수 85</p>
+                    <p class="status">좋음</p>
+                </div>
+            </div>
+            <div class="box_btn">
+                <button class="btn_report"><span class="sprite sprite_common sprite_icon_graph_statistic">아이콘</span>공기리포트
+                </button>
+            </div>
+        </div>
+        <!-- // 실내센서 일 경우 -->
+        {{/deviceKindCode}}
+    </div>
+    {{/each}}
+</div>

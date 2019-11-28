@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <meta property="og:title" content="US-HOME"/>
+    <meta property="og:description" content="US-HOME"/>
+    <meta name="description" content="US-HOME">
+    <meta property="og:site_name" content="US-HOME"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://US-HOME/images/kakao_thumbnail.jpg"/>
+    <meta property="og:url" content="URL입력"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="210"/>
+    <title>Homecook</title>
+    <link rel="stylesheet" href="../../js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wra">
+    <!--header-->
+    <div class="wra_header wra_header_white">
+        <div class="area_header">
+            <div class="box_logo"><a href="#"><img src="../../images/header/bi_culistory.png" alt=""></a></div>
+            <div class="box_gnb box_gnb_main">
+                <ul class="clearfix">
+                    <li class=""><a href="#">컬리스토리란?</a></li>
+                    <li><a href="#">컬리스토리 메뉴</a></li>
+                    <li><a href="#">에듀밀</a></li>
+                    <li><a href="#">주간레시피</a></li>
+                    <li class="m_community"><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="box_gnb box_gnb_user">
+                <p class="lang_user"><select name="select_lang" class="selectbox_lang">
+                    <option value="lang_kor">한국어</option>
+                    <option value="lang_eng">영어</option>
+                </select></p>
+                <ul>
+                    <li class=""><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                </ul>
+            </div>
+            <div class="box_menu">
+                <a href="#" class="search"></a>
+                <a href="#" class="mypage"></a>
+                <a href="#" class="mycart"></a>
+            </div>
+        </div>
+    </div>
+    <!--search area-->
+    <div class="wra_search_active">
+        <p class="search_txt">키워드를 입력하세요</p>
+        <form action="">
+            <p class="serach_area">
+                <input type="text" class="search_txtbox" placeholder="검색어">
+                <button type="submit"></button>
+            </p>
+        </form>
+
+    </div>
+    <div class="container">
+        <div class="contents">
+            <div id="pageSignup" class="page_wra">
+                <div class="section_login">
+                    <div class="signup_wra">
+                        <div class="title_login_box">
+                            <p class="title">회원가입</p>
+                        </div>
+                        <form action="">
+                            <div class="signup_step_area">
+                                <p class="step_desc"><span>STEP.1</span>기본정보를 입력해주세요</p>
+                                <div class="signup_box">
+                                    <div class="input_each">
+                                        <div class="title"><p>아이디</p></div>
+                                        <div class="content_input">
+                                            <input type="text" name="email_id" class="textbox textbox_email1"
+                                                   placeholder="이메일 주소 입력">
+                                            <span class="txt_email">@</span>
+                                            <input type="text" name="email_site" class="textbox textbox_email2">
+                                            <select name="select_email" class="selectbox">
+                                                <option value="empty">직접입력</option>
+                                                <option value="naver">naver.com</option>
+                                                <option value="naver">gmail.com</option>
+                                            </select>
+                                            <div class="desc"><p>* 작성하신 이메일주소가 아이디로 사용됩니다. 아이디는 추후 변경 불가합니다</p>
+                                                <button class="btn_chk_overlap">중복확인</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input_each">
+                                        <div class="title"><p>비밀번호</p></div>
+                                        <div class="content_input pw_input">
+                                            <input type="password" name="password_sign" class="textbox textbox_pw"
+                                                   placeholder="비밀번호 입력">
+                                            <input type="password" name="password_sign_chk" class="textbox"
+                                                   placeholder="비밀번호 확인">
+                                            <div class="desc">
+                                                <p>* 비밀번호는 8~20자 이내로 영문, 숫자, 특수문자를 두가지 이상 조합하여 작성해주세요</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input_each">
+                                        <div class="title"><p>이름</p></div>
+                                        <div class="content_input pw_input">
+                                            <input type="text" name="name_sign" class="textbox textbox_name"
+                                                   placeholder="이름 입력">
+                                        </div>
+                                    </div>
+                                    <div class="input_each">
+                                        <div class="title"><p>연락처</p></div>
+                                        <div class="content_input pw_input">
+                                            <select name="selectbox_tel" class="selectbox selectbox_tel">
+                                                <option value="">010</option>
+                                            </select>
+                                            <span class="bar">ㅡ</span>
+                                            <input type="text" name="tel_sub1" class="textbox textbox_tel">
+                                            <span class="bar">ㅡ</span>
+                                            <input type="text" name="tel_sub2" class="textbox textbox_tel">
+                                        </div>
+                                    </div>
+                                    <div class="input_each">
+                                        <div class="title"><p>마케팅 수신 동의</p></div>
+                                        <div class="content_input">
+                                            <p class="chk_marketing">
+                                                <input type="radio" name="marketing_agree" id="agree_marketing"
+                                                       class="chk_user" checked>
+                                                <label for="agree_marketing">수신함</label>
+                                            </p>
+                                            <p class="chk_marketing">
+                                                <input type="radio" name="marketing_agree" id="disagree_marketing"
+                                                       class="chk_user">
+                                                <label for="disagree_marketing">수신하지 않음</label>
+                                            </p>
+                                            <div class="desc">
+                                                <p>* 쇼핑몰 정보를 이메일과 SMS로 수신받으실 수 잇습니다. 단, 상품 구매정보는 수신동의 여부 관계없이 발송됩니다</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="signup_step_area last">
+                                <p class="step_desc"><span>STEP.2</span>약관을 확인하세요</p>
+                                <div class="signup_box signup_box_term">
+                                    <p class="chk_term">
+                                        <input type="checkbox" class="chk_user" name="term_all" id="agree_all">
+                                        <label for="agree_all">전체 동의</label>
+                                    </p>
+                                    <div class="chk_term_each">
+                                        <input type="checkbox" name="term_1" class="chk_user">
+                                        <p><span>(필수)</span> 이용약관 동의</p>
+                                        <a href="#">전문보기</a>
+                                    </div>
+                                    <div class="chk_term_each">
+                                        <input type="checkbox" name="term_2" class="chk_user">
+                                        <p><span>(필수)</span> 개인정보수집 및 이용 동의</p>
+                                        <a href="#">전문보기</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="btn_group_sign">
+                                <button type="submit" class="btn_user">취소</button>
+                                <button type="submit" class="btn_user btn_signup">회원가입</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="wra_footer">
+        <!--main-userlink-->
+        <div class="area_link_user">
+            <a href="#" class="move_user_center">FAQ</a>
+            <a href="#" class="move_user_center">1:1문의</a>
+            <a href="#" class="move_user_center">공지사항</a>
+        </div>
+        <div class="area_shop_info">
+            <ul>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_call.png" alt="">고객센터</span>
+                        <p><span>010.3336.4643</span><span>월-금  ㅣ  10:00 - 17:00</span><span>토·일·공휴일  ㅣ  휴무</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_mail.png" alt="">E-mail</span>
+                        <p><span>jskang402@gmail.com</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_bank.png" alt="">입금정보</span>
+                        <p><span>하나은행 316-910028-80205</span><span>예금주 : (주)홈쿡</span></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area_footer">
+            <div class="footer_link">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="footer_desc">
+                <p>상호명 : 농업회사법인 누리(주) <span></span>대표 : 강주석<span></span>개인정보관리책임자 : 강주석<br>
+                    전화 : 010-3336-4643<span></span>이메일 : jskang402@gmail.com<span></span>회사 이메일 :
+                    NU***@**********<span></span>사업자등록번호 : 263-87-00956<br>
+                    주소 : 전라북도 익산시 왕국면 동촌제길 110 식품벤처센터 F동 348호
+                <p>Copyright ⓒ 2016 컬리스토리 All right reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

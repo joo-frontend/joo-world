@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body class="desktop">
+
+<!-- desktop_header -->
+<div class="desktop_header">
+
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <div class="title">기기명</div>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+
+</div>
+<!-- //desktop_header -->
+
+<!-- desktop_contents -->
+<div class="desktop_contents clearfix">
+    <div class="desktop_col col2">
+        <div class="col_box">
+    <!-- section_product_activate -->
+    <section class="section_on_off section_product_activate">
+        <div class="area_title">
+            <p>기능 선택</p>
+        </div>
+        <div class="area_on_off">
+            <div class="box_on_off col_5">
+                <div>
+                    <input type="checkbox" class="toggle_purify one_cup">
+                    <label for="">한컵</label>
+                    <!--<a href="#">-->
+                    <!--<div>-->
+                    <!--<span class="sprite sprite_purify sprite_one_cup"></span>-->
+                    <!--</div>-->
+                    <!--<p>한컵</p>-->
+                    <!--</a>-->
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_purify cup_550">
+                    <label for="">550ml</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_purify refresh">
+                    <label for="">연속</label>
+                </div>
+                <div>
+                    <p class="toggle_purify wifi">
+                        <span class="toggle_title">WIFI</span>
+                        <span class="active_indicator"></span>
+                        <!--<a href="#">-->
+                        <!--<div>-->
+                        <!--<span class="sprite sprite_purify sprite_wifi"></span>-->
+                        <!--</div>-->
+                        <!--<p>WIFI</p>-->
+                        <!--</a>-->
+                </div>
+                <div class="none_bg no_blue">
+                    <p class="toggle_purify top_purify">
+                        <span class="toggle_title">살균</span>
+                        <span class="active_indicator"></span>
+                </div>
+            </div>
+            <div class="box_on_off col_4">
+                <div>
+                    <input type="checkbox" class="toggle_purify bottom_cold">
+                    <label for="">냉수</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_purify top_purify01">
+                    <label for="">정수</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_purify bottom_warm" disabled>
+                    <label for="">유아수</label>
+                </div>
+                <div class="none_bg">
+                    <input type="checkbox" class="toggle_purify bottom_hot">
+                    <label for="">온수</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section_product_activate -->
+    </div>
+    </div>
+    <div class="desktop_col col2">
+        <div class="col_box">
+    <!-- //section_set_warm -->
+    <section class="section_set_warm">
+        <div class="area_set_warm">
+            <div>
+                <p>유아수 온도 설정</p>
+                <span>바로 만든 새물!<br>아기에게도 안심할 수<br>있는 물!</span>
+            </div>
+            <div>
+                <label for=""><input type="radio" name="set_warm" class="set_warm_radio warm_45">
+                   </label>
+                <label for=""><input type="radio" name="set_warm" class="set_warm_radio warm_50">
+                   </label>
+                <label for=""><input type="radio" name="set_warm" class="set_warm_radio warm_55">
+                   </label>
+
+                <!--<p><span class="active">45º</span></p>
+                <p><span>50º</span></p>
+                <p><span>55º</span></p>-->
+            </div>
+        </div>
+    </section>
+    <!-- //section_set_warm -->
+
+    <section class="section_coke_sterilizing">
+        <div class="area_title">
+            <p>코크살균</p><span>몇 일에 한번씩 하는 살균은? NO! 2시간에 한번 코크 살균!</span>
+        </div>
+
+        <!-- 진행하기 클래스: activate_start -->
+        <!-- 완료 클래스: activate_end -->
+        <div class="area_activate">
+            <div class="box_img">
+                <div class="box_remain_time">
+                    <p class="txt_remain">REMAIN TIME</p>
+                    <p class="txt_timer">00:00</p>
+                    <!-- button disabled 적용가능 -->
+                    <button>진행하기</button>
+                    <!--<button disabled>진행하기</button>-->
+                </div>
+
+                <div class="box_loading_image">
+                    <div class="product_active_loader"></div>
+                </div>
+
+            </div>
+            <div class="box_bottom_txt">
+                <p>지금은 코크 살균 대기 중입니다!</p>
+                <!--<p>지금은 코크 살균 진행 중입니다!</p>-->
+                <!--<p>코크 살균이 완료 되었습니다!</p>-->
+            </div>
+        </div>
+    </section>
+
+    <section class="section_coke_sterilizing" style="display: none">
+        <div class="area_title">
+            <p>코크살균</p><span>몇 일에 한번씩 하는 살균은? NO! 2시간에 한번 코크 살균!</span>
+        </div>
+
+        <!-- 진행하기 클래스: activate_start -->
+        <!-- 완료 클래스: activate_end -->
+        <div class="area_activate activate_start">
+            <div class="box_img">
+                <div class="box_remain_time">
+                    <p class="txt_remain">REMAIN TIME</p>
+                    <p class="txt_timer">00:00</p>
+                    <button>진행하기</button>
+                </div>
+
+                <div class="box_loading_image">
+                    <div class="product_active_loader"></div>
+                </div>
+
+            </div>
+            <div class="box_bottom_txt">
+                <!--<p>지금은 코크 살균 대기 중입니다!</p>-->
+                <p>지금은 코크 살균 진행 중입니다!</p>
+                <!--<p>코크 살균이 완료 되었습니다!</p>-->
+            </div>
+        </div>
+    </section>
+
+    <section class="section_coke_sterilizing" style="display: none">
+        <div class="area_title">
+            <p>코크살균</p><span>몇 일에 한번씩 하는 살균은? NO! 2시간에 한번 코크 살균!</span>
+        </div>
+
+        <!-- 진행하기 클래스: activate_start -->
+        <!-- 완료 클래스: activate_end -->
+        <div class="area_activate activate_end">
+            <div class="box_img">
+                <div class="box_remain_time">
+                    <p class="txt_remain">REMAIN TIME</p>
+                    <p class="txt_timer">00:00</p>
+                    <button>진행하기</button>
+                </div>
+
+                <div class="box_loading_image">
+                    <div class="product_active_loader"></div>
+                </div>
+
+            </div>
+            <div class="box_bottom_txt">
+                <!--<p>지금은 코크 살균 대기 중입니다!</p>-->
+                <!--<p>지금은 코크 살균 진행 중입니다!</p>-->
+                <p>코크 살균이 완료 되었습니다!</p>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- wrap_contents_area -->
+</div>
+</div>
+</body>
+</html>

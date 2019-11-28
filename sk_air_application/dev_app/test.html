@@ -1,0 +1,86 @@
+
+<!-- saved from url=(0043)http://iot.ubiveloxmobile.com/skt/test.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<script src="js/lib/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div>
+<button type="button" onclick="callSide()">사이드메뉴</button> <br> 
+<button type="button" onclick="currentPosition()">GPS</button>
+<div id="currentPosition"></div>  
+<button type="button" onclick="getLoginId()">로그인아이디</button>  
+<div id="getLoginId"></div>  
+<button type="button" onclick="callLoginView()">로그인 화면 호출</button>  
+<div id="callbackLoginResult"></div>  
+</div>
+
+<script>
+var isMobile = {
+        Android: function () {
+                 return navigator.userAgent.match(/Android/i) == null ? false : true;
+        },
+        BlackBerry: function () {
+                 return navigator.userAgent.match(/BlackBerry/i) == null ? false : true;
+        },
+        IOS: function () {
+                 return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
+        },
+        Opera: function () {
+                 return navigator.userAgent.match(/Opera Mini/i) == null ? false : true;
+        },
+        Windows: function () {
+                 return navigator.userAgent.match(/IEMobile/i) == null ? false : true;
+        },
+        any: function () {
+                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IOS() || isMobile.Opera() || isMobile.Windows());
+        }
+};
+
+window.AirManagerWeb = {
+		callbackCurrentPosition: function (lat, lon) {
+			$('#currentPosition').text('currentPosition lat: ' + lat + '/lon:' + lon)
+		},
+		callbackLoginId: function (loginId) {
+			$('#getLoginId').text('getLoginId: ' + loginId)
+		},
+		callbackLoginResult: function (loginId) {
+			$('#callbackLoginResult').text('callbackLoginResult: ' + loginId)
+		}
+};
+
+function callSide() {
+	if(isMobile.Android()){
+		window.AirManager.callSideMenu();
+	}else{
+		window.webkit.messageHandlers.AirManager.postMessage({command:"callSideMenu"});
+	}
+}
+function currentPosition() {
+	if(isMobile.Android()){
+		window.AirManager.currentPosition();
+	}else{
+		window.webkit.messageHandlers.AirManager.postMessage({command:"currentPosition"});
+	}
+}
+function getLoginId() {
+	if(isMobile.Android()){
+		window.AirManager.getLoginId();
+	}else{
+		window.webkit.messageHandlers.AirManager.postMessage({command:"getLoginId"});
+	}
+}
+function callLoginView() {
+	if(isMobile.Android()){
+		window.AirManager.callLoginView();
+	}else{
+		window.webkit.messageHandlers.AirManager.postMessage({command:"callLoginView"});
+	}
+}
+		
+
+</script>
+
+
+</body></html>

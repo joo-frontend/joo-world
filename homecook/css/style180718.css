@@ -1,0 +1,13 @@
+/*community*/
+.area_write_cate dl dd {
+    float: right;
+    width: calc(100% - 7.067em);
+}
+.area_write_cate dl dd + dd {
+    margin-top: 0.8em;
+}
+/*select search*/
+.form-control {
+    width: 28.333em !important;
+}
+

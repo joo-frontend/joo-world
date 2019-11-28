@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>페이지목록 | cocobot</title>
+    <link href="css/ui/ui.style.css" rel="stylesheet" type='text/css'>
+    <style type="text/css">
+        h3.title {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-size: 17px;
+        }
+
+        .logo {
+            background: #ff718e;
+        }
+
+        .wrap_header .header {
+            margin: 0 auto;
+        }
+
+        .wrap_header {
+            background: #fff;
+        }
+
+        .table {
+            width: 95%;
+            margin: 0 auto 15px auto;
+        }
+
+        .table thead th {
+            font-weight: 700;
+            border-bottom: #aaaaaa 2px solid;
+        }
+
+        .table thead tr th{
+            background: #eeeeee;
+        }
+        .table td {
+            height: 30px;
+            border-bottom: #ddd 1px solid;
+            text-align: center;
+            background: #ffff;
+            font-size: 12px;
+        }
+
+        .table td:first-child {
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .table td a {
+            color: #ff718e;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .O {
+            color: #ff718e;
+        }
+
+        .X {
+            color: gray;
+        }
+
+    </style>
+    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<div class="wrap_header" style="border-bottom:1px solid #cccccc">
+    <div class="header">
+        <div class="logo" style="text-align: center">
+            <img src="images/login/img_splash_logo.png" alt="" style="width: 100px">
+        </div>
+    </div>
+</div>
+<div class="wrap_contents wrap_contents_gray">
+    <div class="section_contents">
+
+        <h3 class="title">회원가입 & 로그인</h3>
+        <div>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 17%;">
+                    <col style="width: 13%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>화면명</th>
+                    <th>퍼블리싱</th>
+                    <th>Link</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>메인</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/main.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>메인 펼침</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/main_open.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>quiz01</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_01.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>quiz02</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_02.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>quiz03</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_03.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>quiz04</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_04.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>quiz05</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_05.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>quiz06</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_06.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>회원가입</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/quiz_finish.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>회원가입 정보입력</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/sign_in.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>회원가입 정보입력 오류</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/sign_in_error.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>회원가입 정보입력 완료</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/sign_in_success.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>로그인</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/login.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>로그인 오류</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/login_error.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>비밀번호 찾기 (팝업)</td>
+                    <td class="O">O</td>
+                    <td><a href="html/login/popup_find_pw.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <h3 class="title">픽</h3>
+        <div>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 17%;">
+                    <col style="width: 13%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>화면명</th>
+                    <th>퍼블리싱</th>
+                    <th>Link</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>픽</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_main.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>픽_트렌드리스트</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_trend_list.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>픽_트렌드리스트_상세_1</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_trend_list_detail.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>픽_트렌드리스트_상세_2</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_trend_list_detail_2.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>픽_피부고민별_상세_2</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_skin_type_detail.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>[Ppopup]픽_제품라인</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_product_line(popup).html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>픽_브랜드별</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_category.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>픽_상세</td>
+                    <td class="O">O</td>
+                    <td><a href="html/pick/pick_detail.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="title">톡</h3>
+        <div>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 17%;">
+                    <col style="width: 13%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>화면명</th>
+                    <th>퍼블리싱</th>
+                    <th>Link</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>톡_메인</td>
+                    <td class="O">O</td>
+                    <td><a href="html/talk/talk_main.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>톡_기본</td>
+                    <td class="O">O</td>
+                    <td><a href="html/talk/talk_type1.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>톡_대화형</td>
+                    <td class="O">O</td>
+                    <td><a href="html/talk/talk_type2.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="title">설정</h3>
+        <div>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 60%;">
+                    <col style="width: 17%;">
+                    <col style="width: 13%;">
+                    <col style="width: 10%;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>화면명</th>
+                    <th>퍼블리싱</th>
+                    <th>Link</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>설정_메인</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_main.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_즐겨찾기 제품이 없을 경우</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_bookmark_none.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_화장대 제품이 없을 경우</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_cosmetic_none.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_즐겨찾기 리스트</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_bookmark.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_화장대 리스트</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_cosmetic.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_공지사항/이벤트</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_notice_event.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_공지 상세화면</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_notice_detail.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_이용가이드</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_guide.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_FAQ</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_faq.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_버전정보</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_version.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_서비스 이용약관</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_terms.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>설정_내정보</td>
+                    <td class="O">O</td>
+                    <td><a href="html/setting/setting_my_info.html">Link</a></td>
+                    <td>-</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

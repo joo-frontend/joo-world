@@ -1,0 +1,483 @@
+.register_top_box {
+    width: 100%;
+    display: flex;
+}
+.register_top_box .register_left {
+    width: 50%;
+}
+.register_top_box .register_right {
+    width: 40%;
+    position: relative;
+}
+.register_top_box .link_btn_box {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-top: 20px;
+}
+.register_top_box .link_btn_box a {
+    margin: 0;
+}
+.register_right .profile_line {
+    display: flex;
+    align-items: center;
+}
+.register_right .profile_line .profile_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.register_right .profile_line .user_name {
+    font-size: 0.875rem;
+    font-weight: 200;
+    color: #fff;
+    margin: 0 15px;
+}
+.register_right .profile_line .user_name span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.register_right .profile_line .see_profile_btn {
+    font-size: 0.8125rem;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 7.5rem;
+    height: 2rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meetingDate_box {
+    margin-top: 30px;
+}
+.meetingDate_box .meetingDate_title {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 5px;
+}
+.meetingDate_box .meetingDate_table {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px 0;
+}
+.meetingDate_box .meetingDate_line {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+}
+.meetingDate_box .meetingDate_th {
+    width: 20%;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+.meetingDate_box .meetingDate_td {
+    font-size: 1.125rem;
+    font-weight: 100;
+    color: #fff;
+}
+.meetingDate_box .meetingDate_td span {
+    font-weight: 500;
+    font-size: 1.375rem;
+}
+
+
+
+.project_temp_wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #377AEF;
+}
+.project_temp_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.project_temp_box {
+    width: 100%;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.project_temp_left {
+    width: 45%;
+}
+.project_temp_left > p {
+    font-size: 1.875rem;
+    font-weight: 100;
+    color: #fff;
+}
+.project_temp_left > p > span {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #fff;
+}
+.project_temp_right {
+    width: 55%;
+}
+.project_temp_right > p {
+    font-size: 0.8125rem;
+    font-weight: 200;
+    color: #fff;
+    line-height: 2;
+}
+.project_temp_right > p > a {
+    font-size: 0.8125rem;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: underline;
+}
+.project_temp_right > .go_mypage_btn {
+    margin-top: 30px;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.375rem;
+    height: 2.813rem;
+}
+.register_right .pop_pf_pm .member_prtf {
+    right: inherit;
+    top: 4em;
+    left: -2em;
+}
+.member_prtf .pm_info {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #cccccc;
+}
+.member_prtf .pm_info img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+.member_prtf .pm_info span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1em;
+    color: #1e1e1e;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.member_prtf .pm_info span.fr {
+    float: right;
+}
+/*팀구성 완료*/
+.complete_layout {
+    padding: 7% 20px 0;
+    height: 100%;
+    float: left;
+}
+.complete_layout.left {
+    width: 64%;
+    background: #377aef;
+}
+.complete_layout.right {
+    position: relative;
+    width: 36%;
+    float: right;
+    padding-left: 4.8%;
+}
+.complete_layout.right .ani_here {
+    right: 14%;
+}
+.complete_layout.right .btnMainBox a {
+    color: #377aef;
+}
+.complete_layout.right .dotted_line_item{fill:#377aef;}/*흰색으로 변환시 fill:#fff*/
+.complete_layout.right .st_line{fill:none;stroke:#377aef}/*흰색으로 변환시 fill:#fff*/
+.complete_layout.right .out_line_item{fill:none;stroke:#377aef}/*흰색으로 변환시 fill:#fff*/
+.section_complete {
+    max-width: 876px;
+    width: 100%;
+    margin: 0 auto;
+}
+.title_complete {
+    margin-bottom: 3.125em;
+}
+.title_complete .msg {
+    font-size: 2.5em;
+    color: #ffffff;
+    font-weight: 200;
+    line-height: 1.35em;
+    margin-bottom: 0.6em;
+}
+.title_complete .msg b {
+    font-weight: 300;
+}
+.title_complete .desc {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 200;
+    display: inline-block;
+    line-height: 1.6em;
+}
+.title_complete .desc span {
+    font-weight: 500;
+}
+.link_my {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 1.643em;
+    width: 10.643em;
+    height: 3.286em;
+    line-height: 3.2em;
+    font-size: 0.875em;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    margin-top: -1em;
+}
+.right .title_complete .msg  {
+    color: #377aef;
+}
+.right .title_complete .msg b {
+    font-weight: 500;
+}
+.right .title_complete .desc {
+    color: #303030;
+}
+.detail_complete {
+    margin-bottom: 3em;
+}
+.card_detail_info {
+    float: left;
+}
+.card_detail_info.last {
+    float: right;
+}
+.bidding_step_box .title,
+.card_detail_info .title {
+    color: #ffffff;
+    font-size: 0.813em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+.card_detail_info .card_team {
+    background: #ffffff;
+    width: 25.625em;
+    height: 11.438em;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.4);
+}
+.card_detail_info.last .item_info_team {
+    padding: 0.8em 0;
+}
+.item_info_team {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.item_info_team.last {
+    border-bottom: 0;
+}
+.item_info_team .lb {
+    display: inline-block;
+    vertical-align: top;
+    color: #377aef;
+    width: 4.125rem;
+    font-size: 0.750rem;
+    padding-left: 1em;
+    line-height: 2em;
+}
+.item_info_team .info {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 4px - 4.125rem);
+}
+.item_info_team .info .pm,
+.item_info_team .info p {
+    font-size: 0.875em;
+}
+.item_info_team .info .role {
+    font-weight: 200;
+}
+.item_info_team .info .tel {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.item_info_team .info .tel img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.4em;
+}
+.card_detail_info.last .info p {
+    font-weight: 200;
+    font-size: 1.209em;
+}
+.card_detail_info.last .icon_info {
+    display: inline-block;
+    width: 2em;
+    vertical-align: middle;
+}
+.card_detail_info.last .info p {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.card_detail_info.last .info p b {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.card_detail_info.last .item_info_team .lb {
+    line-height: 2.4em;
+}
+/* 등록 성공 */
+.project_finish_wrap {
+    height: 100vh;
+    padding: 4.938em 20px 0;
+    background: #377aef;
+    text-align: center;
+}
+
+.txt_finish_area {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding: 15% 13% 0 0;
+
+}
+.txt_finish_area p.title {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 3.050em;
+    margin-bottom: 0.5em;
+    line-height: 1.4em;
+}
+.txt_finish_area .desc {
+    color: #ffffff;
+    font-size: 1.25em;
+    font-weight: 200;
+}
+.move_page_box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.move_page_box a {
+    display: block;
+    color: #ffffff;
+    font-size: 0.875em;
+    border: 1px solid #ffffff;
+    height: 3.286em;
+    line-height: 3.286em;
+    width: 10.714em;
+    text-align: center;
+    margin-top: 1.2em;
+    border-radius: 1.643em;
+}
+/*project 브리핑*/
+.project_summary {
+    padding: 5% 20px;
+    background: #377aef;
+}
+.area_summary_pj {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.area_summary_pj .box_title_s p {
+    color: #ffffff;
+    font-size: 1.875em;
+    font-weight: 200;
+}
+.area_summary_pj .box_title_s p span {
+    font-weight: 400;
+}
+.box_info_s {
+    width: 20.938em;
+}
+.box_info_s .lb {
+    font-size: 1.25em;
+    margin-bottom: 1.3em;
+    padding: 0 0.4em 0.5em;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+.box_info_s .lb img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.back_move {
+    color: #ffffff;
+    font-size: 0.6em;
+    float: right;
+    height: 2.583em;
+    line-height: 2.583em;
+    width: 6.056em;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1.296em;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid #ffffff;
+}
+.box_info_s .price p {
+    color: #ffffff;
+    font-size: 1.25em;
+}
+.box_info_s .price b {
+    font-size: 3.950em;
+}
+.range_pj .day {
+    font-size: 0.938em;
+    color: #ffffff;
+    margin-bottom: 0.7em;
+}
+.range_pj .date  {
+    margin-bottom: 1em;
+}
+.range_pj .date p {
+    background: #ffffff;
+    font-size: 1.813em;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0 0.4em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+    color: #2b2b2b;
+}
+.range_pj .date span {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #ffffff;
+    font-size: 0.750em;
+    margin: 0 0.5em 0 0.2em;
+}
+.range_pj .date .alone {
+    width: 1.276em;
+    padding: 0;
+}
+.range_pj .date .alone.zero {
+    color: rgba(43,43,43,0.3);
+}
+.scope_pj p {
+    font-size: 1.25em;
+    line-height: 1.6em;
+    color: #ffffff;
+    padding-left: 1em;
+    font-weight: 300;
+}

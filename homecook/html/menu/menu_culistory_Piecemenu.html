@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <meta property="og:title" content="US-HOME"/>
+    <meta property="og:description" content="US-HOME"/>
+    <meta name="description" content="US-HOME">
+    <meta property="og:site_name" content="US-HOME"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://US-HOME/images/kakao_thumbnail.jpg"/>
+    <meta property="og:url" content="URL입력"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="210"/>
+    <title>Homecook</title>
+    <link rel="stylesheet" href="../../js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+<div class="wra">
+    <!--header-->
+    <div class="wra_header wra_header_white">
+        <div class="area_header">
+            <div class="box_logo"><a href="#"><img src="../../images/header/bi_culistory.png" alt=""></a></div>
+            <div class="box_gnb box_gnb_main">
+                <ul class="clearfix">
+                    <li class=""><a href="#">컬리스토리란?</a></li>
+                    <li><a href="#">컬리스토리 메뉴</a></li>
+                    <li><a href="#">에듀밀</a></li>
+                    <li><a href="#">주간레시피</a></li>
+                    <li class="m_community"><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="box_gnb box_gnb_user">
+                <p class="lang_user"><select name="select_lang" class="selectbox_lang">
+                    <option value="lang_kor">한국어</option>
+                    <option value="lang_eng">영어</option>
+                </select></p>
+                <ul>
+                    <li class=""><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                </ul>
+            </div>
+            <div class="box_menu">
+                <a href="#" class="search"></a>
+                <a href="#" class="mypage"></a>
+                <a href="#" class="mycart"></a>
+            </div>
+        </div>
+    </div>
+    <!--search area-->
+    <div class="wra_search_active">
+        <p class="search_txt">키워드를 입력하세요</p>
+        <form action="">
+            <p class="serach_area">
+                <input type="text" class="search_txtbox" placeholder="검색어">
+                <button type="submit"></button>
+            </p>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="contents">
+            <div id="pageMenu2_2" class="page_wra">
+                <!--메뉴 gnb-->
+                <div class="wra_culi_menu_gnb">
+                    <ul class="clearfix">
+                        <li class=""><a href="menu_culistory_showMenu.html">메뉴보기</a></li>
+                        <li class="focus"><a href="menu_culistory_choice_menuType.html">메뉴구매</a></li>
+                        <li class=""><a href="menu_culistory_delivery.html">배송안내</a></li>
+                    </ul>
+                </div>
+                <!--컬리스토리 메뉴-->
+                <div class="wra_menu_contents">
+                    <div class="section_menu_type">
+                        <ul class="clearfix">
+                            <li><a href="menu_culistory_Fixmenu.html">고정메뉴</a></li>
+                            <li class="focus"><a href="menu_culistory_Piecemenu.html">선택메뉴</a></li>
+                        </ul>
+                    </div>
+                    <div class="section_purchase_menu">
+                        <div class="area_menu_type">
+                            <div class="box_menu_type_detail">
+                                <div class="guide_menu_type purchase">
+                                    <p class="title">[구매안내]</p>
+                                    <p class="desc">
+                           <span>12가지 메뉴 중 구매하실 메뉴를<br>
+                           <i>3개 체크(3가지 - 한묶음)</i>하면,</span><br>
+                                        장바구니에 담으실 수 잇으며 바로 결제 가능합니다
+                                    </p>
+                                </div>
+                                <div class="bar"></div>
+                                <div class="guide_menu_type delivery">
+                                    <p class="title">[배송안내]</p>
+                                    <ul>
+                                        <li>상품 선택 후 배송일을 선택하세요</li>
+                                        <li>매주 화요일 낮 12시 주문 마감 (목요일 일괄배송)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="area_fix_menu_contents">
+                                <p class="all_num_pd">총 상품 <span class="f_mont">12</span></p>
+                                <div class="box_piece_menu">
+                                    <div class="purchase_menu_btn">
+                                        <div class="delivery_date">
+                                            <p>선택한 배송일 ㅣ <span>06월 21일(목)</span></p>
+                                        </div>
+                                        <p class="menu_cart">
+                                            <button type="submit" class="cart_btn">장바구니</button>
+                                        </p>
+                                        <p class="menu_delivery">
+                                            <button type="submit" class="delivery_btn">배송일 선택</button>
+                                        </p>
+                                    </div>
+
+                                    <div class="product_list_piece">
+                                        <ul class="clearfix">
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu1"
+                                                                                name="menu_pick_piece1"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu1">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_1"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">새싹비빔밥
+                                                            <input type="hidden" name="piecePd_1" class="piecePd" value="새싹비빔밥">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">11,000</span>원
+                                                            <input type="hidden" name="piecePd_price_1" class="piecePd_price"
+                                                                   value="11000">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu2"
+                                                                                name="menu_pick_piece2"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu2">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_2"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">차돌된장찌개
+                                                            <input type="hidden" name="piecePd_2" class="piecePd" value="차돌된장찌개">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">13,000</span>원
+                                                            <input type="hidden" name="piecePd_price_2" class="piecePd_price"
+                                                                   value="13000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu3"
+                                                                                name="menu_pick_piece3"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu3">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_3"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">두부김치
+                                                            <input type="hidden" name="piecePd_3" class="piecePd" value="두부김치"></p>
+                                                        <p class="price"><span class="f_mont">15,000</span>원
+                                                            <input type="hidden" name="piecePd_price_3" class="piecePd_price"
+                                                                   value="15000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu4"
+                                                                                name="menu_pick_piece4"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu4">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_4"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">닭볶음탕
+                                                            <input type="hidden" name="piecePd_4" class="piecePd" value="닭볶음탕"></p>
+                                                        <p class="price"><span class="f_mont">12,000</span>원
+                                                            <input type="hidden" name="piecePd_price_4" class="piecePd_price"
+                                                                   value="12000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu5"
+                                                                                name="menu_pick_piece5"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu5">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_5"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">함박스테이크
+                                                            <input type="hidden" name="piecePd_5" class="piecePd" value="함박스테이크">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">19,000</span>원
+                                                            <input type="hidden" name="piecePd_price_5" class="piecePd_price"
+                                                                   value="19000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu6"
+                                                                                name="menu_pick_piece6"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu6">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_6"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">돼지묵은지찌개
+                                                            <input type="hidden" name="piecePd_6" class="piecePd" value="돼지묵은지찌개">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">14,000</span>원
+                                                            <input type="hidden" name="piecePd_price_6" class="piecePd_price"
+                                                                   value="14000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu7"
+                                                                                name="menu_pick_piece7"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu7">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_7"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">숙주삽결살볶음
+                                                            <input type="hidden" name="piecePd_7" class="piecePd" value="숙주삽결살볶음">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">18,000</span>원
+                                                            <input type="hidden" name="piecePd_price_7" class="piecePd_price"
+                                                                   value="18000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu8"
+                                                                                name="menu_pick_piece8"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu8">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_8"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">찹스테이크
+                                                            <input type="hidden" name="piecePd_8" class="piecePd" value="찹스테이크"></p>
+                                                        <p class="price"><span class="f_mont">24,000</span>원
+                                                            <input type="hidden" name="piecePd_price_8" class="piecePd_price"
+                                                                   value="24000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu9"
+                                                                                name="menu_pick_piece9"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu9">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_9"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">마파두부
+                                                            <input type="hidden" name="piecePd_9" class="piecePd" value="마파두부"></p>
+                                                        <p class="price"><span class="f_mont">12,000</span>원
+                                                            <input type="hidden" name="piecePd_price_9" class="piecePd_price"
+                                                                   value="12000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu10"
+                                                                                name="menu_pick_piece10"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu10">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_10"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">혼제오리겨자채
+                                                            <input type="hidden" name="piecePd_10" class="piecePd" value="혼제오리겨자채">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">14,000</span>원
+                                                            <input type="hidden" name="piecePd_price_10" class="piecePd_price"
+                                                                   value="14000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu11"
+                                                                                name="menu_pick_piece11"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu11">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_11"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">돼지고기김치찜
+                                                            <input type="hidden" name="piecePd_11" class="piecePd" value="돼지고기김치찜">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">18,000</span>원
+                                                            <input type="hidden" name="piecePd_price_11" class="piecePd_price"
+                                                                   value="18000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="">
+                                                <div class="purchase_pd purchase_piece clearfix">
+                                                    <p class="menu_pick"><input type="checkbox" id="piece_menu12"
+                                                                                name="menu_pick_piece12"
+                                                                                class="pick_chk">
+                                                        <label for="piece_menu12">메뉴선택</label></p>
+                                                    <div class="menu_num">
+                                                        <span class="order_num_title">주문수량</span>
+                                                        <p class="field_num">
+                                                            <input type="hidden" value="1" name="piece_menu_num_12"
+                                                                   class="order_numbox_hide">
+                                                            <input type="number" class="order_numbox" value="1" disabled>
+                                                            <span class="up"></span><span class="down"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product_preview">
+                                                    <a href="#" class="img_product">
+                                                        <img src="http://www.placehold.it/301X226" alt="">
+                                                    </a>
+                                                    <div class="info_product">
+                                                        <p class="name">소고기버섯전골
+                                                            <input type="hidden" name="piecePd_12" class="piecePd" value="소고기버섯전골">
+                                                        </p>
+                                                        <p class="price"><span class="f_mont">16,000</span>원
+                                                            <input type="hidden" name="piecePd_price_12" class="piecePd_price"
+                                                                   value="16000"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="wra_footer">
+        <!--main-userlink-->
+        <div class="area_link_user">
+            <a href="#" class="move_user_center">FAQ</a>
+            <a href="#" class="move_user_center">1:1문의</a>
+            <a href="#" class="move_user_center">공지사항</a>
+        </div>
+        <div class="area_shop_info">
+            <ul>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_call.png" alt="">고객센터</span>
+                        <p><span>010.3336.4643</span><span>월-금  ㅣ  10:00 - 17:00</span><span>토·일·공휴일  ㅣ  휴무</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_mail.png" alt="">E-mail</span>
+                        <p><span>jskang402@gmail.com</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_bank.png" alt="">입금정보</span>
+                        <p><span>하나은행 316-910028-80205</span><span>예금주 : (주)홈쿡</span></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area_footer">
+            <div class="footer_link">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="footer_desc">
+                <p>상호명 : 농업회사법인 누리(주) <span></span>대표 : 강주석<span></span>개인정보관리책임자 : 강주석<br>
+                    전화 : 010-3336-4643<span></span>이메일 : jskang402@gmail.com<span></span>회사 이메일 :
+                    NU***@**********<span></span>사업자등록번호 : 263-87-00956<br>
+                    주소 : 전라북도 익산시 왕국면 동촌제길 110 식품벤처센터 F동 348호
+                <p>Copyright ⓒ 2016 컬리스토리 All right reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop pop_cart">
+    <div class="popup">
+        <div class="popup_contents">
+            <a href="#" class="close_pop"><img src="../../images/menu/menu9_close.png" alt=""></a>
+            <div class="title_popup">
+                <p class="title_cart">장바구니</p>
+            </div>
+            <div class="list_cart_preview">
+                <table class="">
+                    <thead>
+                    <tr>
+                        <th width="50%">메뉴명</th>
+                        <td>가격 / 수량</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>차돌된장찌개</th>
+                        <td><span class="price_pop">13,000원</span>x<span class="num_pop">1개</span></td>
+                    </tr>
+                    <tr>
+                        <th>두부김치</th>
+                        <td><span class="price_pop">15,000원</span>x<span class="num_pop">1개</span></td>
+                    </tr>
+                    <tr>
+                        <th>닭볶음탕</th>
+                        <td><span class="price_pop">12,000원</span>x<span class="num_pop">1개</span></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>합계(원)</th>
+                        <td><b>40,000원</b></td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="btn_group_pop">
+                <button type="submit" class="btn_submit_pop">장바구니 담기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop pop_delivery_date">
+    <div class="popup">
+        <div class="popup_contents">
+            <a href="#" class="close_pop"><img src="../../images/menu/menu9_close.png" alt=""></a>
+            <div class="title_popup">
+                <p class="title_delivery">배송일 선택</p>
+            </div>
+            <div class="list_delivery_date">
+                <ul>
+                    <li>
+                        <div class="datebox">
+                            <input type="radio" class="chk_circle" name="chk_date" id="chk_date1" checked><label
+                                for="chk_date1"></label>
+                            <span>06월 21일(목)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datebox">
+                            <input type="radio" class="chk_circle" id="chk_date2" name="chk_date"><label
+                                for="chk_date2"></label>
+                            <span>06월 28일(목)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datebox">
+                            <input type="radio" class="chk_circle" id="chk_date3" name="chk_date"><label
+                                for="chk_date3"></label>
+                            <span>07월 05일(목)</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datebox">
+                            <input type="radio" class="chk_circle" id="chk_date4" name="chk_date"><label
+                                for="chk_date4"></label>
+                            <span>07월 12일(목)</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="btn_group_pop">
+                <button type="submit" class="btn_submit_pop">저장</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop pop_cart_success">
+    <div class="popup">
+        <div class="popup_contents">
+            <div class="complete_txt">
+                <p class="txt_desc_pop">선택하신 상품을 장바구니에 담았습니다</p>
+            </div>
+            <div class="btn_group_pop">
+                <button type="submit" class="btn_submit_pop">장바구니 확인</button>
+                <button class="btn_submit_pop btn_close_pop">메뉴 계속 보기</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop pop_alert_num">
+    <div class="popup">
+        <div class="popup_contents">
+            <div class="complete_txt">
+                <p class="txt_desc_pop">주문하실 상품을 3개 선택하세요</p>
+                <p class="txt_etc_pop">3가지가 한묶음으로 주문·배송됩니다</p>
+            </div>
+            <div class="btn_group_pop">
+                <button class="btn_submit_pop btn_close_pop">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

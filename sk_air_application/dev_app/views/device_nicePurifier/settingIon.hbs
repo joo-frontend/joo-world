@@ -1,0 +1,14 @@
+<!--
+<div class="box_card _ion">
+    <p class="card_title title_alone">이온</p>
+    <input type="checkbox" class="icon_check toggle_default" checked>
+</div>-->
+
+<div class="box_card _ion">
+    <p class="card_title title_alone">이온</p>
+    {{#each openDeviceList}}
+        {{#isIon fncCd}}
+            <input type="checkbox" class="icon_check toggle_default" data-fncCd="{{fncCd}}" data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="{{fncVal}}" {{isOn fncVal}}>
+        {{/isIon}}
+    {{/each}}
+</div>

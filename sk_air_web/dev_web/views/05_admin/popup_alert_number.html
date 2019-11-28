@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK School Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="../../js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+
+<!-- 숫자만 입력가능 팝업 -->
+<div class="dim_block popup01" style="display: block">
+    <div class="wrap_popup wrap_popup_alert">
+        <div class="pop_header">
+            <h1>알림</h1>
+            <a href="#" class="btn_close _popup_close">
+                <img src="../../images/common/img_pop_close.png" alt="X">
+            </a>
+        </div>
+        <div class="pop_contents">
+            <p>숫자만 입력 가능합니다.</p>
+        </div>
+
+        <div class="pop_btn">
+            <a href="#" class="btn btn_lg btn_orange">확인</a>
+        </div>
+
+    </div>
+</div>
+<!-- //숫자만 입력가능 팝업 -->
+
+<!-- ui library -->
+<script type="text/javascript" src="../../js/ui/ui.util.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.common.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.page.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.init.js"></script>
+<script>
+    /**
+     * 팝업열기 클래스 _popup_open
+     * 팝업열기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.showPopup('.popup01');
+
+    /**
+     * 팝업닫기 클래스 _popup_close
+     * 팝업 닫기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.closePopup('.popup01');
+</script>
+
+
+</body>
+</html>

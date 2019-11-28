@@ -1,0 +1,8 @@
+<div class="box_card _plasmawave">
+    <p class="card_title title_alone">공기정화<span>PLASMAWAVE</span></p>
+    {{#each openDeviceList}}
+        {{#isPlasmaWave fncCd}}
+            <input type="checkbox" class="icon_check toggle_default" data-fncCd="{{fncCd}}"  data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="{{fncVal}}" {{isOn fncVal}}>
+        {{/isPlasmaWave}}
+    {{/each}}
+</div>

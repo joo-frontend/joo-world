@@ -1,0 +1,23 @@
+<div class="area_box_list" data-makernm="{{makerNm}}">
+    <div id="power"></div>
+    {{#each openDeviceList}}
+        {{#isMode fncCd}}
+            <div id="mode"></div>
+        {{/isMode}}
+    {{/each}}
+    {{#each openDeviceList}}
+        {{#isVolume fncCd}}
+            <div id="volume"></div>
+        {{/isVolume}}
+    {{/each}}
+    <div id="turnOff"></div>
+    {{#each openDeviceList}}
+        {{#isFilterused fncCd}}
+            <div id="filterUsed"></div>
+        {{/isFilterused}}
+    {{/each}}
+    {{#isAlarm actMsg}}
+        <div id="alarm"></div>
+    {{/isAlarm }}
+    <div id="infomation"></div>
+</div>

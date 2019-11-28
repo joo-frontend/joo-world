@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <meta property="og:title" content="US-HOME"/>
+    <meta property="og:description" content="US-HOME"/>
+    <meta name="description" content="US-HOME">
+    <meta property="og:site_name" content="US-HOME"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://US-HOME/images/kakao_thumbnail.jpg"/>
+    <meta property="og:url" content="URL입력"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="210"/>
+    <title>Homecook</title>
+    <link href="../../js/dropzone/dropzone.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/cart.css">
+    <link rel="stylesheet" href="../../css/community.css">
+    <link rel="stylesheet" href="../../css/meal.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="wra">
+    <!--header-->
+    <div class="wra_header wra_header_white">
+        <div class="area_header">
+            <div class="box_logo"><a href="#"><img src="../../images/header/bi_culistory.png" alt=""></a></div>
+            <div class="box_gnb box_gnb_main">
+                <ul class="clearfix">
+                    <li class=""><a href="#">컬리스토리란?</a></li>
+                    <li><a href="#">컬리스토리 메뉴</a></li>
+                    <li class="focus"><a href="#">에듀밀</a></li>
+                    <li><a href="#">주간레시피</a></li>
+                    <li class="m_community"><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="box_gnb box_gnb_user">
+                <p class="lang_user"><select name="select_lang" class="selectbox_lang">
+                    <option value="lang_kor">한국어</option>
+                    <option value="lang_eng">영어</option>
+                </select></p>
+                <ul>
+                    <li class=""><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                </ul>
+            </div>
+            <div class="box_menu">
+                <a href="#" class="search"></a>
+                <a href="#" class="mypage"></a>
+                <a href="#" class="mycart"></a>
+            </div>
+        </div>
+    </div>
+    <!--search area-->
+    <div class="wra_search_active">
+        <p class="search_txt">키워드를 입력하세요</p>
+        <form action="">
+            <p class="serach_area">
+                <input type="text" class="search_txtbox" placeholder="검색어">
+                <button type="submit"></button>
+            </p>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="contents">
+            <div id="pageWriteSnack" class="page_wra">
+                <div class="wra_write">
+                    <div class="area_meal_menu">
+                        <ul class="clearfix">
+                            <li><a href="meal_main.html">에듀밀</a></li>
+                            <li class="focus"><a href="meal_snack.html">간식소개</a></li>
+                            <li><a href="meal_month.html">월간식 구매</a></li>
+                            <li><a href="meal_nutrient.html">필수영양소 분류</a></li>
+                        </ul>
+                    </div>
+                    <p class="vacuum"></p>
+                    <form>
+                        <div class="area_write_cate">
+                            <dl class="clearfix">
+                                <dt>작성자</dt>
+                                <dd><input type="text" class="textbox textbox_sm" name="writer_snack"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>대표 효능</dt>
+                                <dd><input type="text" class="textbox" name="repre_effect_snack" placeholder="대표 효능을 입력하세요"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>효능 설명</dt>
+                                <dd><input type="text" class="textbox" name="repre_effect_desc_snack" placeholder="효능에 대한 설명을 입력하세요"></dd>
+                            </dl>
+                        </div>
+                        <div class="area_write_cate area_write_snack">
+                            <p class="snack_title">첫번째 간식</p>
+                            <dl class="clearfix">
+                                <dt>제목</dt>
+                                <dd><input type="text" class="textbox" name="title_snack1" placeholder="간식명을 입력하세요 "></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>한줄소개</dt>
+                                <dd><input type="text" class="textbox" name="intro_snack1" placeholder="한줄소개를 입력하세요"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>영양성분</dt>
+                                <dd class="form_snack_component">
+                                    <div class="component_box">
+                                    <input type="text" class="textbox textbox_sm" name="component1_snack1" placeholder="성분명">
+                                    <input type="text" class="textbox textbox_sm" name="component_content1_snack1" placeholder="함량">
+                                    </div>
+                                    <div class="component_box">
+                                    <input type="text" class="textbox textbox_sm" name="component2_snack1" placeholder="성분명">
+                                    <input type="text" class="textbox textbox_sm" name="component_content2_snack1" placeholder="함량">
+                                    </div>
+                                    <div class="component_box">
+                                    <input type="text" class="textbox textbox_sm" name="component3_snack1" placeholder="성분명">
+                                    <input type="text" class="textbox textbox_sm" name="component_content3_snack1" placeholder="함량">
+                                    </div>
+                                </dd>
+                                <p class="add_box"><a href="#" class="add_item_btn">추가 <img src="../../images/community/p16/p16_add.png" alt=""></a></p>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>내용</dt>
+                                <dd>
+                                    <textarea class="txtbox_snack" name="txt_desc_snack1" placeholder="내용을 입력하세요"></textarea>
+                                </dd>
+                            </dl>
+                            <div class="box_attach_photo">
+                                <p class="title">대표파일</p>
+                                <div class="upload_contract">
+							    <span class="filetype">
+							    	<span class="file-btn"><img src="../../images/community/p16/p16_camera_small.png" alt="">사진등록</span><input type="text" class="file-text" multiple disabled />
+							    	<span class="file-select"><input type="file" name="file_attach_snack1" class="input-file" size="3"></span>
+							    </span>
+                                    <p class="desc">* 대표사진을 업로드하세요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area_write_cate area_write_snack">
+                            <p class="snack_title">두번째 간식</p>
+                            <dl class="clearfix">
+                                <dt>제목</dt>
+                                <dd><input type="text" class="textbox" name="title_snack2" placeholder="간식명을 입력하세요 "></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>한줄소개</dt>
+                                <dd><input type="text" class="textbox" name="intro_snack2" placeholder="한줄소개를 입력하세요"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>영양성분</dt>
+                                <dd>
+                                    <div class="component_box">
+                                        <input type="text" class="textbox textbox_sm" name="component1_snack2" placeholder="성분명">
+                                        <input type="text" class="textbox textbox_sm" name="component_content1_snack2" placeholder="함량">
+                                    </div>
+                                    <div class="component_box">
+                                        <input type="text" class="textbox textbox_sm" name="component2_snack2" placeholder="성분명">
+                                        <input type="text" class="textbox textbox_sm" name="component_content2_snack2" placeholder="함량">
+                                    </div>
+                                    <div class="component_box">
+                                        <input type="text" class="textbox textbox_sm" name="component3_snack2" placeholder="성분명">
+                                        <input type="text" class="textbox textbox_sm" name="component_content3_snack2" placeholder="함량">
+                                    </div>
+
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>내용</dt>
+                                <dd>
+                                    <textarea class="txtbox_md" name="txt_desc_snack2" placeholder="내용을 입력하세요"></textarea>
+                                </dd>
+                            </dl>
+                            <div class="box_attach_photo">
+                                <p class="title">대표파일</p>
+                                <div class="upload_contract">
+							    <span class="filetype">
+							    	<span class="file-btn"><img src="../../images/community/p16/p16_camera_small.png" alt="">사진등록</span><input type="text" class="file-text" multiple disabled />
+							    	<span class="file-select"><input type="file" name="file_attach_snack2" class="input-file" size="3"></span>
+							    </span>
+                                    <p class="desc">* 대표사진을 업로드하세요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area_write_cate area_write_snack">
+                            <p class="snack_title">세번째 간식</p>
+                            <dl class="clearfix">
+                                <dt>제목</dt>
+                                <dd><input type="text" class="textbox" name="title_snack3" placeholder="간식명을 입력하세요 "></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>한줄소개</dt>
+                                <dd><input type="text" class="textbox" name="intro_snack3" placeholder="한줄소개를 입력하세요"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>영양성분</dt>
+                                <dd>
+                                    <div class="component_box">
+                                        <input type="text" class="textbox textbox_sm" name="component1_snack3" placeholder="성분명">
+                                        <input type="text" class="textbox textbox_sm" name="component_content1_snack3" placeholder="함량">
+                                    </div>
+                                    <div class="component_box">
+                                        <input type="text" class="textbox textbox_sm" name="component2_snack3" placeholder="성분명">
+                                        <input type="text" class="textbox textbox_sm" name="component_content2_snack3" placeholder="함량">
+                                    </div>
+                                    <div class="component_box">
+                                        <input type="text" class="textbox textbox_sm" name="component3_snack1" placeholder="성분명">
+                                        <input type="text" class="textbox textbox_sm" name="component_content3_snack3" placeholder="함량">
+                                    </div>
+
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>내용</dt>
+                                <dd>
+                                    <textarea class="txtbox_md" name="txt_desc_snack3" placeholder="내용을 입력하세요"></textarea>
+                                </dd>
+                            </dl>
+                            <div class="box_attach_photo">
+                                <p class="title">대표파일</p>
+                                <div class="upload_contract">
+							    <span class="filetype">
+							    	<span class="file-btn"><img src="../../images/community/p16/p16_camera_small.png" alt="">사진등록</span><input type="text" class="file-text" multiple disabled />
+							    	<span class="file-select"><input type="file" name="file_attach_snack3" class="input-file" size="3"></span>
+							    </span>
+                                    <p class="desc">* 대표사진을 업로드하세요</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area_excel_set">
+                            <div class="box_excel">
+                            <p class="title">세트 영양표 약식 다운로드</p>
+                            <a href="" class="download_excel_table" target="_blank"><img src="../../images/meal/p3/p3_download.png" alt="">다운로드</a>
+                                <p class="desc">- 세트 영양표 양식을 다운받아 내용 작성 후 업로드 해주세요 </p>
+                            </div>
+                            <div class="box_excel">
+                            <p class="title">세트 영양표 업로드</p>
+                                <div class="upload_contract">
+							    <span class="filetype">
+							    	<span class="file-btn">파일선택</span><input type="text" class="file-text" multiple disabled />
+							    	<span class="file-select"><input type="file" name="file_attach_set" class="input-file" size="3"></span>
+							    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="area_btn_write_group">
+                            <button type="button" class="btn_post_cancel">취소</button>
+                            <button type="submit" class="btn_post_register">등록</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="wra_footer">
+        <!--main-userlink-->
+        <div class="area_link_user">
+            <a href="#" class="move_user_center">FAQ</a>
+            <a href="#" class="move_user_center">1:1문의</a>
+            <a href="#" class="move_user_center">공지사항</a>
+        </div>
+        <div class="area_shop_info">
+            <ul>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_call.png" alt="">고객센터</span>
+                        <p><span>010.3336.4643</span><span>월-금  ㅣ  10:00 - 17:00</span><span>토·일·공휴일  ㅣ  휴무</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_mail.png" alt="">E-mail</span>
+                        <p><span>jskang402@gmail.com</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_bank.png" alt="">입금정보</span>
+                        <p><span>하나은행 316-910028-80205</span><span>예금주 : (주)홈쿡</span></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area_footer">
+            <div class="footer_link">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="footer_desc">
+                <p>상호명 : 농업회사법인 누리(주) <span></span>대표 : 강주석<span></span>개인정보관리책임자 : 강주석<br>
+                    전화 : 010-3336-4643<span></span>이메일 : jskang402@gmail.com<span></span>회사 이메일 :
+                    NU***@**********<span></span>사업자등록번호 : 263-87-00956<br>
+                    주소 : 전라북도 익산시 왕국면 동촌제길 110 식품벤처센터 F동 348호
+                <p>Copyright ⓒ 2016 컬리스토리 All right reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/previewImg.js"></script>
+<script src="../../js/dropzone/dropzone.js"></script>
+<script src="../../js/script.js"></script>
+<script>
+    /*dropzone*/
+    $('#photo_recipe').dropzone({
+        thumbnailWidth: null,
+        thumbnailHeight:134,
+        uploadMultiple: false,
+    });
+
+    $(document).ready(function() {
+        $.uploadPreview({
+            input_field: "#method_recipe1",
+            preview_box: "#photo_method_recipe1",
+            label_field: ".method_recipe1"
+        });
+    });
+</script>
+</body>
+</html>

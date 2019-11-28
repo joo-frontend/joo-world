@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8a765faf-8b30-420f-9dc5-11a6bcb9ec7c" name="ppanam" url="http://ppanam.dkbrothers.co.kr">
+        <fileTransfer host="ppanam.dkbrothers.co.kr" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

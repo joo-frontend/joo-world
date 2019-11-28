@@ -1,0 +1,54 @@
+@media (max-width: 1600px) {
+    .wra_sound_id .area_sound_id {
+        width: 90%;
+    }
+    .wra_system .area_system_img img {
+        width: 90%;
+    }
+    .wra_client .area_client {
+        max-width: 80%;
+    }
+}
+@media (max-width: 1440px) {
+    html, body {
+        font-size: 15px
+    }
+}
+
+@media (max-width: 1366px) {
+    html, body {
+        font-size: 14px
+    }
+    .main_pagination {
+        right: 2em;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    html, body {
+        font-size: 13px
+    }
+
+}
+
+@media (max-width: 1152px) {
+    html, body {
+        font-size: 12px
+    }
+    .main_pagination {
+        right: 1em;
+    }
+}
+
+@media (max-width: 1024px) {
+    html, body {
+        font-size: 11px
+    }
+}
+
+@media (max-width: 960px) {
+    html, body {
+        font-size: 10px
+    }
+}

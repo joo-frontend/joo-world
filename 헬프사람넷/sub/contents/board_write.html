@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <title>헬프사람넷</title>
+    <!--swiper-->
+    <link rel="stylesheet" href="../../assets/js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!--js-->
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="wra">
+    <div class="header_wra">
+        <div class="header_area">
+            <a href="../../index.html" class="logo"><img src="http://www.placehold.it/82X28" alt=""></a>
+            <ul class="gnb clearfix">
+                <li class="focus"><a href="../contents/board.html">희</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">노</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">애</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">락</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="../customer/notice.html">고객센터</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="search_header">
+                    <input type="text" class="textbox_round" name="mainSearch">
+                    <input type="button" class="btn_search">
+                </div>
+                <!--login 전    'login_type'class에 'active'추가-->
+                <div class="login_type ">
+                    <div class="member_access">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                </div>
+                <!--login 후    'login_type'class에 'active'추가-->
+                <div class="login_type active">
+                    <div class="box_login_menu">
+                        <!--프로필 사진 클릭시 focus class 추가-->
+                        <div class="my_p focus">
+                            <img src="../../assets/images/main/user4_noprofileimage.png" alt="">
+                        </div>
+                        <ul class="sub_menu">
+                            <li><a href="../mypage/my_question.html" class="myM">마이페이지</a></li>
+                            <li><a href="#" class="logoutM">로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="board_wra write_wra">
+            <div class="cate_top_title">
+                <p>창업·취업</p>
+            </div>
+            <div class="board_wrtie_area">
+                <form>
+                    <div class="write_header">
+                        <div class="each_write">
+                            <div class="lb"><p>공개여부</p></div>
+                            <div class="form_contents">
+                                <select name="selectboxOpenType" class="selectbox">
+                                    <option value="">전체공개</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="each_write">
+                            <div class="lb"><p>질문유형</p></div>
+                            <div class="form_contents">
+                                <select name="selectboxQType" class="selectbox">
+                                    <option value="">일반질문</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="each_write">
+                            <div class="lb"><p>보상 포인트</p></div>
+                            <div class="form_contents">
+                                <input type="text" name="rewardPoint" class="textbox textbox_medium" placeholder="보상포인트를 입력하세요 (최소 보상포인트 300P)">
+                                <p class="my_point">보유포인트 500P</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="write_body">
+                        <div class="each_write">
+                            <div class="lb"><p>제목</p></div>
+                            <div class="form_contents">
+                                <input type="text" name="boardTitle" class="textbox" placeholder="제목을 입력하세요">
+                            </div>
+                        </div>
+                        <div class="each_write">
+                            <div class="lb"><p>내용</p></div>
+                        <div class="form_contents">
+                            <textarea name="txtbox_write" name="boardCotents" class="txtbox_write" placeholder="내용을 입력하세요"></textarea>
+                        </div>
+                    </div>
+                        <div class="each_write">
+                            <div class="lb"><p>태그</p></div>
+                            <div class="form_contents form_tag">
+                                <p><input type="text" name="boardTag1" class="textbox textbox_medium"><a href="#" class="add_tag"><img src="../../assets/images/contents/4p/add.png" alt=""></a></p>
+                            </div>
+                        </div>
+                        <div class="each_write">
+                            <div class="lb"><p>첨부파일</p></div>
+                            <div class="form_contents">
+                               <div class="file-upload">
+                                   <label for="audio-upload" class="btn_attach"></label>
+                                   <label for="audio-upload" class="btn_attach_text">파일선택</label>
+                                   <input type="file" name="audio" class="textbox textbox_medium" onchange="readURL(this);" id="audio-upload" /><br />
+                               </div>
+                                <div id="audio-preview"><img src="" alt=""></div>
+                            </div>
+                        </div>
+                       <div class="btn_group"> <button class="register_q">질문 등록하기</button>
+                       </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <div class="footer_wra">
+        <div class="customer_area">
+            <div class="customer_box">
+                <a href="#">FAQ</a>
+                <a href="#">1:1문의</a>
+                <a href="#">개인정보취급방침</a>
+                <a href="#">이용약관</a>
+            </div>
+        </div>
+        <div class="company_area">
+            <a href="../../index.html" class="logo_ft"><img src="http://www.placehold.it/70X70" alt=""></a>
+            <div class="info_com">
+                <div class="">
+                    <p class="ele_com"><span>회사명</span>헬프사람넷</p>
+                    <p class="ele_com"><span>주소</span>경기도 성남시 판교로 1111</p>
+                </div>
+                <div>
+                    <p class="ele_com"><span>대표</span>조현철</p>
+                    <p class="ele_com"><span>대표번호</span>010-9897-2003</p>
+                </div>
+                <div>
+                    <p class="ele_com"><span>사업자등록번호</span>000-000-0000</p>
+                    <p class="ele_com"><span>이메일</span>zhc2000@naver.com</p>
+                </div>
+                <p class="copyright">COPYRIGHT ⓒ 헬프사람넷. ALL RIGHTS RESERVED.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="../../assets/js/swiper-4.3.3/dist/js/swiper.min.js"></script>
+<script src="../../assets/js/script.js"></script>
+<script>
+
+    /*tag add*/
+    function addTag(n) {
+        $(".form_tag").append('<p><input type="text" name="boardTag'+n+'" class="textbox textbox_medium"></p>');
+    }
+    $(".add_tag").click(function () {
+       var nthTag = $(this).parents(".form_tag").find("p").length + 1;
+        addTag(nthTag);
+        return false;
+    });
+    /*upload preview*/
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#audio-preview img')
+                    .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+</script>
+</body>
+</html>

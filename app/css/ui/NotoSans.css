@@ -1,0 +1,24 @@
+/*
+ * NotoSans FONT
+ */
+
+@font-face {
+    font-family: 'Noto-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../fonts/notokr-regular.eot);
+    src: url(../../fonts/notokr-regular?#iefix) format('embedded-opentype'),
+    url(../../fonts/notokr-regular.woff2) format('woff2'),
+    url(../../fonts/notokr-regular.woff) format('woff');
+   /* url(../fonts/NanumGothic-Regular.ttf) format('truetype');*/
+}
+@font-face {
+    font-family: 'Noto-medium';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../../fonts/notokr-medium.eot);
+    src: url(../../fonts/notokr-medium?#iefix) format('embedded-opentype'),
+    url(../../fonts/notokr-medium.woff2) format('woff2'),
+    url(../../fonts/notokr-medium.woff) format('woff');
+  /*  url(../fonts/NanumGothic-Bold.ttf) format('truetype');*/
+}

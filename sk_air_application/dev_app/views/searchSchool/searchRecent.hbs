@@ -1,0 +1,6 @@
+<p class="search_title">최근 검색 학교 <a href="#" class="btn_all_delete">전체 삭제</a></p>
+<ul class="search_list _searchList">
+    {{#each schList}}
+        <li data-school-id="{{serId}}"><a href="#" class="btn_link">{{serKey}}</a> <a href="#" class="btn_delete"><span class="sprite sprite_common sprite_search_delete_p">X</span></a></li>
+    {{/each}}
+</ul>

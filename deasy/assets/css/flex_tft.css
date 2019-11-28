@@ -1,0 +1,1256 @@
+@media (max-width: 1601px) {
+    .calendar_meeting {
+        max-width: 730px;
+    }
+    .calendar_meeting .date-picker-wrapper .month-wrapper table .day.checked.hovering .wrap-day,
+    .calendar_meeting .date-picker-wrapper .month-wrapper table div.day .wrap-day,
+    .calendar_meeting .date-picker-wrapper .month-wrapper table .day.checked .wrap-day {
+        padding: 1.2em 1.2em !important;
+        margin: 0 1.2em !important;
+    }
+
+}
+@media (max-width: 1024px) {
+    /*메인*/
+    .icon_gnb li.pm_step_btn {
+        display: none;
+    }
+    .video_box,.consult_box:hover .video_box,
+    .consult_box:hover .subtitle {
+        display: none;
+    }
+    .consult_box .title img,
+    .consult_box:hover .consult_desc {
+        display: block;
+    }
+    .click_menu li.tft_nav a,
+    .consult_box2 .click_menu li.agency_nav a {
+        background: #377aef;
+        color: #ffffff;
+    }
+    .consult_box .ani_here {
+        bottom: 320px;
+    }
+    .consult_box2 .title,
+    .consult_box2 .consult_desc
+    /*.consult_box2 .consult_desc span*/ {
+        color: #377aef;
+    }
+    .consult_box2.consult_box:hover .ani_here a {
+        color: #3c70b7;
+    }
+    .consult_box.consult_box2 .dotted_line_item{fill:#3c70b7;}/*흰색으로 변환시 fill:#fff*/
+    .consult_box.consult_box2 .st_line{fill:none;stroke:#3c70b7}/*흰색으로 변환시 fill:#fff*/
+    .consult_box.consult_box2 .out_line_item{fill:none;stroke:#3c70b7}/*흰색으로 변환시 fill:#fff*/
+    .consult_box.consult_box2 .ani_here a {color: #3c70b7;}
+    /*agency calendar*/
+    .date-picker-wrapper table .caption {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 2em;
+        top: 0;
+        height: auto;
+    }
+    .date-picker-wrapper .month-wrapper table .caption th {
+        display: inline-block;
+    }
+    .date-picker-wrapper .month-wrapper table .caption th.month-name {
+        left: 0;
+        display: inline-block;
+        width: 6.4em;
+        margin: 0.5em 2em 0 0;
+    }
+    .date-picker-wrapper .month-element {
+        float: right;
+    }
+    .date-picker-wrapper .month-element:first-child:after {
+        bottom: inherit;
+        top: 4px;
+        font-size: 19px;
+    }
+    .date-picker-wrapper .month-element:last-child {
+        font-size: 19px;
+    }
+    .total_txt {
+        margin-bottom: 1rem;
+        display: block;
+        color: rgba(255,255,255,0.6);
+        font-size: 20px;
+    }
+    .final_date_mbox {
+        display: block;
+        margin-bottom: 8em;
+        padding-left: 4em;
+    }
+    .final_date_mbox .dateBtn {
+        display: block;
+    }
+    .final_date_box .entry_date_box {
+        display: none !important;
+    }
+    /*등록 완료*/
+    .project_temp_box {
+        display: block;
+        max-width: 500px;
+    }
+    .project_temp_left {
+        margin-bottom: 4em;
+    }
+    .project_temp_left,.project_temp_right {
+        width: 100%;
+    }
+    .project_temp_left > p,
+    .project_temp_left > p > span{
+        font-size: 24px;
+    }
+    .project_temp_right > p,.project_temp_right > p > a {
+        font-size: 16px;
+    }
+    .project_temp_right > .go_mypage_btn {
+        font-size: 13px;
+        width: 12.375rem;
+        height: 3.813rem;
+    }
+    .link_btn_box {
+        position: static;
+        transform: translate(0,0);
+        text-align: left;
+        padding-top: 2em;
+    }
+    .link_btn_box a {
+        margin: 0 1em 0 0;
+        font-size: 16px;
+        height: 2.986em;
+        line-height: 2.986em;
+    }
+    .bidding_msg_box {
+        width: 100%;
+        float: none;
+        margin-bottom: 6em;
+    }
+    .bidding_step_box {
+        width: 100%;
+        float: none;
+        padding: 5em 2em 0;
+    }
+    .step_info_item .imgbox {
+        height: 5.3em;
+    }
+    .step_info_item .txt {
+        font-size: 16px;
+    }
+    .bidding_step_box .step_info {
+        padding: 1.7em 1em 0;
+    }
+    .end_register_area {
+        padding: 0 40px;
+    }
+    .register_top_box {
+        display: block;
+    }
+    .register_top_box .register_left {
+        width: 100%;
+        float: none;
+    }
+    .register_top_box .register_right {
+        float: none;
+        padding-top: 3em;
+        width: 100%;
+    }
+    .register_top_box .link_btn_box {
+        margin-top: 0;
+    }
+    .register_right .profile_line .user_name,
+    .register_right .profile_line .user_name span {
+        font-size: 20px;
+    }
+    .register_right .profile_line .see_profile_btn {
+        font-size: 18px;
+        width: 14.5rem;
+        height: 4.4rem;
+        border-radius: 30px;
+    }
+    .meetingDate_box {
+        text-align: left;
+    }
+    .meetingDate_box .meetingDate_title {
+        font-size: 16px;
+    }
+    .meetingDate_box .meetingDate_th {
+        width: 15%;
+        font-size: 16px;
+    }
+    .meetingDate_box .meetingDate_td span {
+        font-size: 22px;
+    }
+    .meetingDate_box .meetingDate_td {
+        font-size: 16px;
+    }
+    /*mypage*/
+    .saving_msg,
+    .confirm_msg ,
+    .holding_msg {
+        height: auto;
+        position: static;
+        padding-top: 0;
+    }
+    .saving_msg p,
+    .holding_msg p,.confirm_msg p {
+        color: #ffffff;
+        font-size: 16px;
+        padding: 15px 0;
+
+    }
+    .tft_control_btn,
+    .saving_msg p a,
+    .holding_msg p a {
+        display: none;
+    }
+    .tft_col_line {
+        display: block;
+    }
+    .col2 .tft_col_line {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+    }
+    .col2 .tft_col_line:nth-child(2) {
+        margin-top: 0;
+    }
+    .tft_td p span.border_line {
+        width: 80px;
+    }
+    .tft_td .tft_amount_txt {
+        font-weight: 600;
+        color: #adadad;
+        font-size: 45px;
+        font-family: 'Montserrat';
+    }
+    .tft_col_line .tft_th {
+        width: 100%;
+        margin-bottom: 0.9em;
+        font-size: 15px;
+    }
+    .tft_col_line .tft_td .tft_name {
+        font-size: 15px;
+    }
+    .tft_col_line .tft_td p {
+        font-size: 15px;
+    }
+    .common_btn {
+        font-size: 15px;
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        margin-top: -10px;
+    }
+    .pm_profile_btn {
+        margin-top: 0;
+    }
+    .item_bidding_prjct .col {
+        position: relative;
+    }
+    .tft_detail_box .box_title.active,
+    .tft_detail_box .box_title {
+        font-size: 16px;
+    }
+    .line_progress span {
+        right: -32px;
+    }
+    .tft_detail_line .header_th,
+    .tft_detail_line .header_td,
+    .tft_detail_line .line_th,
+    .tft_detail_line p,
+    .tft_detail_line,
+    .tft_detail_line .line_td {
+        font-size: 14px;
+    }
+    .tft_detail_line .header_th,
+    .tft_detail_line .line_th {
+        width: 9.5rem;
+        padding-right: 2em;
+    }
+    .info_helper {
+        left: -50px;
+        top: 2em;
+    }
+    .tft_wra {
+        height: auto;
+        padding: 60px 0 0 0;
+    }
+    .freelancer_area {
+        width: 100%;
+        height: 642px;
+        padding-top: 0;
+        position: relative;
+        transition: none;
+    }
+    .type_pjct_menu {
+        height: auto;
+    }
+    .type_pjct_menu li p.required ,
+    .type_pjct_menu li p {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+    .type_pjct_menu .arrow_menu {
+        bottom: 1.5em;
+    }
+    .chart_txt {
+        font-size: 25px;
+    }
+    .year_people img {
+        width: 86px;
+    }
+    .chk_team .chkTxt {
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .chk_team .chkTxt span {
+        font-size: 16px;
+    }
+
+    .type_pjct_menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .pjct_people_list {
+        padding-top: 90px;
+        height: 100%;
+    }
+    .right_info .day_price span,.right_info .range_work span,
+    .right_info .range_work,.right_info .day_price {
+        font-size: 13px;
+    }
+    .right_info {
+        margin: 0.3em 1em 0 0;
+    }
+    .skill_people .lb, .year_people .lb {
+        font-size: 12px;
+    }
+    .graph_section .graph_box p {
+        font-size: 10px;
+    }
+    .responsive_area {
+        display: block;
+    }
+    .tft_wra .responsive_area {
+        padding: 2em 0;
+    }
+    .team_make_area .title_team_box {
+        display: none;
+    }
+    .title_team_box p {
+        font-size: 13px;
+    }
+    .title_team_box p.step2_txt {
+        font-size: 38px;
+    }
+    .title_team_box p i {
+        font-size: 20px;
+    }
+    .table_line .table_contents {
+        height: 345px;
+    }
+    .table_team_section {
+        position: relative;
+        width: 55em;
+        padding: 3em 0;
+    }
+    .table_team {
+        width: 25em;
+        margin-left: -12.5em;
+    }
+    .table_team_section .seat_pm {
+        margin: 0 auto 2em;
+    }
+    .seat_team {
+        width: 130px;
+        height: 130px;
+    }
+    .rest_seat {
+        margin-top: 2em;
+    }
+    .team_make_area {
+        padding: 5em 0 12em;
+    }
+    .price_team {
+        bottom: 13em;
+    }
+    .price_team p {
+        font-size: 23px;
+    }
+    .price_team p span {
+        font-size: 80px;
+    }
+    .btn_free {
+        position: absolute;
+        display: block;
+        bottom: -40px;
+        left: 50%;
+        width: 100px;
+        margin-left: -50px;
+        color: #ffffff;
+        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .btn_free span {
+        display: block;
+        padding-left: 30px;
+    }
+    .btn_free:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 0;
+        border-top: 40px solid rgba(255,255,255,0.5);
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+    }
+    .btn_free img {
+        position: absolute;
+        right: -10px;
+        top: 16px;
+        transform: rotate(180deg);
+    }
+    .closed .btn_free img {
+        transform: rotate(0);
+    }
+    .freelancer_area.closed {
+        height: 64px;
+    }
+    .table_team .txt_table p {
+        font-size: 14px;
+    }
+    .table_team .txt_table span {
+        font-size: 20px;
+    }
+    .seat_team .pp_seat span {
+        font-size: 16px;
+    }
+    .left.seat_team .pp_seat:after,
+    .seat_team .pp_seat:after{
+        width: 73px;
+        height: 76px;
+        -webkit-background-size: 73px 76px;
+        background-size: 73px 76px;
+        background-repeat: no-repeat;
+    }
+    .left .port_btn {
+        left: -9.5em;
+    }
+    .active .port_btn {
+        right: -9.5em;
+    }
+    .type_pjct_menu li p .choice_num.active {
+        font-size: 14px;
+        top: 0.9rem;
+        width: 2.188rem;
+        height: 2.188rem;
+        line-height: 2.188rem;
+    }
+    .tft_wra .pf_contents {
+        width: 100%;
+    }
+    .tft_wra .partner_pf_box .title_pf {
+        font-size: 20px;
+        padding: 1.5em 2em 0;
+    }
+    .tft_wra .desc_pf .type {
+        font-size: 20px;
+    }
+    .tft_wra .desc_pf .name {
+        padding: 1em 20px;     font-size: 20px;
+    }
+    .tft_wra .desc_pf .name .date {
+        font-size: 20px;
+    }
+    .tft_wra .partner_pf_box .close_pf img {
+        width: 2.188em;
+        height: 2.188em;
+    }
+    .member_prtf {
+        width: 26em;
+        left: 50%;
+        margin-left: -13em;
+        padding: 1.2em 1.2em 4.938em;
+    }
+    .left .member_prtf {
+        right: 50%;
+        margin-right: -13em;
+    }
+    .pop_pf_pm .pm,
+    .member_prtf .member_no {
+        font-size: 14px;
+    }
+    .member_prtf .pm_info span {
+        font-size: 17px;
+    }
+    .member_prtf .name {
+        font-size: 18px;
+    }
+    .item_skill_mb .lb {
+        font-size: 14px;
+    }
+    .member_prtf .detail_work p {
+        font-size: 16px;
+    }
+    .member_prtf .detail_work p span.price,
+    .member_prtf .detail_work p span.work {
+        font-size: 19px;
+    }
+    .member_prtf .detail_work p span.price strong {
+        font-size: 22px;
+    }
+    .seat_pm .member_prtf {
+        padding: 1.4em 1.2em;
+    }
+    .step_project_m a.tftstep3,
+    .tft_step2m .step_project_m a.tftstep2 {
+        display: none;
+    }
+    .tft_step2m .step_project_m a.tftstep3 {
+        display: block;
+    }
+    .tft_step2m .freelancer_area {
+        display: none;
+    }
+
+    /*tft step3*/
+    .tft_step3_wra {
+        padding-top: 60px;
+        height: auto;
+    }
+    .calendar_tft_area {
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+    .time_tft_area {
+        width: 100%;
+        float: none;
+    }
+    .calendar_meeting {
+        height: 610px;
+        max-width: none;
+        padding-top: 0;
+    }
+    .date-picker-wrapper .month-wrapper {
+        padding-top: 0;
+    }
+    .date-picker-wrapper table .caption {
+        top: -4.5em;
+    }
+    .calendar_meeting .date-picker-wrapper {
+        width: 80% !important;
+        top: 15% !important;
+    }
+    .calendar_meeting .date-picker-wrapper .month-wrapper table {
+        table-layout: fixed;
+    }
+    .calendar_meeting .date-picker-wrapper .month-wrapper table .caption th.month-name {
+        left: 0.1em;
+    }
+    .info_cal p {
+        font-size: 16px;
+    }
+    .calendar_meeting .date-picker-wrapper .month-wrapper table .day.checked.hovering .wrap-day, .calendar_meeting .date-picker-wrapper .month-wrapper table .day.checked .wrap-day {
+        padding: 0 0.3em !important;
+        margin: 0 0.8em !important;
+    }
+    .date-picker-wrapper table .caption {
+        top: -5.5em;
+    }
+    .tft_step3_wra .title_team_box .step3_txt {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .calendar_tft_area .title_team_box  .pop_pf_pm.active,
+    .calendar_tft_area .title_team_box .pm_profile {
+        display: none;
+    }
+    .calendar_tft_area .pm_profile {
+        float: none;
+    }
+    .pm_profile .name {
+        font-size: 19px;
+    }
+    .pm_profile .detail_btn_pf {
+        font-size: 16px;
+    }
+    .pm_profile.pm_profile_m {
+        padding: 2em 0;
+        display: block;
+        overflow: hidden;
+        margin: 0 auto 4em;
+        border-top: 1px solid #ccc;
+        max-width: 80%;
+        width: 100%;
+    }
+    .pm_profile .detail_btn_pf {
+        top: 1em;
+    }
+    .time_tft_area .title {
+        font-size: 40px;
+    }
+    .time_tft_area .title .desc {
+        display: block;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .customer_time .lb {
+        font-size: 18px;
+    }
+    .meet_time + label {
+        font-size: 25px;
+    }
+    .meet_time + label span {
+        font-size: 15px;
+    }
+    .customer_time {
+        margin-bottom: 2.3em;
+    }
+    .pop_pf_pm .member_prtf {
+        top: inherit;
+        bottom: -15em;
+        width: 46em;
+    }
+    .pm_profile_m + .pop_pf_pm.active {
+        display: block;
+    }
+    .calendar_tft_area .pop_pf_pm .pm {
+        font-size: 14px;
+    }
+    .calendar_tft_area .member_prtf .detail_work p,
+    .calendar_tft_area .member_prtf .detail_work p span.price,
+    .calendar_tft_area .member_prtf .detail_work p span.work {
+        font-size: 12px;
+    }
+    .calendar_tft_area .pop_pf_pm .mb_info img {
+        width: 63px;
+    }
+    .calendar_meeting .info_cal {
+        right: 10%;
+        margin: 0.2em 2em 0 0;
+    }
+    .register_right .profile_line {
+        position: relative;
+    }
+    .register_right .pop_pf_pm .member_prtf {
+        right: inherit;
+        padding: 1.3em;
+        top: 4em;
+        left: 23em;
+        height: 280px;
+    }
+    .register_right .pop_pf_pm .mb_info img {
+        width: 60px;
+    }
+    .register_right .member_prtf .detail_work p span.price, .register_right .member_prtf .detail_work p span.work {
+        font-size: 12px;
+    }
+    .register_right .member_prtf .detail_work p {
+        font-size: 13px;
+    }
+    .content_m_menu li.pm_step_btn {
+        padding: 2.4em 0;
+    }
+    .content_m_menu li.pm_step_btn a {
+        color: #ffffff;
+        font-size: 20px;
+        background: #377aef;
+        height: 3.231em;
+        padding: 0 1em;
+        border-radius: 1.615em;
+        display: inline-block;
+        line-height: 3.231em;
+        margin-right: 2em;
+        margin-top: -0.3em;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    }
+    /*pm step2*/
+    .tft_wra.pm_wra {
+        position: relative;
+        min-height: 100vh;
+        padding-top: 60px;
+        padding-bottom: 24em;
+    }
+    .pm_wra .page_title_section .page_title_contents {
+        font-size: 38px;
+    }
+    .pm_wra .page_title_section {
+        position: static;
+    }
+    .pjct_people_list ul.active {
+        padding: 0;
+    }
+    .pm_wra .pjct_people_list {
+        width: 100%;
+        padding: 0;
+    }
+    .pm_wra .step_project_m {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .pm_wra .freelancer_area {
+        position: static;
+        height: auto;
+        transform: translate(0,0);
+    }
+
+    .calendar_meeting .date-picker-wrapper .month-wrapper table div.day .wrap-day {
+        /* padding: 1em 0.9em !important; */
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+}
+@media (max-width: 640px) {
+    /*main*/
+    .consult_box .ani_here {
+        bottom: 220px;
+    }
+    .consult_box .title img {
+        width: 1.7em;
+    }
+    .consult_box .title .info_tft_box img,
+    .consult_box .title .info_agency_box  img {
+        width: 1em;
+        margin: 0.25em 0.5em 0 0;
+    }
+    .final_date_mbox {
+        margin-bottom: 4em;
+        padding-left: 2em;
+    }
+    .final_date_mbox .dateBtn {
+        font-size: 12px;
+    }
+    .budget_review {
+        padding: 0em 0 3em;
+    }
+    .budget_review p.desc {
+        font-size: 15px;
+    }
+    .total_txt {
+        font-size: 13px;
+    }
+    .date-picker-wrapper .month-element:last-child,
+    .date-picker-wrapper .month-element:first-child:after {
+        font-size: 10px;
+    }
+    .date-picker-wrapper .month-wrapper table .caption th.month-name {
+        width: 5.4em;
+        margin: 0.8em 2.6em 0 0;
+    }
+    .date-picker-wrapper .month-element:first-child:after {
+        top: 8px;
+    }
+    .date-picker-wrapper table .caption {
+        left: 0;
+    }
+    .info_cal {
+        right: 2em;
+    }
+    .info_cal p {
+        font-size: 11px;
+    }
+    /*등록 완료*/
+    .project_temp_box {
+        padding: 0 20px;
+    }
+    .project_temp_left > p, .project_temp_left > p > span {
+        font-size: 16px;
+    }
+    .project_temp_right > p, .project_temp_right > p > a {
+        font-size: 10px;
+    }
+    .project_temp_right > .go_mypage_btn {
+        font-size: 11px;
+        width: 9.375rem;
+        height: 3.313rem;
+    }
+    .end_register_area {
+        padding: 0 20px;
+    }
+    .link_btn_box a,
+    .register_right .profile_line .user_name, .register_right .profile_line .user_name span{
+        font-size: 11px;
+    }
+    .register_right .profile_line .profile_img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+    .register_right .profile_line .profile_img img {
+        width: 22px;
+    }
+    .register_right .profile_line .see_profile_btn {
+        font-size: 13px;
+        width: 11.5rem;
+        height: 3.4rem;
+        border-radius: 20px;
+    }
+    .meetingDate_box .meetingDate_title,
+    .meetingDate_box .meetingDate_th,
+    .meetingDate_box .meetingDate_td{
+        font-size: 10px;
+    }
+    .meetingDate_box .meetingDate_th {
+        width: 20%;
+    }
+    .meetingDate_box .meetingDate_line {
+        padding: 0 5px;
+    }
+    .meetingDate_box .meetingDate_td span {
+        font-size: 16px;
+    }
+    .bidding_msg_box {
+        margin-bottom: 2em;
+    }
+    .step_info_item img.focus_off, .step_info_item.pass img.focus_on {
+        transform: scale(0.6);
+    }
+    .bidding_step_box {
+        padding: 4em 0 0;
+    }
+    .bidding_step_box .step_bar {
+        width: 75%;
+    }
+    .line_progress span {
+        right: -16px;
+    }
+    .line_progress span img {
+        width: 30px;
+    }
+    .step_info_item .txt {
+        font-size: 10px;
+    }
+    .bidding_step_box .step_info {
+        padding: 1.7em 0 0;
+    }
+    .step_info_item .imgbox {
+        height: 3.8em;
+    }
+    /*mypage tft*/
+    .tft_col_line .tft_td p {
+        font-size: 12px;
+    }
+    .tft_col_line .tft_td .tft_name {
+        font-size: 13px;
+    }
+    .common_btn {
+        font-size: 10px;
+    }
+    .tft_col_line .tft_th {
+        font-size: 10px;
+    }
+    .tft_td p span.border_line {
+        width: 50px;
+    }
+    .tft_td .tft_amount_txt {
+        font-size: 18px;
+    }
+    .col2 .tft_col_line {
+        width: 50%;
+    }
+    .col2 .tft_col_line:nth-child(2) {
+        width: auto;
+    }
+    .item_bidding_prjct .detail_budget,
+    .item_bidding_prjct .budget_detail {
+        font-size: 10px;
+    }
+    .saving_msg p, .holding_msg p, .confirm_msg p {
+        font-size: 10px;
+    }
+    .tft_detail_box .box_title.active, .tft_detail_box .box_title {
+        font-size: 12px;
+    }
+    .tft_detail_line .header_th, .tft_detail_line .header_td, .tft_detail_line .line_th, .tft_detail_line p, .tft_detail_line, .tft_detail_line .line_td {
+        font-size: 11px;
+    }
+    .tft_detail_line .header_th, .tft_detail_line .line_th {
+        width: 7.5rem;
+    }
+    .item_bidding_prjct .col {
+        padding: 2em 1.3em;
+    }
+    .member_profile_btn.common_btn{
+        margin: -10px 0 0;
+    }
+    .info_helper {
+        left: -155px;
+        top: 2em;
+    }
+    /*tft step1*/
+    .tft_wra {
+        padding-top: 50px;
+        min-height: 100vh;
+    }
+    .tft_wra .step_project_m {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    .freelancer_area {
+        height: 280px;
+    }
+    .type_pjct_menu ul {
+        height: 39px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 0.6em 3em 0 0;
+    }
+    .type_pjct_menu li {
+        width: 33.3%;
+        display: inline-block;
+        float:none;
+    }
+    .type_pjct_menu li p.required, .type_pjct_menu li p {
+        font-size: 10px;
+        line-height: 1;
+        height: 29px;
+    }
+    .type_pjct_menu .arrow_menu {
+        bottom: 1.2em;
+    }
+    .pjct_people_list {
+        padding: 50px 0.5em 0 1.5em;
+    }
+    .btn_free {
+        font-size: 10px;
+        width: 82px;
+        line-height: 24px;
+        height: 24px;
+        bottom: -24px;
+    }
+    .btn_free span {
+        padding-left: 16px;
+    }
+    .btn_free img {
+        right: -5px;
+        top: 9px;
+    }
+    .btn_free:after {
+        width: 82px;
+        border-top: 24px solid rgba(255,255,255,0.5);
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+    }
+    .title_team_box p {
+        font-size: 10px;
+    }
+    .title_team_box p i {
+        font-size: 15px;
+    }
+    .tft_wra .responsive_area {
+        padding: 1.4em 0;
+    }
+    .year_people img {
+        width: 46px;
+    }
+    .chk_team .chkTxt span {
+        font-size: 10px;
+    }
+    .chk_team .chkTxt {
+        font-size: 13px;
+    }
+    .chkbox_chk + label {
+        -webkit-background-size: 13px 10px;
+        background-size: 13px 10px;
+    }
+    .right_info {
+        float: none;
+    }
+    .right_info .day_price span, .right_info .range_work span, .right_info .range_work, .right_info .day_price {
+        font-size: 10px;
+    }
+    .chart_txt {
+        font-size: 12px;
+        bottom: 35%;
+    }
+    .graph_section {
+        padding: 0;
+    }
+    .graph_section .graph_box {
+        width: 20%;
+    }
+    .skill_people .lb, .year_people .lb {
+        font-size: 10px;
+        padding-left: 0;
+    }
+    .detail_people_info {
+        padding: 0.8em 1em 0em;
+    }
+    .table_team_section {
+        width: 280px;
+        padding: 1em 0 0;
+    }
+    .seat_team {
+        width: 65px;
+        height: 65px;
+    }
+    .table_line .table_contents {
+        height: 174px;
+    }
+    .table_team {
+        width: 13em;
+        margin-left: -6.5em;
+    }
+    .table_team .txt_table p,.table_team .txt_table span {
+        font-size: 10px;
+    }
+    .table_team .txt_table span img {
+        width: 12px;
+    }
+    .team_make_area {
+        padding: 5em 0 16em;
+    }
+    .price_team p {
+        font-size: 15px;
+    }
+    .price_team p span {
+        font-size: 40px;
+    }
+    .price_team {
+        right: 3em;
+        bottom: 7em;
+    }
+    .freelancer_area.closed {
+        height: 39px;
+    }
+    .year_people .lb {
+        margin-bottom: 1em;
+    }
+    .seat_team .pp_seat span {
+        font-size: 10px;
+    }
+    .left.seat_team .pp_seat:after, .seat_team .pp_seat:after {
+        -webkit-background-size: 42px 45px;
+        background-size: 42px 45px;
+        width: 42px;
+        height: 45px;
+    }
+    .active .port_btn {
+        top: inherit;
+        bottom: -3.7em;
+        right: -2.5em;
+    }
+    .seat_section_line1 .active .port_btn {
+        top: -3.7em;
+    }
+    .left .port_btn {
+        left: -2em;
+    }
+    .port_btn img {
+        width: 100%;
+    }
+    .type_pjct_menu li p .choice_num.active {
+        font-size: 10px;
+        top: 0.5rem;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+    }
+    .pjct_people_list ul li {
+        margin-bottom: 1em;
+    }
+    .title_team_box p.step2_txt {
+        font-size: 28px;
+    }
+    .tft_wra .partner_pf_box .title_pf {
+        font-size: 16px;
+        padding: 0 1em 0;
+    }
+    .tft_wra .desc_pf .type {
+        font-size: 13px;
+        padding: 1em 10px;
+    }
+    .tft_wra .desc_pf .name {
+        padding: 1em 10px;
+        font-size: 15px;
+    }
+    .tft_wra .desc_pf .name .date {
+        font-size: 13px;
+    }
+    .active .port_btn {
+        width: 58px;
+        height: 32px;
+    }
+    .member_prtf {
+        width: 22em;
+        margin-left: -22em;
+    }
+    .seat_pm .member_prtf {
+        margin-left: -11em;
+    }
+    .item_skill_mb .lb,
+    .member_prtf .detail_work p span.price, .member_prtf .detail_work p span.work,
+    .member_prtf .member_no {
+        font-size: 10px;
+    }
+
+    .member_prtf .detail_work p span.price strong,
+    .member_prtf .detail_work p,
+    .member_prtf .name {
+        font-size: 12px;
+    }
+    .left .member_prtf {
+        margin-right: -22em;
+    }
+    /*tft step3*/
+    .tft_step3_wra .title_team_box {
+        padding-left: 2em;
+    }
+    .calendar_tft_area {
+        padding-top: 2em;
+    }
+    .tft_step3_wra .title_team_box .step3_txt {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .calendar_meeting .info_cal {
+        right: 0;
+        top: 1.5em;
+    }
+    .calendar_meeting .date-picker-wrapper {
+        width: 90% !important;
+    }
+    .calendar_meeting .date-picker-wrapper .month-wrapper table td {
+        height: 3.3em;
+    }
+    .calendar_meeting .date-picker-wrapper .month-wrapper table .real-today .wrap-day:after {
+        height: 3px;
+        bottom: 1px;
+    }
+    .calendar_meeting {
+        height: 330px;
+    }
+    .date-picker-wrapper table .caption {
+        top: -3.6em;
+    }
+    .pm_profile .name {
+        font-size: 13px;
+    }
+    .pm_profile .detail_btn_pf {
+        top: 1.2em;
+        font-size: 12px;
+    }
+    .time_tft_area {
+        padding: 3.7em 2em 0;
+    }
+    .time_tft_area .title {
+        font-size: 28px;
+    }
+    .time_meeting {
+        margin-bottom: 5em;
+    }
+    .customer_time .lb {
+        font-size: 13px;
+    }
+    .customer_time {
+        margin-bottom: 1.3em;
+    }
+    .meet_time + label {
+        font-size: 19px;
+    }
+    .meet_time + label span {
+        font-size: 10px;
+    }
+    .pm_profile.pm_profile_m {
+        margin: 0 auto 0.6em;
+    }
+    .pop_pf_pm .member_prtf {
+        bottom: -13.5em;
+        width: 85%;
+    }
+    .calendar_tft_area .pop_pf_pm .mb_info img {
+        width: 43px;
+    }
+    .calendar_tft_area .member_prtf .detail_work p span.work,
+    .pop_pf_pm .member_prtf .detail_work p, .tft_step2 .member_prtf .detail_work p,
+    .calendar_tft_area .pop_pf_pm .pm {
+        font-size: 10px;
+    }
+    .register_right .pop_pf_pm .mb_info,
+    .register_right .pop_pf_pm .member_prtf .detail_skill_mb,
+    .register_right .pop_pf_pm .member_prtf .detail_work {
+        float: none;
+        width: 100%;
+    }
+    .register_right .pop_pf_pm .member_prtf {
+        width: 78%;
+        left: 50%;
+        margin-left: -39%;
+        height: 390px;
+    }
+    .pop_pf_pm .pm {
+        font-size: 10px;
+    }
+    .member_prtf .pm_info span {
+        font-size: 12px;
+        width: 100%;
+    }
+    .member_prtf .pm_info span.fr {
+        float: left;
+    }
+    .register_right .pop_pf_pm .mb_info img {
+        margin-bottom: 10px;
+    }
+    .register_right .member_prtf .detail_skill_mb {
+        margin-bottom: 1.5em;
+    }
+    .register_right .member_prtf .detail_work p span.price, .register_right .member_prtf .detail_work p span.work {
+        float: right;
+        margin-top: 0;
+    }
+    .register_right .pop_pf_pm .member_prtf .detail_work, .tft_step2 .register_right .member_prtf .detail_work {
+        padding: 0;
+    }
+    .content_m_menu li.pm_step_btn {
+        padding: 1.4em 0;
+    }
+    .content_m_menu li.pm_step_btn a {
+        font-size: 13px;
+    }
+    .pm_wra .page_title_section .page_title_contents {
+        font-size: 25px;
+    }
+    .tft_wra.pm_wra {
+        padding-top: 50px;
+        padding-bottom: 14em;
+    }
+}
+@media (max-width: 360px) {
+    .info_cal p {
+        display: block;
+    }
+    .info_cal {
+        right: 2em;
+        top: -4em;
+    }
+
+}
+@media (max-height: 600px) {
+    .consult_box .ani_here {
+        bottom: 200px;
+        right: 100px;
+    }
+    .consult_box .consult_desc {
+        font-size: 24px;
+    }
+    .btnMainBox a {
+        font-size: 18px;
+    }
+}

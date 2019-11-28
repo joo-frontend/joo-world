@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+    <style>
+        .popup_detail.type2 .popup_detail_header {
+            position: relative;
+        }
+        .popup_detail.type2 .popup_detail_contents {
+            position: relative;
+            padding:0 0 51px 0;
+        }
+        .popup_detail_header .sprite_back {
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            left: 15px;
+        }
+        .tab_use ul {
+            border-bottom:1px solid #dcdcdc;
+        }
+        .tab_use ul li {
+            float: left;
+            width: 50%;
+            text-align: center;
+            height: 40px;
+            position: relative;
+        }
+        .tab_use ul li p:before {
+            content: '';
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .tab_use ul li:after {
+            content: '';
+            height: 15px;
+            width: 1px;
+            position: absolute;
+            top: 13px;
+            right: 1px;
+            background: #e7e7e7;
+        }
+        .tab_use ul li.last:after {
+            width: 0;
+        }
+        .tab_use ul li p {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            height: 40px;
+        }
+        .tab_use ul li a {
+            line-height: 17px;
+            font-size: 1.1rem;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        @media all and (max-width: 350px) {
+            .tab_use ul li a {
+                font-size: 1rem;
+            }
+        }
+        .tab_use ul li.focus a {
+            color: #92592c;
+        }
+        
+        .tab_use ul li.focus p:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #92592c;
+            width: 100%;
+            height: 2px;
+        }
+        .area_terms {
+            padding: 15px;
+            overflow-y: auto;
+            padding-bottom: 55px;
+        }
+        .area_terms .title {
+            font-size: 1.4rem;
+        }
+        .area_terms p {
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="popup_detail type2">
+    <div class="popup_detail_header" style="background: #585858;">
+        <button class="sprite sprite_common sprite_back" @click="$emit('close')">뒤로</button>
+        <h1>이용 약관</h1>
+        <!-- //section_header -->
+    </div>
+    <section class="tab_use">
+        <ul class="clearfix">
+            <li class="focus"><p><a href="#">서비스 이용 약관</a></p></li>
+            <li class="focus last"><p><a href="#">위치 정보수집 및 서비스 이용 동의</a></p></li>
+        </ul>
+    </section>
+    <div class="popup_detail_contents">
+        <section class="area_terms">
+            <p class="title">서비스 이용약관</p>
+            <p>매직IoT앱서비스이용약관동의</p>
+            <p>제 1장총칙<br>제 1조 (목적)</p>
+            <p>이 약관은 주식회사 SK매직 (이하 'SK매직'이라 함.)이 SK매직 공식 앱을 통해 IoT (사물 인터넷) 앱 서비스를 이용 고객 (이하 '고객'이라 함.)에게
+            제공하는 것과관련하여 SK매직과 이용 고객 간의 권리와 의무 및 이용 절차 등에 대한 사항을 규정하는 것을 목적으로 합니다.
+            </p>
+            <p>제 1장총칙<br>제 1조 (목적)</p>
+            <p>이 약관은 주식회사 SK매직 (이하 'SK매직'이라 함.)이 SK매직 공식 앱을 통해 IoT (사물 인터넷) 앱 서비스를 이용 고객 (이하 '고객'이라 함.)에게
+                제공하는 것과관련하여 SK매직과 이용 고객 간의 권리와 의무 및 이용 절차 등에 대한 사항을 규정하는 것을 목적으로 합니다.
+            </p>
+            <p>제 1장총칙<br>제 1조 (목적)</p>
+            <p>이 약관은 주식회사 SK매직 (이하 'SK매직'이라 함.)이 SK매직 공식 앱을 통해 IoT (사물 인터넷) 앱 서비스를 이용 고객 (이하 '고객'이라 함.)에게
+                제공하는 것과관련하여 SK매직과 이용 고객 간의 권리와 의무 및 이용 절차 등에 대한 사항을 규정하는 것을 목적으로 합니다.
+            </p>
+            <p>제 1장총칙<br>제 1조 (목적)</p>
+            <p>이 약관은 주식회사 SK매직 (이하 'SK매직'이라 함.)이 SK매직 공식 앱을 통해 IoT (사물 인터넷) 앱 서비스를 이용 고객 (이하 '고객'이라 함.)에게
+                제공하는 것과관련하여 SK매직과 이용 고객 간의 권리와 의무 및 이용 절차 등에 대한 사항을 규정하는 것을 목적으로 합니다.
+            </p>
+            <p>제 1장총칙<br>제 1조 (목적)</p>
+            <p>이 약관은 주식회사 SK매직 (이하 'SK매직'이라 함.)이 SK매직 공식 앱을 통해 IoT (사물 인터넷) 앱 서비스를 이용 고객 (이하 '고객'이라 함.)에게
+                제공하는 것과관련하여 SK매직과 이용 고객 간의 권리와 의무 및 이용 절차 등에 대한 사항을 규정하는 것을 목적으로 합니다.
+            </p>
+        </section>
+    </div>
+</div>
+</body>
+</html>

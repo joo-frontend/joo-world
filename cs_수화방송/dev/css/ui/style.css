@@ -1,0 +1,38 @@
+/* 공통요소, 리셋 */
+@import "common.css";
+/*cs_popup*/
+@import "cs_popup.css";
+
+._section {}
+._moveFocus {}
+._moveFocus_btn {}
+
+
+
+.psd_button {
+    position: absolute;
+    top: 10px;
+    left: 980px;
+    background: #f3b24c;
+    color: #000;
+}
+.psd_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 540px;
+    opacity: 0.5;
+    z-index: 10000;
+    display: none;
+}
+
+.psd_img.block {
+    display: block;
+}
+.psd_img.show {
+    opacity: 1;
+}
+.psd_img.hide {
+    opacity: 0;
+}

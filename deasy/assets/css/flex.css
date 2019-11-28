@@ -1,0 +1,5621 @@
+@media (max-width: 1637px) {
+
+}
+@media (max-width: 1600px) {
+    html, body {
+        font-size: 15px
+    }
+    /*index*/
+    .main_area {
+        padding-top: 8.251em;
+    }
+    .title_main_box .title_main {
+        font-size: 3.624em;
+    }
+    .click_menu li a {
+        padding: 2.2em 0 2.2em 4.960em;
+    }
+    .consult_box {
+        padding: 7.751em 0 0 4.625em;
+    }
+    .alarm_section:after {
+        right: 56px;
+    }
+}
+@media (max-width:1440px){
+    html, body{font-size:14px}
+
+}
+@media (max-width:1366px) {
+    html, body {
+        font-size: 13px
+    }
+}
+@media (max-width:1280px) {
+    html, body {
+        font-size: 12px
+    }
+}
+@media (max-width:1152px) {
+    html, body {
+        font-size: 11px
+    }
+}
+@media (max-width:1024px) {
+    html, body {
+        font-size: 10px
+    }
+    /*header*/
+    .header_wra {
+        border: 0;
+    }
+    .header_wra.header_blue_flex_wra,
+    .header_wra.header_flex_wrap,
+    .header_wra.header_flex_wrap2 {
+        background: transparent;
+    }
+    .header_flex_wrap .btn_m_menu span {
+        background: #ffffff;
+    }
+    .header_area {
+        height: 60px;
+    }
+    .header_area .gnb_header {
+        display: none;
+    }
+    .header_area .logo_box {
+        position: absolute;
+        left: 50%;
+        width: auto;
+        top: 1.9em;
+        display: block;
+        margin-left: -5em;
+    }
+    .header_area .logo_box img {
+        width: 10em;
+    }
+    .mypage_menu {
+        display: none;
+    }
+    .icon_gnb {
+        padding-top: 1.3em;
+        position: relative;
+        z-index: 10;
+    }
+    .icon_gnb li.login_menu {
+        display: none;
+    }
+    .btn_m_menu {
+        display: block;
+        position: absolute;
+        top: 1.8em;
+        left: 0;
+        width: 29px;
+        z-index: 10;
+    }
+    .header_blue_wra.header_blue_flex_wra .btn_m_menu span,
+    .btn_m_menu span {
+        width: 100%;
+        display: block;
+        height: 2px;
+        background: #424242;
+        margin-bottom: 8px;
+        border-radius: 2px;
+    }
+    .header_blue_wra .btn_m_menu span {
+        background: #ffffff;
+    }
+    .btn_m_menu span:nth-child(2) {
+        width: 80%;
+    }
+    .btn_m_menu span:last-child {
+        margin-bottom: 0;
+    }
+    .bg_black {
+        display: none;
+    }
+    .bg_black.active {
+        display: block;
+    }
+    .m_menu_side {
+        left: -80%;
+        display: block;
+        background: #ffffff;
+        z-index: 110;
+        position: fixed;
+
+        top: 0;
+        height: 100%;
+        width: 80%;
+    }
+    .m_menu_side.active {
+        left: 0;
+        -webkit-transition: left 0.3s;
+        -ms-transition: left 0.3s;
+        -moz-transition: left 0.3s;
+    }
+    .top_m_menu {
+        margin-bottom: 2em;
+    }
+    .content_m_menu {
+        padding: 1.5em 4em;
+    }
+    .content_m_menu ul {
+        height: 100%;
+    }
+    .content_m_menu li {
+        padding: 3.4em 0;
+
+    }
+    .content_m_menu li a {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .my_profile {
+        padding: 3.5em 4em 2em;
+        position: relative;
+    }
+    .mypage_link {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1.5em;
+    }
+    .mypage_link img {
+        width: 35px;
+    }
+    .my_profile .id_txt {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .my_profile .id_txt a {
+        font-size: 20px;
+        margin-right: 0.3em;
+    }
+    .my_profile .logout {
+        position: absolute;
+        right: 4em;
+        top: 3.8em;
+    }
+    .my_profile .logout img {
+        width: 35px;
+    }
+    .my_info_preview {
+        padding: 3em 4em;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .my_info_preview .label {
+        display: inline-block;
+        vertical-align: middle;
+        color: #7c7c7c;
+        font-size: 16px;
+    }
+    .my_info_preview .point {
+        float: right;
+        color: #377aef;
+        font-size: 26px;
+        margin-top: -6px;
+    }
+    .my_info_preview .prjct_status {
+        float: right;
+        margin-top: -8px;
+    }
+    .my_info_preview .prjct_status p {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 17px;
+        margin-left: 15px;
+    }
+    .my_info_preview .prjct_status p strong {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 8px;
+        border: 1px solid #e8e8e8;
+        font-size: 25px;
+        width: 60px;
+        height: 36px;
+        line-height: 36px;
+        padding-left: 15px;
+        border-radius: 18px;
+    }
+    .bottom_m_menu {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /*height: 30%;*/
+        background: #282828;
+    }
+    .bottom_m_menu .dk_info {
+        padding: 4em 4em;
+        height: calc(100% - 65px);
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    .bottom_m_menu .dk_info:after {
+        content: '';
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+
+    }
+    .bottom_m_menu .dk_info .dk_box {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .bottom_m_menu .dk_info p {
+        margin-bottom: 1em;
+        font-family: 'Montserrat';
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .bottom_m_menu .dk_info p:last-child {
+        margin-bottom: 0;
+    }
+    .bottom_m_menu .dk_info p img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        margin-right: 0.8em;
+    }
+    .bottom_m_menu .dk_info p.tel {
+        font-weight: 700;
+    }
+    .bottom_m_menu .term {
+        color: #ffffff;
+        font-size: 20px;
+        padding: 0 40px;
+        display: block;
+        height: 65px;
+        line-height: 65px;
+    }
+   /* .main_wra {
+        display: none;
+    }*/
+    .main_wra.main_mobile_wra {
+        display: block;
+        height: 100vh;
+    }
+    /*search*/
+    .icon_gnb li.search_header_btn a.focus .hover_on,.icon_gnb li a:hover .hover_off,.icon_gnb li.alarm_menu a.focus .hover_on{
+        display: inline-block;
+    }
+    .icon_gnb li.search_header_btn a.focus .hover_off,.icon_gnb li.alarm_menu a.focus .hover_off, .icon_gnb li a:hover .hover_on {
+        display: none;
+    }
+    .searchHeader_section.active {
+        top: 0;
+        z-index: 201;
+    }
+    .searchHeader_section.active + .bg_black.bg_blackSearch {
+        display: block;
+    }
+    .search_top_box .textbox_search {
+        font-size: 20px;
+    }
+    .searchHeader_section .search_top_box {
+        padding: 11em 20px;
+    }
+    .close_pop_mb {
+        display: block;
+        position: absolute;
+        top: 2.5em;
+        right: 2.5em;
+    }
+    .search_top_box button img {
+        width: 2.5em;
+    }
+    .my_search {
+        font-size: 18px;
+        padding-left: 25px;
+        text-align: left;
+        margin-bottom: 1em;
+    }
+    .cate_search_result {
+        flex-wrap: wrap;
+    }
+    .cate_search_result li {
+        width: 50%;
+        margin-bottom: 3px;
+    }
+    .result_box .title,
+    .result_box .bidding_list li a.result-title,
+    .cate_search_result li p,
+    .result_box .partner_list .profile_partner_col a.namePartner{
+        font-size: 20px;
+    }
+    .result_box .result_more {
+        font-weight: 600;
+    }
+    .search_result_contents .bidding_list, .search_result_contents .partner_list, .search_result_contents .faq_list {
+        padding: 0 20px;
+    }
+    .result_box .bidding_list li {
+        padding: 2em 1em;
+    }
+    .result_box .partner_list .intro_partner_col a,
+    .result_box .bidding_list li a.result-desc {
+        font-size: 15px;
+        font-weight: 200;
+        color: #000;
+    }
+    .result_box .partner_list .profile_partner_col {
+        width: auto;
+        display: block;
+        margin-bottom: 1em;
+    }
+    .result_box .partner_list .intro_partner_col {
+        width: 100%;
+    }
+    .result_box .partner_list li {
+        padding: 2em 1em;
+    }
+    .result_box .partner_list .profile_partner_col a.imgLogo {
+        width: 48px;
+        height: 48px;
+        margin-right: 1.4em;
+    }
+    .result_box .faq_list .type_faq,.result_box .faq_list .question_faq {
+        font-size: 15px;
+    }
+    .mb_search_area {
+        display: block;
+        padding: 0 20px 4.5em;
+    } 
+    .mb_search_area p {
+        display: none;
+        color: #377aef;
+        font-weight: 200;
+        font-size: 28px;
+        margin-bottom: 1em;
+    }
+    .mb_search_area p span {
+        font-weight: 400;
+    }
+    .mb_search_frm_box {
+        position: relative;
+        margin: 0 auto;
+        width: 450px;
+    }
+    .mb_search_frm_box .textbox_search {
+        width: 100%;
+        font-size: 20px;
+        background: #f4f4f4;
+        border: 0;
+        border-radius: 30px;
+    }
+    .mb_search_frm_box button {
+        position: absolute;
+        top: 1em;
+        right: 2em;
+    }
+    /*alarm*/
+    .header_flex_wrap .alarm_section {
+        background: #000;
+    }
+    .header_flex_wrap .alarm_box {
+        background: #ffffff;
+    }
+    .alarm_section {
+        width: 100%;
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 0;
+        height: 100%;
+        padding-top: 60px;
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    .alarm_section:after {
+        display: none;
+    }
+    .alarm_box {
+        height: 100%;
+        padding: 5em 4em;
+    }
+    .alarm_box ul {
+        height: 100%;
+    }
+    .alarm_box ul li {
+        padding: 0 1.8em 3em;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        margin-bottom: 3em;
+    }
+    .alarm_box .contents_alarm .date,
+    .alarm_box .contents_alarm .title {
+        font-size: 20px;
+    }
+    .alarm_box .contents_alarm .detail,
+    .alarm_box .contents_alarm .title a {
+        font-size: 25px;
+    }
+    .alarm_box .type_alarm {
+        width: 40px;
+        padding-top: 4px;
+    }
+    .alarm_box .type_alarm img {
+        width: 30px;
+    }
+    .alarm_box .contents_alarm {
+        width: calc(100% - 40px - 4px);
+    }
+    /*index*/
+    .info_site .each_info_main {
+        display: none;
+    }
+    /*customer*/
+    .customer_wra {
+        height: 100%;
+    }
+   /* .customer_area {
+        max-width: 780px;
+    }*/
+    .location_section .title,
+    .faq_section .title {
+        padding: 0 40px;
+    }
+    .menu_center li a {
+        font-size: 13px;
+        padding-left: 1.3em;
+    }
+    .faq_section .title, .location_section .desc {
+        font-size: 18px;
+    }
+    .item_info_dk .tel {
+        font-size: 16px;
+    }
+    .item_info_dk .time {
+        font-size: 13px;
+    }
+    .item_info_dk .address {
+        font-size: 14px;
+    }
+    .faq_type li p {
+        font-size: 12px;
+    }
+    /*mypage*/
+    .top_member_box {
+        padding: 0 0 1em;
+        display: block;
+    }
+    .info_profile_my {
+        float: none;
+    }
+    .element_info_my {
+        display: block;
+        height: auto;
+        padding: 1em;
+    }
+    .element_info_my.first {
+        border-right: 0;
+        border-bottom: 1px solid rgba(58,58,58,0.2);
+    }
+    .element_info_my .lb {
+        font-size: 14px;
+    }
+    .element_info_my.first .lb {
+        display: inline-block;
+    }
+    .element_info_my.first .point {
+        float: right;
+        font-size: 38px;
+    }
+    .my_status_prjct .prjct_type {
+        width: calc(50% - 4px);
+        margin: 0;
+    }
+    .my_status_prjct .prjct_type .type {
+        margin-bottom: 0.5em;
+        font-size: 13px;
+    }
+    .my_status_prjct .prjct_type .num {
+        font-size: 28px;
+        width: 4.2em;
+        height: 1.7em;
+        line-height: 1.7em;
+        border-radius: 0.9em;
+    }
+    .my_profile_area {
+        padding: 8.5em 20px 3em;
+    }
+    .top_member_box .img_member img {
+        width: 6.5em;
+    }
+    .top_member_box .nick {
+        font-size: 25px;
+    }
+    .element_info_my .lb {
+        font-size: 17px;
+        margin-bottom: 1em;
+    }
+    .my_status_prjct .prjct_type .type {
+        font-size: 20px;
+    }
+    .menu_mypage_box a {
+        padding: 1.2em 0;
+        font-size: 18px;
+    }
+    .my_contract_box {
+        padding-bottom: 9em;
+    }
+    .my_contract_box .pagination {
+        padding: 0;
+    }
+    .my_bidding_type_box p {
+        text-align: center;
+        font-size: 18px;
+        padding: 0 0 0.4em;
+        width: 9.722em;
+    }
+    .my_bidding_type_box {
+        padding: 5em 0;
+    }
+    .total_num_bidding {
+        text-align: right;
+        display: block;
+        font-size: 16px;
+        color: #a0a0a0;
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto 1.5em;
+    }
+    .my_contract_box ul,
+    .my_bidding_box ul {
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .my_bidding_box li {
+        margin-bottom: 6em;
+    }
+    .my_bidding_type_box strong {
+        display: none;
+    }
+    .item_bidding_prjct {
+        height: auto;
+    }
+    .my_contract_box .col.col2 {
+        padding: 2em 0;
+    }
+    .item_bidding_prjct .col {
+        width: 100%;
+        padding: 2em;
+        float: none;
+    }
+    .item_bidding_prjct .col.col1, .item_bidding_prjct .col.col2 {
+        border-right: 0;
+        border-bottom: 1px solid #d3d3d3;
+    }
+    .item_bidding_prjct .col.col3 {
+        position: static;
+        overflow: hidden;
+    }
+    .item_bidding_prjct .detail_budget {
+        top: 1.6em;
+        right: 1em;
+    }
+    .condition_prjct {
+        margin-bottom: 1.4em;
+    }
+    .condition_prjct:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .condition_prjct span.lb {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    .item_bidding_prjct .col .budget_lb {
+        display: inline-block;
+    }
+    .item_bidding_prjct .col.col3 .budget_lb {
+        margin: 0.6em 0 0;
+    }
+    .item_bidding_prjct .budget_detail {
+        float: right;
+        font-size: 12px;
+        line-height: 1;
+    }
+    .item_bidding_prjct .budget_detail span {
+        font-size: 45px;
+    }
+    .holding_msg {
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        text-align: center;
+        padding: 0;
+    }
+    .saving_msg {
+        padding: 0;
+        height: 15em;
+        position: static;
+    }
+    .holding_msg:after,.saving_msg:after {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .holding_msg p,.saving_msg p {
+        font-size: 22px;
+        color: #377aef;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .saving_msg p,
+    .contract_msg p {
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .saving_msg p br {
+        display: block;
+    }
+    .saving_msg p a ,
+    .holding_msg p a {
+        display: block;
+        margin: 1.2em auto 0;
+        width: 10em;
+        height: 3em;
+        line-height: 3em;
+        font-size: 15px;
+        border-radius: 30px;
+        background: none;
+        color: #9b9b9b;
+        border: 1px solid #9b9b9b;
+    }
+    .saving_msg p a {
+        background: #ffffff;
+        color: #377aef;
+        border: 0;
+    }
+    .contract_msg {
+        position: static;
+        text-align: left;
+        height: 5.9em;
+        padding: 1.6em 20px 0;
+    }
+    .contract_msg p a {
+        float: right;
+        margin-top: -0.2em;
+    }
+    .item_bidding_prjct .detail_budget,
+    .item_bidding_prjct .col .type_prjct,.condition_prjct span.lb,
+    .item_bidding_prjct .col .name_prjct,.bidding_manage_btn a,
+    .condition_prjct span.condition_content,.receipt_prjct .info_receipt .lb,
+    .receipt_prjct .info_receipt .date,.receipt_prjct .info_receipt .price{
+        font-size: 18px;
+    }
+    .item_bidding_prjct .col .name_prjct {
+        margin-bottom: 0;
+    }
+    .condition_prjct span.d_day,.condition_prjct span.num {
+        font-size: 26px;
+    }
+    .item_bidding_prjct .col .budget_lb {
+        font-size: 18px;
+    }
+    .item_bidding_prjct .col .type_prjct span {
+        float: none;
+        margin-left: 1em;
+    }
+    .item_bidding_prjct .col .type_prjct span img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .partner_prjct {
+        padding: 1em 0 0;
+    }
+    .partner_prjct span.logo {
+        width: 3.875em;
+        height: 3.875em;
+    }
+    .partner_prjct span.name {
+        font-size: 12px;
+    }
+    .btn_prjct_link {
+        font-size: 14px;
+    }
+    .receipt_prjct .info_receipt {
+        margin-right: 3em;
+    }
+    .bidding_manage_btn {
+        display: none;
+    }
+    .m_bidding_manage_btn.bidding_manage_btn {
+        display: block;
+        text-align: center;
+        padding-top: 1em;
+    }
+    .m_bidding_manage_btn.bidding_manage_btn a {
+        margin: 0 0.5%;
+        font-size: 19px;
+        width: 32%;
+        border-radius: 1.466em;
+        height: 2.633em;
+        line-height: 2.633em;
+    }
+    .btn_prjct_link {
+        display: none;
+    }
+    .pagination a {
+        font-size: 15px;
+    }
+    /*project detail*/
+    .info_bidding_area {
+        display: block;
+        padding: 0;
+    }
+    .item_info_b {
+        width: 100%;
+        padding: 2em;
+        border-right: 0;
+        border-bottom: 1px solid rgba(196,196,196,0.5);
+    }
+    .item_info_b .label,.item_info_b .date {
+        font-size: 20px;
+    }
+    .join_partners {
+        font-size: 23px;
+    }
+    .tab_detail {
+        padding: 5em 0;
+    }
+    .tab_detail p {
+        font-size: 20px;
+    }
+    .edit_btn {
+        text-align: center;
+        margin: 0 auto 3em;
+    }
+    .edit_btn a {
+        font-size: 20px;
+    }
+    .top_briefing .top_detail .title,.item_briefing .title {
+        font-size: 20px;
+    }
+    .top_briefing .top_detail .detail,.item_briefing .desc {
+        font-size: 18px;
+        padding-left: 1em;
+        font-weight: 200;
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+    .keyword_list p {
+        font-size: 20px;
+    }
+    .detail_bidding_top {
+        position: relative;
+    }
+    .detail_bidding_top.detail_bidding_my {
+        padding-top: 20em;
+    }
+    .manage_box {
+        float: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 4em 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .manage_box a {
+        width: 9.5em;
+        padding: 0.4em 0;
+        margin: 0 10px;
+        border-radius: 30px;
+        font-size: 20px;
+        background: #fff;
+    }
+    .detail_top_area .company_p {
+        font-size: 18px;
+    }
+    .logo_type li {
+        width: 50%;
+        margin: 0 0 3em 0;
+        padding: 0 2.5em 0 0;
+    }
+    .logo_type .desc_logo_type .type {
+        font-size: 20px;
+        margin-bottom: 0.8em;
+    }
+    .logo_type .desc_logo_type .info {
+        font-size: 15px;
+    }
+    .item_style_logo .label {
+        font-size: 15px;
+    }
+    .item_style_logo .percentage {
+        margin-top: 0.9em;
+    }
+    .item_briefing .img_reference a {
+        width: 16.375em;
+    }
+    .project_ask_item .partner_pf .img_pf {
+        width: 50px;
+        height: 50px;
+    }
+    .project_ask_item .partner_pf .name_pf {
+        font-size: 20px;
+    }
+    .contents_ask {
+        font-size: 16px;
+        padding-left: 3.6em;
+    }
+    .project_ask_item .partner_pf .date {
+        font-size: 16px;
+        right: 30px;
+        top: 0.7em;
+    }
+    .client_recomment .client_name {
+        font-size: 20px;
+    }
+    .client_recomment .comment {
+        font-size: 16px;
+    }
+    .client_recomment .client_name span {
+        font-size: 16px;
+        right: 10px;
+    }
+    .btn_comment {
+        font-size: 20px;
+        border-width: 1px;
+    }
+    .txtbox_comment {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    /*mypage detail*/
+    .detail_contract_status {
+        padding: 4.5em 0;
+    }
+    .detail_contract_status p,.detail_top_area .name_p {
+        font-size: 25px;
+    }
+    .detail_top_area .type_p {
+        font-size: 20px;
+        margin-bottom: 1.4em;
+    }
+    .info_bidding_area:after {
+        font-size: 13px;
+    }
+    .info_bidding_area .row {
+        padding: 0;
+        height: auto;
+    }
+    .info_bidding_area .row.row1 {
+        border-bottom: 0;
+    }
+    .info_bidding_area .row .item_info_b {
+        width: 100%;
+        float: none;
+        height: auto;
+        border-right: 0;
+        padding: 2em 0;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(196,196,196,0.5);
+    }
+    .row .item_info_b .label,.row .item_info_b .date {
+        font-size: 18px;
+    }
+    .item_info_b .partners {
+        font-size: 32px;
+    }
+    .item_info_b .budget {
+        font-size: 13px;
+    }
+    .item_info_b .review a {
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    .item_info_b .partners img {
+        width: 0.7em;
+    }
+    .row .item_info_b .budget img {
+        width: 2.257em;
+    }
+    .info_bidding_area .row .item_info_b .my_partner .logo {
+        width: 3em;
+        height: 3em;
+        top: 0;
+    }
+    .item_info_b span {
+        font-size: 18px;
+    }
+    .info_bidding_area .row .item_info_b .my_partner {
+        padding-left: 3.5em;
+        float: right;
+    }
+    .item_info_b .review,
+    .row .item_info_b .date {
+        float: right;
+    }
+    /*회원정보 수정*/
+    .edit_my_area {
+        max-width: 600px;
+        padding: 6em 20px;
+    }
+    .col_45,.col_55 {
+        float: none;
+        width: 100%;
+    }
+    /*main 메인*/
+    .chat_bot {
+        display: none;
+    }
+    .main_area {
+        padding-top: 9.313em;
+    }
+    .title_main_box .subtitle_main {
+        font-size: 29px;
+        font-weight: 200;
+    }
+    .title_main_box .title_main {
+        font-size: 45px;
+    }
+    .main_click_num .title {
+        font-size: 22px;
+    }
+    .main_click_num .number_click p {
+        font-size: 36px;
+    }
+    .start_project .title {
+        font-size: 26px;
+        font-weight: 200;
+        color: #7c7c7c;
+        margin-bottom: 0.24em;
+    }
+    .start_project {
+        margin-bottom: 3.3em;
+    }
+    .click_menu li {
+        padding: 0;
+        float: none;
+        width: 100%;
+        overflow: hidden;
+        font-size: 30px;
+        padding: 2.4em 0 2.4em 1.7em;
+    }
+    .consult_box2 .click_menu li.agency_nav {
+        color: #fff;
+        background-color: #377AEF;
+    }
+    .click_menu li.schedule a:hover,
+    .click_menu li.schedule a {
+        background: url("/assets/images/project/mobile/cal1.png") center right 2em no-repeat #f7f7f7;
+        -webkit-background-size: 60px;
+        background-size: 60px;
+    }
+    .click_menu li a {
+      /*  font-size: 30px;
+        padding: 2.4em 0 2.4em 1.7em;*/
+    }
+    .click_menu li a:hover {
+        background: #f7f7f7;
+        color: #377aef;
+    }
+    .click_menu li.budget a:hover,
+    .click_menu li.budget a {
+        color: #ffffff;
+        background: url("/assets/images/project/mobile/money1.png") center right 2.1em no-repeat #377aef;
+        -webkit-background-size: 51px;
+        background-size: 51px;
+    }
+    .consult_box .click_menu {
+        display: block;
+    }
+    .scroll_direct img.pc_img {
+        display: none;
+    }
+    .scroll_direct img.mb_img {
+        display: block;
+    }
+    .consult_box {
+        width: 100%;
+        padding: 9.813em 0 0 6.625em;
+        float: none;
+    }
+    /*.consult_box2 {
+        background: none;
+    }*/
+    .consult_box:hover {
+        background: #ffffff;
+    }
+    .consult_box:hover .title, .consult_box:hover .consult_desc, .consult_box:hover .ani_here .here {
+        color: #377aef;
+
+    }
+    .consult_box:hover .consult_desc span {
+        color: #444;
+    }
+    .consult_box .title img,
+    .consult_box .title .hover_on, .consult_box:hover .title .hover_off,
+    .consult_box:hover .title .hover_on {
+        display: none;
+    }
+    .consult_box .title,.page_title_section .page_title {
+        font-size: 25px;
+    }
+    .consult_box .consult_desc {
+        font-size: 65px;
+    }
+    .ani_here {
+        left:inherit;
+        right: 150px;
+        bottom: 330px;
+    }
+    .consult_box:hover .dotted_line_item{fill:#3c70b7;}/*흰색으로 변환시 fill:#fff*/
+    .consult_box:hover .st_line{fill:none;stroke:#3c70b7}/*흰색으로 변환시 fill:#fff*/
+    .consult_box:hover .out_line_item{fill:none;stroke:#3c70b7}/*흰색으로 변환시 fill:#fff*/
+    .consult_box:hover .ani_here a {color: #3c70b7;}
+    /*main budget*/
+    .budget_wra {
+        height: auto;
+    }
+    .budget_area {
+        padding: 0;
+        height: auto;
+    }
+    .page_title_section {
+        float: none;
+        width: 100%;
+        margin-bottom: 6em;
+    }
+    .setting_budget_section {
+        width: 100%;
+        position: relative;
+        padding: 0 60px 0;
+    }
+    .setting_budget_input {
+        position: absolute;
+        padding-top: 0;
+        top: 0;
+        left: 60px;
+        width: calc(100% - 120px);
+    }
+    .page_title_section .page_title_contents {
+        font-size: 50px;
+    }
+    .page_title_section .skip_btn {
+        font-size: 20px;
+    }
+    .page_title_section .page_desc {
+        font-size: 20px;
+    }
+    .page_title_section .page_desc:before {
+        margin: 1.2em 0;
+    }
+    .setting_budget_price dl {
+        width: 100%;
+        margin: 0 0 3em;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    .budget_white_wra .setting_budget_price dl {
+        border-bottom: 1px solid rgba(34,34,34,0.2);
+    }
+
+    .setting_budget_price dl:last-child {
+        border-bottom: 0;
+    }
+    .setting_budget_price dt, .setting_budget_input dt {
+        font-size: 18px;
+    }
+    .pricebox {
+        font-size: 56px;
+        height: 1em;
+    }
+    .setting_budget_price dd {
+        padding-bottom: 3em;
+        position: static;
+    }
+    .setting_budget_price dd .price_arrow img {
+        width: 50px;
+        height: 50px;
+    }
+    .setting_budget_price dd .price_arrow {
+        top: 5px;
+    }
+    .setting_budget_price dd .price_arrow.down {
+        bottom: 20px;
+    }
+    .total_budget_area {
+        padding: 3.25em 20px;
+        height: auto;
+    }
+    .total_budget_area {
+        position: relative;
+    }
+    .step_project {
+        display: none;
+    }
+    .step_project_m {
+        overflow: hidden;
+        background: #303030;
+        display: block;
+        width: 100%;
+    }
+    .step_project_m a {
+        padding: 2em 10px;
+        width: 50%;
+        float: left;
+        color: #ffffff;
+        font-size: 20px;
+        position: relative;
+        background: #303030;
+    }
+    .step_project_m a.next:before {
+        content: '';
+        height: 70%;
+        width: 1px;
+        left: 0;
+        position: absolute;
+        top: 15%;
+        background: rgba(255,255,255,0.5);
+    }
+    .step_project_m a img {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 1em;
+    }
+    .step_project_m a.next {
+        text-align: right;
+    }
+    .pricebox_direct {
+        font-size: 76px;
+        width: 31%;
+        max-width: 50%;
+        min-width: 55px;
+        height: 1em;
+        text-align: left;
+
+    }
+    .budget_num strong {
+        width: 3.5rem;
+        font-size: 14px;
+    }
+    .price_unit {
+        font-size: 25px;
+    }
+    .total_budget_section {
+        padding-left: 0;
+        max-width: 650px;
+    }
+    .budget_num {
+        position: static;
+    }
+    .budget_review {
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        padding: 1em 0 4em;
+        margin-bottom: 2em;
+    }
+    .budget_review p {
+        float: right;
+    }
+    .budget_review p.desc {
+        float: left;
+        margin: 0;
+        padding-top: 0.6em;
+        font-size: 24px;
+    }
+    .budget_num p {
+        font-size: 14px;
+    }
+    .budget_num .mb_txt {
+        display: block;
+        font-size: 20px;
+        color: rgba(255,255,255,0.6);
+        line-height: 1;
+    }
+    .budget_range p,.budget_range p.end {
+        font-size: 20px;
+    }
+    .bar_price input,.bar_price:after {
+        font-size: 18px;
+    }
+    .ui-slider .ui-slider-handle .bar_price {
+        /*top: 3.8em;*/
+        margin-left: -7.356em;
+    }
+    .bar_price input {
+        margin-top: 1.3em;
+    }
+    .bar_price {
+        width: 18.313em;
+        height: 5.688em;
+        left: 16.5%;
+        background: url(../images/project/P7/box.png) 0 0 no-repeat #377aef;
+        -webkit-background-size: 17.313em 5.688em;
+        background-size: 17.313em 5.688em;
+    }
+    /*step1*/
+    .bidding_wra,.partner_wra,.briefing_wra, .customer_wra,.mypage_wra,.budget_wra,.find_wra {
+        padding-top: 60px;
+    }
+    .search_wra {
+        padding-top: 80px;
+    }
+    .type_project_wra {
+        padding: 60px 0 0;
+        height: auto;
+    }
+    .page_title_section {
+        padding: 6em 60px 0;
+        position: static;
+    }
+    .type_project_area .page_title_section {
+        padding: 6em 60px 4em;
+        position: static;
+    }
+    .type_project_area {
+
+    }
+    .type_project_section {
+        float: none;
+        padding-left: 0;
+    }
+    .type_project_section ul {
+        display: block;
+        overflow: hidden;
+    }
+    .type_project_section li.empty {
+        display: none;
+    }
+    .type_project_section li {
+        float: left;
+        width: 50%;
+        padding: 0;
+        height: 500px;
+    }
+   /* .type_project_section li > label:hover p.desc {
+        font-size: 24px;
+    }*/
+    .type_project_section li p.sub_title {
+        text-align: left;
+        margin-bottom: 1em;
+        font-size: 25px;
+    }
+    .type_project_section li p.title {
+        font-size: 46px;
+    }
+    .type_project_section .chkbox_white + .chkShape {
+        display: none;
+    }
+    .type_project_section li label {
+        border: 0;
+        position: relative;
+    }
+    .type_project_section li label p.desc,
+    .type_project_section li label:hover p.desc {
+        display: block;
+        position: absolute;
+        left: 3.25em;
+        bottom: 2.5em;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.739em;
+    }
+    .type_project_section li label:hover {
+        background: none;
+    }
+    .type_project_section li:nth-child(7) label.active,
+    .type_project_section li:nth-child(8) label.active,
+    .type_project_section li:nth-child(3) label.active,
+    .type_project_section li:nth-child(4) label.active,
+    .type_project_section li label.active,
+    .type_project_section li:nth-child(7) label.active:hover,
+    .type_project_section li:nth-child(8) label.active:hover,
+    .type_project_section li:nth-child(3) label.active:hover,
+    .type_project_section li:nth-child(4) label.active:hover,
+    .type_project_section li label.active:hover {
+        background: #377aef;
+    }
+    .type_project_section li:nth-child(7) > label,
+    .type_project_section li:nth-child(8) > label,
+    .type_project_section li:nth-child(3) > label,
+    .type_project_section li:nth-child(4) > label {
+        background: #2b2b2b;
+    }
+    .type_project_section li:nth-child(7) > label:hover,
+    .type_project_section li:nth-child(8) > label:hover,
+    .type_project_section li:nth-child(3) > label:hover,
+    .type_project_section li:nth-child(4) > label:hover {
+        background: #2b2b2b;
+    }
+    /*step2*/
+    .project_partner_wra {
+        padding: 60px 0 0;
+    }
+    .project_partner_wra .page_title_section .page_desc:before,
+    .project_partner_wra .page_title_section .page_desc {
+        display: none;
+    }
+    .choice_partner_step {
+        width: 100%;
+        float: none;
+    }
+    .my_project_condition .title {
+        font-size: 18px;
+        margin-left: 2em;
+    }
+    .condition_pj {
+        overflow: hidden;
+        padding: 2.4em 4.3em;
+    }
+    .condition_pj p {
+        font-size: 20px;
+    }
+    .condition_pj p.lb {
+        font-size: 20px;
+        padding: 0.4em 0 0;
+    }
+    .condition_pj p.budget {
+        float: right;
+    }
+    .condition_pj p.type {
+        float: right;
+        font-size: 25px;
+    }
+    .condition_pj .reset_move {
+        display: none;
+    }
+    .choice_partner_step .txt_desc .icon_partner {
+        font-size: 20px;
+        margin: 0 0 0.5em 0;
+    }
+    .choice_partner_step .txt_desc {
+        padding: 4em 4.3em;
+        margin: 0;
+
+    }
+    .custom_partner_list ul {
+        padding: 0 4.3em 4em;
+    }
+    .custom_partner_list li {
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin-bottom: 4em;
+    }
+    .choice_partner_step .partner_desc {
+        font-size: 20px;
+        display: block;
+        padding-top: 0.7em;
+    }
+    .custom_partner_list li .show_pf {
+        font-size: 50px;
+    }
+    .chkbox_chk + label {
+        width: 28px;
+        height: 28px;
+        margin-right: 1em;
+        -webkit-background-size: 22px 16px;
+        background-size: 22px 16px;
+    }
+    .chkbox_chk:checked + label:after {
+      /*  width: 22px;
+        height: 16px;*/
+        -webkit-background-size: 22px 16px;
+        background-size: 22px 16px;
+    }
+    .choice_partner_step .txt_desc img {
+        width: 25px;
+        vertical-align: top;
+    }
+    .reset_btn_group {
+        display: block;
+        text-align: center;
+        padding: 5em 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+    .txt_desc .mb_txt {
+        display: inline-block;
+        font-size: 25px;
+        color: #377aef;
+        margin-right: 0.5em;
+    }
+    .reset_btn_group .reset_move {
+        font-size: 20px;
+        border: 1px solid #999999;
+        padding: 0.7em 1.2em;
+        margin: 0 5px;
+        border-radius: 50px;
+    }
+    .reset_btn_group .reset_move span {
+        color: #377aef;
+    }
+    .reset_btn_group .reset_move img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5em;
+    }
+    .pop_pf_section {
+        display: none;
+    }
+    .partner_pf_box .close_pf {
+        position: fixed;
+    }
+    .pop_pf_section.active {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: inherit;
+        width: 100%;
+        min-height: 100%;
+        overflow-y: auto;
+        z-index: 100;
+    }
+    .partner_pf_box {
+        padding: 6em 0 3em;
+    }
+    .pf_contents {
+        width: 100%;
+    }
+    .desc_pf {
+        padding: 0 2em;
+    }
+    .desc_pf .type,.desc_pf .name {
+        padding: 1em 20px;
+    }
+    .partner_pf_box .title_pf{
+        font-size: 20px;
+        padding: 1.5em 2em 0;
+    }
+    .desc_pf .type,.desc_pf .name,.desc_pf .name .date {
+        font-size: 20px;
+    }
+    .mb_partner_name {
+        color: #377aef;
+        font-size: 30px;
+        padding: 0 40px;
+        display: block;
+    }
+    .slide_pf .swiper-button-next, .slide_pf .swiper-button-prev{
+        display: none;
+    }
+    .slide_pf .swiper-wrapper {
+        display: block;
+        overflow: hidden;
+
+    }
+    .slide_pf .swiper-slide {
+        margin-bottom: 6em;
+    }
+    /*step3*/
+    .project_date_wra {
+        height: auto;
+    }
+    .project_date_wra .project_date_area {
+        padding: 60px 0 0;
+        height: auto;
+    }
+    .pj_calendar_section {
+        float: none;
+        width: 100%;
+    }
+    .final_date_box {
+        padding: 0;
+        width: 100%;
+        float:none;
+        position: static;
+    }
+    .dateBtn {
+        font-size: 20px;
+        margin: 1.5em 0 0;
+    }
+    .dateBtn {
+        display: none;
+    }
+    .box_date {
+        width: 100%;
+        padding: 2.6em 0;
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(34,34,34,0.2);
+    }
+    .box_date:first-child {
+        border-top: 1px solid rgba(34,34,34,0.2);
+    }
+    .box_date .title {
+        margin-bottom: 0;
+    }
+    .box_date .title,.final_date_box .period p span.text {
+        display: inline-block;
+        padding-left: 40px;
+        text-align: center;
+        font-size: 25px;
+        color: #7c7c7c;
+        margin: 0.1em 0 0;
+    }
+    .project_date_blue_wra .final_date_box .period p span.text {
+        color: #ffffff;
+    }
+    .finalDatebox {
+        font-size: 37px;
+    }
+    .box_date span {
+        font-size: 20px;
+    }
+    .box_date p:nth-child(2) {
+        float: right;
+        padding-right: 40px;
+    }
+    .final_date_box .period {
+        position: static;
+        float: none;
+        margin-top: 0;
+        padding: 2.6em 0;
+        margin-bottom: 2em;
+    }
+    .info_cal {
+        position: absolute;
+        right: 4em;
+        top: 3.2em;
+    }
+    .info_cal p {
+        display: inline-block;
+        font-size: 20px;
+        margin: 0 0 0 0.8em;
+    }
+    .final_date_box .period p span.day {
+        padding: 13px 40px 0 0;
+        font-size: 18px;
+        float: right;
+    }
+    .final_date_box .period p strong {
+        font-size: 60px;
+        margin-right: 5px;
+    }
+    .calendar_box {
+        border: 0;
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+    /*.final_date_box {
+        display: none;
+    }
+    .final_date_box.m_final_date_box {
+        display: block;
+    }*/
+    .date-picker-wrapper .month-wrapper {
+        padding-top: 6em;
+        position: static;
+    }
+    .date-picker-wrapper .date-range-length-tip {
+        display: none;
+    }
+    .calendar_box .date-picker-wrapper {
+        width: 100% !important;
+        top: 7em !important;
+        position: static;
+        transform: translate(0,0);
+    }
+    .project_date_blue_wra .calendar_box .date-picker-wrapper {
+        border: 0;
+    }
+    .calendar_box .date-picker-wrapper table {
+        width: 100% !important;
+    }
+    .date-picker-wrapper .month-wrapper table td {
+        /*height: 5em;*/
+    }
+    .date-picker-wrapper table .caption .prev,
+    .date-picker-wrapper table .caption .next {
+        position: static;
+        display: inline-block;
+        width: 16px;
+        height: 34px;
+        margin-top: 0;
+    }
+    .condition_pj p.budget .date {
+        margin-right: 20px;
+        float: left;
+    }
+    .date-picker-wrapper table .caption .prev:hover,
+    .date-picker-wrapper table .caption .prev {
+        background: url("../images/project/P11/month_before.png") 0 0 no-repeat;
+        -webkit-background-size: 16px 34px;
+        background-size: 16px 34px;
+    }
+    .date-picker-wrapper table .caption .next:hover,
+    .date-picker-wrapper table .caption .next {
+        background: url("../images/project/P11/month_next.png") 0 0 no-repeat;
+        -webkit-background-size: 16px 34px;
+        background-size: 16px 34px;
+    }
+    .date-picker-wrapper .month-element {
+        font-size: 35px;
+    }
+    .date-picker-wrapper .month-wrapper table th {
+        font-size: 17px;
+        line-height: 40px;
+        width: 14.28%;
+    }
+    .date-picker-wrapper .month-wrapper table td .day .wrap-day {
+        font-size: 18px !important;
+        /*padding: 1em 0.9em !important;*/
+        padding: 0 !important;
+        width: 54px !important;
+        height: 54px !important;
+        line-height: 54px !important;
+        margin: 0 auto !important;
+    }
+    .startday:after,
+    .endday:after {
+        width: 0.8em;
+        height: 0.8em;
+        top: 0.4em;
+    }
+    .today:after {
+        width: 1.386em;
+        top: 0.6em;
+    }
+    .date-picker-wrapper .month-wrapper table .real-today:after {
+        width: 2.475em;
+    }
+    .date_entry_directly {
+        padding: 3em 0 0;
+        display: inline-block;
+        margin: 0 4em 0 0;
+    }
+    .date_entry_directly span,
+    .date_entry_directly .title {
+        font-size: 20px;
+    }
+    .date_entry_directly .datebox, .datetrange {
+        font-size: 23px;
+    }
+    .date_entry_directly .entry_date {
+        display: none;
+    }
+    .box_hidden {
+        opacity: 1;
+    }
+    .dateBtn:hover {
+        color: #898989;
+        border: 1px solid #898989;
+    }
+    .dateBtn.focus:hover {
+        color: #377aef;
+        border-color: #377aef;
+    }
+    .project_date_blue_wra .dateBtn,
+    .project_date_blue_wra .dateBtn:hover {
+        background: transparent;
+        color: #ffffff;
+    }
+    .project_date_blue_wra .dateBtn.focus:hover {
+        background: #ffffff;
+        color: #377aef;
+    }
+    /*mypage 회원정보 수정*/
+    .edit_profile_box .info_type p,.edit_profile_box .info_type .leave_mbr {
+        font-size: 18px;
+    }
+    .edit_profile_box .info_type .leave_mbr {
+        border-radius: 30px;
+    }
+    .edit_profile_box .info_type {
+        padding-bottom: 1.1em;
+    }
+    .item_my .lb {
+        display: block;
+        margin-bottom: 0.7em;
+        font-size: 22px;
+    }
+    .my_content_edit {
+        display: block;
+        overflow: hidden;
+    }
+    .textbox_mbr,.my_content_edit .address .textbox_mbr {
+        width: 100%;
+        font-size: 20px;
+    }
+    .my_content_edit .address .textbox_mbr.textbox_mbr_sm {
+        width: 70%;
+    }
+    .search_address {
+        font-size: 15px;
+        vertical-align: top;
+    }
+    .my_content_edit .tel {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+    .my_content_edit .auth_my {
+        margin-top: 1em;
+        float: right;
+        font-size: 14px;
+    }
+    .confirm_mail {
+        font-size: 20px;
+    }
+    .selectbox_mbr,.textbox_mbr.textbox_mbr_sm {
+        width: 30%;
+        font-size: 20px;
+    }
+    .my_content_edit .email span, .my_content_edit .tel span {
+        margin: 0.3em 0 0;
+        font-size: 24px;
+    }
+    .my_content_edit .desc {
+        font-size: 17px;
+    }
+    .chk_agree_box {
+        display: block;
+    }
+    .sns_agree .title {
+        color: #595959;
+        margin-bottom: 0.4em;
+    }
+    .email .selectbox_mbr {
+        width: 100%;
+        margin-top: 0.5em;
+    }
+    .email .textbox_mbr {
+        width: 46%;
+    }
+    .my_content_edit .email .email_m_box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .edit_my_section {
+        padding: 1em 0 0 1em;
+    }
+    .item_my {
+        margin-bottom: 1.7em;
+    }
+    .sns_agree {
+        padding-top: 1em;
+    }
+    .btn_group button, .btn_review {
+        width: 12.5em;
+        height: 3.067em;
+        border-radius: 1.933em;
+        font-size: 20px;
+    }
+    .sns_agree .title {
+        font-size: 18px;
+    }
+    .chkTxt,.sns_agree p.desc {
+        font-size: 18px;
+    }
+    /*후기작성*/
+    .top_review_area {
+        padding: 9.2em 20px 3.2em;
+    }
+    .top_review_box .write_msg {
+        font-size: 28px;
+        font-weight: 200;
+    }
+    .item_review .lb {
+        font-size: 20px;
+    }
+    .item_review .desc_lb {
+        font-size: 15px;
+    }
+    .num_score {
+        font-size: 27px;
+    }
+    .write_review_area {
+        padding: 3em 20px;
+    }
+    .txtbox {
+        font-size: 15px;
+    }
+    .pop_btn_group button {
+        font-size: 22px;
+        height: 3.056em;
+        width: 8.911em;
+    }
+    .pop_review_complete .title {
+        font-size: 25px;
+    }
+    .pop_review_complete .desc {
+        font-size: 20px;
+        white-space: nowrap;
+        margin-bottom: 1em;
+    }
+    /*팝업 기간연장*/
+    .period_edit_box {
+        width: 100%;
+    }
+    .period_edit_box .title {
+        font-size: 35px;
+    }
+    .period_edit_box .desc {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .period_edit_box .desc br {
+        display: block;
+    }
+    .period_edit_box .etc {
+        font-size: 20px;
+        margin-bottom: 45px;
+        display: block;
+        color: rgba(255,255,255,0.5);
+    }
+    .period_edit_box .pop_btn_group button:nth-child(2) {
+        color: #377aef;
+        border-color: #377aef;
+    }
+    /*contact*/
+    .customer_area {
+        padding: 3em 0 0;
+    }
+    .faq_section {
+        padding: 0;
+    }
+    .location_section {
+        padding: 0 0 4em 0;
+    }
+    .menu_center {
+        display: flex;
+        justify-content: center;
+    }
+    .menu_center li {
+        width: 25em;
+        text-align: center;
+        margin: 0 10px;
+        float: none;
+    }
+    .menu_center li a {
+        padding: 0 0 10px 0;
+        font-size: 25px;
+    }
+    .faq_section .title, .location_section .desc {
+        font-size: 40px;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+    .faq_section .title {
+        background: #ffffff;
+    }
+    .info_dk {
+        display: block;
+        margin-bottom: 0;
+    }
+    .item_info_dk,.item_info_dk.dk3 {
+        width: 100%;
+        padding: 1.7em 40px 0;
+        height: 78px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(34,34,34,0.2);
+    }
+    .item_info_dk.dk2,.item_info_dk.dk3 {
+        text-align: left;
+    }
+    .item_info_dk.dk2 {
+        padding-top: 2.3em;
+    }
+    .item_info_dk span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .item_info_dk .mail,.item_info_dk .time {
+        font-size: 25px;
+    }
+    .item_info_dk .tel {
+        font-size: 25px;
+    }
+    .item_info_dk .address {
+        font-size: 20px;
+    }
+    .map_section {
+        padding-bottom: 0;
+    }
+    .item_info_dk img,.item_info_dk.dk3 img {
+        width: 3em;
+        margin-right: 3.1em;
+    }
+    .info_dk_2 .item_info_dk img {
+        width: 2.5em;
+    }
+    .map_section iframe {
+        height: 52em;
+    }
+    .faq_area {
+        padding: 0;
+        min-height: calc(100% - 78px);
+        background: rgba(247,247,247,0.7);
+    }
+    .faq_type {
+        flex-wrap: wrap;
+        background: #ffffff;
+    }
+    .faq_type li {
+        width: 50%;
+        margin-top: 0.5em;
+    }
+    .faq_type li p {
+        padding: 0.9em 1.2em;
+        font-size: 25px;
+    }
+    .faq_contents.active {
+        padding-bottom: 6em;
+
+    }
+    .faq_area .pagination {
+        display: block;
+        padding-top: 2em;
+    }
+    .pagination a {
+        font-size: 20px;
+    }
+    .item_faq {
+        margin-bottom: 2.4em;
+    }
+    .item_faq .question {
+        padding: 2.4em 2em;
+    }
+    .item_faq .question p {
+        font-size: 25px;
+    }
+    .item_faq .answer p {
+        font-size: 20px;
+    }
+    .faq_contents {
+        padding: 0 40px;
+    }
+    /*project step4*/
+    .briefing_area {
+        padding: 0;
+    }
+    .briefing_section {
+        width: 100%;
+        float: none;
+        padding: 0 40px;
+    }
+    .briefing_section .item_briefing_type span {
+        font-size: 25px;
+        width: 110px;
+    }
+    .briefing_section .item_briefing_type span.bar {
+        width: calc(100% - 114px);
+    }
+    .item_briefing_box .label {
+        font-size: 20px;
+    }
+    .briefing_section .textbox_default {
+        font-size: 14px;
+    }
+    .keyword_item {
+        width: 100%;
+        margin: 0 0 2em;
+    }
+    .keyword_item .title {
+        font-size: 16px;
+    }
+    .item_briefing_box .prjct_item_content {
+        padding-left: 0;
+    }
+    .briefing_required:after {
+        left: 40px;
+    }
+    .briefing_selection .page_title_contents br {
+        display: none;
+    }
+    .briefing_selection .page_title_section {
+        margin-bottom: 2em;
+    }
+    .briefing_selection .briefing_section .item_briefing_type {
+        position: relative;
+        padding-top: 4em;
+    }
+    .briefing_section .skip_btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        background: none;
+        border: 1px solid #c1c1c1;
+        color: #c1c1c1;
+        width: 8.5em;
+        height: 2.933em;
+        line-height: 2.933em;
+        border-radius: 1.766em;
+    }
+    .briefing_selection .briefing_section .item_briefing_type span.bar {
+        width: calc(100% - 114px);
+    }
+    .item_briefing_box .label .desc {
+        font-size: 15px;
+        padding-left: 0;
+    }
+    .item_briefing_box .label .desc.desc_2 {
+        display: block;
+        padding-top: 5px;
+    }
+    .job_type {
+        width: 32%;
+    }
+    .job_type .chkTxt {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .item_briefing_box .logo_type li {
+        width: 50%;
+    }
+    .item_briefing_box .logo_type .job_type {
+        width: 100%;
+    }
+    .item_briefing_box .logo_type li img {
+        width: 100%;
+    }
+    .item_briefing_box .item_style_logo .label {
+        font-size: 20px;
+        padding-left: 0.9em;
+        width: 7.325em;
+    }
+    .tone_n_manner, .company_name {
+        padding: 0;
+    }
+    .style_bar {
+        margin-top: 1.2em;
+    }
+    .style_bar .ui-slider .ui-slider-handle {
+        top: -1em;
+    }
+    .item_color {
+        width: calc(50% - 4px);
+    }
+    .item_color .chkTxt {
+        font-size: 20px;
+    }
+    .item_color span {
+        font-size: 13px;
+    }
+    .item_briefing_box .label .desc.desc_2 br {
+        display: block;
+    }
+    .temp_save, .briefing_selection .btn_group {
+        display: none;
+    }
+    .briefing_selection .btn_group_m {
+        display: block;
+        padding-bottom: 8em;
+    }
+    .briefing_selection .btn_group_m button {
+        color: #ffffff;
+        width: 10.5em;
+        border: 0;
+        background: #377aef;
+        margin: 0 10px;
+    }
+    .briefing_wra {
+        padding-bottom: 0;
+    }
+    .briefing_selection .btn_group_m button:first-child {
+        background: #bcbcbc;
+
+    }
+    /*project 완료*/
+    .top_msg_complete {
+        text-align: center;
+        padding: 4em 0;
+        height: auto;
+    }
+    .top_msg_complete .title,.bidding_msg_box .title {
+        font-size: 26px;
+        text-align: left;
+    }
+    .top_msg_complete .title span {
+        font-size: 28px;
+    }
+    .bidding_msg_area {
+        height: auto;
+        padding-top: 3.5em;
+        /*height: calc(100vh - 24em - 60px);*/
+    }
+    .bidding_msg_box .desc {
+        font-size: 20px;
+    }
+    .btn_bidding a {
+        font-size: 23px;
+    }
+    .project_wra {
+        height: 100%;
+        padding-top: 60px;
+    }
+    .bidding_msg_full_area {
+        height: 100%;
+    }
+    /*공개입찰*/
+    .partner_top10_area {
+        padding-top: 9em;
+    }
+    .title_top_box {
+        padding: 0 40px;
+    }
+
+    .title_top_box .title.title_pc {
+        display: none;
+    }
+    .title_top_box .title.title_mb {
+        display: block;
+        font-size: 22px;
+        font-style: italic;
+        margin: 0 0 1em 0;
+        line-height: 1.3em;
+    }
+    .title_top_box .pop_premium img {
+        width: 22px;
+    }
+    .title_top_box .pop_premium {
+        font-size: 22px;
+        color: rgba(0,0,0,0.5);
+        display: block;
+    }
+    .premium_contents {
+        height: 25.5em;
+    }
+    .premiumSlide_box .slidePremium {
+        padding: 3em 10em;
+    }
+    .slidePremium .swiper-slide {
+        opacity: 1 !important;
+        width: 95% !important;
+    }
+    .type_premiumP p {
+        font-size: 16px;
+    }
+    .premiumP_detail .name {
+        font-size: 22px;
+    }
+    .premiumP_detail .desc,.premiumP_info .date,.premiumP_info .d_day {
+        font-size: 14px;
+    }
+    .premiumP_info .sub_label {
+        font-size: 13px;
+    }
+    .premiumP_info .budget .budget_icon {
+        font-size: 13px;
+    }
+    .premiumP_info .d_day {
+        font-size: 16px;
+    }
+    .premiumP_info .budget .price span {
+        font-size: 40px;
+    }
+    .premiumP_info .budget {
+        top: 0.9em;
+    }
+    .swiper-container-horizontal>.blue_bar.swiper-pagination-bullets, .swiper-pagination-custom, .slidePremium .swiper-pagination-fraction {
+        bottom: 0;
+        top: inherit;
+        right: 50%;
+        margin-right: -12.5em;
+    }
+    .nextCircle.swiper-button-next, .swiper-container-rtl .swiper-button-prev.prevCircle {
+        right: 1em;
+    }
+    .prevCircle.swiper-button-prev, .swiper-container-rtl .swiper-button-next.nextCircle {
+        left: 1em;
+    }
+    .field_p_box {
+        overflow: hidden;
+    }
+    .field_p_box .field_section {
+        padding: 2em 20px;
+    }
+    .field_p_box .label {
+        font-size: 20px;
+        height: 2.5em;
+        line-height: 2.5em;
+        padding-right: 0;
+        padding-left: 5px;
+        float: left;
+        margin-right: 0;
+        width: 10%;
+    }
+    .field_p_box ul{
+        width: 90%;
+        padding-left: 2em;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .field_p_box li {
+        float: none;
+        display: inline-block;
+    }
+    .field_p_box li.focus p {
+        border-radius: 30px;
+    }
+    .field_p_box li p {
+        width: 152px;
+        text-align: center;
+        padding: 0;
+    }
+    .field_p_box li p,.reset_field,.choice_item p {
+        font-size: 20px;
+    }
+    .field_p_box.result .field_section {
+        padding: 3.6em 2em;
+    }
+    .reset_field {
+        margin-right: 0;
+        width: 20%;
+    }
+    .choice_item i {
+        margin-left: 1em;
+        margin-top: 0.6em;
+    }
+    .choice_item i img {
+        width: 2.063em;
+    }
+    .choice_field {
+        width: calc(100% - 20% - 4px);
+    }
+    .project_menu_box li {
+        width: 25%;
+    }
+    .project_menu_box li p,.order_box p {
+        font-size: 20px;
+    }
+    .order_box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+        padding-left: 0;
+        padding-left: 0;
+    }
+    .order_box span {
+        height: 2em;
+        margin: 0.4em 1.5em 0;
+    }
+    .list_project_area ul {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .list_project_area li {
+        float: none;
+        width: 100%;
+    }
+    .preview_contents .top_preview .title_p {
+        font-size: 25px;
+    }
+    .bidding_item .type_project p.type {
+        font-size: 18px;
+        margin-right: 0.7em;
+    }
+    .bidding_item .type_project p.icon_p {
+        font-size: 16px;
+    }
+    .preview_contents .top_preview .company {
+        font-size: 17px;
+    }
+    .bidding_item .sub_label {
+        font-size: 15px;
+    }
+    .bidding_item .keyword_box a {
+        font-size: 20px;
+        border-radius: 30px;
+    }
+    .bidding_item .period_box .period,.bidding_item .partners_box .join_p {
+        font-size: 20px;
+    }
+    .bidding_item .budget_box .budget {
+        font-size: 18px;
+    }
+    .bidding_item .period_box .d_day {
+        font-size: 38px;
+        top: 0.7em;
+    }
+    .bidding_item .partners_box .num_p {
+        font-size: 38px;
+        top: 0.6em;
+    }
+    .bidding_item .budget_box .price {
+        font-size: 15px;
+        top: 1.5em;
+    }
+    .bidding_item .budget_box .price span {
+        font-size: 38px;
+    }
+    /*pop공개입찰*/
+    .pop_full {
+        background: #ffffff;
+    }
+    .register_bidding {
+        width: 100%;
+        height: 100%;
+    }
+    .register_bidding .title {
+        background: #4e7add;
+        font-size: 55px;
+        text-align: left;
+        margin-bottom: 1em;
+        padding: 1.4em 40px;
+    }
+    .register_bidding .title br {
+        display: block;
+    }
+    .progress_bidding {
+        display: block;
+    }
+    .progress_bidding span {
+        color: #4c4c4c;
+    }
+    .progress_bidding span b {
+        color: #377aef;
+    }
+    .progress_bidding span.step {
+        display: block;
+        font-size: 30px;
+        width: 100%;
+    }
+    .start_btn {
+        font-size: 24px;
+        color: #377aef;
+        border: 1px solid #377aef;
+        line-height: 2.7em;
+        width: 9.111em;
+    }
+    .progress_bidding span.next {
+        background: url("/assets/images/member/drop.png") 0 0 no-repeat;
+        -webkit-background-size: 15px 8px;
+        background-size: 15px 8px;
+        color: #ffffff;
+        display: block;
+        width: 15px;
+        height: 8px;
+        margin: 2em;
+    }
+    .more_project span {
+        font-size: 20px;
+    }
+    .bidding_btn {
+        font-size: 20px;
+        bottom: 1.5em;
+        right: 1.5em;
+    }
+    /*나중에설정 pop*/
+    .popup_brief_desc .pop {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        border-radius: 0;
+    }
+    .briefing_desc_box .close_pop {
+        top: 1.5em;
+        right: 1.5em;
+    }
+    .briefing_desc_box .close_pop img {
+        width: 2.5em;
+    }
+    .briefing_desc_box {
+        padding: 6em 0;
+    }
+    .briefing_desc_box .title {
+        font-size: 23px;
+        border-bottom: 0;
+        padding-bottom: 1em;
+    }
+    .briefing_desc_box .desc p {
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .fileinput-button_box p {
+        font-size: 1.5em;
+    }
+    /*참여 파트너*/
+    .bidding_partner_wra .info_bidding_area,
+    .bidding_partner_wra .detail_bidding_top {
+        display: none;
+    }
+    .more_partners {
+        font-size: 20px;
+    }
+    .partners_join_list .desc {
+        font-size: 28px;
+        padding: 1.5em 0;
+        color: #377aef;
+    }
+    .partners_join_list ul {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .partners_join_list li {
+        width: 100%;
+        float: none;
+        margin-bottom: 5em;
+    }
+    .item_partner_join {
+        height: auto;
+        border: 0;
+    }
+    .join_partner_pf {
+        width: 100%;
+        border: 1px solid #d3d3d3;
+        border-bottom: 0;
+        height: 62px;
+        float: none;
+        padding: 0.9em 20px 0;
+    }
+    .partner_offer {
+        width: 100%;
+        padding: 0;
+    }
+    .join_partner_pf .imgC {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5em;
+        margin-bottom: 0;
+    }
+    .join_partner_pf .nameC {
+        font-size: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+    .join_partner_pf .level_partner {
+        float: right;
+        margin-top: 6px;
+    }
+    .join_partner_pf .level_partner img {
+        width: 30px;
+    }
+    .offer_info {
+        padding: 1.5em 20px 0;
+        margin-bottom: 0;
+        border: 1px solid #d3d3d3;
+        border-bottom: 0;
+        height: 62px;
+    }
+    .offer_info .lb,.offer_info .unit {
+        font-size: 20px;
+    }
+    .offer_info .unit span {
+        font-size: 25px;
+    }
+    .btn_group_offer {
+        justify-content: flex-end;
+        border-top: 1px solid #d3d3d3;
+        padding-top: 1.5em;
+    }
+    .btn_group_offer a {
+        font-size: 20px;
+        border-radius: 30px;
+    }
+    /*partner home*/
+    .partner_top10_area .pop_premium {
+        color: #ffffff;
+        opacity: 0.5;
+    }
+    .partner_top10_area .pop_premium br {
+        display: block;
+    }
+    .swiper-container.slideTop10 {
+        padding: 4em 3em;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 0 !important;
+        top: inherit;
+        right: 50%;
+        height: 4px;
+        margin-right: -15em;
+    }
+    .partner_profile_item .info_partner .num {
+        font-size: 14px;
+    }
+    .partner_profile_item .info_partner .pf_partner .name {
+        font-size: 20px;
+    }
+    .partner_profile_item .info_partner .etc_info .lb,.partner_profile_item .info_partner .etc_info .type_work span {
+        font-size: 20px;
+    }
+    .partner_profile_item .info2_partner .detail_partner .lb {
+        font-size: 15px;
+    }
+    .partner_profile_item .info2_partner .detail_partner .num.num_p {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .partner_profile_item .info2_partner .detail_partner .num {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .partner_profile_item .info_partner .etc_info .lb img {
+        width: 20px;
+    }
+    .partner_profile_item .info_partner .imgC {
+        width: 4em;
+        height: 4em;
+    }
+    .title_blue {
+        font-size: 20px;
+        font-style: italic;
+        padding-left: 40px;
+    }
+    .slideBestPf .swiper-slide {
+        width: 90% !important;
+        opacity: 1 !important;
+    }
+    .slideBestPf.swiper-container {
+        padding: 7em 22em 4em 3em;
+    }
+    .item_best_portfolio .premium_icon {
+        position: absolute;
+        top: -3.713em;
+        left: 0;
+    }
+    .item_best_portfolio .premium_icon img {
+        width: 9.875em;
+    }
+    .item_best_portfolio .best_pf_detail .name {
+        font-size: 20px;
+    }
+    .best_pf_detail .pf_element p {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .item_best_portfolio .logo_best_c {
+        width: 60px;
+        height: 60px;
+        left: 1.3em;
+        top: 1.3em;
+    }
+    .sort_partner {
+        text-align: center;
+    }
+    .sort_partner span {
+        font-size: 22px;
+    }
+    .sort_partner p {
+        font-size: 20px;
+    }
+    .section_partners_list {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section_partners_list li {
+        height: auto;
+        margin-bottom: 4em;
+    }
+    .profile_card {
+        width: 100%;
+        float: none;
+        border-right: 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .prjct_card {
+        width: 100%;
+        float: none;
+        height: 170px;
+    }
+    .img_repre_prjct {
+        width: 30%;
+        float: left;
+        height: 100%;
+    }
+    .img_repre_prjct img {
+        height: 100%;
+    }
+    .info_repre_prjct {
+        width: 70%;
+        float: right;
+        padding: 0;
+        height: 100%;
+    }
+    .profile_card .logo_img {
+        width: 20em;
+    }
+    .profile_card .logo_img span {
+        width: 75px;
+        height: 75px;
+    }
+    .company_detail {
+        width: calc(100% - 20em - 4px);
+    }
+    .company_detail .name {
+        font-size: 25px;
+    }
+    .company_detail .type_tech .lb {
+        font-size: 18px;
+    }
+    .company_detail .type_tech span {
+        font-size: 18px;
+        width: 4.417em;
+        height: 1.917em;
+        line-height: 1.917em;
+    }
+    .info_repre_prjct .label {
+        font-size: 15px;
+        margin-bottom: 0;
+        height: 33.3%;
+        line-height: 57px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .info_repre_prjct .label:last-child {
+        border-bottom: 0;
+    }
+    .info_repre_prjct .label.label_blue {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .info_repre_prjct .label span ,
+    .info_repre_prjct .label.label_blue span {
+        font-size: 30px;
+        margin-top: 13px;
+    }
+    .info_repre_prjct .label span.score {
+        display: none;
+    }
+    .info_repre_prjct .label span img {
+        width: 0.76em;
+    }
+    .nextCircle.swiper-button-next, .prevCircle.swiper-button-prev {
+        display: none;
+    }
+    /*partner detail*/
+    .top_partners_area {
+        padding: 4em;
+        position: relative;
+    }
+    .top_partners_info {
+        float: none;
+    }
+    .top_info_box.first {
+        border: 0;
+        padding-top: 1em;
+    }
+    .top_info_box {
+        float: none;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        text-align: left;
+    }
+    .top_info_box .lv_partner,
+    .top_info_box.first .lb {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 0;
+        margin: 0;
+    }
+    .type_tech_partner br {
+        display: none;
+    }
+    .top_info_box .type_tech_partner span {
+        text-align: center;
+    }
+    .top_partners_name {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 2.5em;
+    }
+    .top_partners_img {
+        width: 9em;
+        margin-right: 1em;
+        vertical-align: top;
+        position: absolute;
+        top: 4em;
+        left: 4em;
+    }
+    .top_partners_img img {
+        width: 100%;
+    }
+    .top_partners_name .name {
+        font-size: 20px;
+        padding-left: 110px;
+        line-height: 90px;
+    }
+    .top_partners_name .intro {
+        display: block;
+        font-size: 16px;
+        width: 100%;
+    }
+    .top_info_box .lb,.top_info_box .type_tech_partner span {
+        font-size: 18px;
+    }
+    .top_info_box .lv_partner img {
+        width: 25px;
+    }
+    .top_partners_work {
+        display: block;
+        padding: 0;
+    }
+    .top_work_box {
+        width: 100%;
+        border-right: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #afafaf;
+    }
+    .top_work_box:last-child {
+        border-bottom: 0;
+    }
+    .top_work_box .lb {
+        font-size: 15px;
+    }
+    .top_work_box .lb span {
+        font-size: 35px;
+    }
+    .sort_partner_prjct .selectbox {
+        font-size: 16px;
+        width: 11.233em;
+        height: 2.667em;
+    }
+    .list_partner_prjct {
+        padding: 4em 0 0;
+    }
+    .list_partner_prjct li {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .prjct_preview_info .title {
+        font-size: 25px;
+    }
+    .prjct_preview_info {
+        padding: 1.5em 40px;
+    }
+    .prjct_preview_info .best_pf_detail {
+        display: flex;
+        justify-content: space-between;
+    }
+    .best_pf_detail .pf_element_two {
+        float:none;
+    }
+    .best_pf_detail .pf_element p {
+        margin-bottom: 0;
+    }
+    .best_pf_detail .pf_element i {
+        margin-top: -0.8em;
+    }
+    .list_partner_prjct .more_project {
+        padding: 2em 0 4em;
+    }
+    /*project*/
+    .profile_pj_box {
+        padding: 10px 20px;
+        height: 70px;
+    }
+    .profile_pj_area {
+        bottom: 2em;
+    }
+    .prjct_desc {
+        padding: 0;
+        display: block;
+        top: -2em;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .prjct_desc .desc_element {
+        padding: 0 20px;
+        width: 100%;
+        height: 70px;
+        border-right: 0;
+        border-bottom: 1px solid #afafaf;
+    }
+    .profile_pj_box span.img_logo {
+        width: 50px;
+        height: 50px;
+    }
+    .profile_pj_box span {
+        font-size: 20px;
+    }
+    .profile_pj_box span.lv {
+        float: right;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .prjct_desc2 {
+        padding: 3em 0 0;
+        margin-bottom: 0;
+    }
+    .prjct_desc2 .img_box {
+        margin-bottom: 0;
+    }
+    .prjct_desc .desc_element .lb,
+    .prjct_desc .desc_element .lb.lb_eng {
+        font-size: 15px;
+        line-height: 70px;
+    }
+    .prjct_desc .desc_element .desc .scroe_num {
+        font-size: 35px;
+        line-height: 70px;
+    }
+    .prjct_desc .desc_element .desc .type {
+        line-height: 70px;
+        font-size: 20px;
+    }
+    .prjct_desc .desc_element .desc .period {
+        font-size: 23px;
+        line-height: 70px;
+    }
+    .prjct_detail_content {
+        padding: 0;
+    }
+
+    .prjct_desc2 .client {
+        font-size: 15px;
+    }
+    .prjct_desc2 .prjct_name {
+        font-size: 28px;
+    }
+    .prjct_desc2 .prjct_name span {
+        float: none;
+        margin-top: 0.7em;
+        display: block;
+    }
+    .prjct_desc2 .prjct_name span img {
+        width: 75px;
+    }
+    .prjct_desc2 .detail_txt {
+        font-size: 16px;
+    }
+    .client_review_area {
+        margin-bottom: 0;
+        padding: 4em 0;
+    }
+    .client_review_box {
+        padding: 0 40px;
+    }
+    .client_review_box .title {
+        font-size: 20px;
+    }
+    .client_review_box .review_txt {
+        font-size: 16px;
+    }
+    .client_review_box .score_pj .score_num {
+        font-size: 35px;
+    }
+    .client_review_box .score_pj i {
+        margin-top: 8px;
+    }
+    .client_review_box .score_pj img {
+        width: 25px;
+    }
+    /*login*/
+    .login_wrap {
+        padding-top: 60px;
+        height: auto;
+        min-height: 100%;
+    }
+    .login_section {
+        /*padding: 2em 20px 4em;*/
+        padding: 5em 20px 7em;
+        height: 100%;
+        min-width: 100%;
+    }
+    .login_wrap2 .login_section {
+        height: auto;
+        min-height: calc(100% - 285px);
+    }
+    .title_login_pc {
+        display: none;
+    }
+    .title_login {
+        font-size: 48px;
+        font-weight: 300;
+        margin-bottom: 0.3em;
+    }
+    .login_area .textbox_default {
+        font-size: 20px;
+        height: 2.933em;
+    }
+    .title_login,.sub_title {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .sub_title {
+        font-size: 20px;
+    }
+    .login_area {
+        max-width: 500px;
+        padding: 3.5em 0 2.875em;
+        border: 0;
+    }
+    .login_area .chkTxt {
+        font-size: 18px;
+    }
+    .login_area .find_box {
+        position: static;
+        text-align: center;
+        padding-top: 1.5em;
+    }
+    .login_area .find_box a {
+        font-size: 20px;
+        padding: 0 0.8em;
+        color: #ffffff;
+    }
+    .login_area .find_box a:first-child:after {
+        right: -10px;
+        top: 7px;
+        height: 20px;
+    }
+    .login_area .error_msg {
+        font-size: 18px;
+    }
+    .login_sns {
+        padding-top: 3.125em;
+        max-width: 500px;
+    }
+    .login_sns .title {
+        font-size: 25px;
+        margin-bottom: 1em;
+    }
+    .login_sns .sns_box li {
+        float: none;
+        width: 100%;
+        border-right: 0;
+        padding: 1.8em 0;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    .login_sns .sns_box li:last-child {
+        border: 0;
+    }
+    .login_sns .sns_box li a {
+        font-size: 20px;
+        width: 150px;
+        text-align: left;
+    }
+    .login_btn {
+        padding-top: 2.5em;
+        max-width: 500px;
+    }
+    .login_btn button {
+        font-size: 22px;
+        display: block;
+        margin: 0 auto 0.7em;
+        padding: 0.8em 0;
+        width: 10em;
+    }
+    .login_btn button:nth-child(2) {
+        background: #dcdde0;
+    }
+    /*회원가입 완료*/
+    .top_login_txt {
+        display: block;
+        background: #ffffff;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .top_login_txt .complete_txt {
+        color: #377aef;
+        font-size: 49px;
+        margin-bottom: 10px;
+    }
+    .top_login_txt {
+        padding: 5em 0;
+    }
+
+    .top_login_txt .sub_title_m {
+        color: #757575;
+        font-size: 20px;
+    }
+    /*member find*/
+    .find_member_area {
+        padding: 3em 20px;
+    }
+    .find_member_area form {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .title_find {
+        border-bottom: 0;
+    }
+    .title_find p {
+        font-size: 40px;
+        text-align: left;
+    }
+    .content_find .desc {
+        font-size: 20px;
+        padding-top: 0;
+        text-align: left;
+    }
+    .content_find .item_find_m {
+        padding-left: 0;
+    }
+    .content_find .lb {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .find_member_area .textbox_mbr {
+        width: 100%;
+    }
+    .find_member_area .textbox_mbr, .find_member_area .address .textbox_mbr,.find_member_area .selectbox_mbr,
+    .find_member_area .textbox_mbr.textbox_mbr_sm {
+        font-size: 16px;
+    }
+    .find_member_area .textbox_mbr.textbox_mbr_sm {
+        width: calc(30% - 4px);
+    }
+    .find_mb .bar {
+        text-align: center;
+        width: 5%;
+        font-size: 20px;
+    }
+    .send_number {
+        float: right;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .content_find .find_mb {
+        width: 100%;
+    }
+    .find_wra .btn_group {
+        padding-top: 4em;
+    }
+    .content_find .result p {
+        font-size: 30px;
+        text-align: left;
+    }
+    .content_find .result {
+        padding-top: 0;
+    }
+    .content_find {
+        min-height: 21em;
+    }
+    .content_find .new_pw_msg {
+        padding-top: 5em;
+    }
+    .content_find .new_pw_msg p {
+        font-size: 20px;
+        text-align: left;
+    }
+    /*signup*/
+    .signup_wra {
+        padding: 60px 0 0;
+        height: 100%;
+        position: relative;
+    }
+	.signup_m{display: none}
+    .join_top_txt {
+        padding: 6em 4em 0;
+		display: block
+    }
+    .join_top_txt .title {
+        color: #377aef;
+        font-style: italic;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .join_top_txt .msg {
+        color: #377aef;
+        font-size: 50px;
+        line-height: 1.4em;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+    .join_top_txt .msg span {
+        font-weight: 400;
+    }
+    .join_top_txt .etc {
+        color: #757575;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.5em;
+    }
+    .type_join_area {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+	.type_join_area.active{
+		  position: static;
+	}
+	.type_join_area.active .type_join_box{
+		float: left;
+  		width: 50%;
+  		height: 50px;
+  		padding: 15px 10px;
+		background-size: auto 20px;
+		background-position: center right 2em
+	}
+	.type_join_area.active .type_join_box .type{display: inline-block;margin: 0 5px 0 0;font-size: 15px;}
+	.type_join_area.active .type_join_box .name{display: inline-block;margin: 0;}
+	.join_frm_area{padding: 3em 20px 5em;}
+	.edit_my_section{padding: 1em 0 0;}
+	.join_frm_area.active{display:block}
+	.join_top_txt.active{display:none}
+	
+    .type_join_box {
+        display: block;
+        width: 100%;
+        height: 200px;
+        float: none;
+        padding: 4.7em 4em;
+    }
+    .type_join_box .desc {
+        display: none;
+    }
+    .type_join_box .type {
+        font-size: 40px;
+        font-style: italic;
+    }
+    .type_join_box .name {
+        font-size: 15px;
+    }
+    .type_join_box.client.active.active_fix {
+        background: url("/assets/images/member/client.png") center right 5em no-repeat #377aef;
+        -webkit-background-size: 74px 75px;
+        background-size: 74px 75px;
+    }
+    .type_join_box.partner {
+        background: url("/assets/images/member/partner.png") center right 5em no-repeat #f7f7f7;
+        -webkit-background-size: 80px 69px;
+        background-size: 80px 69px;
+    }
+    .signup_detail_section {
+        max-width: 700px;
+        width: 100%;
+        padding: 3em 0 0;
+        margin: 0 auto;
+    }
+    .type_member {
+        color: #377aef;
+        font-size: 27px;
+        font-style: italic;
+    }
+    .edit_profile_box .info_type p {
+        padding-left: 10px;
+        font-size: 23px;
+    }
+
+    .chk_repeat_id,.my_content_edit .auth_my {
+        font-size: 20px;
+        float: right;
+        margin-top: 15px;
+    }
+    .search_address {
+        font-size: 18px;
+        margin-top: 2px;
+        margin-left: 6px;
+    }
+    .join_term .term_link a {
+        font-size: 20px;
+    }
+    .chk_agree_box span {
+        margin-right: 1.3em;
+    }
+    .join_term .term_link {
+        display: inline-block;
+    }
+    .join_term span {
+        float: right;
+    }
+    .join_term span .chk_orange + .chkShape{
+        margin-right: 6px;
+    }
+    .item_my .lb.lb_none {
+        display: none;
+    }
+    .chk_orange + .chkShape {
+        width: 24px;
+        height: 24px;
+    }
+    .chk_orange:checked + .chkShape:after {
+        width: 13px;
+        height: 13px;
+    }
+    .mypage_wra,.review_wra,
+    .partner_wra.partner_home_wra,
+    .bidding_wra.bidding_detail_wra {
+        padding-top: 0;
+    }
+    .detail_contract_status {
+        padding: 7.5em 0 4.5em;
+    }
+    .icon_gnb li.alarm_menu.alarm_new:after {
+        right: 3px;
+        top: -2px;
+    }
+    .custom_box {
+        padding: 1em 0 0;
+    }
+
+    .fileinput-button_box p {
+        height: 2.738em;
+    }
+    .fileinput-button_box span {
+        line-height: 2.738em;
+        font-size: 0.9em;
+    }
+    .item_briefing_box .dropzone .dz-preview {
+        /*margin: 0 1em 1em 0;*/
+    }
+    .sub_title_pc {
+        display: none;
+    }
+    .slideTop10 .swiper-slide{
+        opacity:1 !important;
+        width: 80% !important;
+    }
+    .slideBestPf .swiper-slide{opacity:1 !important}
+    .best_pf_area .title_blue {
+        padding: 0 40px;
+    }
+    .best_pf_detail .pf_element {
+        margin-bottom: 1.5em;
+    }
+    .consult_type {
+        height: auto;
+    }
+    /*#mainPagePC {
+        display: none;
+    }*/
+    #mainPageMobile {
+        display: block;
+    }
+    .link_login {
+        font-size: 16px;
+        width: 106px;
+        text-align: center;
+        margin-right: 0.5em;
+        padding: 0.5em 1.8em;
+        border-radius: 50px;
+        color: #aaaaaa;
+        border: 1px solid #aaaaaa;
+    }
+
+    /*내프로젝트*/
+    .myproject_wra {
+        padding-top: 60px;
+        height: auto;
+    }
+    .my_pf_left_area {
+        width: 100%;
+        height: 150px;
+        float: none;
+    }
+    .type_person {
+        position: static;
+        margin: 2em 2em 1em;
+        display: inline-block;
+    }
+    .pf_top_box .imgPf {
+        width: 50px;
+        height: 50px;
+    }
+    .pf_top_box {
+        padding: 0 2em 0;
+        margin-bottom: 0;
+    }
+    .item_type_pj {
+        padding-left: 0;
+        text-align: center;
+    }
+    .type_my_pj {
+        position: absolute;
+        right: 1em;
+        top: 3.2em;
+        overflow: hidden;
+    }
+    .type_my_pj li {
+        float: left;
+        width: 16.250em;
+        border: 0;
+        padding: 0 20px;
+        border-right: 1px solid #fff;
+    }
+    .type_my_pj li:last-of-type {
+        border-right: 0;
+    }
+    .type_my_pj li.focus:before {
+        display: none;
+    }
+    .type_my_pj li p.lb {
+        font-size: 11px;
+    }
+    .type_my_pj li p.num {
+        font-size: 50px;
+    }
+    .pf_top_box .namePf {
+        font-size: 14px;
+    }
+    .contents_my_pj {
+        width: 100%;
+        float: none;
+        height: calc(100% - 150px);
+    }
+    .my_list_pj_area {
+        padding: 3em 2em 2em;
+        min-height: calc(100vh - 210px);
+    }
+    .list_my_pj {
+        height: auto;
+        overflow-y: auto;
+    }
+    .list_my_pj li {
+        margin: 0 1em 3em;
+        width: calc(50% - 2em);
+    }
+    .item_my_pj {
+        width: 100%;
+    }
+    .desc_chk {
+        font-size: 12px;
+    }
+    .title_pj_top a {
+        font-size: 14px;
+    }
+    .preview_pj p {
+        font-size: 13px;
+    }
+    .preview_pj {
+        height: 14.5em;
+    }
+    .top_title_pj {
+        padding: 3em 2em 0;
+        height: 21.438em;
+    }
+    .top_title_pj .name {
+        font-size: 16px;
+    }
+    .top_title_pj .info_pj p, .top_title_pj .status_step .step .num {
+        font-size: 12px;
+    }
+    .top_title_pj .status_step .step .txt {
+        font-size: 14px;
+    }
+    .top_title_pj .status_step {
+        width: calc(100% - 4em);
+        left: 2em;
+    }
+    .top_title_pj .name {
+        font-size: 23px;
+    }
+    .top_title_pj .info_pj p,
+    .top_title_pj .status_step .step .num{
+        font-size: 14px;
+    }
+    .top_title_pj .status_step .step .txt {
+        font-size: 16px;
+    }
+    .top_title_pj .status_step .step .inner_step {
+        padding: 0.9em 0 0.9em 1em;
+    }
+    .step_title_list .step,
+    .step_content_list .control_work_btn button{
+        font-size: 12px;
+    }
+    .step_content_list .pf_img {
+        width: 35px;
+        height: 35px;
+    }
+    .step_content_list td {
+        padding: 1em 0 1em 1em;
+    }
+    .step_content_list td:after {
+        top: 1.7em;
+        height: 1.9em;
+    }
+    .step_content_list .down {
+        top: 1.8em;
+    }
+    .step_content_list .date,
+    .step_content_list .work_title,
+    .step_content_list .pf_name,
+    .step_content_list .detail_work .txt,
+    .step_content_list .detail_work .detail_history,
+    .step_content_list .detail_work .detail_edit {
+        font-size: 13px;
+    }
+    .step_content_list .work_file {
+        font-size: 11px;
+    }
+    .list_work_pj {
+        padding: 5em 2em 0;
+    }
+    .step_title_list .member_pj span {
+        width: 35px;
+        height: 35px;
+    }
+    .step_list_box {
+        margin-top: 3.5em;
+    }
+    .step_list_box {
+        padding-right: 0;
+        height: auto;
+    }
+    /*내프로젝트 팝업*/
+    .popup_detail_my .pop_head .title_my_pop, .popup_my .pop_head .title_my_pop {
+        font-size: 18px;
+    }
+    .popup_my .pop_body .msg_txt {
+        font-size: 14px;
+    }
+    .textbox_pj,.item_input_pop .save_txt {
+        font-size: 13px;
+    }
+    .attach_file span {
+        font-size: 12px;
+        line-height: 2.7em;
+    }
+    .pop_pm .pf_pm {
+        width: 30px;
+        height: 30px;
+    }
+    .popup_detail_my .pop_footer button, .popup_my .pop_footer button,
+    .pop_pm .msg {
+        font-size: 13px;
+    }
+    .pop_pm .tel_pm {
+        font-size: 16px;
+    }
+}
+@media (max-width: 640px) {
+    /*header*/
+    .header_wra {
+        padding: 0 15px;
+    }
+    .header_area {
+        height: 50px;
+    }
+    .header_area .logo_box {
+        top: 1.7em;
+        margin-left: -3.5em;
+    }
+    .header_area .logo_box img {
+        width: 7em;
+    }
+    .btn_m_menu {
+        width: 25px;
+        top: 1.6em;
+    }
+    .icon_gnb {
+        padding-top: 1.3em;
+    }
+    .btn_m_menu span {
+        margin-bottom: 6px;
+    }
+    .icon_gnb li a img {
+        width: 25px;
+    }
+    .my_profile {
+        padding: 2.5em 2em 2em;
+    }
+    .mypage_link img {
+        width: 25px;
+    }
+    .my_profile .id_txt,.my_profile .id_txt a {
+        font-size: 11px;
+    }
+    .my_profile .logout {
+        right: 2em;
+        top: 2.4em;
+    }
+    .my_profile .logout img {
+        width: 25px;
+    }
+    .my_info_preview {
+        padding: 2em;
+        overflow: hidden;
+    }
+    .my_info_preview .label,.my_info_preview .prjct_status p {
+        font-size: 10px;
+    }
+    .my_info_preview .point {
+        font-size: 18px;
+        margin-top: -2px;
+    }
+    .my_info_preview .prjct_status {
+        margin-top: -2px;
+    }
+    .my_info_preview .prjct_status p {
+        margin-left: 6px;
+    }
+    .my_info_preview .prjct_status p strong {
+        font-size: 14px;
+        margin-left: 4px;
+        width: 43px;
+        height: 26px;
+        line-height: 26px;
+        padding-left: 10px;
+        border-radius: 13px;
+    }
+    .content_m_menu {
+        padding: 0 2em;
+    }
+
+    .content_m_menu li a {
+        font-size: 20px;
+    }
+    .bottom_m_menu .dk_info {
+        padding: 2em;
+        height: calc(100% - 45px);
+    }
+    .bottom_m_menu .dk_info p {
+        font-size: 12px;
+    }
+    .bottom_m_menu .dk_info p img {
+        width: 20px;
+    }
+    .bottom_m_menu .dk_info p.tel {
+        font-size: 16px;
+    }
+    .bottom_m_menu .term {
+        line-height: 45px;
+        font-size: 15px;
+        height: 45px;
+        padding: 0 20px;
+    }
+    .link_login {
+        font-size: 12px;
+        padding: 0.5em 1.8em;
+        border-radius: 50px;
+        color: #aaaaaa;
+        border: 1px solid #aaaaaa;
+    }
+    /*search*/
+    .search_wra {
+        padding: 2em 0;
+    }
+    .search_result_contents .bidding_list, .search_result_contents .partner_list, .search_result_contents .faq_list {
+        padding: 0 13px;
+    }
+    .mb_search_frm_box {
+        width: 100%;
+    }
+    .mb_search_area p {
+        display: block;
+    }
+    .mb_search_frm_box .textbox_search {
+        font-size: 15px;
+    }
+    .mb_search_frm_box button img {
+        width: 20px;
+    }
+    .my_search, .cate_search_result {
+        display: none;
+    }
+    .result_box .title, .result_box .bidding_list li a.result-title, .cate_search_result li p, .result_box .partner_list .profile_partner_col a.namePartner {
+        font-size: 13px;
+    }
+    .result_box .bidding_list li,.result_box .faq_list li {
+        padding: 1em;
+    }
+    .result_box .partner_list li {
+        padding: 1.3em 1em;
+    }
+    .result_box .faq_list .type_faq {
+        margin-bottom: 0.5em;
+    }
+    .result_box .partner_list .intro_partner_col a, .result_box .bidding_list li a.result-desc {
+        font-size: 11px;
+    }
+    .result_box .faq_list .type_faq, .result_box .faq_list .question_faq {
+        font-size: 13px;
+        width: 100%;
+    }
+    /*customer*/
+    .customer_area {
+        padding: 2em 0 0;
+    }
+    .menu_center {
+        padding: 0 20px;
+    }
+    .faq_section .title, .location_section .desc {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .faq_section .title {
+        background: #ffffff;
+    }
+    .menu_center li {
+        width: 11em;
+    }
+    .menu_center li a {
+        padding: 0 0 8px 0;
+        font-size: 14px;
+    }
+
+    .info_dk {
+        display: block;
+        margin-bottom: 0;
+    }
+    .item_info_dk,.item_info_dk.dk3 {
+        width: 100%;
+        padding: 1.6em 15px 0;
+        height: 55px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(34,34,34,0.2);
+    }
+    .item_info_dk.dk2,.item_info_dk.dk3 {
+        text-align: left;
+    }
+    .item_info_dk .mail,.item_info_dk .time {
+        font-size: 12px;
+    }
+    .item_info_dk .tel {
+        font-size: 15px;
+    }
+    .item_info_dk .address {
+        font-size: 11px;
+    }
+    .item_info_dk img, .item_info_dk.dk3 img {
+        width: 2.063em;
+        margin-right: 1.3em;
+    }
+    .item_info_dk.dk2 {
+        padding-top: 2em;
+    }
+    .info_dk_2 .item_info_dk img {
+        width: 1.8em;
+    }
+    .map_section {
+        padding-bottom: 0;
+    }
+    .map_section iframe {
+        height: 250px;
+    }
+    .faq_area {
+        padding: 0;
+        min-height: calc(100% - 49px);
+    }
+    .faq_type {
+        flex-wrap: wrap;
+    }
+    .faq_type li {
+        width: 50%;
+        padding: 0 1px;
+        margin-top: 2px;
+    }
+    .faq_type li p {
+        font-size: 11px;
+    }
+    .faq_area .pagination {
+        display: block;
+        padding-top: 2em;
+    }
+    .pagination a {
+        font-size: 13px;
+    }
+    .faq_contents {
+        padding: 0 15px;
+    }
+    .faq_contents.active {
+        padding-bottom: 2em;
+        height: calc(100% - 175.56px);
+    }
+
+    .item_faq {
+        margin-bottom: 1em;
+    }
+    .item_faq .question {
+        padding: 1.4em 1em;
+    }
+    .item_faq.open .answer {
+        padding: 1.2em 1em;
+    }
+    .item_faq .question p,.item_faq .answer p {
+        font-size: 11px;
+    }
+    /*mypage*/
+    .my_profile_area {
+        padding-top: 7em;
+    }
+    .top_member_box {
+        padding: 0 0 1em;
+        display: block;
+    }
+    .info_profile_my {
+        float: none;
+    }
+    .element_info_my {
+        display: block;
+        height: auto;
+        padding: 0.3em 1em;
+    }
+    .element_info_my.first {
+        border-right: 0;
+        border-bottom: 1px solid rgba(58,58,58,0.2);
+    }
+    .element_info_my .lb {
+        font-size: 14px;
+    }
+
+    .element_info_my.first .point {
+        font-size: 30px;
+        top: 0;
+    }
+    .my_status_prjct .prjct_type {
+        width: calc(50% - 4px);
+        margin: 0;
+    }
+    .my_status_prjct .prjct_type .type {
+        margin-bottom: 0.5em;
+        font-size: 13px;
+    }
+    .my_status_prjct .prjct_type .num {
+        display: inline-block;
+        font-size: 20px;
+        width: 3.6em;
+        height: 1.7em;
+        line-height: 1.7em;
+        border-radius: 0.9em;
+    }
+    .menu_mypage_box a {
+        padding: 1.3em 0;
+        font-size: 10px;
+    }
+    .my_bidding_type_box p {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 0 0.6em;
+        margin: 0 5px;
+        min-width: calc(33.3% - 10px);
+    }
+
+    .item_bidding_prjct .col .budget_lb,.item_bidding_prjct .detail_budget,.condition_prjct span.condition_content,
+    .item_bidding_prjct .col .type_prjct,.condition_prjct span.lb,.condition_prjct span {
+        font-size: 10px;
+    }
+    .item_bidding_prjct .budget_detail span {
+        font-size: 30px;
+    }
+    .my_bidding_type_box {
+        padding: 3em 0;
+    }
+    .my_bidding_box li {
+        margin-bottom: 4em;
+    }
+    .m_bidding_manage_btn.bidding_manage_btn a {
+        font-size: 12px;
+        width: 31%;
+        padding: 0;
+    }
+    .total_num_bidding {
+        text-align: right;
+        display: block;
+        font-size: 10px;
+        margin-bottom: 1.5em;
+        color: #a0a0a0;
+    }
+    .item_bidding_prjct .col .name_prjct {
+        font-size: 14px;
+    }
+    .condition_prjct span.d_day, .condition_prjct span.num {
+        font-size: 21px;
+    }
+    .item_bidding_prjct .detail_budget, .item_bidding_prjct .col .type_prjct, .condition_prjct span.lb, .item_bidding_prjct .col .name_prjct, .bidding_manage_btn a, .condition_prjct span.condition_content, .receipt_prjct .info_receipt .lb, .receipt_prjct .info_receipt .date, .receipt_prjct .info_receipt .price {
+        font-size: 12px;
+    }
+    .holding_msg p, .saving_msg p {
+        font-size: 14px;
+    }
+    .saving_msg {
+        height: 13em;
+    }
+    .saving_msg p a, .holding_msg p a {
+        font-size: 12px;
+    }
+    /*회원정보 수정*/
+    .item_my .lb {
+        display: block;
+        margin-bottom: 0.7em;
+    }
+    .my_content_edit {
+        display: block;
+        overflow: hidden;
+    }
+    .edit_my_area {
+        padding: 3em 20px;
+    }
+    .edit_profile_box .info_type p,.search_address,.my_content_edit .desc,.my_content_edit .auth_my {
+        font-size: 12px;
+    }
+    .edit_profile_box .info_type .leave_mbr {
+        font-size: 13px;
+    }
+    .textbox_mbr,.my_content_edit .address .textbox_mbr {
+        font-size: 12px;
+    }
+    .my_content_edit .address .textbox_mbr.textbox_mbr_sm {
+        width: 16em;
+    }
+    .my_content_edit .tel {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+    .my_content_edit .auth_my {
+        margin-top: 1em;
+        float: right;
+    }
+    .selectbox_mbr,.textbox_mbr.textbox_mbr_sm,.confirm_mail,.item_my .lb {
+        font-size: 12px;
+    }
+    .signup_detail_section {
+        padding: 2em 20px 0;
+    }
+
+    .my_content_edit .email span, .my_content_edit .tel span {
+        margin: 0.5em 0 0;
+        font-size: 14px;
+    }
+    .chk_agree_box {
+        display: block;
+    }
+    .sns_agree .title,.chkTxt, .sns_agree p.desc,.chk_repeat_id, .my_content_edit .auth_my {
+        font-size: 12px;
+    }
+    .join_term .term_link a {
+        font-size: 12px;
+    }
+    .type_member {
+        font-size: 18px;
+    }
+    .email .selectbox_mbr {
+        width: 100%;
+        margin-top: 0.5em;
+    }
+    .email .textbox_mbr {
+        width: 46%;
+    }
+    .my_content_edit .email .email_m_box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .item_my {
+        margin-bottom: 0.7em;
+    }
+    .btn_group button, .btn_review {
+        width: 12.5em;
+        height: 3.067em;
+        border-radius: 1.933em;
+        font-size: 14px;
+    }
+    .top_member_box .img_member img {
+        width: 50px;
+    }
+    .top_member_box .nick {
+        font-size: 15px;
+    }
+    /*main*/
+    .title_main_box .subtitle_main {
+        font-size: 16px;
+    }
+    .title_main_box .title_main {
+        font-size: 37px;
+    }
+    .main_click_num .title {
+        font-size: 14px;
+    }
+    .main_click_num .number_click p {
+        font-size: 30px;
+    }
+    .main_area {
+        padding-top: 7em;
+    }
+    .start_project .title {
+        font-size: 20px;
+    }
+    .click_menu li {
+        font-size: 20px;
+        padding: 2em 0 2em 1.7em;
+    }
+    .click_menu li.schedule a:hover, .click_menu li.schedule a {
+        background: url(/assets/images/project/mobile/cal1.png) center right 2em no-repeat #f7f7f7;
+        -webkit-background-size: 30px;
+        background-size: 30px;
+    }
+    .click_menu li.budget a:hover, .click_menu li.budget a {
+        color: #ffffff;
+        background: url(/assets/images/project/mobile/money1.png) center right 2.2em no-repeat #377aef;
+        -webkit-background-size: 23px;
+        background-size: 23px;
+    }
+    .consult_box {
+        padding: 6.813em 0 0 3em;
+    }
+    .consult_box .title {
+        font-size: 15px;
+    }
+    .consult_box .consult_desc {
+        font-size: 33px;
+    }
+    .ani_here {
+        bottom: 220px;
+        right: 120px;
+    }
+    .btnMainBox {
+        width: 120px;
+        height: 120px;
+    }
+    .btnMainBox a {
+        line-height: 120px;
+    }
+    #out_line g{transform: translate(60px,-45px) rotate(0deg);transform-origin: 0 92px;width:1px;height:16px;overflow:unset}
+    #out_line g:nth-child(2){transform: translate(60px,-45px) rotate(90deg);}
+    #out_line g:nth-child(3){transform: translate(60px,-45px) rotate(180deg);}
+    #out_line g:nth-child(4){transform: translate(60px,-45px) rotate(270deg);}
+    #out_line2 g{transform: translate(60px,-42px) rotate(0deg);transform-origin: 0 102px;width:1px;height:20px;overflow:unset}
+    #out_line2 g:nth-child(2){transform: translate(60px,-42px) rotate(30deg);}
+    #out_line2 g:nth-child(3){transform: translate(60px,-42px) rotate(60deg);}
+    #out_line2 g:nth-child(4){transform: translate(60px,-42px) rotate(90deg);}
+    #out_line2 g:nth-child(5){transform: translate(60px,-42px) rotate(120deg);}
+    #out_line2 g:nth-child(6){transform: translate(60px,-42px) rotate(150deg);}
+    #out_line2 g:nth-child(7){transform: translate(60px,-42px) rotate(180deg);}
+    #out_line2 g:nth-child(8){transform: translate(60px,-42px) rotate(210deg);}
+    #out_line2 g:nth-child(9){transform: translate(60px,-42px) rotate(240deg);}
+    #out_line2 g:nth-child(10){transform: translate(60px,-42px) rotate(270deg);}
+    #out_line2 g:nth-child(11){transform: translate(60px,-42px) rotate(300deg);}
+    #out_line2 g:nth-child(12){transform: translate(60px,-42px) rotate(330deg);}
+    @keyframes line_ani {
+        0% {
+            transform: scaleY(0);
+            transform-origin: 0 42px;
+        }
+        65% {
+            transform: scaleY(0);
+            transform-origin: 0 42px;
+        }
+        70% {
+            transform: scaleY(0.5);
+        }
+        75% {
+            transform-origin: 0 0;
+        }
+        85% {
+            transform: scaleY(0.05);
+            opacity: 1;
+        }
+        100% {
+            transform: scaleY(0);
+            transform-origin: 0 0;
+            opacity: 0
+        }
+    }
+    @keyframes line_ani_2 {
+        0% {
+            transform: scaleY(0);
+            transform-origin: 0 45px;
+        }
+        65% {
+            transform: scaleY(0);
+            transform-origin: 0 45px;
+        }
+        70% {
+            transform: scaleY(0.5);
+        }
+        75% {
+            transform-origin: 0 0;
+        }
+        85% {
+            transform: scaleY(0.05);
+            opacity: 1;
+        }
+        100% {
+            transform: scaleY(0);
+            transform-origin: 0 0;
+            opacity: 0
+        }
+    }
+    /*alarm*/
+    .alarm_section {
+        padding-top: 50px;
+    }
+    .alarm_box .contents_alarm .date, .alarm_box .contents_alarm .title {
+        font-size: 10px;
+    }
+    .alarm_box .contents_alarm .detail, .alarm_box .contents_alarm .title a {
+        font-size: 13px;
+    }
+    .alarm_box {
+        padding: 3em 2em;
+    }
+    .alarm_box ul li {
+        padding: 0 1em 2em;
+        margin-bottom: 2em;
+    }
+    .alarm_box .type_alarm {
+        width: 30px;
+        padding: 0;
+    }
+    .alarm_box .contents_alarm .title .new_icon {
+        padding: 0;
+    }
+    .alarm_box .contents_alarm {
+        width: calc(100% - 30px - 4px);
+    }
+    .alarm_box .type_alarm img {
+        width: 20px;
+    }
+    /*budget*/
+    .budget_area {
+        padding-top: 1em;
+    }
+    .page_title_section .page_desc {
+        font-size: 15px;
+    }
+    .setting_budget_price dt, .setting_budget_input dt {
+        font-size: 13px;
+    }
+    .pricebox_direct {
+        font-size: 29px;
+    }
+    .price_unit {
+        font-size: 15px;
+    }
+
+    .setting_budget_section {
+        padding: 0 20px 0;
+    }
+    .setting_budget_input {
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+    .pricebox {
+        font-size: 32px;
+        padding: 0 0 0 0.3em;
+    }
+    .setting_budget_price dl {
+        margin-bottom: 2em;
+    }
+    .setting_budget_price dd .price_arrow img {
+        width: 30px;
+        height: 30px;
+    }
+    .setting_budget_price dd .price_arrow.down {
+        bottom: 10px;
+    }
+    .setting_budget_price dd {
+        padding-bottom: 1.5em;
+    }
+    .budget_review p img {
+        width: 5.438em;
+    }
+    .budget_review p span {
+        font-size: 1.75em;
+    }
+    .budget_review p.desc {
+        padding-top: 0.2em;
+    }
+    .budget_num .mb_txt {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .budget_num p span {
+        font-size: 50px;
+    }
+        /*step1*/
+    .bidding_wra, .partner_wra, .briefing_wra, .customer_wra, .budget_wra, .find_wra {
+        padding-top: 50px;
+    }
+    .search_wra {
+        padding-top: 70px;
+    }
+    .type_project_wra {
+        padding: 50px 0 0;
+    }
+    .page_title_section {
+        padding: 2.5em 20px 0;
+        margin-bottom: 3em;
+    }
+    .type_project_area .page_title_section {
+        padding: 2.5em 20px 3em;
+    }
+    .page_title_section .page_title {
+        font-size: 15px;
+    }
+    .page_title_section .page_title_contents {
+        font-size: 25px;
+    }
+    .type_project_area .page_title_section {
+        padding: 3.5em 20px 3em;
+    }
+    .type_project_section li {
+        height: 250px;
+    }
+    .type_project_section li p.sub_title {
+        font-size: 16px;
+    }
+    .type_project_section li p.title {
+        font-size: 25px;
+    }
+    .type_project_section li label {
+        padding: 20px 0 0 20px;
+    }
+    .type_project_section li label p.desc, .type_project_section li label:hover p.desc {
+        font-size: 12px;
+        left: 20px;
+    }
+    .step_project_m a {
+        font-size: 15px;
+        padding: 1em 10px;
+    }
+    .step_project_m a img {
+        width: 10px;
+        margin: 0 0.4em;
+    }
+    /*step2*/
+    .project_partner_wra {
+        padding: 50px 0 0;
+    }
+    .my_project_condition .title {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .condition_pj {
+        padding: 1.2em 2.2em;
+    }
+    .condition_pj p,
+    .condition_pj p.lb {
+        font-size: 15px;
+    }
+    .condition_pj p.lb {
+        width: auto;
+    }
+    .condition_pj p.type {
+        font-size: 20px;
+    }
+    .reset_btn_group .reset_move {
+        font-size: 15px;
+        padding: 0.6em 1em;
+    }
+    .reset_btn_group {
+        padding: 3em 0;
+    }
+    .txt_desc .mb_txt {
+        font-size: 20px;
+    }
+    .choice_partner_step .txt_desc img {
+        width: 18px;
+        padding-top: 3px;
+    }
+    .choice_partner_step .txt_desc {
+        padding: 2em 2.3em;
+    }
+    .choice_partner_step .partner_desc {
+        font-size: 14px;
+    }
+    .custom_partner_list ul {
+        padding: 0 2.3em 2em;
+    }
+    .custom_partner_list li {
+        margin-bottom: 2em;
+    }
+    .custom_partner_list li .show_pf {
+        font-size: 30px;
+    }
+    .chkbox_chk + label {
+        width: 1.875em;
+        height: 1.875em;
+    }
+    .partner_pf_box .title_pf,.mb_partner_name {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .mb_partner_name {
+        margin-bottom: 1em;
+    }
+    .desc_pf .name .date{
+        font-size: 13px;
+    }
+    .desc_pf .type {
+        font-size: 13px;
+        padding: 1em 10px;
+    }
+    .desc_pf .name {
+        padding: 1em 10px;
+        font-size: 15px;
+    }
+    .slide_pf .swiper-slide {
+        margin-bottom: 3em;
+    }
+    /*step3*/
+    .project_date_wra .project_date_area {
+        padding: 50px 0 0;
+    }
+    .project_date_wra .page_title_section {
+        margin-bottom: 1.5em;
+    }
+    .dateBtn {
+        font-size: 14px;
+    }
+    .date_entry_directly span, .date_entry_directly .title {
+        font-size: 12px;
+    }
+    .condition_pj p.budget .date {
+        margin-right: 10px;
+    }
+    .date_entry_directly .datebox, .datetrange {
+        font-size: 18px;
+    }
+    .date_entry_directly .datetrange {
+        width: 6.5em;
+        font-size: 14px;
+    }
+    .date_entry_directly {
+        padding: 2em 0 0;
+        margin: 0 2em 0 0;
+    }
+    .info_cal {
+        margin: 0 0 20px 0;
+        top: -1.4em;
+    }
+    .info_cal p {
+        font-size: 13px;
+        margin: 0 1em 0 0;
+        text-align: center;
+    }
+    .date-picker-wrapper .month-element {
+        font-size: 18px;
+    }
+    .date-picker-wrapper .month-wrapper table td div .wrap-day,
+    .date-picker-wrapper .month-wrapper table th {
+        font-size: 10px !important;
+    }
+    .date-picker-wrapper .month-wrapper table td {
+        height: 3.3em;
+    }
+    .date-picker-wrapper .month-wrapper table th {
+        line-height: 1;
+        width: 14.28%;
+    }
+    .date-picker-wrapper table .caption .next:hover, .date-picker-wrapper table .caption .next,
+    .date-picker-wrapper table .caption .prev:hover, .date-picker-wrapper table .caption .prev {
+        -webkit-background-size: 9px 19px;
+        background-size: 9px 19px;
+    }
+    .calendar_box .date-picker-wrapper {
+        top: 5em !important;
+    }
+    .box_date .title, .final_date_box .period p span.text {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    .box_date span,.final_date_box .period p span.day {
+        font-size: 11px;
+    }
+    .box_date p:nth-child(2) {
+        padding-right: 20px;
+    }
+    .finalDatebox {
+        font-size: 19px;
+    }
+    .final_date_box .period p strong {
+        font-size: 37px;
+    }
+    .final_date_box .period p span.text {
+        padding-top: 0.7em;
+    }
+    .final_date_box .period {
+        padding: 1.6em 0 0;
+    }
+    .date-picker-wrapper .month-wrapper {
+        padding-top: 4.5em;
+    }
+    .date-picker-wrapper table .caption {
+        height: 3.833em;
+    }
+    .date-picker-wrapper .month-wrapper table .real-today:after {
+        height: 3px;
+    }
+    .date-picker-wrapper .month-wrapper table td.chkTd.first .wrap-day:after,
+    .date-picker-wrapper .month-wrapper table td.chkTd .wrap-day:before {
+        height: 30px;
+    }
+    .date-picker-wrapper .month-wrapper{
+        width: 100% !important;
+    }
+    .date-picker-wrapper .month-wrapper table {
+        width: 100% !important;
+    }
+    .date-picker-wrapper .month-wrapper table td div .wrap-day {
+        padding: 1em 0 !important;
+        margin: 0 !important;
+    }
+    .date-picker-wrapper .month-wrapper table td .day .wrap-day {
+        width: 30px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        margin: 0 auto !important;
+        font-size: 10px !important;
+    }
+    .date-picker-wrapper .month-wrapper table td.chkTd.first:after {
+        height: 31px;
+    }
+    .date-picker-wrapper .month-wrapper table td.chkTd:before {
+        height: 30px;
+        margin-top: -15px;
+    }
+    .setting_budget_price {
+        padding-top: 2em;
+    }
+    .date-picker-wrapper .month-wrapper table .real-today .wrap-day:after {
+        height: 3px;
+    }
+    /*후기 작성*/
+    .top_review_area {
+        padding: 7em 2em 2em;
+    }
+    .top_review_box .write_msg {
+        font-size: 25px;
+        text-align: left;
+    }
+    .write_review_area {
+        padding: 2em 20px 4em;
+    }
+    .write_msg,.write_review_area .item_review .lb {
+        display: none;
+    }
+    .write_msg_m {
+        display: block;
+        font-weight: 200;
+        font-size: 25px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+    .write_msg_m span {
+        font-weight: 400;
+    }
+    .write_msg_m strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 200;
+        margin: 0 0 1em 0;
+    }
+    .top_review_box .item_review .lb {
+        display: block;
+        font-size: 13px;
+    }
+    .item_review .desc_lb {
+        font-size: 13px;
+    }
+    .score_register {
+        float: none;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+    .num_score {
+        float: right;
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+    .item_review .txtarea {
+        padding-top: 0;
+    }
+    .txtbox {
+        height: 20em;
+    }
+    .item_review .txtarea span {
+        font-size: 11px;
+    }
+    .pop_review_complete .title {
+        font-size: 20px;
+    }
+    .pop_review_complete .desc {
+        display: none;
+    }
+    .pop_review_complete .desc_m {
+        display: block;
+        white-space: normal;
+        font-size: 15px;
+        padding: 0 30px;
+        color: #ffffff;
+        margin-bottom: 2em;
+    }
+    .pop_btn_group button {
+        font-size: 16px;
+    }
+    .period_edit_box {
+        width: 100%;
+    }
+    /*mypage detail*/
+    .detail_contract_status {
+        padding: 6.5em 0 2.5em;
+    }
+    .detail_contract_status p, .detail_top_area .name_p {
+        font-size: 15px;
+    }
+    .detail_top_area .type_p {
+        margin-bottom: 1.7em;
+    }
+    .detail_top_area .type_p,.detail_top_area .company_p,.info_bidding_area:after,.row .item_info_b .budget {
+        font-size: 10px;
+    }
+    .detail_bidding_top {
+        padding: 2em 20px 5em;
+    }
+    .item_info_b .label,.item_info_b .date,
+    .row .item_info_b .label, .row .item_info_b .date,.info_bidding_area .row .item_info_b .my_partner .partner_name {
+        font-size: 12px;
+        line-height: 43px;
+    }
+    .item_info_b {
+        padding: 0 20px;
+        height: 43px;
+    }
+    .info_bidding_area .row .item_info_b {
+        padding: 0;
+        height: 43px;
+    }
+    .item_info_b .partners {
+        font-size: 18px;
+    }
+    .info_bidding_area .row .item_info_b .my_partner {
+        padding-left: 37px;
+        line-height: 30px;
+    }
+    .info_bidding_area .row .item_info_b .my_partner .logo {
+        width: 30px;
+        height: 30px;
+        margin-top: 6px;
+    }
+    .item_info_b span {
+        line-height: normal;
+    }
+    .item_info_b .partners {
+        line-height: 43px;
+    }
+    .item_info_b .review a {
+        font-size: 11px;
+        padding: 5px 15px;
+        margin-top: 7px;
+    }
+    .info_bidding_area .row.row2 .item_info_b:last-child {
+        border-bottom: 0;
+    }
+    .row .item_info_b .budget img {
+        margin-top: -1.2em;
+    }
+    .contract_area .item_briefing {
+        margin-bottom: 2.5em;
+    }
+    .item_briefing.first {
+        padding-bottom: 2em;
+    }
+    .item_briefing .title {
+        font-size: 11px;
+    }
+    .item_briefing .desc,.contract_area .keyword_list p,.logo_type .desc_logo_type .info {
+        font-size: 10px;
+    }
+    .item_briefing .img_reference {
+        padding: 2em 0 0;
+    }
+    .item_briefing .img_reference a {
+        width: 9.35em;
+        margin-right: 1em;
+    }
+    .item_style_logo .label,.logo_type .desc_logo_type .type {
+        font-size: 11px;
+    }
+    .item_style_logo .percentage {
+        height: 4px;
+        margin-top: 0.7em;
+    }
+    .logo_type .desc_logo_type .info {
+        height: 30px;
+    }
+    .logo_type li {
+        padding: 0 1.5em 0 0;
+        margin: 0 0 2em 0;
+    }
+    .item_info_b .d_day {
+        font-size: 19px;
+        line-height: 43px;
+    }
+    .item_info_b .budget {
+        font-size: 10px;
+        vertical-align: bottom;
+        padding-top: 7px;
+    }
+    .item_info_b .budget span,.item_info_b .budget img {
+      /*  vertical-align: middle;*/
+    }
+    .item_info_b:last-child {
+        border-bottom: 0;
+    }
+    .join_partners {
+        font-size: 16px;
+    }
+    .tab_detail p {
+        font-size: 14px;
+        width: 8em;
+    }
+    .tab_detail {
+        padding: 3em 0;
+    }
+    .edit_btn a {
+        font-size: 13px;
+    }
+    .top_briefing .top_detail .title, .item_briefing .title {
+        font-size: 11px;
+    }
+    .top_briefing .top_detail .detail {
+        font-size: 10px;
+        padding-left: 0;
+    }
+    .keyword_list p {
+        font-size: 10px;
+    }
+    .manage_box {
+        padding: 2em 20px 0;
+        top: 50px;
+    }
+    .manage_box a {
+        font-size: 13px;
+    }
+    .detail_bidding_top.detail_bidding_my {
+        padding-top: 13em;
+    }
+    .project_ask_item .recomment {
+        padding: 1.6em 1.8em;
+    }
+    .project_ask_item .partner_pf .name_pf,.project_ask_item .partner_pf .date,.client_recomment .client_name,.client_recomment .client_name span {
+        font-size: 11px;
+    }
+    .project_ask_item .partner_pf .date {
+        right: 20px;
+    }
+    .project_ask_item .partner_pf .img_pf {
+        width: 40px;
+        height: 40px;
+    }
+    .contents_ask,.client_recomment .comment {
+        font-size: 12px;
+    }
+    .project_ask_item {
+        padding: 0 0 2em;
+    }
+    .btn_comment,.txtbox_comment {
+        font-size: 13px;
+    }
+    .txtbox_comment {
+        padding: 15px 20px;
+    }
+    /*팝업 기간연장*/
+    .period_edit_box .title {
+        font-size: 20px;
+    }
+    .period_edit_box .desc {
+        font-size: 13px;
+    }
+    .period_edit_box .etc {
+        font-size: 13px;
+    }
+    .period_edit_box .pop_btn_group {
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .period_edit_box .pop_btn_group button{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    /*step4*/
+    .briefing_required .briefing_section {
+        padding: 0 2em;
+    }
+    .briefing_section .item_briefing_type span {
+        font-size: 17px;
+        width: 80px;
+    }
+    .item_briefing_box {
+        margin-bottom: 2em;
+    }
+    .item_briefing_box .label {
+        font-size: 13px;
+    }
+    .briefing_section .item_briefing_type span.bar {
+        width: calc(100% - 84px);
+    }
+    .briefing_section .textbox_default,.keyword_item .title,.item_briefing_box .label .desc {
+        font-size: 11px;
+    }
+    .briefing_required:after {
+        left: 20px;
+    }
+    .briefing_section .skip_btn {
+        font-size: 13px;
+    }
+    .briefing_selection .briefing_section .item_briefing_type {
+        padding-top: 1em;
+    }
+    .briefing_section {
+        padding: 0 20px;
+    }
+    .page_title_section .skip_btn {
+        font-size: 11px;
+    }
+    .job_type {
+        width: 48%;
+    }
+    .job_type .chkTxt {
+        font-size: 14px;
+    }
+    .logo_type {
+        padding-left: 0;
+    }
+    .item_briefing_box .item_style_logo .label {
+        width: 6.325em;
+        font-size: 12px;
+        padding-left: 0.4em;
+    }
+    .style_bar {
+        width: calc(100% - 6.325em);
+        height: 4px;
+        margin-top: 0.7em;
+    }
+    .style_bar .ui-slider .ui-slider-handle {
+        width: 4px;
+        top: -0.7em;
+        height: 20px;
+    }
+    .item_color {
+        width: 100%;
+    }
+    .item_color .chkTxt {
+        font-size: 14px;
+    }
+    .item_color span {
+        font-size: 10px;
+    }
+    .chkbox_chk:checked + label:after {
+        -webkit-background-size: 1.375em 1em;
+        background-size: 1.375em 1em;
+    }
+    .briefing_selection .btn_group_m {
+        max-width: 280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .briefing_selection .btn_group_m button {
+        font-size: 13px;
+        margin: 0 0 1em 0;
+        width: 100%;
+    }
+
+    /*project 완료*/
+    .project_wra {
+        padding-top: 50px;
+    }
+    .bidding_msg_area.bidding_msg_full_area {
+        height: 100%;
+    }
+    .top_msg_complete {
+        padding: 3em 0;
+    }
+    .bidding_msg_area {
+        padding: 2.5em 0 4em;
+    }
+    .top_msg_complete .title span {
+        font-size: 16px;
+    }
+    .top_msg_complete .title, .bidding_msg_box .title {
+        font-size: 17px;
+    }
+    .bidding_msg_box .desc {
+        font-size: 12px;
+        padding: 0;
+        word-break: keep-all;
+    }
+    .btn_bidding a {
+        font-size: 15px;
+    }
+    /*partner bidding*/
+    .partners_join_list .desc {
+        font-size: 14px;
+    }
+    .join_partner_pf .nameC {
+        font-size: 11px;
+        margin-top: -5px;
+    }
+    .partners_join_list {
+        padding: 0;
+    }
+    .join_partner_pf .level_partner {
+        margin-top: 12px;
+    }
+    .join_partner_pf .level_partner img {
+        width: 20px;
+    }
+    .offer_info .lb, .offer_info .unit {
+        font-size: 12px;
+    }
+    .join_partner_pf {
+        border-bottom: 1px solid #d3d3d3;
+    }
+    .offer_info:first-child {
+        padding-top: 15px;
+        height: 44px;
+    }
+    .offer_info .unit span {
+        font-size: 20px;
+    }
+    .offer_info {
+        border-top: 0;
+        height: 29px;
+        padding: 0 20px;
+    }
+    .join_partner_pf .imgC {
+        width: 4em;
+        height: 4em;
+    }
+    .btn_group_offer {
+        justify-content: center;
+    }
+    .btn_group_offer a {
+        font-size: 13px;
+    }
+    .partners_join_list li {
+        margin-bottom: 3em;
+    }
+    .more_partners {
+        font-size: 12px;
+    }
+    /*bidding home*/
+    .bidding_btn {
+        font-size: 11px;
+        bottom: 1em;
+        right: 1em;
+    }
+    .field_p_box .field_section {
+        padding: 1em 15px;
+    }
+    .field_p_box li p, .reset_field, .choice_item p {
+        font-size: 11px;
+    }
+    .field_p_box li{
+        margin-right: 0.5em;
+    }
+    .field_p_box li p {
+        width: 76px;
+    }
+    .field_p_box .label {
+        font-size: 11px;
+    }
+    .field_p_box.result .field_section {
+        padding: 1.5em 15px;
+    }
+    .project_menu_box {
+        padding-top: 2.5em;
+    }
+    .project_menu_box li p, .order_box p {
+        font-size: 13px;
+    }
+    .order_box {
+        margin-bottom: 3.5em;
+    }
+    .list_project_area ul {
+        max-width: 350px;
+    }
+    .bidding_item .type_project p.type{
+        font-size: 12px;
+        border-radius: 5px 5px 0 0;
+    }
+    .bidding_item .type_project p.icon_p {
+        font-size: 10px;
+    }
+    .preview_contents .top_preview .title_p {
+        font-size: 13px;
+    }
+    .preview_contents .top_preview .company,.bidding_item .sub_label,.bidding_item .keyword_box a,.bidding_item .period_box .period, .bidding_item .partners_box .join_p,.bidding_item .budget_box .budget {
+        font-size: 10px;
+    }
+    .bidding_item .period_box .d_day ,
+    .bidding_item .partners_box .num_p {
+        font-size: 18px;
+        top: 1.6em;
+    }
+    .bidding_item .budget_box {
+        padding: 1.9em 1.8em;
+    }
+    .bidding_item .budget_box .price {
+        font-size: 10px;
+        top: 1.1em;
+    }
+    .bidding_item .budget_box .price span {
+        font-size: 30px;
+    }
+    .more_project span {
+        font-size: 12px;
+    }
+    .premium10_area {
+        padding: 2.5em 0 4em;
+    }
+    .partner_top10_area {
+        padding-top: 6em;
+    }
+    .title_top_box {
+        padding: 0 20px;
+    }
+    .title_top_box .title.title_mb {
+        font-size: 15px;
+    }
+    .title_top_box .pop_premium,.premiumP_info .sub_label {
+        font-size: 11px;
+    }
+    .title_top_box .pop_premium img {
+        width: 15px;
+    }
+    .premiumSlide_box .slidePremium {
+        padding: 3em 0;
+    }
+    .nextCircle.swiper-button-next, .prevCircle.swiper-button-prev {
+        display: none;
+    }
+    .premium_contents {
+        height: 20.5em;
+    }
+    .type_premiumP p {
+        font-size: 11px;
+        margin-left: 1em;
+    }
+    .premiumP_detail .name {
+        font-size: 13px;
+    }
+    .premiumP_detail .desc, .premiumP_info .date, .premiumP_info .d_day,.premiumP_info .budget .budget_icon {
+        font-size: 10px;
+    }
+    .premiumP_info .budget .price span {
+        font-size: 25px;
+    }
+    .premiumP_info .budget {
+        top: 1.2em;
+    }
+    .premiumP_detail {
+        padding: 1.7em 1.5em;
+    }
+    .choice_item {
+        margin: 0.3em 1.2em 0.3em 0;
+    }
+    .choice_item i {
+        margin-left: 0.5em;
+        margin-top: 0em;
+    }
+    .choice_item i img {
+        width: 1.463em;
+    }
+    /*pop 공개입찰 */
+    .register_bidding .title {
+        font-size: 25px;
+    }
+    .progress_bidding span.next {
+        margin: 1.7em 1.2em;
+    }
+    .progress_bidding span.step {
+        font-size: 18px;
+    }
+    .start_btn {
+        font-size: 16px;
+    }
+    /*partner home*/
+    .swiper-container.slideTop10 {
+        padding: 4em 2em;
+    }
+    .partner_profile_item .info_partner .num {
+        font-size: 10px;
+    }
+    .partner_profile_item .info_partner .pf_partner .name {
+        font-size: 13px;
+    }
+    .partner_profile_item .info2_partner .detail_partner .lb,
+    .partner_profile_item .info_partner .etc_info .lb, .partner_profile_item .info_partner .etc_info .type_work span {
+        font-size: 10px;
+    }
+    .partner_profile_item .info_partner .etc_info .lb img {
+        width: 13px;
+    }
+    .partner_profile_item .info_partner .imgC {
+        height: 2.773em;
+        width: 2.773em;
+    }
+    .partner_profile_item .info2_partner .detail_partner .num {
+        font-size: 14px;
+    }
+    .partner_profile_item .info2_partner .detail_partner .num.num_p {
+        font-size: 15px;
+    }
+    .item_best_portfolio .premium_icon {
+        top: -2.313em;
+    }
+    .item_best_portfolio .premium_icon img {
+        width: 5.875em;
+    }
+    .slideBestPf.swiper-container {
+        padding: 6em 7em 4em 2em;
+    }
+    .item_best_portfolio .best_pf_detail .name {
+        font-size: 13px;
+        margin-bottom: 0.5em;
+    }
+    .best_pf_detail .pf_element p {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+    .item_best_portfolio .logo_best_c {
+        left: 0.7em;
+        top: 0.7em;
+        width: 3.625em;
+        height: 3.625em;
+    }
+    .title_blue {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+    .sort_partner p,.sort_partner span {
+        font-size: 12px;
+    }
+    .section_partners_list {
+        max-width: 300px;
+    }
+    .partner_wra .field_p_box li {
+        margin-right: 1em;
+
+    }
+    .section_partners_list li {
+        margin-bottom: 2em;
+    }
+    .profile_card .logo_img {
+        width: 30%;
+    }
+
+    .company_detail {
+        width: calc(100% - 30% - 4px);
+        padding: 1.5em 0;
+    }
+    .company_detail .name {
+        font-size: 11px;
+    }
+    .company_detail .type_tech .lb {
+        font-size: 10px;
+    }
+    .company_detail .type_tech span {
+        font-size: 10px;
+        line-height: 1.717em;
+    }
+    .company_detail .lv_company img {
+        width: 23px;
+    }
+    .profile_card .logo_img span {
+        width: 5.5em;
+        height: 5.5em;
+    }
+    .prjct_card {
+        height: 90px;
+    }
+    .img_repre_prjct {
+        width: 90px;
+    }
+    .info_repre_prjct {
+        width: calc(100% - 90px);
+    }
+    .info_repre_prjct .label {
+        line-height: 30px;
+        font-size: 10px;
+    }
+    .info_repre_prjct .label span, .info_repre_prjct .label.label_blue span {
+        font-size: 18px;
+        margin-top: 7px;
+    }
+    .best_pf_area {
+        padding: 2em 0 0;
+    }
+    /*partner detail*/
+    .top_partners_area {
+        padding: 2em;
+    }
+    .top_partners_name .name {
+        font-size: 13px;
+        line-height: 50px;
+        padding-left: 65px;
+    }
+    .top_partners_name .intro,.top_info_box .lb, .top_info_box .type_tech_partner span {
+        font-size: 10px;
+    }
+    .top_partners_img {
+        width: 5em;
+        left: 2em;
+        top: 2em;
+    }
+    .top_info_box .lv_partner img {
+        width: 17px;
+    }
+    .top_work_box {
+        padding: 6px 15px;
+    }
+    .top_work_box .lb {
+        font-size: 11px;
+    }
+    .top_work_box .lb span {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .sort_partner_prjct .selectbox {
+        font-size: 10px;
+    }
+    .list_partner_prjct {
+        padding: 2em 0 0;
+    }
+    .top_work_box .lb .score {
+        margin-top: 0.35em;
+    }
+    .prjct_preview_info .title {
+        font-size: 13px;
+    }
+    .prjct_preview_info {
+        padding: 1.5em 20px;
+    }
+    .sort_partner_prjct .selectbox {
+        margin: 0 0.2em;
+    }
+    /*project detail*/
+    .profile_pj_box {
+        height: 40px;
+        padding: 5px 20px;
+    }
+    .profile_pj_box span.img_logo {
+        width: 30px;
+        height: 30px;
+    }
+    .profile_pj_box span.lv {
+        margin-top: 5px;
+    }
+    .profile_pj_box span.lv img {
+        width: 22px;
+    }
+    .profile_pj_box span {
+        font-size: 12px;
+    }
+    .prjct_desc .desc_element {
+        height: 40px;
+    }
+    .prjct_desc .desc_element .lb, .prjct_desc .desc_element .lb.lb_eng {
+        font-size: 11px;
+        line-height: 40px;
+    }
+    .prjct_desc .desc_element .desc .scroe_num {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .prjct_desc .desc_element .desc .period {
+        font-size: 13px;
+        line-height: 40px;
+    }
+    .prjct_desc .desc_element .desc .type {
+        line-height: 40px;
+        font-size: 12px;
+    }
+    .prjct_desc2 .client {
+        font-size: 10px;
+    }
+    .prjct_desc2 .prjct_name {
+        font-size: 16px;
+    }
+    .prjct_desc2 .prjct_name span img {
+        width: 55px;
+    }
+    .prjct_desc2 .detail_txt,.client_review_box .review_txt {
+        font-size: 11px;
+    }
+    .client_review_box .title {
+        font-size: 10px;
+    }
+    .client_review_area {
+        padding: 2em 0;
+    }
+    .client_review_box {
+        padding: 0 20px;
+    }
+    .client_review_box .score_pj .score_num {
+        font-size: 18px;
+    }
+    .client_review_box .score_pj {
+        padding-top: 2em;
+    }
+    .client_review_box .score_pj img {
+        width: 16px;
+    }
+    .client_review_box .score_pj i {
+        margin-top: 0px;
+    }
+    /*login*/
+    .login_wra {
+        padding-top: 60px;
+    }
+    .login_section {
+        padding: 2em 20px 2em;
+        height: auto;
+        min-height: 100%;
+    }
+    .title_login {
+        display: none;
+    }
+    .title_login.title_login_m {
+        display: block;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 0.6em;
+        font-size: 15px;
+    }
+    .sub_title {
+        font-size: 12px;
+    }
+
+    .login_area .textbox_default {
+        font-size: 10px;
+        height: 3.633em;
+    }
+    .login_area .chkTxt,.login_area .find_box a {
+        font-size: 12px;
+    }
+    .login_area .error_msg {
+        font-size: 10px;
+    }
+    .login_wrap {
+        padding-top: 50px;
+        height: 100%;
+    }
+    .login_area .member_box {
+        border-bottom: 0;
+        padding-bottom: 2em;
+    }
+    .login_area {
+        border-bottom: 0;
+        max-width: 285px;
+        padding: 2.5em 0 0;
+    }
+    .login_area .find_box a:first-child:after {
+        right: -8px;
+        top: 3px;
+        height: 14px;
+    }
+    .title_login.title_login_m,.sub_title,.login_sns {
+        max-width: 285px;
+    }
+    .login_btn button {
+        font-size: 15px;
+        padding: 0.7em 0;
+    }
+    .login_sns .title {
+        font-size: 12px;
+    }
+    .login_sns .sns_box li {
+        padding: 1.1em 0;
+    }
+    .login_sns .sns_box li a {
+        font-size: 10px;
+        width: 100px;
+    }
+    .login_sns .sns_box li a img {
+        width: 29px;
+    }
+    /*join 완료*/
+    .top_login_txt {
+        padding: 3em 20px;
+    }
+    .top_login_txt .complete_txt {
+        font-size: 20px;
+    }
+    .top_login_txt .sub_title_m {
+        font-size: 12px;
+    }
+    /*member find*/
+    .find_member_area {
+        padding: 2em 20px;
+    }
+    .title_find p {
+        font-size: 20px;
+
+    }
+    .content_find .desc {
+        font-size: 12px;
+    }
+    .content_find .lb {
+        font-size: 10px;
+    }
+    .content_find .new_pw_msg p {
+        font-size: 12px;
+    }
+    .content_find {
+        min-height: 15em;
+    }
+    .content_find .result p {
+        font-size: 16px;
+    }
+    .find_member_area .textbox_mbr, .find_member_area .address .textbox_mbr, .find_member_area .selectbox_mbr, .find_member_area .textbox_mbr.textbox_mbr_sm {
+        font-size: 12px;
+    }
+    .send_number {
+        font-size: 10px;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    .content_find .item_find_m {
+        margin-bottom: 1em;
+    }
+    .chk_black + label.chkShape,
+    .chk_orange + .chkShape {
+        width: 14px;
+        height: 14px;
+    }
+    .chk_black:checked + label.chkShape:after,
+    .chk_orange:checked + .chkShape:after {
+        width: 9px;
+        height: 9px;
+    }
+    .signup_wra {
+        padding: 50px 0 0;
+    }
+    /*signup*/
+    .join_top_txt {
+        padding: 3em 2em 0;
+    }
+    .join_top_txt .title {
+        font-size: 15px;
+    }
+    .join_top_txt .msg {
+        font-size: 33px;
+    }
+    .join_top_txt .etc {
+        font-size: 14px;
+    }
+    .type_join_box {
+        padding: 3em 2em;
+        height: 160px;
+    }
+    .type_join_box .type {
+        font-size: 20px;
+    }
+    .type_join_box .name {
+        font-size: 10px;
+    }
+    .type_join_box.client.active.active_fix {
+        background: url(/assets/images/member/client.png) center right 2em no-repeat #377aef;
+        -webkit-background-size: 4.625em 4.688em;
+        background-size: 4.625em 4.688em;
+    }
+    .type_join_box.partner {
+        background: url(/assets/images/member/partner.png) center right 2em no-repeat #f7f7f7;
+        -webkit-background-size: 5em 4.313em;
+        background-size: 5em 4.313em;
+    }
+    .login_btn {
+        padding-top: 0.5em;
+    }
+    .icon_gnb li.alarm_menu.alarm_new:after {
+        right: 0px;
+        top: -3px;
+    }
+    .fileinput-button_box {
+        display: block;
+        text-align: right;
+    }
+    .fileinput-button_box p {
+        width: 100%;
+    }
+    .fileinput-button_box span {
+        line-height: 2.738em;
+    }
+    .dropzone .dz-preview .dz-remove {
+        top: -5px;
+        right: -7px;
+        width: 20px;
+        height: 20px;
+        background: url("/assets/images/project/remove_img.png") 0 0 no-repeat;
+        -webkit-background-size: 20px;
+        background-size: 20px;
+    }
+    .content_m_menu li {
+        padding: 1.4em 0;
+    }
+    .best_pf_area .title_blue {
+        padding: 0 20px;
+    }
+    .best_pf_detail .pf_element i {
+        margin-top: -0.2em;
+    }
+    .best_pf_detail .pf_element {
+        margin-bottom: 0.5em;
+    }
+    .briefing_desc_box {
+        padding: 4em 0;
+    }
+    .briefing_desc_box .title {
+        font-size: 20px;
+    }
+    .briefing_desc_box .desc p {
+        font-size: 13px;
+    }
+    /*내프로젝트*/
+    .myproject_wra {
+        padding-top: 50px;
+    }
+    .pf_top_box {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .pf_top_box .imgPf {
+        display: inline-block;
+        vertical-align: middle;
+        width: 35px;
+        height: 35px;
+        margin-right: 1em;
+    }
+    .pf_top_box .namePf {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .type_person {
+        margin: 0 0 0 2em;
+        vertical-align: middle;
+    }
+    .my_pf_left_area {
+        height: auto;
+        padding: 2em 0;
+    }
+    .type_my_pj {
+        position: static;
+        width: 100%;
+    }
+    .type_my_pj {
+        padding-top: 2em;
+    }
+    .type_my_pj li {
+        width: 33.3%;
+        padding: 0;
+    }
+    .type_my_pj li p.lb {
+        font-size: 10px;
+    }
+    .type_my_pj li p.num {
+        font-size: 44px;
+    }
+    .list_my_pj li {
+        margin: 0 0 3em;
+        width: 100%;
+    }
+    .top_title_pj {
+        height: auto;
+    }
+    .my_list_pj_area {
+        min-height: calc(100vh - 221px);
+    }
+    .top_title_pj .status_step {
+        display: block;
+        position: static;
+        width: 100%;
+        margin: 2em 0;
+    }
+    .top_title_pj .status_step .step {
+        width: 100%;
+    }
+    .list_work_pj {
+        padding: 2em;
+    }
+    .step_content_list td {
+        display: block;
+    }
+    .step_content_list td:nth-child(1) {
+        border-top: 1px solid #919191;
+        padding-bottom: 0;
+    }
+    .step_content_list td:nth-child(2) {
+        border-top: 0;
+    }
+    .step_content_list td:nth-child(3) {
+        padding-bottom: 0;
+    }
+    .step_content_list td:nth-child(4) {
+        border-top: 0;
+    }
+    .step_content_list td:after {
+        display: none;
+    }
+    .step_content_list .detail_work {
+        padding-right: 0;
+    }
+    .step_content_list .down {
+        top: 0;
+    }
+    .top_title_pj .name {
+        font-size: 16px;
+        width: 80%;
+    }
+    .work_control {
+        margin: 1em 0;
+        display: block;
+    }
+    .step_title_list .member_pj {
+        margin-bottom: 1em;
+    }
+    /*내프로젝트 팝업*/
+    .popup.popup_detail_my .pop,
+    .popup.popup_my .pop {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        overflow: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0,0);
+    }
+    .popup_detail_my .pop_head .title_my_pop, .popup_my .pop_head .title_my_pop {
+        font-size: 16px;
+    }
+    .popup_my .pop {
+        padding-top: 3.5em;
+    }
+    .popup_detail_my .pop_head {
+        padding-top: 3.5em;
+    }
+    .pop_body.form {
+        padding: 0 2em;
+    }
+    .popup_detail_my .pop_footer button, .popup_my .pop_footer button, .pop_pm .msg {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 400px) {
+	.type_join_area.active .type_join_box{float: none;width:100%}
+}
+@media (max-width: 360px) {
+    .m_bidding_manage_btn.bidding_manage_btn a {
+        font-size: 13px;
+    }
+    .premiumP_info .budget .price span {
+        font-size: 15px;
+    }
+    .premiumP_info {
+        padding: 1.1em 15px;
+    }
+    .premiumP_info .budget .budget_icon img {
+
+        width: 1.538em;
+    }
+    .premiumP_info .budget .budget_icon {
+        margin-right: 5px;
+    }
+    .premiumP_info .budget {
+        top: 1.8em;
+    }
+    .type_join_box {
+        padding: 2em;
+        height: 120px;
+    }
+   /* .my_info_preview:last-child .label {
+        margin-bottom: 8px;
+        display: block;
+    }*/
+    .m_menu_side {
+        width: 85%;
+        left: -85%;
+    }
+    .my_info_preview .prjct_status p strong {
+        font-size: 13px;
+        margin-left: 2px;
+        width: 39px;
+        height: 22px;
+        line-height: 22px;
+        padding-left: 8px;
+        border-radius: 13px;
+    }
+    .my_info_preview {
+        padding: 1.5em;
+    }
+    .bidding_msg_box .desc {
+        font-size: 10px;
+    }
+
+}
+@media (max-height: 600px) {
+    /*main*/
+    .title_main_box .subtitle_main {
+        font-size: 13px;
+    }
+    .title_main_box .title_main {
+        font-size: 30px;
+    }
+    .start_project .title {
+        font-size: 17px;
+    }
+    .start_project {
+        margin-bottom: 1.3em;
+    }
+    .main_click_num .number_click p {
+        font-size: 24px;
+    }
+    .click_menu li {
+        font-size: 15px;
+        padding: 2.5em 0 2.5em 1.7em;
+    }
+    .ani_here {
+        bottom: 170px;
+        right: 100px;
+    }
+    /**/
+    .register_bidding .title {
+        font-size: 20px;
+        padding: 1.4em 20px;
+        margin-bottom: 1.5em;
+    }
+    .progress_bidding span.next {
+        margin: 1em 1.5em;
+    }
+    .progress_bidding span.step{
+        font-size: 16px;
+    }
+    .top_m_menu {
+        margin-bottom: 1em;
+    }
+    .content_m_menu li a {
+        font-size: 15px;
+    }
+}
+@media (max-height: 800px) and (min-width: 1000px) {
+    .budget_area {
+        padding: 3em 3em 0;
+    }
+    .final_date_box {
+        padding: 0 0 1em 2em;
+    }
+    .final_date_box .period {
+        position: absolute;
+        bottom: 3em;
+        right: inherit;
+        left: 2em;
+    }
+    .project_date_wra .project_date_area {
+        padding: 8.313em 20px 0;
+    }
+    .type_project_area .page_title_section {
+        top: 9em;
+    }
+    .page_title_section .page_desc:before {
+        margin: 1.244em 0;
+    }
+    .team_make_area {
+        padding: 2em 0 0;
+    }
+    .table_team_section {
+        padding-top: 0;
+        margin-top: -1em;
+    }
+    .price_team {
+        bottom: 1em;
+    }
+    .calendar_meeting .date-picker-wrapper {
+        top: 10% !important;
+    }
+   html,body{
+       font-size: 14px;
+   }
+}
+@media (max-height: 800px) and (max-width: 640px) {
+    html,body{
+        font-size:10px;
+    }
+    .project_date_wra .project_date_area {
+        padding: 50px 0 0;
+    }
+    .budget_area {
+        padding: 0 1em;
+    }
+    .final_date_box .period {
+        position: static;
+    }
+    .final_date_box {
+        padding: 0;
+    }
+}
+@media (max-height: 740px) {
+    .title_main_box {
+        margin-bottom: 1em;
+    }
+}

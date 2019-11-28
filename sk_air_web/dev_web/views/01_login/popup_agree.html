@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Device EUI 등록 | SK LoRa Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="./../../css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="./../../js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+
+<!--이용약관동의 팝업-->
+<div class="dim_block popup01" style="display: block">
+    <div class="wrap_popup wrap_popup_agree">
+        <div class="pop_header">
+          <h1>서비스 약관 동의</h1>
+        </div>
+        <div class="pop_contents">
+            <p class="title">
+                Smart [Air Manager]에서 <span>aaaaaa@aaa.com</span>님의 스마트홈 계정 정보를 받습니다.
+            </p>
+            <p class="title">
+                정보는 이용자 식별, 통계, 계정 연동 및  CS를 위해 서비스 이용 중 보관됩니다.
+            </p>
+            <p class="txt">
+                동의 후에는 해당 서비스의 이용약관 및<br>개인정보취급방침에 따라 정보가 관리됩니다.
+            </p>
+        </div>
+        <div class="pop_btn">
+            <a href="#" class="btn btn_lg btn_gray">취소</a>
+            <a href="#" class="btn btn_lg btn_orange">동의하기</a>
+        </div>
+    </div>
+</div>
+<!--//이용약관동의 팝업-->
+
+
+<!-- ui library -->
+<script type="text/javascript" src="./../../js/ui/ui.util.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.common.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.page.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.init.js"></script>
+<script>
+    /**
+     * 팝업열기 클래스 _popup_open
+     * 팝업열기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.showPopup('.popup01');
+    //uiPage.showPopup('.popup02');
+
+    /**
+     * 팝업닫기 클래스 _popup_close
+     * 팝업 닫기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.closePopup('.popup01');
+    //uiPage.closePopup('.popup02');
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+.wrapper {
+    height: 100%;
+}
+.section_contents{
+    height: 100%;
+    position: relative;
+}
+.wrap_header {
+    height: 50px;
+    background: #ffffff;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+}
+
+.wrap_header span {
+    font-size: 16px;
+    line-height: 50px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding: 0 40px;
+}
+
+.header_menu li {
+    float: left;
+}
+
+.header_menu li a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-left: 13px;
+}
+
+.header_menu li:first-child a {
+    margin-left: 0;
+}
+
+.wrap_contents {
+    height: 100%;
+    padding-top: 50px;
+}
+
+/*
+    *popup
+*/
+.popup {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    overflow: auto;
+}
+.popup_side{
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    overflow: auto;
+}
+.popup_side .popup_footer{
+    width: 300px;
+    right: 0;
+    bottom: 0;
+    position: relative;
+}
+.popup_side .popup_header{
+    width: 300px;
+}
+
+.popup_side_right{
+    right: 0;
+}
+.popup_dim{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 101;
+    text-align: center;
+}
+.popup_dim:after{
+   content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+.popup_header {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    position: fixed;
+    width: 100%;
+    border-bottom:1px solid #f1f1f1;
+    background: #ffffff;
+    z-index: 50;
+    top: 0;
+    right: 0;
+}
+.popup_body{
+    padding-top:50px;
+    height: 100%;
+}
+
+
+.popup_center{
+    width: 320px;
+    display: inline-block;
+    background: #ffffff;
+    z-index: 105;
+    vertical-align: middle;
+}
+
+.popup_center .popup_header{
+    width: 320px;
+    height: 120px;
+    line-height:normal;
+    right: auto;
+    top: 44px;
+    padding: 23px 15px 13px 15px;
+    text-align: left;
+}
+.popup_center .popup_body{
+    padding-top: 109px;
+}

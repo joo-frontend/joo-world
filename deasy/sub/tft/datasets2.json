@@ -1,0 +1,705 @@
+{
+  "dataset": {
+    "menu1": [
+      [
+        {
+          "datasets": [{
+            "data": [
+              80,
+              20
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              30,
+              70
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              80,
+              20
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              90,
+              10
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ],
+      [
+        {
+          "datasets": [{
+            "data": [
+              80,
+              20
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              40,
+              60
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              100,
+              0
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ]
+    ],
+    "menu2": [
+      [
+        {
+          "datasets": [{
+            "data": [
+              80,
+              20
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              10,
+              90
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              80,
+              20
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ]
+    ],
+    "menu3": [
+      [
+        {
+          "datasets": [{
+            "data": [
+              90,
+              10
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              80,
+              20
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              70,
+              30
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ]
+    ],
+    "menu4": [
+      [
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              40,
+              60
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              70,
+              30
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              100,
+              0
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              40,
+              60
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ],
+      [
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              100,
+              0
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              100,
+              0
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ]
+    ],
+    "menu5": [
+      [
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              50,
+              50
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              80,20
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              80,20
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ],
+      [
+        {
+          "datasets": [{
+            "data": [
+              70,30
+            ],
+            "backgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#377aef",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#37bc88",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+              60,
+              40
+            ],
+            "backgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#8cd8e5",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+             50,50
+            ],
+            "backgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#add154",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        },
+        {
+          "datasets": [{
+            "data": [
+               40,60
+            ],
+            "backgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "hoverBackgroundColor": [
+              "#ed587c",
+              "#e5e5e5"
+            ],
+            "borderWidth": 0
+          }]
+        }
+      ]
+    ]
+  }
+}

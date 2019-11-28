@@ -1,0 +1,825 @@
+@charset "UTF-8";
+/**
+ * 회원가입 & 로그인
+ * 작성자 : 주효정
+ */
+
+/* 스프라이트 */
+.sprite_login {
+    background: url("../../images/login/sprite_login.png") no-repeat 0 0;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+}
+
+.sprite_login.sprite_prev {
+    width: 20px;
+    height: 20px;
+    background-position: -100px 0;
+}
+
+.sprite_login.sprite_next {
+    width: 20px;
+    height: 20px;
+    background-position: -140px 0;
+}
+
+.sprite_login.sprite_email_sign {
+    width: 25px;
+    height: 25px;
+    background-position: -180px 0;
+}
+
+.sprite_login.sprite_naver_sign {
+    width: 25px;
+    height: 25px;
+    background-position: -220px 0;
+}
+
+.sprite_login.sprite_splash_up {
+    width: 14px;
+    height: 14px;
+    background-position: -80px -20px;
+}
+
+/* 메인 */
+.wrapper.wrapper_main {
+    height: 100%;
+}
+.wrapper_main .wrap_header {
+    background: transparent;
+}
+.wrapper_main .wrap_contents {
+    position: relative;
+    height: 100%;
+    background-image: url('../../images/login/bg_splash.png');
+    background-repeat: no-repeat;
+    background-color: #fe6e96;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 0;
+}
+
+.wrapper_main .wrap_contents .box_logo {
+    padding-top: 115px;
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.wrapper_main .wrap_contents .box_logo img {
+    width: 240px;
+}
+
+.wrapper_main .wrap_contents .btn_start {
+    font-size: 18px;
+    color: #ff718e;
+    border-radius: 30px;
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.wrapper_main .wrap_contents .area_splash {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+}
+
+.wrapper_main .wrap_contents .area_splash .splash_arrow {
+    padding-top: 13px;
+    width: 100%;
+    display: block;
+}
+
+.wrapper_main .wrap_contents .area_splash.active {
+    height: 266px;
+}
+
+.wrapper_main .wrap_contents .area_splash.active .sprite_login.sprite_splash_up {
+    background-position: -60px -20px;
+}
+
+.wrapper_main .wrap_contents .area_splash .menu_list {
+    padding-top: 13px;
+}
+
+.wrapper_main .wrap_contents .area_splash .menu_list ul {
+    padding-left: 40px;
+    float: left;
+    width: 50%;
+}
+@media all and (max-width: 320px) {
+    .wrapper_main .wrap_contents .area_splash .menu_list ul {
+        padding-left: 28px;
+    }
+}
+.wrapper_main .wrap_contents .area_splash .menu_list ul li {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.wrapper_main .wrap_contents .area_splash .menu_list ul li a {
+    font-size: 13px;
+    color: #888888;
+}
+
+.wrapper_main .wrap_contents .area_splash .menu_list ul li.title {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.wrapper_main .wrap_contents .copyright {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: #aaaaaa;
+    left: 50%;
+    margin-left: -113px;
+}
+.wrapper_main .area_splash.active .copyright {
+    display: block;
+}
+/* 로그인 헤더 */
+.wrapper_login .wrap_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8c98+0,ff6992+99 */
+    background: #ff8c98; /* Old browsers */
+    background: -moz-linear-gradient(left, #ff8c98 0%, #ff6992 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ff8c98 0%, #ff6992 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ff8c98 0%, #ff6992 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8c98', endColorstr='#ff6992', GradientType=1); /* IE6-9 */
+    z-index: 200;
+    text-align: left;
+}
+
+.wrapper_login .wrap_header h1 a {
+    display: inline-block;
+    padding-left: 16px;
+    line-height: 50px;
+}
+
+.wrapper_login .wrap_header h1 a img {
+    width: 120px;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.wrapper_main .wrap_header .header_login,
+.wrapper_login .wrap_header .header_login {
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 16px;
+}
+
+/* quiz layout */
+.wrapper_login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.wrapper_login .wrap_contents {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 99;
+    /* padding: 50px 10px; */
+    padding: 50px 0;
+}
+
+/* quiz 페이져 bottom */
+.wrap_pager_quiz {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #f1f1f1;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    z-index: 100;
+}
+
+.wrap_pager_quiz .area_pager {
+    margin-top: 22px;
+    display: inline-block;
+    height: 6px;
+}
+
+.wrap_pager_quiz .area_pager span {
+    display: inline-block;
+    float: left;
+    margin-left: 7px;
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #dddddd;
+}
+
+.wrap_pager_quiz .area_pager span:first-child {
+    margin-left: 0;
+}
+
+.wrap_pager_quiz .area_pager span.visited {
+    background: #ff718e;
+}
+
+.wrap_pager_quiz .area_pager span.focus {
+    background: #ff718e;
+    width: 30px;
+}
+
+.wrap_pager_quiz .sprite_login {
+    vertical-align: top;
+}
+
+.wrap_pager_quiz .prev {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.wrap_pager_quiz .prev .sprite_prev {
+    margin-right: 6px;
+}
+
+.wrap_pager_quiz .prev a {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 16px;
+    color: #aaaaaa;
+}
+
+.wrap_pager_quiz .prev a:focus,
+.wrap_pager_quiz .prev a:active {
+    color: #cccccc;
+}
+
+.wrap_pager_quiz .prev a:focus .sprite_login.sprite_prev,
+.wrap_pager_quiz .prev a:active .sprite_login.sprite_prev {
+    background-position: -80px 0;
+}
+
+.wrap_pager_quiz .next {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.wrap_pager_quiz .next .sprite_next {
+    margin-left: 6px;
+}
+
+.wrap_pager_quiz .next a {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 16px;
+    color: #ff718e;
+}
+
+.wrap_pager_quiz .next a:focus,
+.wrap_pager_quiz .next a:active {
+    color: #f58898;
+}
+
+.wrap_pager_quiz .next a:focus .sprite_login.sprite_next,
+.wrap_pager_quiz .next a:active .sprite_login.sprite_next {
+    background-position: -120px 0;
+}
+
+.wrap_pager_quiz .next.disabled .sprite_login.sprite_next {
+    background-position: -160px 0;
+}
+
+.wrap_pager_quiz .next.disabled a {
+    color: #dddddd;
+}
+
+/* quiz01 */
+.wrap_contents .area_quiz_first img {
+    width: 100%;
+
+}
+
+.wrap_contents .box_quiz_title {
+    height: 75px;
+}
+
+.wrap_contents .box_quiz_title:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.wrap_contents .quiz_title {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 16px;
+
+    vertical-align: middle;
+    padding-left: 10px;
+    width: 98%;
+}
+
+.wrap_contents .quiz_title span {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.wrap_contents .img_list {
+    width: 100%;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.wrap_contents .img_list li {
+    position: relative;
+    float: left;
+    width: 50%;
+    /*height: 111px;*/
+}
+
+.wrap_contents .img_list li a {
+    display: block;
+}
+
+.wrap_contents .img_list li a p {
+    position: absolute;
+    width: 100%;
+    bottom: 11px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wrap_contents .img_list li.checked:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: url('../../images/login/sprite_login.png') 0 -20px no-repeat;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+}
+
+/* quiz03 */
+.wrap_contents .img_list.img_list_border {
+    border-top: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+    padding: 0;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.wrap_contents .img_list.img_list_border li {
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+
+/* quiz05 */
+.wrap_contents .img_list.img_list_shadow li a:before {
+    content: '';
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.5+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0); /* IE6-9 */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/* quiz06 */
+.wrap_contents .text_list {
+    border: 1px solid #f1f1f1;
+    border-bottom: 0;
+    padding: 0;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.wrap_contents .text_list li {
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.wrap_contents .text_list li a {
+    display: block;
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 51px;
+    height: 52px;
+}
+
+.wrap_contents .text_list li.checked a:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../../images/login/sprite_login.png') -40px 0 no-repeat;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+/* 설문완료 페이지 */
+.box_quiz_finish {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box_quiz_finish img {
+    width: 220px;
+    margin-bottom: 30px;
+}
+
+@media all and (max-width: 320px) {
+    .box_quiz_finish img {
+        margin-bottom: 7px;
+    }
+}
+
+.box_quiz_finish p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 18px;
+}
+
+@media all and (max-width: 320px) {
+    .box_quiz_finish p {
+        font-size: 14px;
+    }
+}
+
+.box_sign_btn {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.box_sign_btn .btn {
+    margin-bottom: 20px;
+}
+
+/* btn custom */
+.btn.btn_long {
+    font-size: 15px;
+    height: 44px;
+    width: 280px;
+    border: 0;
+}
+
+.btn.btn_icon {
+    padding-left: 43px;
+    position: relative;
+}
+
+.btn.btn_pink {
+    color: #ffffff;
+    background: #ff718e;
+}
+.btn.btn_disabled {
+    color: #ffffff;
+    background: #dddddd;
+}
+
+.btn.btn_naver {
+    color: #ffffff;
+    background: #1ec800;
+}
+.btn.btn_blank {
+    border: 1px solid #ff718e;
+    color: #ff718e;
+}
+
+.btn.btn_icon span {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+
+}
+
+.btn.btn_icon:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 43px;
+    top: 0;
+    width: 1px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 회원가입 */
+.area_form ul {
+    width: 100%;
+    padding: 0 25px;
+}
+
+@media all and (max-width: 360px) {
+    .area_form ul {
+        padding:0 16px;
+    }
+}
+@media all and (max-width: 320px) {
+    .area_form ul {
+        padding:0 10px;
+    }
+}
+
+ .area_form ul li {
+    height: 62px;
+    border-bottom: 1px solid #f1f1f1;
+}
+@media all and (max-height: 600px) {
+    .area_form ul li {
+        height: 55px;
+    }
+}
+.area_form ul li.info_error {
+    border-bottom: 1px solid #f96f6f;
+}
+
+.area_form ul li .box_sign_info {
+    height: 100%;
+    position: relative;
+}
+
+.area_form ul li .box_sign_info p {
+    display: none;
+    color: #f96f6f;
+    position: absolute;
+    left: 80px;
+    bottom: 4px;
+    white-space: nowrap;
+}
+.area_form ul li.info_error .box_sign_info p {
+    display: block;
+}
+@media all and (max-height: 600px) {
+    .area_form ul li .box_sign_info p {
+        bottom: 2px;
+    }
+}
+.area_form ul li .box_sign_info:before {
+    content: '';
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+}
+
+.area_form ul li .box_sign_info span {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    line-height: 18px;
+}
+@media all and (max-width: 360px) {
+    .area_form ul li .box_sign_info p {
+        left: 70px;
+    }
+    .area_form ul li .box_sign_info span {
+        width: 70px;
+    }
+}
+@media all and (max-width: 320px) {
+    .area_form ul li .box_sign_info span {
+        font-size: 12px;
+    }
+    .area_form ul li .box_sign_info input {
+        font-size: 12px;
+    }
+    .area_form ul li .box_sign_info p {
+        left: 60px;
+    }
+    .area_form ul li .box_sign_info span {
+        width: 60px;
+    }
+}
+.area_form ul li .box_sign_info input {
+    vertical-align: middle;
+    display: inline-block;
+    width: 67%;
+}
+
+/* webkit solution */
+::-webkit-input-placeholder {
+    text-align: left;
+    color: #aaaaaa;
+}
+/* mozilla solution */
+input:-moz-placeholder {
+    text-align: left;
+    color: #aaaaaa;
+}
+.wrap_contents .area_form {
+    position: relative;
+}
+.area_form ul li .box_sign_info label {
+    font-size: 13px;
+    width: 104px;
+    color: #aaaaaa;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+@media all and (max-width: 320px) {
+    .area_form ul li .box_sign_info label {
+        font-size: 12px;
+    }
+}
+.area_form ul li .box_sign_info label.checked {
+    color: #333333;
+}
+.area_form ul li .box_sign_info input[type="radio"]:checked {
+    background: url('../../images/login/sprite_login.png') -60px 0 no-repeat;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: -3px;
+}
+.area_form ul li .box_sign_info select {
+    min-width: 90px;
+}
+.area_form ul li .box_sign_info a ,
+.area_form ul li .box_sign_info i {
+ /*   display: none;*/
+}
+
+.area_form ul li .box_sign_info .btn_delete,
+.area_form ul li .box_sign_info i {
+    position: absolute;
+    font-size: 0;
+    right: 0;
+    top: 20px;
+    display: none;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #aaaaaa;
+    border-radius:50%;
+    background: url('../../images/login/sprite_login.png') -100px -20px no-repeat;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+}
+@media all and (max-height: 600px) {
+    .area_form ul li .box_sign_info a,
+    .area_form ul li .box_sign_info a,
+    .area_form ul li .box_sign_info i {
+        top: 15px;
+    }
+}
+.area_form ul li .box_sign_info i {
+    border: 0;
+    width: 20px;
+    height: 20px;
+    background-position: -60px 0;
+}
+.wrap_contents .area_terms {
+    padding-left: 25px;
+    margin: 30px 0;
+}
+@media all and (max-height: 600px) {
+    .wrap_contents .area_terms {
+        margin:20px 0;
+    }
+}
+.wrap_contents .area_terms p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+.wrap_contents .area_terms .terms_check {
+    background: url('../../images/login/sprite_login.png') 0 0 no-repeat;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+    width: 20px;
+    height: 20px;
+    margin: 0 9px 0 0;
+}
+.wrap_contents .area_terms .terms_check:checked {
+    background-position: -20px 0;
+}
+.wrap_contents .btn_group {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+}
+@media all and (max-height: 600px) {
+    .wrap_contents .btn_group {
+        bottom: 30px;
+    }
+}
+/* 로그인 */
+.wrap_contents .area_login_title {
+    text-align: center;
+    padding-top: 29px;
+    height: 75px;
+}
+.wrap_contents .area_login_title.login_error {
+    padding-top: 20px;
+}
+.wrap_contents .area_login_title p {
+    font-size: 17px;
+    font-weight: bold;
+}
+.wrap_contents .area_login_title p.login_error_msg {
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 8px;
+    font-weight: normal;
+    color: #f96f6f;
+}
+
+.wrap_contents .area_form .text_find {
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 13px;
+    display: block;
+    position: relative;
+    padding-right: 25px;
+    text-align: right;
+
+}
+.wrap_contents .area_form .btn_group_login {
+    text-align: center;
+    padding-top: 40px;
+}
+@media all and (max-height: 600px) {
+    .wrap_contents .area_form .btn_group_login {
+        padding-top: 20px;
+    }
+}
+.wrap_contents .area_form .partition {
+    height: 24px;
+    position: relative;
+    border-bottom:1px solid #f1f1f1;
+    margin: 0 40px 25px;
+}
+.wrap_contents .area_form .partition:after {
+    content: 'or';
+    color: #aaaaaa;
+    font-size: 13px;
+    width: 40px;
+    background: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -20px;
+}
+.wrap_contents .btn_group .desc_sign {
+    font-size: 13px;
+    color: #888888;
+    line-height: 35px;
+}
+
+/* 팝업 비밀번호 찾기 */
+.popup_body .desc_find_pw {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    padding:32px 0;
+}
+@media all and (max-width: 320px) {
+    .popup_body .desc_find_pw {
+        font-size: 14px;
+    }
+}
+.popup_body .btn_popup_pw {
+    text-align: center;
+    padding-top: 66px;
+}

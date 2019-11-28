@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">슈퍼 청정기</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+
+    <!-- section_push_alarm -->
+    <section class="section_push_alarm section_air_setting">
+        <div class="wrap_contents_01">
+        <p class="alarm_title">
+            시간
+        </p>
+        <ul class="area_reserv_contents" style="height: 24.2vh;">
+            <li class="sub_menu">
+                <p>종일</p>
+                <label><input type="checkbox" class="checkbox_toggle_lg" checked=""></label>
+            </li>
+            <li class="box_setting_time clearfix">
+                <div class="time_choice">
+                    <p>
+                        <span class="sprite sprite_air_purify sprite_alarm"></span>
+                        시작시간
+                    </p>
+                    <button class="btn_setting_time">오전 10:00</button>
+                </div>
+                <div class="time_choice">
+                    <p>
+                        <span class="sprite sprite_air_purify sprite_alarm"></span>
+                        종료시간
+                    </p>
+                    <button class="btn_setting_time btn_setting_time_lg">다음날 오전 10:00</button>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <div class="wrap_contents_02">
+        <p class="alarm_title">
+            반복
+        </p>
+        <ul class="area_reserv_contents" style="height: 20.9vh;">
+            <li class="sub_menu">
+                <p>매주 반복</p>
+
+                <label><input type="checkbox" class="checkbox_toggle_lg" checked=""></label>
+            </li>
+            <li class="box_setting_day">
+                <p class="setting_day">일, 월, 화</p>
+                <div class="day_choice">
+                    <div class="box_day"><input type="checkbox" class="day" checked><label>일</label></div>
+                    <div class="box_day"><input type="checkbox" class="day" checked><label>월</label></div>
+                    <div class="box_day"><input type="checkbox" class="day" checked><label>화</label></div>
+                    <div class="box_day"><input type="checkbox" class="day"><label>수</label></div>
+                    <div class="box_day"><input type="checkbox" class="day"><label>목</label></div>
+                    <div class="box_day"><input type="checkbox" class="day"><label>금</label></div>
+                    <div class="box_day"><input type="checkbox" class="day"><label>토</label></div>
+                </div>
+            </li>
+        </ul>
+        </div>
+        <div class="wrap_contents_03">
+        <p class="alarm_title">
+            모드
+        </p>
+        <ul class="area_reserv_contents" style="height: 16.9vh;">
+            <li>
+                <p><input type="radio" class="input_radio_md setting_mode" name="setting_mode">자동모드</p>
+            </li>
+            <li>
+                <p><input type="radio" class="input_radio_md setting_mode" name="setting_mode" checked="">취침모드</p>
+            </li>
+        </ul>
+        </div>
+    </section>
+    <!-- //section_push_alarm -->
+
+    <section class="section_btn bottom_btn">
+        <div class="area_btn btn_inline">
+            <button class="btn btn_lg btn_skyblue btn_block">취소</button>
+            <button class="btn btn_lg btn_blue btn_block">저장</button>
+        </div>
+    </section>
+
+</div>
+
+<!-- //wrap_contents_area-->
+</body>
+</html>

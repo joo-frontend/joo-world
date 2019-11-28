@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <meta property="og:title" content="US-HOME"/>
+    <meta property="og:description" content="US-HOME"/>
+    <meta name="description" content="US-HOME">
+    <meta property="og:site_name" content="US-HOME"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://US-HOME/images/kakao_thumbnail.jpg"/>
+    <meta property="og:url" content="URL입력"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="210"/>
+    <title>Homecook</title>
+    <link rel="stylesheet" href="../../js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/community.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="wra">
+    <!--header-->
+    <div class="wra_header wra_header_white">
+        <div class="area_header">
+            <div class="box_logo"><a href="#"><img src="../../images/header/bi_culistory.png" alt=""></a></div>
+            <div class="box_gnb box_gnb_main">
+                <ul class="clearfix">
+                    <li class=""><a href="#">컬리스토리란?</a></li>
+                    <li><a href="#">컬리스토리 메뉴</a></li>
+                    <li><a href="#">에듀밀</a></li>
+                    <li><a href="#">주간레시피</a></li>
+                    <li class="m_community"><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="box_gnb box_gnb_user">
+                <p class="lang_user"><select name="select_lang" class="selectbox_lang">
+                    <option value="lang_kor">한국어</option>
+                    <option value="lang_eng">영어</option>
+                </select></p>
+                <ul>
+                    <li class=""><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                </ul>
+            </div>
+            <div class="box_menu">
+                <a href="#" class="search"></a>
+                <a href="#" class="mypage"></a>
+                <a href="#" class="mycart"></a>
+            </div>
+        </div>
+    </div>
+    <!--search area-->
+    <div class="wra_search_active">
+        <p class="search_txt">키워드를 입력하세요</p>
+        <form action="">
+            <p class="serach_area">
+                <input type="text" class="search_txtbox" placeholder="검색어">
+                <button type="submit"></button>
+            </p>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="contents">
+            <div id="pageIdea" class="page_wra">
+                <div class="wra_commnunity_gnb">
+                    <ul>
+                        <li><a href="community_make.html">이렇게 만들어 봤어요!</a></li>
+                        <li><a href="community_recipe.html">나만의 레시피 뽐내기</a></li>
+                        <li><a href="community_hotmenu.html">컬리스토리 HOT 메뉴</a></li>
+                        <li><a href="community_cookStudy.html">컬리스토리 요리탐구</a></li>
+                        <li><a href="community_place.html">이런데 가보셨나요?</a></li>
+                        <li class="focus"><a href="community_idea.html">컬리스토리에게 바래요</a></li>
+                        <li><a href="community_tip.html">요리 꿀팁&노하우</a></li>
+                    </ul>
+                </div>
+                <div class="wra_banner_community">
+                    <div class="area_banner_community">
+                        <p class="banner_icon"><img src="../../images/community/p7/p7_icon.png" alt=""></p>
+                        <p class="banner_msg">더 나은 컬리스토리가 되려고 합니다<br>
+                            여러분의 참신한 아이디어를 기다립니다</p>
+                    </div>
+                </div>
+                <div class="wra_list_posting">
+                    <div class="area_search_community">
+                        <p class="select_round">
+                            <select name="selectbox_idea" id="" class="selectbox_round">
+                                <option value="idea_title_contents">제목 + 내용</option>
+                                <option value="idea_title">제목</option>
+                                <option value="idea_contents">내용</option>
+                            </select>
+                        </p>
+                        <p class="search_round">
+                            <input type="text" class="textbox_round" name="txt_search_idea" placeholder="키워드를 입력하세요">
+                            <button type="submit" class="btn_search_user">
+                                <img src="../../images/culistory/no4_search.png" alt=""></button>
+                        </p>
+                    </div>
+                    <div class="area_write_btn">
+                        <a href="write_idea.html"><img src="../../images/culistory/no5_write.png" alt="">글쓰기</a>
+                    </div>
+                    <div class="area_list_posting_type2">
+                        <table>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="60%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                                <th>조회</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--게시글 10개씩 노출-->
+                            <tr>
+                                <td>1</td>
+                                <td class="title" align="left"><a href="#">경기권 배송 확장해주세요</a></td>
+                                <td>sibb2***</td>
+                                <td>2018.06.12</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="title" align="left"><a href="#">배송문의</a></td>
+                                <td>sibb2***</td>
+                                <td>2018.06.12</td>
+                                <td>12</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination clearfix">
+
+                        <p class="first"><a href="#">맨앞</a></p>
+                        <p class="prev"><a href="#"><img src="../../images/culistory/no4_before.png" alt=""></a></p>
+                        <ul>
+                            <li class="focus"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                        </ul>
+                        <p class="next"><a href="#"><img src="../../images/culistory/no4_next.png" alt=""></a></p>
+                        <p class="last"><a href="#">맨끝</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="wra_footer">
+        <!--main-userlink-->
+        <div class="area_link_user">
+            <a href="#" class="move_user_center">FAQ</a>
+            <a href="#" class="move_user_center">1:1문의</a>
+            <a href="#" class="move_user_center">공지사항</a>
+        </div>
+        <div class="area_shop_info">
+            <ul>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_call.png" alt="">고객센터</span>
+                        <p><span>010.3336.4643</span><span>월-금  ㅣ  10:00 - 17:00</span><span>토·일·공휴일  ㅣ  휴무</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_mail.png" alt="">E-mail</span>
+                        <p><span>jskang402@gmail.com</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_bank.png" alt="">입금정보</span>
+                        <p><span>하나은행 316-910028-80205</span><span>예금주 : (주)홈쿡</span></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area_footer">
+            <div class="footer_link">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="footer_desc">
+                <p>상호명 : 농업회사법인 누리(주) <span></span>대표 : 강주석<span></span>개인정보관리책임자 : 강주석<br>
+                    전화 : 010-3336-4643<span></span>이메일 : jskang402@gmail.com<span></span>회사 이메일 :
+                    NU***@**********<span></span>사업자등록번호 : 263-87-00956<br>
+                    주소 : 전라북도 익산시 왕국면 동촌제길 110 식품벤처센터 F동 348호
+                <p>Copyright ⓒ 2016 컬리스토리 All right reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/script.js"></script>
+
+</body>
+</html>

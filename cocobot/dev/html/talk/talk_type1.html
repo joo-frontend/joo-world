@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>TALK</title>
+    <link rel="stylesheet" href="../../css/ui/ui.style.css">
+</head>
+<body>
+<div class="wrapper wrapper_talk">
+<div class="wrap_header">
+    <ul class="clearfix header_menu">
+        <li><a href="#" class="sprite sprite_common sprite_header_menu_pick">픽.</a></li>
+        <li><a href="#" class="sprite sprite_common sprite_header_menu_tip">팁.</a></li>
+        <li class="active"><a href="#" class="sprite sprite_common sprite_header_menu_talk">톡.</a></li>
+    </ul>
+    <a href="#" class="header_btn_right"><i class="sprite sprite_common sprite_list "></i></a>
+</div>
+
+    <!-- 아래 화장품 타입 선택 슬라이더("area_type_choice') 추가시
+     클래스 'wrap_bottom_type_choice' 추가-->
+    <div class="wrap_contents wrap_bottom_type_choice">
+        <p class="desc_history">대화 이력은 최근 2주 동안만 제공됩니다.</p>
+        <p class="desc_date">2017년 09월 03일 일요일</p>
+        <ul class="area_bot_chat">
+            <p class="bot_img">이미지</p>
+            <li class="line first_line">
+                <p>Jung-min님. 안녕하세요~</p>
+            </li>
+            <li class="line">
+                <p> 반가워요! 저는 뷰티디렉터 마스코트
+                    <span>코코봇</span>이라고 해요. 앞으로 저를 친구처럼
+                    편하게 생각해주세요~</p>
+            </li>
+            <li class="line">
+                <p>그럼 무엇이 궁금해서 저를 불렀나요?</p>
+                <span class="desc_time">오후 03:33</span>
+            <li class="line">
+
+        </ul>
+        <ul class="area_bot_chat area_my_chat">
+            <li class="line first_line"><p>화장품 성분 분석</p></li>
+        </ul>
+        <ul class="area_bot_chat">
+            <p class="bot_img">이미지</p>
+            <li class="line first_line">
+                <img src="../../images/talk/img_chat_ing0000.gif" alt="">
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="wrap_chat_window">
+        <div class="area_type_choice">
+            <div class="slider_type">
+                <ul>
+                    <li><a href="#">스킨/토너</a></li>
+                    <li><a href="#">에센스/부스터</a></li>
+                    <li><a href="#">로션/겔</a></li>
+                    <li><a href="#">밤/연고</a></li>
+                    <li><a href="#">크림/수분크림</a></li>
+                    <li><a href="#">페일스오일</a></li>
+                    <li><a href="#">아이세럼/크림</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">타입1</a></li>
+                    <li><a href="#">타입2</a></li>
+                    <li><a href="#">타입타입3</a></li>
+                    <li><a href="#">타입4</a></li>
+                    <li><a href="#">타입타입5</a></li>
+                    <li><a href="#">타입6</a></li>
+                    <li><a href="#">타입타입7</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">타입1</a></li>
+                    <li><a href="#">타입2</a></li>
+                    <li><a href="#">타입타입3</a></li>
+                    <li><a href="#">타입4</a></li>
+                    <li><a href="#">타입5</a></li>
+                    <li><a href="#">타입타입6</a></li>
+                    <li><a href="#">타입타입7</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">타입1</a></li>
+                    <li><a href="#">타입타입2</a></li>
+                    <li><a href="#">타입타입3</a></li>
+                    <li><a href="#">타입4</a></li>
+                    <li><a href="#">타입타입5</a></li>
+                    <li><a href="#">타입6</a></li>
+                    <li><a href="#">타입타입7</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_chat_window">
+            <p class="link_more"><a href="#">more</a></p>
+            <textarea class="chat_window" row="1"></textarea>
+            <!-- 채팅창 활성화시 클래스 'active'추가 -->
+            <p class="submit"><a href="#"><span>전송</span></a></p>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="../../js/lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../js/lib/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.page.js"></script>
+<script>
+
+
+    //bx slider
+    $(document).ready(function () {
+        $('.slider_type').bxSlider({
+            mode: 'horizontal',
+            speed: 800,
+            infiniteLoop: true,
+            controls: false
+        })
+    });
+</script>
+
+</body>
+</html>

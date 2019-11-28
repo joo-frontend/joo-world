@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+    <style>
+        h2 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .area_contents {
+            padding: 10px 10px 20px;
+        }
+
+        .area_contents .sub_title {
+            padding: 0;
+        }
+        .area_contents .sub_contents {
+            margin-bottom: 30px;
+        }
+
+        .sub_title h3 {
+            position: relative;
+            font-size: 1.4rem;
+            padding-left: 15px;
+        }
+
+        .sub_title h3::before {
+            content: '■';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #bebebe;
+        }
+
+    </style>
+</head>
+<body>
+<div class="area_contents">
+    <div class="sub_title">
+        <h2>SK Magic 컴포넌트 가이드</h2>
+    </div>
+    <div class="sub_contents">
+
+    </div>
+    <div class="sub_title">
+        <h3>체크박스</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="checkbox" class="checkbox" checked></label>
+        <label><input type="checkbox" class="checkbox"></label>
+    </div>
+
+    <div class="sub_title">
+        <h3>체크박스 원형</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="checkbox" class="checkbox_circle" checked></label>
+        <label><input type="checkbox" class="checkbox_circle"></label>
+    </div>
+
+    <div class="sub_title">
+        <h3>체크박스 (토글버튼)</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="checkbox" class="checkbox_toggle" checked></label>
+        <label><input type="checkbox" class="checkbox_toggle"></label>
+    </div>
+
+    <div class="sub_title">
+        <h3>체크박스 (토글버튼_lg)</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="checkbox" class="checkbox_toggle_lg" checked></label>
+        <label><input type="checkbox" class="checkbox_toggle_lg"></label>
+    </div>
+
+    <div class="sub_title">
+        <h3>라디오</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="radio" class="input_radio" name="name1" checked>인풋 라디오1</label>
+        <label><input type="radio" class="input_radio" name="name1">인풋 라디오2</label>
+    </div>
+
+    <div class="sub_title">
+        <h3>라디오 md</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="radio" class="input_radio_md" name="name2" checked>인풋 라디오1</label>
+        <label><input type="radio" class="input_radio_md" name="name2">인풋 라디오2</label>
+    </div>
+    <div class="sub_title">
+        <h3>라디오 md</h3>
+    </div>
+    <div class="sub_contents">
+        <label><input type="radio" class="input_radio_md input_radio_white" name="name2" checked>인풋 라디오1</label>
+        <label><input type="radio" class="input_radio_md input_radio_white" name="name2">인풋 라디오2</label>
+    </div>
+
+    <div class="sub_title">
+        <h3>input text</h3>
+    </div>
+    <div class="sub_contents">
+        <input type="text" class="text_box text_box_md" value="text_box">
+        <div class="" style="background: #000; padding: 8px 5px 0">
+            <input type="text" class="text_box text_box_md text_box_dark" value="text_box_dark">
+        </div>
+    </div>
+
+    <div class="sub_title">
+        <h3>input text 크기</h3>
+    </div>
+    <div class="sub_contents">
+        <input type="text" class="text_box text_box_md text_box_block" value="text_box_md">
+        <!--<input type="text" class="text_box text_box_lg" value="text_box text_box_lg" style="width: 100px">-->
+    </div>
+
+    <div class="sub_title">
+        <h3>셀렉트</h3>
+    </div>
+
+    <div class="sub_title">
+        <h3>Top navigation</h3>
+    </div>
+
+    <div class="sub_contents">
+        <!-- section_menu -->
+        <section class="section_menu">
+            <div class="area_menu">
+                <div class="moving">
+                    <ul class="clearfix">
+                        <li class="active"><a href="#"><span>상태표시</span></a></li>
+                        <li><a href="#"><span>제품작동</span></a></li>
+                        <li><a href="#"><span>사용통계</span></a></li>
+                        <li><a href="#"><span>사용설명</span></a></li>
+                        <li><a href="#"><span>관리이력</span></a></li>
+                        <li><a href="#"><span>납부정보</span></a></li>
+                        <li><a href="#"><span>이력 및 알림</span></a></li>
+                        <li><a href="#"><span>사용자 관리</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- //section_menu -->
+    </div>
+
+    <div class="sub_title">
+        <h3>버튼</h3>
+    </div>
+    <div class="sub_contents">
+        <a href="#" class="btn btn_md">button</a>
+        <button class="btn btn_md">button</button>
+        <input type="button" value="button" class="btn btn_md">
+        <input type="submit" value="button" class="btn btn_md">
+    </div>
+
+    <div class="sub_title">
+        <h3>버튼정렬</h3>
+    </div>
+    <div class="sub_contents">
+        <div class="btn_inline">
+            <a href="#" class="btn btn_md btn_blue">button</a>
+            <button class="btn btn_md btn_white">button</button>
+        </div>
+    </div>
+
+    <div class="sub_title">
+        <h3>버튼컬러</h3>
+    </div>
+    <div class="sub_contents">
+        <a href="#" class="btn btn_md btn_blue">button</a>
+        <button class="btn btn_md btn_skyblue">button</button>
+        <input type="button" value="button" class="btn btn_md btn_gray">
+        <input type="submit" value="button" class="btn btn_md btn_white">
+    </div>
+
+    <div class="sub_title">
+        <h3>버튼크기</h3>
+    </div>
+    <div class="sub_contents">
+        <a href="#" class="btn btn_sm btn_blue">btn_sm</a>
+        <button class="btn btn_md btn_skyblue">btn_md</button>
+        <input type="button" value="btn_lg" class="btn btn_lg btn_gray">
+    </div>
+
+    <div class="sub_title">
+        <h3>꽉찬버튼</h3>
+    </div>
+    <div class="sub_contents">
+        <a href="#" class="btn btn_sm btn_blue btn_block" style="margin-bottom: 5px">btn_sm</a>
+        <button class="btn btn_md btn_skyblue btn_block" style="margin-bottom: 5px">btn_md</button>
+        <input type="button" value="btn_lg" class="btn btn_lg btn_gray btn_block">
+    </div>
+
+    <div class="sub_title">
+        <h3>탭</h3>
+        <section class="section_tab">
+            <div class="tabs tabs_col2">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">월별</a></li>
+                    <li><a href="#">년도별</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section_tab">
+            <div class="tabs tabs_col3">
+                <ul class="clearfix">
+                    <li><a href="#">일별</a></li>
+                    <li class="active"><a href="#">월별</a></li>
+                    <li><a href="#">년도별</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="sub_title">
+        <h3>indicator</h3>
+        <section class="section_indicator">
+            <div class="indicator">
+                <ul>
+                    <li class="visited"><span>일별</span></li>
+                    <li class="active"><span>월별</span></li>
+                    <li><span>년도별</span></li>
+                    <li><span>년도별</span></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="sub_title">
+        <h3>아코디언</h3>
+        <section class="section_accordion">
+            <ul class="accordion_list">
+                <!-- 리스트 다운 펼쳤을 때 li 요소 class 추가 'focus' -->
+                <li class="focus"><span>끓이고 알림 / 끓이고 꺼짐 사용방법</span> <a href="#"></a>
+                    <ul class="sub_list">
+                        <li>설명서 보기</li>
+                        <li>동영상 보기</li>
+                    </ul>
+                </li>
+                <li><span>온도유지 조리기능 사용방법</span> <a href="#"></a></li>
+                <li><span>가스레인지 간단 청소방법</span> <a href="#"></a></li>
+                <li><span>기능안내 및 문제해결 방법</span> <a href="#"></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="sub_title">
+        <h3>슬라이드</h3>
+    </div>
+
+
+</div>
+</body>
+</html>

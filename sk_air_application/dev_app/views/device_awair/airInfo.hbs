@@ -1,0 +1,54 @@
+<div class="box_air_all">
+    <ul class="clearfix {{colClass}}">
+        {{#each openDeviceList}}
+            {{#isAirTemp fncCd}}
+                <li>
+                    <!--<p class="name">{{fncNm}}</p>-->
+                    <p class="name">온도</p>
+                    <p class="index">{{checkFncVal fncVal}}<em>℃</em></p>
+                    <span class="sprite sprite_status {{statusIconClass fncCd fncVal}}"></span>
+                </li>
+            {{/isAirTemp}}
+            {{#isAirHumi fncCd}}
+                <li>
+                    <!--<p class="name">{{fncNm}}</p>-->
+                    <p class="name">습도</p>
+                    <p class="index">{{checkFncVal fncVal}}<em>%</em></p>
+                    <span class="sprite sprite_status {{statusIconClass fncCd fncVal}}"></span>
+                </li>
+            {{/isAirHumi}}
+            {{#isAirDust fncCd}}
+                <li>
+                    <p class="name">미세먼지</p>
+                    <!--<p class="name">{{fncNm}}</p>-->
+                    <p class="index">{{checkFncVal fncVal}}<em>㎍/㎥</em></p>
+                    <span class="sprite sprite_status {{statusIconClass fncCd fncVal}}"></span>
+                </li>
+            {{/isAirDust}}
+            {{#isAirFineDust fncCd}}
+                <li>
+                    <!--<p class="name">{{fncNm}}</p>-->
+                    <p class="name">초미세먼지</p>
+                    <p class="index">{{checkFncVal fncVal}}<em>㎍/㎥</em></p>
+                    <span class="sprite sprite_status {{statusIconClass fncCd fncVal}}"></span>
+                </li>
+            {{/isAirFineDust}}
+            {{#isAirCo2 fncCd}}
+                <li>
+                    <!--<p class="name">{{fncNm}}</p>-->
+                    <p class="name">이산화탄소</p>
+                    <p class="index">{{checkFncVal fncVal}}<em>PPM</em></p>
+                    <span class="sprite sprite_status {{statusIconClass fncCd fncVal}}"></span>
+                </li>
+            {{/isAirCo2}}
+            {{#isVoc fncCd}}
+                <li>
+                    <!--<p class="name">{{fncNm}}</p>-->
+                    <p class="name">화학물질</p>
+                    <p class="index">{{checkFncVal fncVal}}<em>PPM</em></p>
+                    <span class="sprite sprite_status {{statusIconClass fncCd fncVal}}"></span>
+                </li>
+            {{/isVoc}}
+        {{/each}}
+    </ul>
+</div>

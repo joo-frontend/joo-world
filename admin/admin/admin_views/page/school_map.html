@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>세대 및 검침일 관리 | SK LoRa Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="./../../admin_css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="./../../admin_js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<section class="section_header">
+    <header>
+		<span class="logo">
+			<a href="#"><img src="../../admin_images/common/@temp_logo.png" alt="Smart Home"></a>
+		</span>
+        <div class="gnb">
+            <ul>
+                <li class="active"><a href="#">전국 공기 조회</a></li>
+                <li><a href="#">내 학교 관리</a></li>
+                <li><a href="#">통계 관리</a></li>
+            </ul>
+        </div>
+
+    </header>
+</section>
+<!-- section_contents -->
+<section class="section_contents clearfix">
+    <div class="wrap_path">
+        <a href="#">전국 공기 조회</a> <span> &gt; </span> <a href="#">전국 학교 지도</a>
+        <div class="myinfo">
+            <ul>
+                <li class="_on_dropdown"><a href="#">김두식<span>(개명초등학교)</span></a>
+                    <div class="drop_myinfo">
+                        <div class="info">
+                            <p class="txt_name">사용자</p>
+                            <p>힐스테이트 반포</p>
+                            <p class="txt_email">aaa@sk.com</p>
+                        </div>
+                        <div class="info_btn clearfix">
+                            <a href="#" class="fl btn btn_setting">내 정보</a>
+                            <a href="#" class="fr btn btn_orange btn_signin">로그아웃</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- lnb -->
+    <div class="wrap_left">
+        <div class="area_lnb">
+            <!-- <div class="box_title">
+                 <h2>전국 공기 조회</h2>
+             </div>-->
+            <ul>
+                <li class="active"><a href="#">전국 학교 지도</a></li>
+                <li><a href="#">전국 학교 목록</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //lnb -->
+
+    <!-- wrap_right -->
+    <div class="wrap_right">
+        <!-- wrap_header -->
+        <div class="wrap_header">
+            <div class="area_title">
+                <div class="layout">
+                    <div class="layout_left">
+                        <h2>전국 학교 지도</h2>
+                    </div>
+                    <div class="layout_right">
+                        <span class="current">[2017.11.30 18:20]</span>
+                        <a href="#" class="btn btn_gray">새로고침</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap_header -->
+
+        <!-- wrap_contents -->
+        <div class="wrap_contents">
+            <div class="area_map">
+                <div class="box_school_position">
+                    <a href="#">서울특별시 ▼</a>
+                    <span>&gt;</span>
+                    <a href="#">강남구 ▼</a>
+                </div>
+                <div class="box_school_tooltip">
+                    <div class="tooltip_title">
+                       <p>계명초등학교</p>
+                    </div>
+                    <div class="tooltip_contents">
+                        <div class="left">
+                            <p>보통</p>
+                        </div>
+                        <div class="right">
+                            <p><span>온도</span><span>26℃</span></p>
+                            <p><span>습도</span><span>45%</span></p>
+                            <p><span>미세먼지</span><span>20㎍/㎥</span></p>
+                            <p><span>초미세먼지</span><span>35㎍/㎥</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_school_list">
+                    <ul>
+                        <li>
+                            <p class="name">계명초등학교</p>
+                            <p><span>실외 공기</span><span>보통</span></p>
+                            <p><span>온도</span><span>26℃</span></p>
+                            <p><span>습도</span><span>45%</span></p>
+                            <p><span>미세먼지</span><span>20㎍/㎥</span></p>
+                            <p><span>초미세먼지</span><span>35㎍/㎥</span></p>
+                        </li>
+                        <li>
+                            <p class="name">신도림초등학교</p>
+                            <p><span>실외 공기</span><span>보통</span></p>
+                            <p><span>온도</span><span>26℃</span></p>
+                            <p><span>습도</span><span>45%</span></p>
+                            <p><span>미세먼지</span><span>20㎍/㎥</span></p>
+                            <p><span>초미세먼지</span><span>35㎍/㎥</span></p>
+                        </li>
+                        <li>
+                            <p class="name">고척초등학교</p>
+                            <p><span>실외 공기</span><span>보통</span></p>
+                            <p><span>온도</span><span>26℃</span></p>
+                            <p><span>습도</span><span>45%</span></p>
+                            <p><span>미세먼지</span><span>20㎍/㎥</span></p>
+                            <p><span>초미세먼지</span><span>35㎍/㎥</span></p>
+                        </li>
+                        <li>
+                            <p class="name">영일초등학교</p>
+                            <p><span>실외 공기</span><span>보통</span></p>
+                            <p><span>온도</span><span>26℃</span></p>
+                            <p><span>습도</span><span>45%</span></p>
+                            <p><span>미세먼지</span><span>20㎍/㎥</span></p>
+                            <p><span>초미세먼지</span><span>35㎍/㎥</span></p>
+                        </li>
+                        <li>
+                            <p class="name">덕의초등학교</p>
+                            <p><span>실외 공기</span><span>보통</span></p>
+                            <p><span>온도</span><span>26℃</span></p>
+                            <p><span>습도</span><span>45%</span></p>
+                            <p><span>미세먼지</span><span>20㎍/㎥</span></p>
+                            <p><span>초미세먼지</span><span>35㎍/㎥</span></p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- //wrap_contents -->
+    </div>
+    <!-- //wrap_right -->
+</section>
+<!-- //section_contents -->
+<section class="section_footer">
+    <div class="footer">
+        <div class="logo">
+            <a href="#"><img src="../../admin_images/common/logo_footer.png" alt="Smart Home SKT 스마트 계량기"></a>
+        </div>
+        <div class="box_footer">
+            <ul class="clearfix">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="copy">
+                <p>우편번호 : 100-999 서울특별시 중구 을지로 65(을지로 2가) SK T-타워 SK텔레콤(주)<span>|</span>대표이사/사장 : 장동현<span>|</span>사업자
+                    등록번호 : 104-81-37225<span>|</span>고객센터 : 1800-0161
+                    <a href="#">이메일문의</a></p>
+                <p>COPYRIGHTⓒSK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ui library -->
+<script type="text/javascript" src="./../../admin_js/ui/ui.util.js"></script>
+<script type="text/javascript" src="./../../admin_js/ui/ui.common.js"></script>
+<script type="text/javascript" src="./../../admin_js/ui/ui.page.js"></script>
+<script type="text/javascript" src="./../../admin_js/ui/ui.init.js"></script>
+<script>
+    /**
+     * 팝업열기 클래스 _popup_open
+     * 팝업열기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.showPopup('.popup01');
+
+    /**
+     * 팝업닫기 클래스 _popup_close
+     * 팝업 닫기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.closePopup('.popup01');
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">슈퍼쿡 가스레인지</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+   <div class="wrap_bg_gray">
+       <!-- section_tab -->
+       <section class="section_tab">
+           <div class="tabs tabs_col3">
+               <ul class="clearfix">
+                   <!-- 탭 클릭비활성화시 li에 'disabled' 클래스 추가 -->
+                   <li class="disabled"><a href="#">일별</a></li>
+                   <li class="active"><a href="#">월별</a></li>
+                   <li><a href="#">년도별</a></li>
+               </ul>
+           </div>
+       </section>
+       <!-- //section_tab -->
+        <!-- section_use_time -->
+        <section class="section_use_time">
+            <p class="title">가스레인지 사용 시간</p>
+            <p class="period">최근 6개월</p>
+            <div class="graph_img"><img src="../../../images/page/@temp_graph_month.png" alt=""></div>
+        </section>
+        <!-- //section_use_time -->
+
+        <!-- section_total_time -->
+        <section class="section_total_time">
+            <p class="title">총 누적 <span>(2015.10.1 ~ )</span></p>
+            <div>
+                <span class="total_time">230시간 10분</span>
+            </div>
+        </section>
+        <!-- //section_total_time -->
+    </div>
+
+</div>
+</body>
+</html>

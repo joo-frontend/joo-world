@@ -1,0 +1,55 @@
+<!--
+<div class="box_card _usereport">
+    <p class="card_title">사용 리포트</p>
+    <a href="#" class="set_date">2017.12.26(화)</a>
+    <div class="report_info">
+        <p class="report_icon"><i class="sprite sprite_common sprite_history_air_sensor"></i>공기청정기<br>사용시간</p>
+        <div class="wrapper_graph clearfix">
+            <div class="report_graph">
+                &lt;!&ndash; 원형 퍼센트 p00 숫자로 조절 &ndash;&gt;
+                &lt;!&ndash; 50%이상 'over50' 클래스 추가 &ndash;&gt;
+                <div class="progress-circle over50 p83">
+                    <span><em>9</em>시간</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
+                <p class="graph_name">우리집</p>
+            </div>
+            <div class="report_graph report_household">
+                <div class="progress-circle p15">
+                    <span><em>4</em>시간</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
+                <p class="graph_name">이용가구 평균</p>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div class="box_card _usereport">
+    <p class="card_title">사용 리포트</p>
+    <a href="#" class="set_date">{{moment}}</a>
+    <div class="report_info">
+        <p class="report_icon"><i class="sprite sprite_common sprite_history_air_sensor"></i>공기청정기<br>사용시간</p>
+        <div class="wrapper_graph">
+            <div class="report_graph">
+                <div id="report_house" style="height: 90px; width: 90px"></div>
+                <span><em>{{homeUseHour}}</em>시간</span>
+                <p class="graph_name">우리집
+                </p>
+            </div>
+
+            <div class="report_graph report_household">
+                <div id="report_household" style="height: 90px; width: 90px"></div>
+                <span><em>{{otherUseHour}}</em>시간</span>
+                <p class="graph_name">이용가구 평균
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

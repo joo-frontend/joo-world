@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Smart Air Manager</title>
+    <link rel="stylesheet" href="../css/ui/ui.style.css">
+</head>
+<body>
+<div class="wrap_header wrap_header_bd">
+    <h1>남정초등학교 1학년 1반</h1>
+    <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+    <input type="checkbox" class="icon_check check_class" checked>
+</div>
+<div class="wrap_contents wrap_contents_gray">
+    <div class="area_school_air bg_white">
+        <div class="slide_pager">
+            <p class="clearfix">
+                <span class="good focus"></span>
+                <span class="normal"></span>
+                <span class="bad"></span>
+                <span class="worse"></span>
+            </p>
+        </div>
+        <div class="slider">
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-1 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status good">
+                        <div class="circle">
+                            <p class="air">공기 상태</p>
+                            <p class="status">좋음</p>
+                            <p class="smell">냄새 상태</p>
+                            <p class="smell_status">좋음</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree degree_lg">극초미세먼지 <em>50</em> ㎍/㎥ / 초미세먼지 <em>50</em> ㎍/㎥ / 미세먼지 <em>50</em> ㎍/㎥</p>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-2 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status normal">
+                        <div class="circle">
+                            <p class="air">공기 상태</p>
+                            <p class="status">보통</p>
+                            <p class="smell">냄새 상태</p>
+                            <p class="smell_status">보통</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree degree_lg">극초미세먼지 <em>50</em> ㎍/㎥ / 초미세먼지 <em>50</em> ㎍/㎥ / 미세먼지 <em>50</em> ㎍/㎥</p>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-3 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status bad">
+                        <div class="circle">
+                            <p class="air">공기 상태</p>
+                            <p class="status">나쁨</p>
+                            <p class="smell">냄새 상태</p>
+                            <p class="smell_status">나쁨</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실내</p>
+                    <p class="degree degree_lg">극초미세먼지 <em>50</em> ㎍/㎥ / 초미세먼지 <em>50</em> ㎍/㎥ / 미세먼지 <em>50</em> ㎍/㎥</p>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div>
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-3 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status worse">
+                        <div class="circle">
+                            <p class="air">공기 상태</p>
+                            <p class="status">매우나쁨</p>
+                            <p class="smell">냄새 상태</p>
+                            <p class="smell_status">매우나쁨</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree degree_lg">극초미세먼지 <em>50</em> ㎍/㎥ / 초미세먼지 <em>50</em> ㎍/㎥ / 미세먼지 <em>50</em> ㎍/㎥</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area_box_list" data-makernm="{{makerNm}}">
+        <div class="box_card">
+            <p class="card_title title_alone">전원설정</p>
+            <input type="checkbox" class="icon_check toggle_lg">
+        </div>
+        <div class="box_card">
+            <p class="card_title title_set">모드 설정</p>
+            <div class="box_setting">
+                <ul  class="clearfix">
+                    <li class="focus"><a href="#"><span>자동</span></a></li>
+                    <li><a href="#"><span>청정</span></a></li>
+                    <li><a href="#"><span>취침</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_card off">
+            <p class="card_title title_set">풍량 설정</p>
+            <div class="box_setting">
+                <ul class="clearfix">
+                    <li><a href="#"><span>약</span></a></li>
+                    <li class="focus"><a href="#"><span>중</span></a></li>
+                    <li><a href="#"><span>강</span></a></li>
+                    <li><a href="#"><span>파워</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title title_alone">청정표시등</p>
+            <input type="checkbox" class="icon_check toggle_default">
+        </div>
+        <div class="box_card">
+            <p class="card_title title_alone">공기제균</p>
+            <input type="checkbox" class="icon_check toggle_default">
+        </div>
+        <div class="box_card">
+            <p class="card_title">꺼짐 예약 </p>
+            <a href="#" class="set_desc">설정</a>
+            <!--<p class="time">오후<span>09:15</span></p>-->    <p class="desc_date"><span class="day"></span><span class="time">09:15</span></p>
+        </div>
+        <div class="box_card">
+            <p class="card_title">사용 리포트</p>
+            <a href="#" class="set_date">2017.12.26(화)</a>
+            <div class="report_info">
+                <p class="report_icon"><i class="sprite sprite_common sprite_history_air_sensor"></i>공기청정기<br>사용시간</p>
+                <div class="wrapper_graph">
+                    <div class="report_graph">
+                        <div id="report_house" style="height: 90px; width: 90px"></div>
+                        <span><em>4</em>시간</span>
+                        <p class="graph_name">우리집
+                        </p>
+                    </div>
+
+                    <div class="report_graph report_household">
+                        <div id="report_household" style="height: 90px; width: 90px"></div>
+                        <span><em>9</em>시간</span>
+                        <p class="graph_name">이용가구 평균
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title"><a href="#">이력 및 알림 <span class="sprite sprite_common sprite_more">?</span></a></p>
+            <span class="sprite sprite_common sprite_new">new</span>
+            <!-- 알림 메세지 1줄일 경우 -->
+            <div class="alarm_txt" style="display: none;">
+                <p>[1-1 공기청정기]의 동작을 시작합니다.</p>
+                <p class="etc">오전 7:52</p>
+            </div>
+            <!-- 알림 메세지 2줄일 경우 -->
+            <div class="alarm_txt">
+                <p>[1-1 공기청정기] 오전 7시 30분에 전원 동작을 예약하였습니다.</p>
+                <p class="etc">오전 7:52</p>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title"><a href="#">정보<span class="sprite sprite_common sprite_more">?</span></a></p>
+            <div class="info_product clearfix">
+                <div class="img">
+                    <img src="../images/default_img.png" alt=""></div>
+                <div class="info_desc">
+                    <p>LG 몽블랑 S 공기청정기</p>
+                    <p>1-1 공기청정기</p>
+                    <span>고객센터 1800-0212</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/lib/jquery-3.2.1.min.js"></script>
+<script src="../js/lib/jquery.bxslider.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            adaptiveHeight: true,
+            pager: false
+        });
+    });
+
+    //highchart circle chart
+    $(function() {
+        var chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'report_house',
+                    type: 'pie',
+                    backgroundColor: '#ffffff'
+                },
+                colors:['#ff9f3e','#eeeeee'],
+                credits: {
+                    enabled: false
+                },
+                title: {
+                    text: ''
+                },
+                plotOptions: {
+                    pie: {
+                        borderColor: 'none',
+                        size:'80',
+                        innerSize: '77'
+                    },
+                    series: {
+                        animation: false
+                    }
+                },
+                series: [{
+                    dataLabels: {
+                        enabled: false
+                    },
+                    data: [33,67]   //percent
+                }]
+            },
+            // using
+            function(chart) { // on complete
+                // Render the text
+                /*chart.renderer.text('<span style="color: #ff9f3e;font-size: 27px;">9</span><br>' +
+                    '시간', 35, 46).css({
+                    width: 80,
+                    color: '#bababa',
+                    fontSize: '11px',
+                    textAlign: 'center'
+                }).attr({
+                    // why doesn't zIndex get the text in front of the chart?
+                    zIndex: 999
+                }).add();*/
+
+                //마커 생성
+                var r, x, y, q = 1;
+                Highcharts.each(chart.series[0].data, function(p, i) {
+                    if (p.y <= 33) {
+                        r = (p.shapeArgs.innerR + p.shapeArgs.r) / 2 ;
+                        q =  p.shapeArgs.end
+                        x = p.shapeArgs.x + r * Math.cos(q) + chart.plotLeft;
+                        y = p.shapeArgs.y + r * Math.sin(q) + chart.plotTop;
+                        chart.renderer.circle(x, y, 2).attr({
+                            zIndex: 4,
+                            fill: '#ff9f3e'
+                        }).add();
+                    }
+                })
+            });
+    });
+
+    $(function() {
+        var chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'report_household',
+                    type: 'pie',
+                    backgroundColor: '#ffffff'
+                },
+                colors:['#666666','#eeeeee'],
+                credits: {
+                    enabled: false
+                },
+                title: {
+                    text: ''
+                },
+                plotOptions: {
+                    pie: {
+                        borderColor: 'none',
+                        size:'80',
+                        innerSize: '77'
+                    },
+                    series: {
+                        animation: false
+                    }
+                },
+                series: [{
+                    dataLabels: {
+                        enabled: false
+                    },
+                    data: [65,35]   //percent
+                }]
+            },
+            // using
+            function(chart) { // on complete
+                // Render the text
+                /*chart.renderer.text('<span style="color: #666666;font-size: 27px;">4</span><br>' +
+                    '시간', 35, 46).css({
+                    width: 80,
+                    color: '#bababa',
+                    fontSize: '11px',
+                    textAlign: 'center'
+                }).attr({
+                    // why doesn't zIndex get the text in front of the chart?
+                    zIndex: 999
+                }).add();*/
+                //마커 생성
+                var r, x, y, q = 1;
+                Highcharts.each(chart.series[0].data, function(p, i) {
+                    if (p.y >= 65) {
+                        r = (p.shapeArgs.innerR + p.shapeArgs.r) / 2 ;
+                        q =  p.shapeArgs.end
+                        x = p.shapeArgs.x + r * Math.cos(q) + chart.plotLeft;
+                        y = p.shapeArgs.y + r * Math.sin(q) + chart.plotTop;
+                        chart.renderer.circle(x, y, 2).attr({
+                            zIndex: 4,
+                            fill: '#666666'
+                        }).add();
+                    }
+                })
+            });
+    });
+</script>
+</body>
+</html>

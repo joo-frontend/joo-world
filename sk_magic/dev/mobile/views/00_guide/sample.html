@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+    <style>
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+        .wrap_contents_area {
+            background: #ff0000;
+            position: relative;
+        }
+        .wrap_contents_area p {
+            font-weight: bold;
+            border-bottom: 1px solid #ffffff;height: 30px;line-height: 30px;color: #ffffff;font-size: 20px;width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+            <div class="title">기기명</div>
+            <a href="#" class="sprite sprite_common sprite_setting"></a>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+    <p>첫번째줄</p>
+    <p>두번째줄</p>
+    <p>세번째줄</p>
+    <p>네번째줄</p>
+    <p>다섯번째줄</p>
+    <p class="contents_bottom" style="position: absolute;left: 0;bottom: 0;border: 1px solid #ffffff;">
+        컨텐츠 맨아래 높이30px
+    </p>
+</div>
+<!-- //wrap_contents_area-->
+</div>
+<script type="text/javascript" src="../../js/lib/jquery-1.12.4.min.js"></script>
+<script>
+    alert($(".wrap_header_area").height());
+    alert($(".wrap_contents_area").height());
+   /* alert($(".wrap").width());*/
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="process_bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+<style type="text/css">.process_icon_line{fill:#C9C9C9;}.process_icon_chk{fill:#C9C9C9;}.process_icon_now{fill:#3D70B7;}
+</style>
+<g>
+	<path class="process_icon_line" d="M21,41.5C9.7,41.5,0.5,32.3,0.5,21S9.7,0.5,21,0.5S41.5,9.7,41.5,21S32.3,41.5,21,41.5z M21,1.5
+		C10.3,1.5,1.5,10.3,1.5,21S10.3,40.5,21,40.5S40.5,31.7,40.5,21S31.7,1.5,21,1.5z"/>
+</g>
+<g>
+	<path class="process_icon_chk" d="M31.2,15.9L19.3,27.8c-0.2,0.2-0.6,0.4-0.9,0.4s-0.6-0.1-0.9-0.4l-6.7-6.7c-0.5-0.5-0.5-1.3,0-1.8
+		c0.5-0.5,1.3-0.5,1.8,0l5.8,5.8l11-11c0.5-0.5,1.3-0.5,1.8,0C31.7,14.6,31.7,15.4,31.2,15.9z"/>
+</g>
+<g>
+	<g>
+		<circle class="process_icon_now" cx="14.1" cy="21" r="1.9"/>
+	</g>
+	<g>
+		<circle class="process_icon_now" cx="21" cy="21" r="1.9"/>
+	</g>
+	<g>
+		<circle class="process_icon_now" cx="27.9" cy="21" r="1.9"/>
+	</g>
+</g>
+</svg>

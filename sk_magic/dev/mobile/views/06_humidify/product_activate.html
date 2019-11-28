@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+            <div class="title">기기명</div>
+            <a href="#" class="sprite sprite_common sprite_setting"></a>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+    <!-- section_sub_activate -->
+    <section class="section_sub_activate">
+        <!-- 전원 on 시 'active' 클래스 추가 -->
+        <div class="area_sub_activate area_sub_activate_humidify active">
+            <ul class="box_humidity_row01">
+                <li class="col_02">
+                    <div>
+                        <span class="menu_title">전원</span>
+                        <input type="checkbox" class="power" checked>
+                    </div>
+                </li>
+                <li class="col_02 none_bg_right">
+                    <div>
+                        <span class="menu_title">꺼짐예약</span>
+                        <div class="box_value"><p>4:40</p></div>
+                        <button class="setting_btn">설정</button>
+                    </div>
+                </li>
+            </ul>
+            <ul class="box_humidity_row02">
+                <li class="col_03 none_bg_right">
+                        <span class="menu_title">가습량</span>
+                        <div class="box_setting_humidify">
+                            <input type="radio" name="toggle_water_humidify" class="toggle_water_humidify sprite_water_mild" checked>
+                            <span>약</span>
+                            <div class="pagination">
+                                <span ></span>
+                            </div>
+                        </div>
+                </li>
+                <li class="col_03 none_bg_right">
+                    <div class="box_setting_humidify">
+                        <input type="radio" name="toggle_water_humidify" class="toggle_water_humidify sprite_water_moderate">
+                        <span>중</span>
+                        <div class="pagination">
+                            <span class=""></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="col_03 none_bg_right">
+                    <div class="box_setting_humidify">
+                        <input type="radio" name="toggle_water_humidify" class="toggle_water_humidify sprite_water_intense">
+                        <span>강</span>
+                        <div class="pagination">
+                            <span class=""></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="box_humidity_row03">
+                <li class="col_03">
+                    <div>
+                        <span class="menu_title">디스플레이 밝기</span>
+                        <div class="box_setting_stage">
+                            <!-- button class
+                           전원 on일때
+                           sprite sprite_humidify sprite_dp_light weak 약
+                           sprite sprite_humidify sprite_dp_light middle 중
+                           sprite sprite_humidify sprite_dp_light strong 강
+                           전원 off일때
+                           sprite sprite_humidify sprite_off_dp_light weak 약
+                           sprite sprite_humidify sprite_off_dp_light middle 중
+                           sprite sprite_humidify sprite_off_dp_light strong 강
+                            -->
+                            <button class="sprite sprite_humidify sprite_dp_light strong"></button>
+                            <span>강</span>
+                            <div class="pagination">
+                                <span></span>
+                                <span></span>
+                                <span class="focus"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col_03">
+                    <div>
+                        <span class="menu_title">무드램프 밝기</span>
+                        <div class="box_setting_stage">
+                            <!-- button class
+                         전원 on일때
+                          sprite sprite_humidify sprite_dp_light stop  꺼짐
+                         sprite sprite_humidify sprite_dp_light weak 약
+                         sprite sprite_humidify sprite_dp_light middle 중
+                         sprite sprite_humidify sprite_dp_light strong 강
+                         전원 off일때
+                         sprite sprite_humidify sprite_dp_light stop 꺼짐
+                         sprite sprite_humidify sprite_off_dp_light weak 약
+                         sprite sprite_humidify sprite_off_dp_light middle 중
+                         sprite sprite_humidify sprite_off_dp_light strong 강
+                          -->
+                            <button class="sprite sprite_humidify sprite_mode_light stop"></button>
+                            <!-- 전원on이고 밝기 없을때 span 클래스 'off' 추가 -->
+                            <span class="off">꺼짐</span>
+                            <div class="pagination">
+                                <span></span>
+                                <span></span>
+                                <span class="focus"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col_03 none_bg_right">
+                    <div>
+                        <span class="menu_title">무드램프 색상</span>
+                        <!-- 전원 off시 disabled 클래스 추가 -->
+                        <!--<div class="mode_color disabled">-->
+                        <div class="mode_color">
+                            <!-- 색상 5가지
+                             color_01 ~ color_05
+                             -->
+                            <button class="color_radio color_01"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 전원 on 시 클래스 추가 'active' -->
+        <div class="area_time_sync active">
+            <p class="title">현재시간 동기화</p>
+            <p class="desc">가전시간 8시 55분</p>
+            <!--
+             전원 off 시
+             sprite sprite_humidify sprite_sync_off
+            전원 on 시
+             sprite sprite_humidify sprite_sync_on
+             -->
+            <button class="sprite sprite_humidify sprite_sync"></button>
+        </div>
+    </section>
+
+
+    <!-- //section_sub_activate -->
+</div>
+<!-- //wrap_contents_area-->
+
+</body>
+</html>

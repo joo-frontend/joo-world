@@ -1,0 +1,890 @@
+/*카트*/
+.table_cart th.align_left_edu {
+    text-align: left;
+    padding-left: 1em;
+}
+
+/*메인*/
+.wra_meal {
+    padding: 4.313em 0 0;
+}
+
+.area_meal_menu {
+    padding-top: 3.750em;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto 2.750em;
+}
+
+.area_meal_menu ul {
+    width: 100%;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.5);
+}
+
+.area_meal_menu li {
+    float: left;
+    width: 25%;
+
+}
+
+.area_meal_menu li a {
+    color: #999999;
+    display: block;
+    position: relative;
+    font-size: 1.063em;
+    text-align: center;
+    padding-bottom: 1.125em;
+}
+
+.area_meal_menu li a:hover,
+.area_meal_menu li.focus a {
+    color: #ef731b;
+}
+
+.area_meal_menu li.focus a:after {
+    content: '';
+    background: #ef731b;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+}
+
+.area_meal_banner {
+    padding: 6.875em 20px 0;
+    background: url("../images/meal/p1/edumeal_top.png") 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.area_meal_banner .meal_b_title {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 0.750em;
+}
+
+.area_meal_banner .meal_b_title .bold {
+    font-weight: 300;
+}
+
+.area_meal_banner .meal_b_title .highlight {
+    position: relative;
+}
+
+.area_meal_banner .meal_b_title .highlight:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.area_meal_banner .meal_b_desc {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.125em;
+    margin-bottom: 3.056em;
+}
+
+.area_meal_banner .meal_b_desc .bold {
+    font-weight: 400;
+}
+
+.area_meal_banner .meal_b_desc .bar {
+    border-right: 1px solid #ffffff;
+    display: inline-block;
+    padding-left: 2.056em;
+    margin-right: 2.056em;
+    height: 1.267em;
+    vertical-align: middle;
+}
+
+.edumeal_intro {
+    background: #ffffff;
+    max-width: 1232px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3.438em 0 2.938em;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    text-align: center;
+}
+
+.edumeal_intro .img_edumeal img {
+    margin: 0 auto 4.563em;
+}
+
+.edumeal_intro dl {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.edumeal_intro dt {
+    width: 18.438em;
+    position: relative;
+    border-bottom: 2px solid #ef731b;
+    padding: 0 0 0.831em 0.813em;
+    margin-bottom: 1.063em;
+}
+
+.edumeal_intro dt p {
+    color: #ef731b;
+    text-align: left;
+    font-size: 1.063em;
+    line-height: 1.412em;
+}
+
+.edumeal_intro dt img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.edumeal_intro dd {
+    padding: 0 0 0 0.813em;
+}
+
+.edumeal_intro dd p {
+    text-align: left;
+    color: #282828;
+    font-size: 0.875em;
+    line-height: 1.857em;
+}
+
+.edumeal_intro .edumeal_desc .plus {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3em;
+}
+
+.area_slide_snack {
+    max-width: 1217px;
+    width: 100%;
+    margin: 5.250em auto 0;
+    padding: 0 20px;
+}
+.area_slide_snack .swiper-button-next, .area_slide_snack .swiper-button-prev {
+    width: 2.313em;
+    height: 4.25em;
+    top: 23%;
+}
+.area_slide_snack .swiper-button-next, .area_slide_snack .swiper-container-rtl .swiper-button-prev {
+    background: url("../images/meal/p1/p1_after.png") 0 0 no-repeat;
+    -webkit-background-size: 2.313em 4.25em;
+    background-size: 2.313em 4.25em;
+}
+.area_slide_snack .swiper-button-prev, .area_slide_snack .swiper-container-rtl .swiper-button-next {
+    background: url("../images/meal/p1/p1_before.png") 0 0 no-repeat;
+    -webkit-background-size: 2.313em 4.25em;
+    background-size: 2.313em 4.25em;
+}
+.area_slide_snack .box_snack_title {
+    border-bottom: 1px solid rgba(158, 158, 158, 0.4);
+    border-top: 1px solid rgba(158, 158, 158, 0.4);
+    max-width: 853px;
+    width: 100%;
+    margin: 0 auto 2.218em;
+    position: relative;
+    text-align: center;
+    padding: 1.938em 0;
+}
+
+.area_slide_snack .box_snack_title .title {
+    color: #ef731b;
+    background: #ffffff;
+    padding: 0 0.5em;
+    font-size: 1.250em;
+    position: absolute;
+    left: 50%;
+    top: -0.8em;
+    transform: translate(-50%, 0);
+
+}
+.area_slide_snack .box_snack_title .desc {
+    color: #282828;
+    font-size: 0.938em;
+    line-height: 1.725em;
+}
+.box_slide_snack {
+    margin-bottom: 6.848em;
+}
+.box_slide_snack .swiper-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    width: 100%;
+}
+.box_slide_snack .swiper-slide {
+    width: 100% !important;
+}
+.box_slide_snack .slide_snack {
+    width: 100%;
+}
+.snack_img_slide .snack img {
+    width: 100%;
+}
+.snack_img_slide .type_snack {
+    background: #ef731b;
+    color: #ffffff;
+    font-size: 1.250em;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.box_snack_month {
+    padding-bottom: 4em;
+}
+.snack_title_slide {
+    text-align: center;
+}
+.snack_title_slide .title {
+    color: #ef731b;
+    padding: 1em 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(158,158,158,0.3);
+}
+.snack_title_slide .desc {
+    color: #ef731b;
+    font-size: 1.125em;
+    padding: 1em 0 1.6em;
+}
+.snack_detail .detail_nutrition {
+    margin-bottom: 2.475em;
+}
+.snack_detail .detail_nutrition .nutrition {
+    text-align: center;
+    color: #191919;
+    background: #efefef;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(158,158,158,0.3);
+}
+.snack_detail .detail_nutrition .nutrition_info {
+    border-bottom: 1px solid rgba(158,158,158,0.3);
+    display: flex;
+    justify-content: center;
+    padding: 0.7em 0;
+}
+.snack_detail .detail_nutrition .nutrition_info:last-child {
+    border-bottom: 0;
+}
+.snack_detail .detail_nutrition .nutrition_info p {
+    padding: 0 1.571em;
+}
+.snack_detail .detail_nutrition .nutrition_info p .name {
+    color: rgba(25,25,25,0.5);
+    font-weight: 400;
+    display: inline-block;
+    width: 8.5em;
+}
+.snack_detail .detail_nutrition .nutrition_info p .nutri_num {
+    color: #191919;
+    font-size: 0.875em;
+    display: inline-block;
+    font-weight: 200;
+    width: 6.071em;
+}
+.snack_detail .desc_nutrition {
+    border: 1px solid rgba(158,158,158,0.5);
+    border-radius: 20px;
+    padding: 1.7em 0;
+}
+.snack_detail .desc_nutrition p {
+    font-size: 0.938em;
+    color: #191919;
+    font-weight: 200;
+    line-height: 1.867em;
+    text-align: center;
+}
+.slide_snack .move_snack_detail {
+    text-align: center;
+    margin-top: 2em;
+}
+.slide_snack .move_snack_detail a {
+    color: rgba(86,86,86,0.5);
+    border: 1px solid rgba(86,86,86,0.5);
+    text-align: center;
+    font-size: 0.938em;
+    line-height: 100%;
+    height: 3.733em;
+    display: inline-block;
+    padding: 1.35em 2em 0;
+    border-radius: 1.866em;
+}
+.slide_snack .move_snack_detail a img {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.7em;
+}
+.area_nutrition_type {
+    max-width: 1279px;
+    width: 100%;
+    margin: 0 auto 5em;
+    padding: 0 20px;
+    text-align: center;
+}
+.area_nutrition_type .title {
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5em 14.111em;
+    font-size: 1.125em;
+    background: #ef731b;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.area_nutrition_type .box_nutrition_type {
+    border: 1px solid #ef731b;
+    border-radius: 20px;
+    padding: 3.125em 12.5em 0;
+}
+.area_nutrition_type .box_nutrition_type .desc {
+    color: #ef731b;
+    margin-bottom: 3.688em;
+}
+.box_nutrition_type .type_box {
+    margin-bottom: 5.188em;
+    overflow: hidden;
+}
+.type_box .nutrition_type {
+    width: 33.3%;
+}
+.nutrition_type {
+    float: left;
+    display: block;
+    text-align: center;
+ /*   margin: 0 4em;*/
+}
+.nutrition_type .link_img {
+    margin: 0 auto 1em;
+    width: 7.375em;
+    height: 7.375em;
+    display: table;
+}
+
+.nutrition_type .link_img img {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.nutrition_type .link_img .on_img,
+.nutrition_type.focus .link_img .off_img,
+.nutrition_type:hover .link_img .off_img {
+    display: none;
+}
+.nutrition_type .link_img .off_img,
+.nutrition_type:hover .link_img .on_img ,
+.nutrition_type.focus .link_img .on_img {
+    display: table-cell;
+}
+
+.nutrition_type span {
+    font-size: 0.938em;
+    color: rgba(86,86,86,0.8);
+}
+.nutrition_type.focus span,
+.nutrition_type:hover span {
+    color: #ef731b;
+}
+/*에듀밀 간식*/
+.area_nutrition_menu {
+    max-width: 1235px;
+    width: 100%;
+    margin: 0 auto 6.188em;
+}
+.box_nutrition_menu {
+
+}
+.nutrition_menu1 {
+    margin-bottom: 3em;
+    overflow: hidden;
+}
+.nutrition_menu2 {
+    overflow: hidden;
+    padding: 0 3em;
+}
+.nutrition_menu1 .nutrition_type {
+    width: 16.6%;
+}
+.nutrition_menu2 .nutrition_type {
+    width: 20%;
+}
+.box_nutrition_menu .nutrition_type .link_img {
+    width: 5.375em;
+    height: 5.375em;
+}
+.area_snack_set {
+
+    max-width: 1275px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.box_admin {
+    text-align: right;
+    margin-bottom: 1em;
+}
+.box_admin a {
+    display: inline-block;
+    font-size: 1.250em;
+    color: rgba(86,86,86,0.7);
+    vertical-align: middle;
+    line-height: 1.250em;
+}
+.box_admin a img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.3em;
+}
+.box_snack_set_title {
+    text-align: center;
+    padding: 1.9em 0;
+    border-bottom: 1px solid rgba(158,158,158,0.4);
+    border-top: 1px solid rgba(158,158,158,0.4);
+    margin-bottom: 4em;
+}
+.box_snack_set_title .title {
+    color: #ef731b;
+    font-size: 1.375em;
+    margin-bottom: 0.836em;
+}
+.box_snack_set_title .desc {
+    color: #191919;
+    font-size: 0.938em;
+    line-height: 1.733em;
+}
+.box_snack_set {
+    margin-bottom: 5.063em;
+}
+.box_snack_set .title {
+    color: #ef731b;
+    font-size: 1.250em;
+    text-align: center;
+    margin-bottom: 1.350em;
+}
+.box_snack_set .title span {
+    display: inline-block;
+    padding-right: 0.7em;
+    margin-right: 0.5em;
+    position: relative;
+}
+.box_snack_set .title span:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0.18em;
+    width: 2px;
+    display: inline-block;
+    background: #ef731b;
+    height: 0.9em;
+}
+.box_snack_set .desc {
+    font-size: 0.875em;
+    color: #ef731b;
+    text-align: center;
+    margin-bottom: 2.571em;
+}
+.snack_set {
+    width: 100%;
+}
+.snack_set .snack_img {
+    float: left;
+    width: 31.75em;
+}
+.snack_set .snack_img img {
+    width: 100%;
+}
+.snack_set .snack_detail {
+    float: left;
+    width: calc(100% - 31.75em);
+    padding-left: 1.6em;
+}
+.box_nutrition_table {
+    max-width: 981px;
+    width: 100%;
+    margin: 0 auto 5em;
+}
+.box_nutrition_table .title {
+    text-align: center;
+    font-size: 1.375em;
+    color: #ef731b;
+    margin-bottom: 1.591em;
+}
+.box_nutrition_table .nutrition_table .unit {
+    text-align: right;
+    font-size: 0.813em;
+    margin-bottom: 1.231em;
+}
+.nutrition_table table {
+    border-collapse: collapse;
+}
+.nutrition_table th {
+    border: 1px solid #9e9e9e;
+    color: #9e9e9e;
+    padding: 1em 0;
+}
+.nutrition_table td {
+    padding: 1em 0;
+    text-align: center;
+    border: 1px solid #9e9e9e;
+    color: #9e9e9e;
+}
+.nutrition_table td.snack_name,
+.nutrition_table td.snack_all {
+    text-align: left;
+    padding-left: 1em;
+}
+.nutrition_table tfoot td {
+    color: #ef731b;
+}
+.nutrition_table tfoot td.snack_all {
+    background: #ef731b;
+    color: #fff;
+}
+/*월간식 구매*/
+.area_snack_month {
+    max-width: 892px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.area_snack_month_title {
+    text-align: center;
+    max-width: 892px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 2em ;
+}
+.area_snack_month_title .msg_month {
+    padding: 1em 3.6em;
+    display: inline-block;
+    font-size: 1.375em;
+    color: #ef731b;
+    border-bottom: 1px solid rgba(158,158,158,0.4);
+    border-top: 1px solid rgba(158,158,158,0.4);
+    margin-bottom: 1.4em;
+}
+.area_snack_month_title .this_month {
+    position: relative;
+}
+.area_snack_month_title .this_month p {
+    color: #ef731b;
+    font-size: 1.125em;
+    margin-bottom: 3em;
+}
+.area_snack_month_title .this_month p span {
+    font-size: 4.111em;
+    display: inline-block;
+    margin-right: 0.1em;
+    line-height: 100%;
+}
+.area_snack_month_title .this_month .next_month {
+    display: inline-block;
+    color: rgba(0,0,0,0.3);
+    font-size: 0.938em;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    line-height: 100%;
+}
+.area_snack_month_title .this_month .next_month img {
+    margin-left: 0.5em;
+    display: inline-block;
+    vertical-align: top;
+    height: 0.933em;
+}
+.box_month_purchase {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.box_month_purchase button {
+    margin: 0 5px;
+}
+.box_month_purchase .purchase_btn {
+    color: #848484;
+    font-size: 1.250em;
+    border: 1px solid #848484;
+    width: 11.500em;
+    height: 2.655em;
+    border-radius: 1.327em;
+}
+.box_month_purchase button:hover {
+    color: #ffffff;
+    background: #ef731b;
+    border: 1px solid transparent;
+}
+.box_month_purchase button.cart_btn:hover {
+    background: url(../images/menu/menu4_cart_on.png) 23% 50% no-repeat #ef731b;
+}
+.area_snack_month_title .this_month_desc {
+    position: relative;
+}
+.area_snack_month_title .this_month_desc p {
+    font-size: 1.125em;
+    color: #848484;
+}
+.snack_month_img_contents {
+    padding-top: 3.5em;
+}
+.snack_month_img_contents .img_box {
+    margin-bottom: 1.3em;
+}
+.snack_month_img_contents .img_box img {
+    width: 100%;
+}
+.snack_month_img_contents .video_box {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+.snack_month_img_contents .video_box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.write_btn {
+    color: rgba(86,86,86,0.7);
+    font-size: 1.250em;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.write_btn img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.1em 0.5em 0 0;
+}
+/*필수영양소분류*/
+.area_meal_nutrient_type ul {
+    max-width: 1257px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ef731b;
+}
+.area_meal_nutrient_type li {
+    float: left;
+    width: 12.5%;
+}
+.area_meal_nutrient_type li a {
+    color: #999999;
+    font-size: 1.063em;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 0.7em 0;
+}
+.area_meal_nutrient_type li a:hover {
+    color: #ef731b;
+}
+.area_meal_nutrient_type li.focus a {
+    color: #ef731b;
+    border: 1px solid #ef731b;
+    border-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.area_meal_nutrient_type li.focus a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+.area_meal_nutrient_type,
+.nutrient_detail_section {
+    padding: 0 20px;
+}
+.area_nutrient_detail {
+    display: none;
+}
+.area_nutrient_detail.active{
+    display: block;
+    max-width: 1132px;
+    width: 100%;
+    margin: 0 auto 3em;
+}
+.area_nutrient_detail .box_nutrient_detail {
+    padding: 4em 0 4em 2.5em;
+    border-bottom: 1px solid rgba(66,66,66,0.2);
+}
+.area_nutrient_detail .box_nutrient_detail:last-child {
+    border-bottom: 0;
+}
+.area_nutrient_detail .box_nutrient_detail .title {
+    font-size: 1.063em;
+    color: #ef731b;
+    margin-bottom: 1.3em;
+}
+.area_nutrient_detail .box_nutrient_detail .desc {
+    font-size: 0.813em;
+    color: #424242;
+    line-height: 2.308em;
+}
+.nutrient_confirm {
+    text-align: center;
+    margin-bottom: 4em;
+}
+.nutrient_confirm a {
+    display: inline-block;
+    padding: 1.3em 1.5em 0.9em;
+    color: rgba(86, 86, 86, 0.5);
+    border: 1px solid rgba(86, 86, 86, 0.5);
+    border-radius: 2.366em;
+    text-align: center;
+}
+.nutrient_confirm a span {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    line-height: 100%;
+}
+.nutrient_confirm a:hover {
+    border: 1px solid #ef731b;
+}
+.nutrient_confirm a:hover span {
+    color: #ef731b;
+}
+.nutrient_confirm a img {
+    width: 0.5em;
+}
+.nutrient_confirm a img.on, .nutrient_confirm a:hover img.off {
+    display: none;
+}
+.nutrient_confirm a img.off, .nutrient_confirm a:hover img.on {
+    display: inline-block;
+    vertical-align: top;
+}
+.title_nutrient_national {
+    color: #666666;
+    font-weight: 200;
+    text-align: center;
+    padding: 3em 0;
+    line-height: 1.625em;
+}
+.title_nutrient_national span {
+    font-weight: 300;
+}
+/*국가성분영양표*/
+.area_table_national {
+    padding: 0 20px;
+    margin-bottom: 6em;
+}
+.box_table_national {
+    max-width: 1209px;
+    width: 100%;
+    margin: 0 auto;
+}
+.box_table_national thead {
+    border-top: 1px solid #9e9e9e;
+}
+.box_table_national th {
+    border-bottom: 1px solid rgba(158,158,158,0.4);
+    border-right: 1px solid #9e9e9e;
+    color: #999999;
+    font-size: 0.625em;
+    height: 3.9em;
+    width: 2.6%;
+}
+.box_table_national thead tr:first-child th,
+.box_table_national thead tr th.empty_row,
+.box_table_national thead tr:last-child th {
+    border-bottom:1px solid #9e9e9e;
+}
+.box_table_national thead tr th.empty_row {
+    width: auto;
+    background: url("../images/meal/p2/table_slash.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.box_table_national th:last-child {
+    border-right: 0;
+}
+.box_table_national th .table_title {
+    font-size: 1.5em;
+  /*  padding: 0.5em 0;*/
+}
+.box_table_national td {
+    border-right: 1px solid rgba(158,158,158,0.4);
+    border-bottom: 1px solid #9e9e9e;
+    font-size: 0.625em;
+    color: #999999;
+    padding: 1em 0;
+    text-align: center;
+}
+.box_table_national td:last-child {
+    border-right: 0;
+}
+.box_table_national td:first-child {
+    padding-left: 0.8em;
+}
+.box_table_national td p {
+    text-align: left;
+}
+.box_table_national td .kor_name {
+    font-size: 1.3em;
+}
+/*글쓰기*/
+.area_write_snack {
+    padding: 5em 0 2em;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(158,158,158,0.5);
+}
+.area_write_cate .snack_title {
+    color: #ef731b;
+    font-size: 1.063em;
+    margin: 0 0 1.5em 0.5em;
+}
+.area_excel_set {
+    padding: 3em 0 0 0.5em;
+}
+.area_excel_set .box_excel {
+    margin-bottom: 1.7em;
+}
+.area_excel_set .box_excel .title {
+    font-size: 1.063em;
+    display: inline-block;
+    color: #ef731b;
+}
+.area_excel_set .box_excel .download_excel_table {
+    display: inline-block;
+    font-size: 0.813em;
+    color: #606060;
+    margin-left: 1em;
+}
+.area_excel_set .box_excel .download_excel_table img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.5em;
+}
+.area_excel_set .box_excel .desc {
+    font-size: 0.813em;
+    color: #606060;
+    padding-top: 1.4em;
+}
+.add_photo_snack {
+    background: #adadad;
+    height: 2.933em;
+    font-size: 1em;
+    width: 7.422em;
+    border: 1px solid #adadad;
+    border-radius: 1.466em;
+}
+.btn_group_snack {
+
+}
+.add_photo_snack img {
+    margin: 0 auto;
+    width: 1.250em;
+}

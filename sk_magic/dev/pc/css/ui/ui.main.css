@@ -1,0 +1,4246 @@
+@charset "UTF-8";
+/**
+ * 메인 공통
+ */
+.section_main {
+    position: relative;
+    /*height: 319px;*/
+    height: 50vh;
+    background: #f3f2f3;
+    border-bottom: #ddddde 1px solid;
+}
+.desktop .section_main {
+    height: 400px;
+}
+.section_main .bg {
+    height: inherit;
+    background-size: 360px;
+}
+.desktop .section_main .bg {
+    height: inherit;
+    background-size: 540px;
+}
+/*
+.desktop .sprite_purify {
+    background: url("../../../images/common/sprite_purify.png") no-repeat;
+    -webkit-background-size: 800px;
+    background-size: 800px;
+}*/
+.sprite_purify {
+    background: url("../../../images/common/sprite_purify.png") no-repeat;
+    -webkit-background-size: 400px;
+    background-size: 400px;
+}
+
+.sprite_edit {
+    /*background-position: -50px 0;*/
+    background-position: -47px 3px;
+    width: 11px;
+    height: 13px;
+}
+/*.desktop .sprite_edit {
+    !*background-position: -50px 0;*!
+    background-position: -94px 6px;
+    width: 22px;
+    height: 26px;
+}*/
+
+.sprite_cold {
+    background-position: -100px 0;
+    width: 22px;
+    height: 24px;
+}
+/*
+.desktop .sprite_cold {
+    background-position: -200px 0;
+    width: 44px;
+    height: 48px;
+}
+*/
+
+.sprite_lock {
+    background-position: -125px 0;
+    width: 29px;
+    height: 15px;
+}
+/*.desktop .sprite_lock {
+    background-position: -250px 0;
+    width: 58px;
+    height: 30px;
+}*/
+
+.sprite_warning {
+    background-position: -175px 0;
+    width: 26px;
+    height: 24px;
+}
+/*.desktop .sprite_warning {
+    background-position: -350px 0;
+    width: 52px;
+    height: 48px;
+}*/
+
+.sprite_warm {
+    background-position: -225px 0;
+    width: 14px;
+    height: 27px;
+}
+/*.desktop .sprite_warm {
+    background-position: -450px 0;
+    width: 28px;
+    height: 54px;
+}*/
+
+.sprite_hot {
+    background-position: 0 -50px;
+    width: 21px;
+    height: 22px;
+}
+/*.desktop .sprite_hot {
+    background-position: 0 -100px;
+    width: 42px;
+    height: 44px;
+}*/
+
+.sprite_bottom_cold {
+    background-position: -150px -50px;
+    width: 26px;
+    height: 29px;
+}
+.active .sprite_bottom_cold {
+    background-position: -150px -100px;
+}
+.sprite_bottom_warm {
+    background-position: -200px -50px;
+    width: 17px;
+    height: 32px;
+}
+.active .sprite_bottom_warm {
+    background-position: -200px -100px;
+}
+
+.sprite_bottom_hot {
+    background-position: 0 -100px;
+    width: 25px;
+    height: 27px;
+}
+.active .sprite_bottom_hot {
+    background-position: -225px -100px;
+}
+
+.sprite_bottom_baby {
+    background-position: -50px -100px;
+    width: 29px;
+    height: 34px;
+}
+.active .sprite_bottom_baby {
+    background-position: 0 -150px;
+}
+.sprite_bottom_purify {
+    background-position: -100px -100px;
+    width: 25px;
+    height: 29px;
+}
+.active .sprite_bottom_purify {
+    background-position: -50px -150px;
+}
+
+.sprite_one_cup {
+    background-position: -225px -150px;
+    width: 25px;
+    height: 30px;
+}
+.active .sprite_one_cup {
+    background-position: -200px -150px;
+}
+.sprite_550 {
+    background-position: -25px -200px;
+    width: 25px;
+    height: 29px;
+}
+.active .sprite_550 {
+    background-position: 0 -200px;
+}
+.sprite_refresh {
+    background-position: -100px -200px;
+    width: 29px;
+    height: 30px;
+}
+.active .sprite_refresh {
+    background-position: -50px -200px;
+}
+.sprite_wifi {
+    background-position: -150px -200px;
+    width: 33px;
+    height: 27px;
+}
+.sprite_top_purify {
+    background-position: -200px -200px;
+    width: 25px;
+    height: 29px;
+}
+.sprite_top_purify01 {
+    background-position: -225px -200px;
+    width: 22px;
+    height: 31px;
+}
+.active .sprite_top_purify01 {
+    background-position: -250px -200px;
+}
+.sprite_processing_coke {
+    background-position: -225px -250px;
+    width: 67px;
+    height: 22px;
+}
+
+.sprite_mini_purify {
+    background: url("../../../images/common/sprite_mini_purify.png") no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.sprite_mini_purify.sprite_weight {
+    background-position: -125px 0;
+    width: 20px;
+    height: 21px;
+}
+.sprite_mini_purify.sprite_cup_of_water {
+    background-position: -125px -25px;
+    width: 12px;
+    height: 15px;
+}
+.sprite_mini_purify.sprite_double_bar {
+    background-position: -225px 0;
+    width: 18px;
+    height: 11px;
+}
+
+.sprite_weather {
+    background: url("../../../images/common/sprite_weather.png") no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.sprite_weather.sprite_position {
+    background-position: 0 0;
+    width: 20px;
+    height: 21px;
+}
+.sprite_weather.sprite_weather_all {
+    width: 47px;
+    height: 47px;
+}
+.sprite_weather.sprite_sun {
+    background-position: 0 -25px;
+}
+.sprite_weather.sprite_sun_sm {
+    background-position: 0 -175px;
+    width: 25px;
+    height: 25px;
+}
+.sprite_weather.sprite_sun_cloud {
+    background-position: -50px -25px;
+}
+.sprite_weather.sprite_sun_cloud_sm {
+    background-position: -100px -175px;
+    width: 31px;
+    height: 24px;
+}
+.sprite_weather.sprite_cloud {
+    background-position: -100px -25px;
+}
+.sprite_weather.sprite_cloud_sm {
+    background-position: -25px -175px;
+    width: 30px;
+    height: 20px;
+}
+.sprite_weather.sprite_mist {
+    background-position: -150px -25px;
+}
+.sprite_weather.sprite_mist_sm {
+    background-position: -75px -175px;
+    width: 21px;
+    height: 16px;
+}
+.sprite_weather.sprite_rain_cloud {
+    background-position: -200px -25px;
+}
+.sprite_weather.sprite_rain_cloud_sm {
+    background-position: -175px -175px;
+    width: 22px;
+    height: 21px;
+}
+.sprite_weather.sprite_rain_sun {
+    background-position: 0 -75px;
+}
+.sprite_weather.sprite_rain_sun_sm {
+    background-position: 0 -200px;
+    width: 30px;
+    height: 29px;
+}
+.sprite_weather.sprite_snow_cloud {
+    background-position: -50px -75px;
+}
+.sprite_weather.sprite_snow_cloud {
+    background-position: -200px -150px;
+    width: 22px;
+    height: 21px;
+}
+.sprite_weather.sprite_snow_sun {
+    background-position: -100px -75px;
+}
+.sprite_weather.sprite_snow_sun_sm {
+    background-position: -50px -200px;
+    width: 29px;
+    height: 28px;
+}
+.sprite_weather.sprite_rain_snow_cloud {
+    background-position: -150px -75px;
+}
+.sprite_weather.sprite_rain_snow_cloud_sm {
+    background-position: -225px -150px;
+    width: 22px;
+    height: 19px;
+}
+.sprite_weather.sprite_rain_snow_sun {
+    background-position: -200px -75px;
+}
+.sprite_weather.sprite_rain_snow_sun_sm {
+    background-position: -100px -200px;
+    width: 30px;
+    height: 27px;
+}
+.sprite_weather.sprite_rain {
+    background-position: 0 -125px;
+}
+.sprite_weather.sprite_rain_sm {
+    background-position: -200px -225px;
+    width: 25px;
+    height: 26px;
+}
+.sprite_weather.sprite_thunderstorm {
+    background-position: -50px -125px;
+}
+.sprite_weather.sprite_thunderstorm_sm {
+    background-position: -200px -125px;
+    width: 24px;
+    height: 24px;
+}
+.sprite_weather.sprite_snow {
+    background-position: -100px -125px;
+}
+.sprite_weather.sprite_snow_sm {
+    background-position: -225px -125px;
+    width: 21px;
+    height: 21px;
+}
+.sprite_weather.sprite_snow_rain {
+    background-position: -150px -125px;
+}
+.sprite_weather.sprite_snow_rain_sm {
+    background-position: -150px 0;
+    width: 31px;
+    height: 24px;
+}
+.sprite_weather.sprite_night_sun_sm {
+    background-position: -150px -175px;
+    width: 20px;
+    height: 21px;
+}
+.sprite_weather.sprite_night_rain_snow_sm {
+    background-position: -200px 0;
+    width: 28px;
+    height: 25px;
+}
+.sprite_weather.sprite_night_snow_sm {
+    background-position: -200px -175px;
+    width: 28px;
+    height: 26px;
+}
+.sprite_weather.sprite_night_rain_sm {
+    background-position: -150px -200px;
+    width: 28px;
+    height: 27px;
+}
+.sprite_gas_stove {
+    background: url("../../../images/common/sprite_gas_stove.png") no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.sprite_gas_stove.sprite_use_time {
+    background-position: 0 0;
+    width: 12px;
+    height: 12px;
+}
+.desktop .sprite_gas_stove.sprite_use_time {
+    background-position: 0 0;
+    width: 24px;
+    height: 24px;
+    -webkit-background-size: 500px;
+    background-size: 500px;
+}
+
+.sprite_gas_stove.sprite_timer {
+    background-position: -50px 0;
+    width: 17px;
+    height: 17px;
+}
+
+.sprite_steam_oven {
+    background: url("../../../images/common/sprite_steam_oven.png") no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.sprite_steam_oven.sprite_top_btn {
+    background-position: 0 -25px;
+    width: 40px;
+    height: 41px;
+}
+
+.sprite_steam_oven.sprite_pre {
+    background-position: -150px 0;
+    width: 9px;
+    height: 15px;
+}
+.sprite_steam_oven.sprite_next {
+    background-position: -175px 0;
+    width: 9px;
+    height: 15px;
+}
+.sprite_steam_oven.sprite_edit {
+    background-position: -125px 0;
+    width: 16px;
+    height: 16px;
+}
+.desktop .sprite_steam_oven.sprite_edit {
+    background-position: -166px 0;
+    width: 21px;
+    height: 21px;
+    -webkit-background-size: 333px;
+    background-size: 333px;
+}
+
+.sprite_steam_oven.sprite_cleaning {
+    background-position: -200px 0;
+    width: 14px;
+    height: 14px;
+}
+.desktop .sprite_steam_oven.sprite_cleaning {
+    background-position: -400px 0;
+    width: 28px;
+    height: 28px;
+    -webkit-background-size: 500px;
+    background-size: 500px;
+}
+
+.sprite_steam_oven.sprite_btn_cleaning {
+    background-position: -75px -125px;
+    width: 64px;
+    height: 21px;
+}
+.desktop .sprite_steam_oven.sprite_btn_cleaning {
+    -webkit-background-size: 333px;
+    background-size: 333px;
+    background-position: -100px -166px;
+    width: 86px;
+    height: 28px;
+}
+
+.sprite_steam_oven.sprite_more {
+    background-position: -125px -75px;
+    width: 22px;
+    height: 22px;
+}
+.sprite_steam_oven.sprite_more_disabled {
+    background-position: -100px -75px;
+    width: 22px;
+    height: 22px;
+}
+.sprite_steam_oven.sprtie_pre_blue {
+    background-position: -100px -100px;
+    width: 8px;
+    height: 13px;
+}
+.sprite_steam_oven.sprtie_next_blue {
+    background-position: -125px -100px;
+    width: 8px;
+    height: 13px;
+}
+.sprite_steam_oven.sprite_cook {
+    background-position: -150px -100px;
+    width: 17px;
+    height: 16px;
+}
+.sprite_steam_oven.sprite_cook_more {
+    background-position: -175px -100px;
+    width: 6px;
+    height: 10px;
+}
+.sprite_steam_oven.sprite_cook_detail_more {
+    background-position: -175px -75px;
+    width: 9px;
+    height: 15px;
+}
+.sprite_steam_oven.sprite_update {
+    background-position: -200px -50px;
+    width: 15px;
+    height: 13px;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.sprite_steam_oven.sprite_alert {
+    background-position: -200px -75px;
+    width: 27px;
+    height: 24px;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+.sprite_induction {
+    background: url('../../../images/common/sprite_induction_range.png');
+    -webkit-background-size: 300px;
+    background-size: 300px;
+}
+.sprite_humidify {
+    background: url('../../../images/common/sprite_humidify.png');
+    -webkit-background-size: 350px;
+    background-size: 350px;
+}
+.sprite_humidify.sprite_notice {
+    width: 15px;
+    height: 15px;
+    background-position: 0 0;
+}
+.sprite_humidify.sprite_water {
+    width: 22px;
+    height: 30px;
+}
+.sprite_humidify.sprite_water.stop {
+    background-position: -25px 0;
+}
+.sprite_humidify.sprite_water.intense {
+    background-position: -100px 0;
+}
+.sprite_humidify.sprite_water.moderate {
+    background-position: -75px 0;
+}
+.sprite_humidify.sprite_water.mild {
+    background-position: -50px 0;
+}
+/*.sprite_humidify.sprite_water.intense {
+    background-position: -75px -225px;
+}
+.sprite_humidify.sprite_water.moderate {
+    background-position: -50px -225px;
+}
+.sprite_humidify.sprite_water.mild {
+    background-position: -25px -225px;
+}*/
+
+.sprite_humidify.sprite_timer.on {
+    width: 26px;
+    height: 26px;
+    background-position: -125px 0;
+}
+.sprite_humidify.sprite_timer.off {
+    width: 26px;
+    height: 26px;
+    background-position: -175px 0;
+}
+.sprite_humidify.sprite_uv.off {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -75px;
+}
+.sprite_humidify.sprite_uv.on {
+    width: 30px;
+    height: 30px;
+    background-position: -50px -75px;
+}
+.sprite_humidify.sprite_battery.off {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -50px;
+}
+.sprite_humidify.sprite_battery.b_30 {
+    width: 31px;
+    height: 18px;
+    background-position: -50px -50px;
+}
+.sprite_humidify.sprite_battery.b_60 {
+    width: 31px;
+    height: 18px;
+    background-position: -100px -50px;
+}
+.sprite_humidify.sprite_battery.b_100 {
+    width: 31px;
+    height: 18px;
+    background-position: -150px -50px;
+}
+
+/**/
+.sprite_humidify.sprite_dp_light.strong {
+    width: 29px;
+    height: 28px;
+    background-position: -250px -175px;
+}
+.sprite_humidify.sprite_dp_light.middle {
+    width: 29px;
+    height: 28px;
+    background-position: -300px -125px;
+}
+.sprite_humidify.sprite_dp_light.weak {
+    width: 29px;
+    height: 28px;
+    background-position: -300px -125px;
+}
+.sprite_humidify.sprite_mode_light.strong {
+    width: 31px;
+    height: 30px;
+    background-position: -200px -275px;
+}
+.sprite_humidify.sprite_mode_light.middle {
+    width: 31px;
+    height: 30px;
+    background-position: -200px -275px;
+}
+.sprite_humidify.sprite_mode_light.weak {
+    width: 31px;
+    height: 30px;
+    background-position: -200px -275px;
+}
+.sprite_humidify.sprite_mode_light.stop {
+    width: 31px;
+    height: 30px;
+    background-position: -50px -275px;
+}
+.sprite_humidify.sprite_off_dp_light.strong {
+    width: 29px;
+    height: 28px;
+    background-position: -200px -225px;
+}
+.sprite_humidify.sprite_off_dp_light.middle {
+    width: 29px;
+    height: 28px;
+    background-position: -150px -225px;
+}
+.sprite_humidify.sprite_off_dp_light.weak {
+    width: 29px;
+    height: 28px;
+    background-position: -100px -225px;
+}
+.sprite_humidify.sprite_off_mode_light.strong {
+    width: 31px;
+    height: 30px;
+    background-position: 0 -275px;
+}
+.sprite_humidify.sprite_off_mode_light.middle {
+    width: 31px;
+    height: 30px;
+    background-position: -250px -225px;
+}
+.sprite_humidify.sprite_off_mode_light.weak {
+    width: 31px;
+    height: 30px;
+    background-position: -250px -225px;
+}
+.sprite_humidify.sprite_sync {
+    width: 26px;
+    height: 29px;
+    background-position: -275px 0;
+}
+
+
+
+.sprite_air_purify {
+    background: url('../../../images/common/sprite_air_purify.png');
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+.sprite_air_purify.sprite_current {
+    width: 42px;
+    height: 42px;
+    background-position: 0 0;
+}
+.desktop .sprite_air_purify.sprite_current {
+    width: 56px;
+    height: 56px;
+    background-position: 0 0;
+    -webkit-background-size: 333px;
+    background-size: 333px;
+}
+
+.sprite_air_purify.sprite_pin {
+    width: 22px;
+    height: 34px;
+    background-position: -50px 0;
+}
+.desktop .sprite_air_purify.sprite_pin {
+    width: 30px;
+    height: 46px;
+    background-position: -66px 0;
+    -webkit-background-size: 333px;
+    background-size: 333px;
+}
+
+.sprite_air_purify.sprite_dp_change {
+    background-position: -75px 0;
+    width: 26px;
+    height: 21px;
+}
+.sprite_air_purify.sprite_dp_change_off {
+    background-position: -125px 0;
+    width: 26px;
+    height: 21px;
+}
+.sprite_air_purify.sprite_alarm {
+    background-position: -225px 0;
+    width: 18px;
+    height: 18px;
+}
+.sprite_air_purify.sprite_wifi {
+    width: 24px;
+    height: 14px;
+}
+.sprite_air_purify.sprite_wifi.wifi_01 {
+    background-position: -50px -200px;
+}
+.sprite_air_purify.sprite_wifi.wifi_02 {
+    background-position: -25px -200px;
+}
+.sprite_air_purify.sprite_wifi.wifi_03 {
+    background-position: 0 -200px;
+}
+.sprite_air_purify.sprite_smell {
+    width: 20px;
+    height: 16px;
+}
+.sprite_air_purify.sprite_smell.smell_01 {
+    background-position: -125px -200px;
+}
+.sprite_air_purify.sprite_smell.smell_02 {
+    background-position: -150px -200px;
+}
+.sprite_air_purify.sprite_smell.smell_03 {
+    background-position: -175px -200px;
+}
+.sprite_air_purify.sprite_smell.smell_04 {
+    background-position: -200px -200px;
+}
+.sprite_air_purify.sprite_smell.smell_05 {
+    background-position: -225px -200px;
+}
+.sprite_air_purify.sprite_ai {
+    width: 23px;
+    height: 17px;
+}
+.sprite_air_purify.sprite_ai.ai_01 {
+    background-position: 0 -225px;
+}
+.sprite_air_purify.sprite_ai.ai_02 {
+    background-position: -25px -225px;
+}
+.sprite_air_purify.sprite_ai.ai_03 {
+    background-position: -50px -225px;
+}
+.sprite_air_purify.sprite_ai.ai_04 {
+    background-position: -75px -225px;
+}
+.sprite_air_purify.sprite_ai.ai_05 {
+    background-position: -100px -225px;
+}
+
+.sprite_air_purify.sprite_waterworks_on {
+    width: 15px;
+    height: 17px;
+    background-position: -100px -200px;
+}
+.sprite_air_purify.sprite_waterworks_off {
+    width: 15px;
+    height: 17px;
+    background-position: -75px -200px;
+}
+.sprite_air_purify.sprite_error {
+    width: 14px;
+    height: 12px;
+    background-position: -125px -225px;
+}
+
+
+/**
+ * 냉온정수기 메인
+ */
+.section_purify .bg_purify {
+    background-image: url("../../../images/main/bg_main.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.section_main .area_title {
+    position: absolute;
+    top: 25px;
+    left: 26px;
+}
+.desktop .section_main .area_title {
+    top: 30px;
+}
+
+.section_purify .area_title {
+    position: absolute;
+    top: 9px;
+    left: 26px;
+}
+.desktop .section_purify .area_title {
+    top: 18px;
+    left: 34px;
+}
+
+
+.section_purify .area_title > p {
+    color: #606060;
+    /*line-height: 12px;*/
+    line-height: 2vh;
+    margin-bottom: 10px;
+}
+
+.section_main .area_title .box_title {
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.desktop .section_main .area_title .box_title {
+    margin-bottom: 17px;
+}
+.section_main .area_title .box_title h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.desktop .section_main .area_title .box_title h1 {
+    font-size:25px;
+    line-height:20px;
+}
+
+.section_main .area_title .box_title span {
+    /*display: inline-block;*/
+    position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 275px;
+    line-height: 25px;
+}
+
+.section_main .area_title .box_title button {
+    position: absolute;
+    top: 1px;
+    right: -28px;
+    border: #d2d2d3 1px solid;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    /*padding-top: 2px;*/
+}
+.section_main .area_title .box_title button.sprite_edit:active {
+    border: 0;
+    background-position: -75px 0;
+    width: 21px;
+    height: 21px;
+}
+.desktop .section_main .area_title .box_title button {
+    top: -2px;
+    right: -37px;
+}
+/*.desktop .section_main .area_title .box_title button.sprite_edit:active {
+    border: 0;
+    background-position: -150px 0;
+    width:42px;
+    height: 42px;
+}*/
+
+.section_main .area_title .box_title a span {
+    vertical-align: top;
+}
+
+.section_purify .area_title .box_remain {
+    position: relative;
+    padding-left: 25px;
+}
+.desktop .section_purify .area_title .box_remain {
+    padding-left: 30px;
+}
+
+.section_purify .area_title .box_remain .img_purify {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    text-align: center;
+    padding-right: 1px;
+}
+
+.section_purify .area_title .box_remain .img_purify img {
+    /*width: 22px;*/
+    width: 12px;
+    display: block;
+    margin: 0 auto;
+}
+/*
+.desktop .section_purify .area_title .box_remain .img_purify img {
+    width: 44px;
+}
+*/
+
+.section_purify .area_title .box_remain .txt_status p {
+    font-size: 1.1rem;
+    line-height: 14px;
+    color: #666;
+}
+
+.desktop .section_purify .area_title .box_remain .txt_status p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.section_purify .area_info {
+    position: absolute;
+    top: 98px;
+    left: 23px;
+}
+.desktop .section_purify .area_info {
+    position: absolute;
+    top: 143px;
+    left: 37px;
+}
+
+.section_purify .area_info .box_info {
+    position: relative;
+    padding-left: 65px;
+    height: 8.6vh;
+    margin-bottom: 13px;
+}
+.desktop .section_purify .area_info .box_info {
+    height: 45px;
+    margin-bottom: 26px;
+}
+
+.section_purify .area_info .box_info .circle_status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background: #7f7e7f;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+/*
+.desktop .section_purify .area_info .box_info .circle_status {
+    width: 110px;
+    height: 110px;
+}
+*/
+
+.section_purify .area_info .box_info.blue .circle_status {
+    background: #63baef;
+}
+
+.section_purify .area_info .box_info.yellow .circle_status {
+    background: #eed36f;
+}
+
+.section_purify .area_info .box_info.orange .circle_status {
+    background: #ed794e;
+}
+
+.section_purify .area_info .box_info .circle_status .sprite_purify.sprite_cold {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    margin-left: -11px;
+}
+/*
+.desktop .section_purify .area_info .box_info .circle_status .sprite_purify.sprite_cold {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    margin-left: -22px;
+}
+*/
+
+.section_purify .area_info .box_info .circle_status .sprite_purify.sprite_lock {
+    position: absolute;
+    top: 15px;
+    left: 40%;
+    margin-left: -9px;
+}
+/*.desktop .section_purify .area_info .box_info .circle_status .sprite_purify.sprite_lock {
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    margin-left: -18px;
+}*/
+.section_purify .area_info .box_info .circle_status .sprite_purify.sprite_warm {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -7px;
+}
+/*.desktop .section_purify .area_info .box_info .circle_status .sprite_purify.sprite_warm {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -14px;
+}*/
+
+.section_purify .area_info .box_info .circle_status .sprite_purify.sprite_hot {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -11px;
+}
+/*
+.desktop .section_purify .area_info .box_info .circle_status .sprite_purify.sprite_hot {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -22px;
+}
+*/
+
+.section_purify .area_info .box_info .circle_status .sprite_purify.sprite_warning {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    margin-left: -13px;
+}
+/*.desktop .section_purify .area_info .box_info .circle_status .sprite_purify.sprite_warning {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: -26px;
+}*/
+
+.section_purify .area_info .box_info .circle_status .txt_label {
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.1vh;
+    margin-top: 5px;
+}
+/*
+.desktop .section_purify .area_info .box_info .circle_status .txt_label {
+    bottom: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+*/
+
+.section_purify .area_info .box_info .txt_status {
+    position: relative;
+    top: 1.3vh;
+}
+.desktop .section_purify .area_info .box_info .txt_status {
+    top: 0px;
+}
+
+.section_purify .area_info .box_info .temperature {
+    line-height: 3.4vh;
+}
+/*
+.desktop .section_purify .area_info .box_info .temperature {
+    line-height: 40px;
+}
+.desktop .section_purify .area_info .box_info .txt_status p {
+    font-size: 20px;
+    line-height: 24px;
+}
+*/
+
+.section_purify .area_info .box_info .temperature span {
+    color: #8f8f90;
+}
+
+.section_purify .area_info .box_info .temperature span:nth-child(1) {
+    font-size: 2.5rem;
+}
+/*.desktop .section_purify .area_info .box_info .temperature span:nth-child(1) {
+    font-size: 50px;
+}*/
+
+.section_purify .area_info .box_info .temperature span em {
+    display: inline-block;
+    width: 17px;
+    height: 19px;
+    background: url("../../../images/common/sprite_purify.png") 0 0 no-repeat;
+    background-size: 400px;
+    margin-right: 3px;
+}
+/*
+.desktop .section_purify .area_info .box_info .temperature span em {
+    width: 34px;
+    height: 38px;
+    background: url("../../../images/common/sprite_purify.png") 0 0 no-repeat;
+    background-size: 800px;
+    margin-right: 6px;
+}
+*/
+
+.section_purify .area_info .box_info.blue .temperature span:nth-child(1) {
+    color: #64baef;
+}
+
+.section_purify .area_info .box_info.yellow .temperature span:nth-child(1) {
+    color: #e6c333;
+}
+
+.section_purify .area_info .box_info.orange .temperature span:nth-child(1) {
+    color: #e46b3f;
+}
+
+.section_purify .area_info .box_info.blue .temperature span:nth-child(1) em {
+    background-position: -125px -150px;
+}
+.section_purify .area_info .box_info.yellow .temperature span:nth-child(1) em {
+    background-position: -150px -150px;
+}
+/*.desktop .section_purify .area_info .box_info.yellow .temperature span:nth-child(1) em {
+    background-position: -300px -300px;
+}*/
+
+.section_purify .area_info .box_info.orange .temperature span:nth-child(1) em {
+    background-position: -175px -150px;
+}
+/*.desktop .section_purify .area_info .box_info.orange .temperature span:nth-child(1) em {
+    background-position: -350px -300px;
+}*/
+
+.section_purify .area_info .box_info .temperature span:nth-child(2) {
+    font-size: 1.3rem;
+}
+/*.desktop .section_purify .area_info .box_info .temperature span:nth-child(2) {
+    font-size: 26px;
+}*/
+
+.section_purify .area_info .box_info .temperature span:nth-child(2) em {
+    width: 6px;
+    height: 9px;
+    background-position: -100px -150px;
+    margin-right: 2px;
+}
+/*.desktop .section_purify .area_info .box_info .temperature span:nth-child(2) em {
+    width: 12px;
+    height: 18px;
+    background-position: -200px -300px;
+    margin-right: 4px;
+}*/
+
+.section_purify .area_txt {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    color: #606060;
+    line-height: 1.8vh;
+    letter-spacing: -1px;
+    padding: 0 23px;
+}
+.desktop .section_purify .area_txt {
+    bottom: 14px;
+    line-height: 20px;
+    padding: 0 38px;
+    font-size: 14px;
+}
+
+.section_function {
+    height: 9vh;
+    border-top: #fff 1px solid;
+    background: #f4f4f4;
+    border-bottom: #ddddde 1px solid;
+}
+.desktop .section_function {
+    height: 100px;
+}
+
+.section_function.section_slide {
+    height: 9vh;
+}
+.section_function.section_on_off {
+    height: 17vh;
+}
+.desktop .section_function.section_slide {
+    height: 100px;
+}
+.desktop .section_function.section_on_off {
+    height: 200px;
+}
+
+.section_function.none_border_bottom {
+    border-bottom: none;
+}
+
+.section_function .area_function > span,
+.section_function .area_function > div {
+    float: left;
+    height: 9vh;
+}
+
+.section_function .area_function > span {
+    width: 20%;
+    color: #666;
+    line-height: 9vh;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-left: 23px;
+    font-weight: bold;
+}
+.desktop .section_function .area_function > span {
+    line-height: 100px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.section_function .area_function > div {
+    width: 80%;
+    padding: 17px 30px 0;
+    text-align: center;
+}
+.desktop .section_function .area_function > div {
+    padding: 40px 30px 0;
+}
+
+.section_function .slide_toggle {
+    position: relative;
+    height: 6px;
+    border-bottom: #dbdadd 1px solid;
+}
+
+.section_function .slide_toggle em {
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    width: 1px;
+    height: 6px;
+    background: #a7a7a7;
+}
+.section_function .slide_toggle .slide_radio {
+    position: absolute;-webkit-appearance: none;
+    top: -4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+}
+/*
+.desktop .section_function .slide_toggle .slide_radio {
+    top: -8px;
+    width: 40px;
+    height: 40px;
+}
+*/
+
+.section_function .slide_toggle .slide_radio:checked {
+    background: url('../../../images/common/sprite_purify.png') -25px -50px no-repeat;
+    -webkit-background-size: 400px;
+    background-size: 400px;
+}
+/*.desktop .section_function .slide_toggle .slide_radio:checked {
+    background: url('../../../images/common/sprite_purify.png') -50px -100px no-repeat;
+    -webkit-background-size: 800px;
+    background-size: 800px;
+}*/
+
+.section_function .slide_toggle .slide_radio:active {
+    background-position: -275px -50px;
+}
+/*.desktop .section_function .slide_toggle .slide_radio:active {
+    background-position: -550px -100px;
+}*/
+
+.section_function .slide_toggle .line01 {
+    left: 0;
+}
+
+.section_function .slide_toggle .line02 {
+    left: 50%;
+}
+
+.section_function .slide_toggle .line03 {
+    right: 0;
+}
+
+.section_function .slide_toggle p {
+    position: absolute;
+    top: 13px;
+    color: #666;
+}
+.desktop .section_function .slide_toggle p {
+    top: 20px;
+    font-size: 14px;
+}
+
+.section_function .slide_toggle .txt01 {
+    left: -9px;
+}
+.desktop .section_function .slide_toggle .txt01 {
+    left: -18px;
+}
+
+.section_function .slide_toggle .txt02 {
+    left: 50%;
+    margin-left: -15px;
+}
+
+.desktop .section_function .slide_toggle .txt02 {
+    margin-left: -20px;
+}
+
+.section_function .slide_toggle .txt03 {
+    right: 0;
+    margin-right: -15px;
+}
+
+.section_function .slide_toggle .btn_slide_toggle {
+    width: 19px;
+    height: 19px;
+    z-index: 100;
+    top: -4px;
+    margin-left: -9px;
+}
+
+.toggle_col_2 .area_toggle {
+    width: 50%;
+}
+.toggle_col_3 .area_toggle {
+    width: 33.3%;
+}
+
+.section_toggle .area_toggle > span,
+.section_toggle .area_toggle > div {
+    float: left;
+    height: inherit;
+}
+.section_toggle .area_toggle > span {
+    width: 70%;
+    color: #666;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 23px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.desktop .section_toggle .area_toggle > span {
+    width: 70%;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.section_toggle .area_toggle:nth-child(2) > span {
+    padding-left: 13px;
+}
+
+.section_toggle .area_toggle > div {
+    width: 30%;
+    /*padding: 16px 0 0;*/
+    text-align: center;
+}
+.section_on_off {
+    position: relative;
+}
+.section_on_off .area_on_off {
+    height: inherit;
+}
+.section_on_off .area_title {
+    position: absolute;
+    top: 7px;
+    left: 21px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 12px;
+    color: #666666;
+}
+.desktop .section_on_off .area_title {
+    top: 30px;
+    left: 21px;
+    margin-right: 24px;
+}
+
+.desktop .section_on_off .area_title p {
+    font-size: 16px;
+}
+.section_on_off .area_on_off > span {
+    display: inline-block;
+    padding-left: 23px;
+    height: 6vh;
+    line-height: 6vh;
+    color: #666;
+}
+.desktop .section_on_off .area_on_off > span {
+    padding-left: 20px;
+    height: 90px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section_on_off .area_on_off .box_on_off.col_5 > div {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #b8b7b9;
+}
+
+@media all and (max-width:320px){
+    .section_on_off .area_on_off .box_on_off.col_5 > div:nth-child(2) .toggle_purify + label {
+        letter-spacing: -1.5px;
+    }
+}
+.section_on_off .area_on_off .box_on_off.col_3 > div {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    color: #b8b7b9;
+}
+.section_on_off .area_on_off .box_on_off.col_4 > div {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #b8b7b9;
+}
+
+.section_on_off .area_on_off .box_on_off > div a {
+    display: block;
+    color: #c6c5c7;
+}
+.section_on_off .area_on_off .box_on_off > div.active a {
+    color: #32a1e0;
+}
+.section_on_off .area_on_off .box_on_off > div div {
+    height: 40px;
+}
+.section_on_off .area_on_off .box_on_off > div.no_blue a,
+.section_on_off .area_on_off .box_on_off > div.no_blue.active a {
+    color: #6a6a6a;
+}
+.section_on_off .area_on_off .box_on_off > div .active_indicator {
+    display: none;
+    position: absolute;
+    top:-8px;
+    right:9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ea5e6;
+}
+.section_on_off .area_on_off .box_on_off > div.active .active_indicator {
+    display: block;
+}
+
+
+
+/*
+ * 제품 작동
+ */
+.section_on_off.section_product_activate {
+    /*height: 200px;*/
+    height: 34vh;
+    border-bottom: #c4c1c1 1px solid;
+    background: #e6e4e7 url("../../../images/page/bg_activate.png") 50% repeat-x;
+}
+.desktop .section_on_off.section_product_activate {
+    height: 100%;
+    border-bottom: #c4c1c1 2px solid;
+    background: #e6e4e7 url("../../../images/page/bg_activate.png") 50% repeat-x;
+}
+
+.section_on_off.section_product_activate .area_on_off .box_on_off {
+    padding-top: 35px;
+    /*height: 100px;*/
+    height: 17vh;
+}
+.desktop .section_on_off.section_product_activate .area_on_off .box_on_off {
+    padding-top: 120px;
+    height: 240px;
+}
+
+.section_on_off.section_product_activate .area_on_off .box_on_off:nth-child(2) {
+    padding-top: 23px;
+}
+.desktop .section_on_off.section_product_activate .area_on_off .box_on_off:nth-child(2) {
+    padding-top: 0;
+}
+
+.section_on_off .area_on_off .box_on_off > div {
+    position: relative;
+    min-height: 65px;
+    /*height: inherit;*/
+    background: url("../../../images/page/bg_line01.png") right 50% no-repeat;
+    background-size: 3px;
+    padding-right: 3px;
+}
+.desktop .section_on_off .area_on_off .box_on_off > div {
+
+}
+
+.section_on_off .area_on_off .box_on_off > div:last-child {
+    background: none;
+}
+.section_on_off.section_product_activate .area_on_off .box_on_off > div.none_bg {
+    background: none;
+}
+.section_set_warm {
+    /*height: 95px;*/
+    height: 15vh;
+    border-top: #f7f7f8 1px solid;
+    border-bottom: #dedede 1px solid;
+    background: #f0eef0;
+}
+.desktop .section_set_warm {
+    /*height: 95px;*/
+    height: 128px;
+    border-top: #f7f7f8 2px solid;
+    border-bottom: #dedede 2px solid;
+}
+
+.section_set_warm .area_set_warm {
+    position: relative;
+    padding-left: 122px;
+
+}
+.desktop .section_set_warm .area_set_warm {
+    position: relative;
+    padding-left: 190px;
+
+}
+
+.section_set_warm .area_set_warm div:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 122px;
+    color: #666666;
+    padding: 20px 0 0 19px;
+}
+.desktop .section_set_warm .area_set_warm div:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 160px;
+    width: 160px;
+    color: #666666;
+    padding: 22px 0 0 25px;
+}
+
+.section_set_warm .area_set_warm div:nth-child(1) p {
+    font-size: 1.2rem;
+    font-weight:bold;
+    line-height: 1.8rem;
+}
+.desktop .section_set_warm .area_set_warm div:nth-child(1) p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.section_set_warm .area_set_warm div:nth-child(1) span {
+    line-height: 1.2rem;
+    display: inline-block;
+}
+.desktop .section_set_warm .area_set_warm div:nth-child(1) span {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.section_set_warm .area_set_warm div:nth-child(2) {
+    width: 100%;
+    padding-top: 22px;
+}
+.desktop .section_set_warm .area_set_warm div:nth-child(2) {
+    padding-top: 25px;
+}
+
+.section_set_warm .area_set_warm div:nth-child(2) p {
+    width: 33.3%;
+    float:left;
+    color: #9c9b9d;
+}
+.section_set_warm .area_set_warm div:nth-child(2) p span {
+    font-size: 1.9rem;
+    display: inline-block;
+    padding: 18px 0 0 14px;
+    background: url(../../../images/common/sprite_purify.png) 0 -250px no-repeat;
+    background-size: 400px;
+    width: 54px;
+    height: 53px;
+}
+.section_set_warm .area_set_warm div:nth-child(2) p span.active {
+    background: url(../../../images/common/sprite_purify.png) -75px -250px no-repeat;
+    background-size: 400px;
+    width: 54px;
+    height: 53px;
+    color: #ffffff;
+}
+.section_coke_sterilizing {
+    position: relative;
+    /*height: 230px;*/
+    height: 36.5vh;
+    border-top: #f7f7f8 1px solid;
+    border-bottom: #dedede 1px solid;
+    background: #f0eef0;
+    padding: 18px 21px;
+    color: #666;
+}
+.section_coke_sterilizing.section_ice {
+    height: 51.5vh;
+}
+.desktop .section_coke_sterilizing {
+    height: 355px;
+    border-top: #f7f7f8 2px solid;
+    border-bottom: #dedede 2px solid;
+    padding: 18px 25px;
+    color: #666;
+}
+
+.section_coke_sterilizing .area_title p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 12px;
+}
+.desktop .section_coke_sterilizing .area_title p {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.section_coke_sterilizing .area_title span {
+    font-size: 1rem;
+}
+.desktop .section_coke_sterilizing .area_title span {
+    font-size: 14px;
+}
+
+.section_coke_sterilizing .area_activate .box_img {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 144px;
+    height: 144px;
+    margin: -72px 0 0 -72px;
+    border: #3fc7bc 2px solid;
+    border-radius: 50%;
+}
+.desktop .section_coke_sterilizing .area_activate .box_img {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 242px;
+    height: 242px;
+    margin: -121px 0 0 -121px;
+    border: #3fc7bc 4px solid;
+    border-radius: 50%;
+}
+
+.section_coke_sterilizing .area_activate .box_remain_time {
+    position: absolute;
+    top: 41px;
+    left:0;
+    width: 100%;
+    text-align: center;
+    z-index: 200;
+}
+.desktop .section_coke_sterilizing .area_activate .box_remain_time {
+    top: 70px;
+    font-size: 16px;
+}
+
+.section_coke_sterilizing .area_activate .box_remain_time button {
+    width: 67px;
+    height: 22px;
+    background: url('../../../images/common/sprite_purify.png') -225px -250px no-repeat;
+    background-size: 400px;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 22px;
+}
+.desktop .section_coke_sterilizing .area_activate .box_remain_time button {
+    margin-top: 10px;
+    border-radius: 25px;
+    width: 120px;
+    height: 39px;
+    background-color: #3fc7bc;
+    background-image: none;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.section_coke_sterilizing .area_activate .box_remain_time button:active {
+    background-position: -225px -275px;
+}
+.desktop .section_coke_sterilizing .area_activate .box_remain_time button:active {
+    background-position: -450px -550px;
+}
+
+.section_coke_sterilizing .area_activate .box_remain_time button:disabled {
+    background-position: -150px -250px;
+    color: rgba(255,255,255,0.5);
+}
+.section_coke_sterilizing .area_activate .box_remain_time p {
+    color: #cdccce;
+}
+.section_coke_sterilizing .area_activate .box_remain_time .txt_remain {
+    line-height: 11px;
+}
+.section_coke_sterilizing .area_activate .box_remain_time .txt_timer {
+    font-size: 3.2rem;
+    line-height: 33px;
+    margin-bottom: 6px;
+}
+.desktop .section_coke_sterilizing .area_activate .box_remain_time .txt_timer {
+    font-size: 60px;
+    line-height: 64px;
+    margin-bottom: 12px;
+}
+
+.section_coke_sterilizing .box_bottom_txt {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.desktop .section_coke_sterilizing .box_bottom_txt p {
+    font-size: 16px;
+}
+
+.section_coke_sterilizing .area_activate .box_loading_image {
+    display: none;
+}
+.section_coke_sterilizing .area_activate .box_loading_image {
+    display: none;
+}
+
+.section_coke_sterilizing .area_activate.activate_start .box_img {
+    border-color: transparent;
+}
+.section_coke_sterilizing .area_activate.activate_start .box_loading_image {
+    display: block;
+}
+.section_coke_sterilizing .area_activate.activate_start .sprite_processing_coke,
+.section_coke_sterilizing .area_activate.activate_end .sprite_processing_coke {
+    background-position: -150px -250px;
+}
+
+.section_coke_sterilizing .area_activate.activate_end .box_img {
+    border:#3fc7bc 6px solid;
+}
+.section_coke_sterilizing .area_activate.activate_start .box_remain_time p,
+.section_coke_sterilizing .area_activate.activate_end .box_remain_time p {
+    color: #4b4b4b;
+}
+
+/* 슈퍼미니정수기 메인 */
+.section_purify .bg_mini_purify {
+    background-image: url(../../../images/main/bg_mini_main.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.section_purify .area_title .btn_cancel {
+    position: relative;
+    top: 4px;
+    left: 23px;
+    display: inline-block;
+    background-position: -150px -25px;
+    width: 64px;
+    height: 20px;
+}
+.section_purify .area_title .btn_start {
+    position: relative;
+    top: 4px;
+    left: 23px;
+    display: inline-block;
+    background-position: -150px -75px;
+    width: 64px;
+    height: 20px;
+}
+
+.section_purify .area_title .btn_cancel:active {
+    background-position: -150px -50px;
+}
+.section_purify .area_title .btn_start:active {
+    background-position: -150px -100px;
+}
+
+.section_purify .area_title .box_title .title_wifi {
+    padding-left: 28px;
+    position: relative;
+}
+.section_purify .area_title .box_title .title_wifi:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 12px;
+    background: url('../../../images/common/sprite_mini_purify.png') no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.section_purify .area_title .box_title .title_wifi.wifi_01:before {
+    background-position: -150px 0;
+}
+.section_purify .area_title .box_title .title_wifi.wifi_02:before {
+    background-position: -175px 0;
+}
+.section_purify .area_title .box_title .title_wifi.wifi_03:before {
+    background-position: -200px 0;
+}
+.section_purify .img_purify.img_mini_purify {
+    width: 19px;
+    height: 22px;
+    background: url('../../../images/common/sprite_mini_purify.png') -100px -25px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.section_purify .img_purify.img_mini_purify_wait {
+    width: 19px;
+    height: 22px;
+    background: url('../../../images/common/sprite_mini_purify.png') -100px -50px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+.section_purify .img_purify.img_mini_purify .cup_of_water {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    width: 12px;
+    height: 15px;
+}
+.section_purify .img_purify.img_mini_purify span {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+
+
+
+.section_purify .area_water_graph {
+    position: absolute;
+    top: 135px;
+    left: 26px;
+}
+.desktop .section_purify .area_water_graph {
+    top: 185px;
+    left: 46px;
+}
+
+.section_purify .area_water_graph .box_section_title {
+    margin-bottom: 13px;
+}
+.box_section_title span {
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 21px;
+    vertical-align: top;
+    color: #494a4a;
+    font-weight: bold;
+    position: relative;
+}
+.desktop .box_section_title span {
+    font-size: 1.8rem;
+    line-height: 24px;
+}
+
+.box_section_title button.sprite_weight {
+    position: absolute;
+    right: -24px;
+    top: 0;
+}
+.desktop .box_section_title button.sprite_weight {
+    right: -30px;
+}
+
+.box_section_title button.sprite_weight:active {
+    background-position: -225px -25px;
+}
+
+.section_purify .area_water_graph .area_graph {
+    position: relative;
+    background: #d1dae3;
+    width: 57px;
+    height: 134px;
+    margin-left: 5px;
+}
+.section_purify .area_water_graph .area_graph:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 5px;
+    height: 130px;
+    background: url('../../../images/common/sprite_mini_purify.png') 0 -25px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.section_purify .area_water_graph .area_graph p {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 47px;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+.section_purify .area_water_graph .area_graph .bar_graph {
+    background: #5accf2;
+    width: 57px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.section_purify .area_water_graph .area_graph .bar_graph:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 68px;
+    height: 15px;
+    background: url('../../../images/common/sprite_mini_purify.png') 0 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.section_purify .area_water_graph .area_graph .bar_graph.bar_0:after {
+    height: 0;
+}
+.section_purify .area_water_graph .box_graph_desc {
+    padding-left: 14px;
+    position: absolute;
+    top: 36px;
+    left: 89px;
+    width: 130px;
+}
+.section_purify .area_water_graph .box_graph_desc p {
+    font-size: 1.2rem;
+    color: #a9b4bf;
+    line-height: 21px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.section_purify .box_graph_desc span {
+    font-size: 1.9rem;
+    color: #b6c1cc;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.section_purify .box_graph_desc .sprite_double_bar {
+    font-size: 0;
+}
+.section_purify .area_water_graph .box_graph_desc p.water_current + span {
+    color: #45c0f2;
+}
+.section_purify .area_water_graph .box_graph_desc p.water_current:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 5px;
+    background: url('../../../images/common/sprite_mini_purify.png') -75px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+    width: 12px;
+    height: 11px;
+}
+.section_purify .area_water_graph .box_graph_desc p.water_aim:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 5px;
+    background: url('../../../images/common/sprite_mini_purify.png') -100px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+    width: 12px;
+    height: 11px;
+}
+
+.section_purify .area_water_graph .cup_150 {
+    display: inline-block;
+    position: absolute;
+    top: 94px;
+    left: 83px;
+    background: url('../../../images/common/sprite_mini_purify.png') -25px -25px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+    width: 75px;
+    height: 86px;
+    text-align: center;
+}
+.section_purify .area_water_graph .cup_150:active {
+    background: url('../../../images/common/sprite_mini_purify.png') 0 -125px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+    width: 75px;
+    height: 86px;
+}
+.section_purify .area_water_graph .cup_150 p:first-child {
+    font-size: 2rem;
+    color: #ffffff;
+    padding-top: 18px;
+}
+.section_purify .area_water_graph .cup_150:active p {
+    opacity: 0.5;
+}
+.section_purify .area_water_graph .cup_150 p:nth-child(2) {
+    font-size: 1.4rem;
+    color: #edf8fe;
+    font-weight: bold;
+}
+.section_purify .area_water_graph .cup_150 p:last-child {
+    color: #c1e5fd;
+}
+
+.section_toggle.section_toggle_col_3 .area_toggle {
+    width: 33.3%;
+    background: none;
+}
+.section_toggle.section_toggle_col_3 .area_toggle > span {
+    padding-left: 15px;
+    width: 60%;
+}
+.section_toggle.section_toggle_col_3 .area_toggle .toggle_line_2 {
+    /*padding-top: 12px;*/
+    line-height: 13px;
+    font-size: 1.1rem;
+}
+.desktop .section_toggle.section_toggle_col_3 .area_toggle .toggle_line_2 {
+    line-height: 18px;
+    font-size: 1.5rem;
+}
+
+.section_toggle.section_toggle_col_3 .area_toggle > div {
+    width: 40%;
+    text-align: left;
+}
+
+.section_weather {
+    min-height: 17vh;
+    border-top: #fff 1px solid;
+    background: #f5f3f5;
+    border-bottom: #ddddde 1px solid;
+    padding: 11px 15px 0;
+    position: relative;
+}
+.desktop .section_weather {
+    min-height: 200px;
+    border-top: #fff 2px solid;
+    border-bottom: #ddddde 2px solid;
+    padding: 22px 30px 0;
+}
+
+.section_weather .box_section_title span {
+    font-size: 1.4rem;
+    position: relative;
+}
+.desktop .section_weather .box_section_title span {
+    font-size: 1.6rem;
+}
+
+.section_weather .box_section_title span button.sprite_position {
+    position: absolute;
+    right: -24px;
+    top: 0;
+}
+.section_weather .box_section_title span button.sprite_position:active {
+    background-position: -25px 0;
+}
+
+
+.section_weather .box_section_title p {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    font-size: 1.1rem;
+    color: #c2c2c2;
+}
+.desktop .section_weather .box_section_title p {
+    font-size: 1.3rem;
+    top: 28px;
+    right: 30px;
+}
+
+.section_weather .wrap_weather {
+    padding-top: 15px;
+}
+.section_weather .box_weather {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.desktop .section_weather .box_weather {
+    top: 30px;
+    left: 0;
+    width: 35%;
+}
+
+.section_weather .box_weather .weather_desc {
+    font-size: 1.5rem;
+    color: #6f7883;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 47px;
+    padding-left: 7px;
+}
+.desktop .section_weather .box_weather .weather_desc {
+    font-size: 2.6rem;
+    line-height: 44px;
+    padding-left: 14px;
+}
+
+.section_weather .box_weather .weather_desc strong {
+    font-size: 3rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.desktop .section_weather .box_weather .weather_desc strong {
+    font-size: 3.8rem;
+
+}
+
+.section_weather .box_weather .weather_desc strong:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 12px;
+    right: -10px;
+    width: 9px;
+    height:8px;
+    background: url('../../../images/common/sprite_weather.png') -50px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.desktop .section_weather .box_weather .weather_desc strong:after {
+    top: 5px;
+}
+
+.section_weather .box_air {
+    position: absolute;
+    top: 49px;
+    left: 191px;
+}
+.desktop .section_weather .box_air {
+    top: 90px;
+    left: 280px;
+    width: 270px;
+}
+.desktop .section_weather.section_weather_wide .box_air {
+    top: 12px;
+    left: 105px;
+    width: 70px;
+}
+
+.section_weather .box_air > div {
+    display: inline-block;
+    margin-right: 11px;
+    min-width: 27px;
+    max-width: 55px;
+}
+.desktop .section_weather .box_air > div {
+    margin-right: 15px;
+    min-width: 80px;
+    max-width:60px;
+}
+.desktop .section_weather .box_air > div:first-child {
+    margin-right: 15px;
+    min-width: 50px;
+    max-width:60px;
+}
+
+.section_weather .box_air > div p:nth-child(1) {
+    font-size: 1.1rem;
+    color: #a1a6ad;
+    margin-bottom: 5px;
+}
+.desktop .section_weather .box_air > div p:nth-child(1) {
+    font-size: 1.6rem;
+    margin-bottom:9px;
+}
+.desktop .section_weather.section_weather_wide .box_air > div p:nth-child(1) {
+    font-size: 1.3rem;
+    margin-bottom:5px;
+}
+
+.section_weather .box_air div p:nth-child(2) {
+    font-size: 1.6rem;
+    color: #6f7883;
+    position: relative;
+    display: inline-block;
+}
+.desktop .section_weather .box_air div p:nth-child(2) {
+    font-size: 2.7rem;
+}
+.desktop .section_weather.section_weather_wide .box_air div p:nth-child(2) {
+    font-size: 1.8rem;
+}
+
+.section_weather .box_air .humidity:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    right: -7px;
+    width: 6px;
+    height:7px;
+    background: url('../../../images/common/sprite_weather.png') -75px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.desktop .section_weather .box_air .humidity:after {
+    bottom: -2px;
+    right: -15px;
+    width: 12px;
+    height:14px;
+    background: url('../../../images/common/sprite_weather.png') -150px 0 no-repeat;
+    -webkit-background-size: 500px;
+    background-size: 500px;
+}
+.section_weather .box_air .dust {
+    margin-right: 19px;
+}
+.box_air .dust:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    right: -21px;
+    width: 19px;
+    height:10px;
+    background: url('../../../images/common/sprite_weather.png') -100px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.desktop .box_air .dust:after {
+    bottom: -3px;
+    right: -40px;
+    width: 38px;
+    height:20px;
+    background: url('../../../images/common/sprite_weather.png') -200px 0 no-repeat;
+    -webkit-background-size: 500px;
+    background-size: 500px;
+}
+.desktop .section_main.section_air_purify .box_air .dust:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    right: -21px;
+    width: 19px;
+    height:10px;
+    background: url('../../../images/common/sprite_weather.png') -100px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+.desktop .section_weather_wide .box_air .dust:after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    right: -21px;
+    width: 19px;
+    height:10px;
+    background: url('../../../images/common/sprite_weather.png') -100px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+/* 가스레인지 메인 */
+.section_stove .bg_stove {
+    background-image: url(../../../images/main/bg_main_stove.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.section_stove .bg_gas_induction {
+    background-image: url(../../../images/main/bg_main_gas_induc.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.desktop .section_stove .bg_gas_induction {
+    background-image: url(../../../images/main/bg_main_gas_induc.png);
+    background-position: center 86%;
+    background-repeat: no-repeat;
+}
+
+.desktop .section_stove .bg_stove {
+    background-image: url(../../../images/main/bg_main_stove.png);
+    background-position: center 80%;
+    background-repeat: no-repeat;
+}
+
+.section_main.section_stove {
+    height: 56vh;
+    position: relative;
+    background: #ebe9ec;
+}
+.desktop .section_main.section_stove {
+    height: 380px;
+}
+
+.section_main .area_title p {
+    font-size: 1.1rem;
+    color: #666666;
+    position: relative;
+    padding-left: 15px;
+}
+.desktop .section_main .area_title p {
+    font-size: 1.6rem;
+}
+
+.desktop .section_main .area_title + p {
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 30px;
+    position: absolute;
+    top: 34px;
+    right: 20px;
+}
+
+.section_main.section_purify .area_title p {
+    padding-left: 0;
+}
+
+.section_main .sprite_use_time {
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.section_main .sprite_cleaning {
+    position: absolute;
+    top: 1px;
+    left: -1px;
+}
+
+.section_stove .area_gas_status {
+    position: absolute;
+    top: 98px;
+    width: 100%;
+    height: 100px;
+    padding: 0 24px
+}
+.desktop .section_stove .area_gas_status {
+    top: 96px;
+    width: 100%;
+    height: 100px;
+    padding: 0 54px
+}
+
+.section_stove .area_gas_status > div {
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.section_stove .area_gas_status > div p {
+    color: #666666;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -26px;
+    left: -8px;
+}
+.desktop .section_stove .area_gas_status > div p {
+    font-size: 1.6rem;
+    top: -26px;
+    left: -15px;
+}
+
+.section_stove .area_gas_status > div:nth-child(2) p {
+    left: -1px;
+}
+.desktop .section_stove .area_gas_status > div:nth-child(2) p {
+    left: -14px;
+}
+
+.section_stove .area_gas_status > div  p span {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: -32px;
+}
+.desktop .section_stove .area_gas_status > div  p span {
+    font-size: 1.8rem;
+    right: -39px;
+}
+
+.section_stove .area_gas_status .stove_btn {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -35px;
+    width: 71px;
+    height: 71px;
+}
+
+.toggle_gas_lock {
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    width: 71px;
+    height: 71px;
+    background: url('../../../images/common/sprite_gas_stove.png') 0 0 no-repeat;
+    background-size: 250px;
+    display: block;
+    margin: 0 auto;
+}
+.stove_off {
+    background-position: 0 -75px;
+    width: 70px;
+    height: 71px;
+}
+.stove_off:checked {
+    background-position: -75px -75px;
+}
+.section_stove .area_gas_status .stove_off:checked + p span {
+    color: #e86740;
+}
+.section_stove .tooltip_stove {
+    position: absolute;
+    top: 64px;
+    border: 1px solid #e86740;
+    border-radius: 20px;
+    color: #e86740;
+    width: 74px;
+    height: 24px;
+    font-size: 1.1rem;
+    padding: 3px 11px;
+    letter-spacing: -1px;
+}
+.desktop .section_stove .tooltip_stove {
+    top: 63px;
+}
+
+.section_stove .tooltip_stove:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 32px;
+    width: 8px;
+    height: 6px;
+    background: url('../../../images/common/sprite_gas_stove.png') -25px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+
+.section_function.toggle_col_2 {
+    height: 9vh;
+    border-top:0;
+    background: #f0eef1;
+}
+.desktop .section_function.toggle_col_2 {
+    height:100px;
+}
+
+.section_toggle .area_toggle {
+    text-align: center;
+    height: inherit;
+    float: left;
+    background: url("../../../images/main/bg_line.png") right 50% no-repeat;
+    background-size: 3px;
+    padding-top: 2.3vh;
+}
+.desktop .section_toggle .area_toggle {
+    height: 100px;
+    padding-top: 35px;
+}
+
+.section_toggle.toggle_col_3 .area_toggle {
+
+}
+.section_toggle .area_toggle label {
+    color: #b9b8ba;
+    font-size: 1.5rem;
+    display: inline-block;
+    font-weight:bold;
+    padding: 6px 0 0 12px;
+    vertical-align: top;
+}
+.desktop .section_toggle .area_toggle label {
+    font-size: 2rem;
+    padding: 6px 0 0 9px;
+}
+
+.toggle_gas_btn {
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    width: 40px;
+    height: 22px;
+    background: url(../../../images/common/sprite_gas_stove.png) 0 0 no-repeat;
+    background-size: 250px;
+    display: inline-block;
+    /*margin: 0 auto;*/
+    vertical-align: middle;
+}
+.toggle_gas_btn:disabled {
+    opacity: 0.3;
+}
+.toggle_gas_btn:active {
+    opacity: 0.6;
+}
+.toggle_gas_btn.gas_lock {
+    background-position: -100px -25px;
+    width: 31px;
+    height: 30px;
+}
+.toggle_gas_btn.gas_lock:checked {
+    background-position: -150px -25px;
+}
+.toggle_gas_btn.gas_off {
+    background-position: -75px 0;
+    width: 32px;
+    height: 24px;
+}
+.toggle_gas_btn.gas_off:checked {
+    background-position: -125px 0;
+}
+.area_toggle input.toggle_gas_btn:checked + label {
+    color: #2082ca;
+}
+.area_toggle input.toggle_gas_btn:active + label {
+    opacity: 0.6;
+}
+.area_toggle input.toggle_gas_btn:disabled + label {
+    opacity: 0.3;
+}
+.section_timer {
+    height: 20vh;
+    background: #f4f4f4;
+    padding-top: 20px;
+    position: relative;
+    border-bottom: 1px solid #c8c8c8;
+}
+.desktop .section_timer {
+    height: 280px;
+    padding-top: 50px;
+    border-bottom: 2px solid #c8c8c8;
+}
+
+.section_timer .timer_title {
+    color: #666666;
+    font-size: 1.5rem;
+    padding-left: 22px;
+    font-weight:bold;
+    position: relative;
+    margin-left: 19px;
+}
+.desktop .section_timer .timer_title {
+    font-size: 1.8rem;
+    padding-left: 22px;
+}
+
+.section_timer .timer_title .sprite_timer {
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+.section_timer .area_timer {
+    position: absolute;
+    top: 46px;
+    width: 100%;
+}
+.section_timer .area_timer .box_timer {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    position: relative;
+    height: 65px;
+    background: url(../../../images/page/bg_line01.png) right 50% no-repeat;
+    background-size: 3px;
+    padding-right: 3px;
+    text-align: center;
+    padding-top: 4px;
+}
+.desktop .section_timer .area_timer .box_timer {
+    height: 200px;
+    background: url(../../../images/page/bg_line01.png) right 50% no-repeat;
+    background-size: 3px;
+    padding-right: 3px;
+    padding-top: 60px;
+}
+
+.section_timer .area_timer .box_timer:last-child {
+    background: none;
+}
+.section_timer .area_timer span {
+    font-size: 1.3rem;
+    color: #2082ca;
+}
+.desktop .section_timer .area_timer span {
+    font-size: 1.8rem;
+}
+
+.section_timer .area_timer .timer_off span {
+    color: #a6a6a6;
+}
+
+.section_timer .area_timer button {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #2082ca;
+    color: #2082ca;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+.desktop .section_timer .area_timer button.setting {
+    width: 40px;
+    height: 25px;
+    border: 1px solid #2082ca;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 1px 4px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.section_timer .area_timer .timer_off button.setting {
+    border: 1px solid #a6a6a6;
+    color: #a6a6a6;
+}
+.section_timer .area_timer .time_box {
+    width: 97px;
+    height: 29px;
+    background: #2082ca;
+    color: #ffffff;
+    font-size: 1.7rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 0 26px;
+    font-weight: bold;
+    margin: 5px auto 0;
+    border:0;
+}
+.desktop .section_timer .area_timer .time_box {
+    width: 120px;
+    height: 33px;
+    font-size: 2rem;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    padding: 0 28px;
+    margin: 14px auto 0;
+    display: block;
+}
+
+.section_timer .area_timer .timer_off .time_box {
+    background: #a6a6a6;
+}
+.desktop .section_timer .area_timer .timer_off .time_box {
+    display: block;
+}
+
+/*가스레인지 2구 메인*/
+.section_stove.section_stove_2 .bg_stove {
+    background-image: url(../../../images/main/bg_main_stove_2.png);
+}
+.section_stove.section_stove_2 .area_gas_status > div {
+    width: 50%;
+}
+.section_stove.section_stove_2 .area_gas_status {
+    padding: 0 58px;
+}
+.section_timer.section_timer_2 .area_timer .box_timer {
+    width: 50%;
+}
+
+/* 오븐 메인 */
+.section_oven .bg_oven {
+    background-image: url('../../../images/main/bg_oven_main.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.section_main.section_oven {
+    height: 76.5vh;
+}
+.desktop .section_main.section_oven {
+    height: 500px;
+}
+
+.section_oven .area_title .btn_cleaning {
+    position: relative;
+    top: 4px;
+    left: 23px;
+    height: 20px;
+    display: inline-block;
+}
+.desktop .section_oven .area_title .btn_cleaning {
+    top: 4px;
+    left: 23px;
+    height: 30px;
+}
+
+.desktop .section_oven .area_title .btn_cleaning:disabled {
+    background-position: 0 -166px;
+    -webkit-background-size: 333px;
+    background-size: 333px;
+}
+.desktop .section_oven .area_title .btn_cleaning:active {
+    background-position: -200px -166px;
+    -webkit-background-size: 333px;
+    background-size: 333px;
+}
+
+.section_oven .range_badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: url('../../../images/common/sprite_steam_oven.png') 0 -150px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+    text-align: center;
+}
+.desktop .section_oven .range_badge {
+    top: 68px;
+    right: 25px;
+}
+
+.section_oven .range_badge.disabled {
+    opacity: 0.5;
+}
+.section_oven .range_badge.disabled p {
+    opacity: 0.5;
+}
+
+.section_oven .range_badge p {
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.section_oven .oven_info {
+    position: relative;
+    top: 317px;
+    left: 0;
+    padding: 21px 22px 0;
+
+}
+.section_oven .oven_info p.title {
+    color: #666666;
+    font-size: 1.6rem;
+    line-height: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+.desktop .section_oven .oven_info p.title {
+    font-size: 2rem;
+    line-height: 28px;
+    margin-bottom:10px;
+
+}
+
+.section_oven .oven_info ul {
+    width: 100%;
+}
+.section_oven .oven_info li {
+    position: relative;
+    margin: 0 10px;
+    height: 36px;
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 35px;
+    border-bottom: 1px solid #dcdcdc;
+    font-weight: bold;
+}
+.desktop .section_oven .oven_info li {
+    margin: 0 10px;
+    height: 55px;
+    font-size: 1.6rem;
+    line-height: 54px;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.section_oven .oven_info li:last-child {
+    border-bottom:0;
+}
+.section_oven .oven_info li span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.2rem;
+    color: #888888;
+    font-weight: normal;
+}
+.desktop .section_oven .oven_info li span {
+    bottom: 0;
+    right: 0;
+    font-size: 1.6rem;
+}
+
+.section_oven .oven_info .oven_btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fe6165;
+    background: none;
+    border: 1px solid #fe6165;
+    border-radius: 15px;
+    font-weight: normal;
+}
+.desktop .section_oven .oven_info .oven_btn {
+    font-size: 1.7rem;
+    border-radius: 22px;
+}
+
+.section_oven .oven_info .oven_btn_md {
+    position: absolute;
+    top: 19px;
+    right: 33px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+}
+.desktop .section_oven .oven_info .oven_btn_md {
+    top: 19px;
+    right: 33px;
+    height: 35px;
+    line-height:35px;
+    padding: 0 18px;
+}
+
+.section_oven .oven_info .oven_btn_lg {
+    width: 110px;
+    height: 34px;
+    line-height: 34px;
+}
+.section_oven .alarm_txt {
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    margin-left: -112px;
+    width: 225px;
+    text-align: center;
+}
+
+.desktop .section_oven .alarm_txt {
+    top: 285px;
+    width: 300px;
+    margin-left: -150px;
+}
+
+.section_oven .alarm_txt.heating {
+    top: 176px;
+}
+.desktop .section_oven .alarm_txt.heating {
+    top: 266px;
+}
+
+.section_oven .alarm_txt p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 20px;
+    font-weight: bold;
+}
+.desktop .section_oven .alarm_txt p {
+    font-size: 1.8rem;
+    line-height: 24px;
+}
+.section_oven .alarm_txt.alarm_alert .sprite_alert {
+    margin-bottom: 3px;
+}
+.section_oven .alarm_txt.alarm_alert {
+    top: 171px;
+    padding:7px 0;
+}
+.desktop .section_oven .alarm_txt.alarm_alert {
+    top: 261px;
+    padding:7px 0;
+}
+
+.section_oven .alarm_txt.alarm_alert p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.desktop .section_oven .alarm_txt.alarm_alert p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.section_oven .alarm_txt .desc {
+    opacity:0.65;
+}
+.section_oven .alarm_txt .end_heating {
+    margin-bottom: 12px;
+}
+
+.section_oven .alarm_txt .end_time {
+    font-size: 2.4rem;
+    line-height: 36px;
+}
+.desktop .section_oven .alarm_txt .end_time {
+    font-size: 2.8rem;
+    line-height: 40px;
+}
+
+.section_oven .alarm_txt .icon_heat {
+    background: url('../../../images/common/sprite_steam_oven.png') -200px -25px no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+    width: 11px;
+    height: 11px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.toggle_oven {
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: url(../../../images/common/sprite_steam_oven.png) no-repeat;
+    background-size: 250px;
+    display: inline-block;
+    /* margin: 0 auto; */
+    vertical-align: top;
+}
+.toggle_oven.oven_lock {
+    background-position: 0 -200px;
+    width: 22px;
+    height: 29px;
+}
+.toggle_oven.oven_lock:checked {
+    background-position: -25px -200px;
+}
+.toggle_oven.brightness {
+    background-position: -50px -200px;
+    width: 25px;
+    height: 25px;
+}
+.toggle_oven.brightness:checked {
+    background-position: -75px -200px;
+}
+.toggle_oven.volume {
+    background-position: -150px -200px;
+    width: 28px;
+    height: 22px;
+}
+.toggle_oven.volume:checked {
+    background-position: -100px -200px;
+}
+.toggle_oven.volume_none {
+    background-position: -150px -225px;
+    width: 28px;
+    height: 22px;
+}
+.toggle_oven.volume_none:checked {
+    background-position: -100px -225px;
+}
+.area_toggle .brightness + label,
+.area_toggle .volume + label {
+    padding-left: 6px;
+}
+.toggle_col_3 .area_toggle p {
+    margin: 2px 0 0 4px;
+}
+
+
+.section_oven .oven_info .box_progress {
+    position: relative;
+    top: 28px;
+    padding: 0 15px;
+}
+.desktop .section_oven .oven_info .box_progress {
+    top: 58px;
+}
+
+.section_oven .oven_info .box_progress .progress {
+    display: flex;
+    justify-content: space-between;
+}
+.section_oven .oven_info .box_progress .progress span {
+    width: 2.2%;
+}
+.section_oven .oven_info .progress_desc {
+    display: inline-block;
+    color: #333333;
+    font-size: 2.4rem;
+    padding-left: 0;
+    margin-bottom: 14px;
+    position: relative;
+}
+.desktop .section_oven .oven_info .progress_desc {
+    font-size: 2.8rem;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.section_oven .oven_info .progress_desc:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+.section_oven .oven_info .progress_desc button {
+    position: absolute;
+    top: -3px;
+    right: -28px;
+}
+.section_oven .oven_info .progress span {
+    background: #c5c4c6;
+    width: 7px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 3px;
+}
+.oven_info .progress span.orange1 {
+    background: #f94a51;
+}
+.oven_info .progress span.orange2 {
+    background: #f94a52;
+}
+.oven_info .progress span.orange3 {
+    background: #f94a53;
+}
+.oven_info .progress span.orange4 {
+    background: #f94a54;
+}
+.oven_info .progress span.orange5 {
+    background: #f94a55;
+}
+.oven_info .progress span.orange6 {
+    background: #f94a57;
+}
+.oven_info .progress span.orange7 {
+    background: #f94a58;
+}
+.oven_info .progress span.orange8 {
+    background: #fa5b5a;
+}
+.oven_info .progress span.orange9 {
+    background: #fa5b5b;
+}
+.oven_info .progress span.orange10 {
+    background: #fa625d;
+}
+.oven_info .progress span.orange11 {
+    background: #fb665f;
+}
+.oven_info .progress span.orange12 {
+    background: #fb6960;
+}
+.oven_info .progress span.orange13 {
+    background: #fb6d62;
+}
+.oven_info .progress span.orange14 {
+    background: #fb7064;
+}
+.oven_info .progress span.orange15 {
+    background: #fc7466;
+}
+.oven_info .progress span.orange16 {
+    background: #fc7767;
+}
+.oven_info .progress span.orange17 {
+    background: #fc7b69;
+}
+.oven_info .progress span.orange18 {
+    background: #fc7f6b;
+}
+.oven_info .progress span.orange19 {
+    background: #fc826d;
+}
+.oven_info .progress span.orange20{
+    background: #fd866e;
+}
+.oven_info .progress span.orange21 {
+    background: #fd8970;
+}
+.oven_info .progress span.orange22 {
+    background: #fd8d72;
+}
+.oven_info .progress span.orange23 {
+    background: #fd9073;
+}
+.oven_info .progress span.orange24 {
+    background: #fd9274;
+}
+.oven_info .progress span.orange25 {
+    background: #fd9576;
+}
+.oven_info .progress span.orange26 {
+    background: #fe9777;
+}
+.oven_info .progress span.orange27 {
+    background: #fe9a78;
+}
+.oven_info .progress span.orange28 {
+    background: #fe9c79;
+}
+.oven_info .progress span.orange29 {
+    background: #fe9d7a;
+}
+.oven_info .box_msg {
+    text-align: center;
+}
+.desktop .oven_info .box_msg {
+    margin-top: 20px;
+}
+
+.oven_info .msg_complete {
+    font-size: 2rem;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.desktop .oven_info .msg_complete {
+    font-size: 2.8rem;
+    line-height: 40px;
+}
+
+.oven_info .msg_question {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.desktop .oven_info .msg_question {
+    font-size:2.1rem;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+}
+
+.oven_info .msg_first {
+    font-size: 2rem;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+.oven_info .msg_first span {
+    font-weight: bold;
+}
+
+.oven_info .box_msg .oven_btn {
+    margin-right: 10px;
+}
+.oven_info .box_msg .oven_btn:last-child {
+    margin-right: 0;
+}
+
+/* 전기레인지 메인 */
+.section_main.section_induction {
+    height: 56.5vh;
+    background: #e8e8e8;
+}
+.desktop .section_main.section_induction {
+    height: 380px;
+}
+
+.section_main.section_induction .bg_induction {
+    background: url('../../../images/main/bg_main_induction.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 360px;
+    background-size: 360px;
+}
+.section_induction .area_induction {
+    position: relative;
+    top: 84px;
+    left: 50%;
+    margin-left: -147px;
+    width: 294px;
+    height: 245px;
+}
+.section_induction .area_induction .range_size {
+    position: absolute;
+    text-align: center;
+}
+
+.section_induction .area_induction .range_size div {
+    position: relative;
+}
+
+.section_induction .area_induction .range_size label {
+    position: absolute;
+    color: rgba(255,255,255,0.5);
+}
+.section_induction .area_induction .range_size .toggle_range:checked + label {
+    color: #ffffff;
+}
+
+.section_induction .area_induction .range_size.range_sm {
+    width: 73px;
+    height: 73px;
+    top: 18px;
+    left: 50px;
+}
+.section_induction .area_induction .range_size.range_sm label {
+    top: 22px;
+    left: 20px;
+    font-size: 1.1rem;
+}
+.section_induction .area_induction .range_size.range_md {
+    width: 97px;
+    height: 96px;
+    top: 118px;
+    left: 41px;
+}
+.section_induction .area_induction .range_size.range_md label {
+    top: 30px;
+    left: 30px;
+    font-size: 1.2rem;
+}
+.section_induction .area_induction .range_size.range_lg {
+    width: 108px;
+    height: 109px;
+    top: 55px;
+    left: 156px;
+}
+.section_induction .area_induction .range_size.range_lg label {
+    top: 36px;
+    left: 35px;
+    font-size: 1.2rem;
+}
+
+
+.toggle_range {
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: url(../../../images/common/sprite_induction_range.png) 0 0 no-repeat;
+    -webkit-background-size: 300px;
+    background-size: 300px;
+    /*display: block;*/
+}
+.toggle_range:active {
+    opacity:0.6;
+}
+.toggle_range:disabled {
+    opacity:0.3;
+}
+
+.toggle_range.toggle_range_sm {
+    background-position: 0 0;
+    width: 73px;
+    height: 73px;
+}
+.toggle_range.toggle_range_sm:checked {
+    background-position: -75px 0;
+}
+.toggle_range.toggle_range_md {
+    background-position: 0 -75px;
+    width: 97px;
+    height: 96px;
+}
+.toggle_range.toggle_range_md:checked {
+    background-position: -100px -75px;
+}
+.toggle_range.toggle_range_lg {
+    background-position: 0 -175px;
+    width: 108px;
+    height: 109px;
+
+}
+.toggle_range.toggle_range_lg:checked {
+    background-position: -125px -175px;
+}
+.toggle_range.range_lock {
+    background-position: -150px 0;
+    width: 36px;
+    height: 20px;
+    margin-top: 3px;
+}
+.toggle_range.range_lock:checked {
+    background-position: -150px -25px;
+}
+.toggle_range.fireball {
+    background-position: -200px 0;
+    width: 27px;
+    height: 27px;
+}
+.toggle_range.fireball:checked {
+    background-position: -250px 0;
+}
+.toggle_range.volume {
+    background-position: -150px -50px;
+    width: 27px;
+    height: 22px;
+}
+.toggle_range.volume:checked {
+    background-position: -200px -50px;
+}
+.section_toggle .area_toggle .toggle_range + label {
+    padding: 6px 0 0 6px;
+}
+.section_toggle .area_toggle .toggle_range:checked + label {
+    color: #2082ca;
+}
+.section_toggle .area_toggle .toggle_range:active + label {
+    opacity:0.6;
+}
+.section_toggle .area_toggle .toggle_range:disabled + label {
+    opacity:0.3;
+}
+.section_induction .area_induction .range_size p {
+    width: 40px;
+    height: 20px;
+    line-height: 19px;
+}
+.section_induction .area_induction .range_size .btn_on {
+    background: #e86740;
+    border: 1px solid #e86740;
+}
+.section_induction .area_induction .range_size .btn_off {
+    background: #484848;
+    border: 1px solid #484848;
+    color: rgba(255,255,255,0.5);
+}
+.section_induction .area_induction .range_size .tooltip_range {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -48px;
+    background: #0666ad;
+    border: 1px solid #0666ad;
+    height: 24px;
+    line-height: 22px;
+    padding: 0 8px;
+    width: 95px;
+    -webkit-box-shadow: 0 3px 12px 0 rgba(50, 50, 50, 0.43);
+    box-shadow: 0 3px 12px 0 rgba(50, 50, 50, 0.43);
+}
+.tooltip_range:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #0666ad;
+    border-left: 1px solid #0666ad;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -5px;
+    background-color: #0666ad;
+}
+
+/* 메인 가습기 */
+.section_main.section_humidify {
+    height: 85.5vh;
+    position: relative;
+}
+.desktop .section_main.section_humidify {
+    height: 380px;
+    position: relative;
+}
+
+.section_main.section_humidify .bg_humidify {
+    background: url(../../../images/main/bg_main_humidify.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    -webkit-background-size: 360px;
+    background-size: 360px;
+}
+
+
+.section_main.section_humidify .area_title p {
+    padding-left: 2px;
+    font-size: 1.3rem;
+}
+.section_main.section_humidify .area_title .notice {
+    position: relative;
+    top: 30px;
+    left: 0;
+    padding-left: 19px;
+    color: #eb535a;
+    font-size: 1.3rem;
+}
+.desktop .section_main.section_humidify .area_title .notice {
+    top: 20px;
+    left: 6px;
+    font-size: 1.7rem;
+}
+
+.section_main.section_humidify .notice span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section_main.section_humidify .area_air_status {
+    position: absolute;
+    top: 140px;
+    left: 6px;
+    width: 207px;
+    height: 207px;
+    text-align: center;
+}
+.desktop .section_main.section_humidify .area_air_status {
+    left: 56px;
+    width: 207px;
+    height: 207px;
+}
+
+.section_main.section_humidify .area_air_status.off {
+    background: url('../../../images/main/status/bg_off.png') 0 0 no-repeat;
+    -webkit-background-size: 207px;
+    background-size: 207px;
+}
+.section_main.section_humidify .area_air_status.bad {
+    background: url('../../../images/main/status/bg_bad.png') 0 0 no-repeat;
+    -webkit-background-size: 207px;
+    background-size: 207px;
+}
+.section_main.section_humidify .area_air_status.good {
+    background: url('../../../images/main/status/bg_good.png') 0 0 no-repeat;
+    -webkit-background-size: 207px;
+    background-size: 207px;
+}
+.section_main.section_humidify .area_air_status.normal {
+    background: url('../../../images/main/status/bg_normal.png') 0 0 no-repeat;
+    -webkit-background-size: 207px;
+    background-size: 207px;
+}
+.section_main.section_humidify .area_air_status .box_txt_status {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+}
+.section_main.section_humidify .area_air_status .box_txt_status .current {
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+}
+.desktop .section_main.section_humidify .area_air_status .box_txt_status .current {
+    font-size: 2.2rem;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.section_main.section_humidify .area_air_status .box_txt_status .humidify_num {
+    font-size: 6.2rem;
+    line-height: 70px;
+    margin: 10px 0 0 8px;
+}
+.desktop .section_main.section_humidify .area_air_status .box_txt_status .humidify_num {
+    font-size: 6.5rem;
+    line-height: 70px;
+    margin: 5px 0 0 8px;
+}
+
+.section_main.section_humidify .area_air_status .box_txt_status .humidify_num span {
+    font-size: 2rem;
+}
+.desktop .section_main.section_humidify .area_air_status .box_txt_status .humidify_num span {
+    font-size: 2.8rem;
+}
+
+.section_main.section_humidify .area_air_status.normal .box_txt_status p {
+    color: #60c98f;
+}
+.section_main.section_humidify .area_air_status.bad .box_txt_status p {
+    color: #f26358;
+}
+.section_main.section_humidify .area_air_status.good .box_txt_status p {
+    color: #50abff;
+}
+.section_main.section_humidify .area_air_status.normal .box_txt_status p {
+    color: #60c98f;
+}
+.section_main.section_humidify .area_air_status.off .box_txt_status {
+    top: 75px;
+}
+.section_main.section_humidify .area_air_status.off .box_txt_status .current {
+    color: #777777;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.section_main.section_humidify .area_air_status.off .box_txt_status .humidify_num {
+    color: #c2c2c2;
+    font-size: 1.7rem;
+    line-height: 20px;
+    margin: 20px 0 0;
+}
+
+.section_main.section_humidify .area_air_status .box_humidify_info {
+    position: absolute;
+    top: 156px;
+    left: 0;
+    width: 100%;
+}
+.desktop .section_main.section_humidify .area_air_status .box_humidify_info {
+    top: 152px;
+}
+
+.section_main.section_humidify .area_air_status .box_humidify_info p {
+    color: #999999;
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+.desktop .section_main.section_humidify .area_air_status .box_humidify_info p {
+    font-size: 1.5rem;
+    line-height: 26px;
+}
+
+.section_main.section_humidify .area_air_status .box_humidify_info p span {
+    color: #4e555b;
+    font-size: 2.3rem;
+    vertical-align: top;
+    margin: 0 2px 0 4px;
+}
+.desktop .section_main.section_humidify .area_air_status .box_humidify_info p span {
+    font-size: 2.7rem;
+    margin: 0 2px 0 4px;
+}
+
+.section_main.section_humidify .area_function_humidify {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    width: 100%;
+}
+.desktop .section_main.section_humidify .area_function_humidify {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -34px;
+    left: 0;
+    width: 100%;
+}
+
+.section_main.section_humidify .area_function_humidify .box_mode {
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+}
+.section_main.section_humidify .area_function_humidify .box_mode span {
+    color: #999999;
+    font-weight: bold;
+    display: block;
+    line-height: 34px;
+}
+.desktop .section_main.section_humidify .area_function_humidify .box_mode span {
+    line-height: 50px;
+}
+
+.section_main.section_humidify .area_function_humidify .box_mode .sprite_water + span {
+    font-size: 1.6rem;
+    color: #339eff;
+}
+.section_main.section_humidify .area_function_humidify .box_mode .sprite_water.stop + span {
+    color: #999999;
+}
+.section_main.section_humidify .area_function_humidify .box_mode .sprite_battery + span {
+    font-size: 2.2rem;
+}
+.section_main.section_humidify .area_function_humidify .box_mode .sprite_battery + span em {
+    font-size: 1.3rem;
+}
+.section_main.section_humidify .area_function_humidify .box_mode .sprite_timer + span {
+    font-size: 2rem;
+}
+.section_main.section_humidify .area_function_humidify .box_mode .sprite_uv + span {
+    font-size: 1.9rem;
+}
+.desktop .section_main.section_humidify .area_function_humidify .box_mode .sprite_water + span {
+    font-size:2rem;
+}
+.desktop .section_main.section_humidify .area_function_humidify .box_mode .sprite_battery + span {
+    font-size: 2.8rem;
+}
+.desktop .section_main.section_humidify .area_function_humidify .box_mode .sprite_battery + span em {
+    font-size: 1.8rem;
+}
+.desktop .section_main.section_humidify .area_function_humidify .box_mode .sprite_timer + span {
+    font-size: 2.6rem;
+}
+.desktop .section_main.section_humidify .area_function_humidify .box_mode .sprite_uv + span {
+    font-size: 2.5rem;
+}
+/* 슈퍼청정기 메인 */
+.section_main.section_air_purify {
+    height: 48.8vh;
+    background: #fafafa;
+}
+.desktop .section_main.section_air_purify {
+    height: 400px;
+}
+
+.section_main.section_air_purify .area_air_status {
+    position: absolute;
+    top: 65px;
+    left: 6px;
+    width: 204px;
+    height: 204px;
+    text-align: center;
+}
+
+.desktop .section_main.section_air_purify .area_air_status {
+    top: 85px;
+    left: 36px;
+}
+
+.section_main.section_air_purify .area_air_status.loading .img_msg {
+    display: inline-block;
+    width: 52px;
+    height: 65px;
+    background: url("../../../images/main/air_purify_loading.png") 0 0 no-repeat;
+    background-size: 52px;
+    padding-top: 28px;
+}
+
+.section_main.section_air_purify .bg_air_purify_mini {
+    background: url(../../../images/main/bg_air_purify_mini.png);
+    -webkit-background-size: 360px;
+    background-size: 360px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.section_main.section_air_purify .bg_air_purify_v15 {
+    background: url(../../../images/main/bg_air_purify_v15.png);
+    -webkit-background-size: 360px;
+    background-size: 360px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.section_main.section_air_purify .bg_air_purify_v16_35 {
+    background: url(../../../images/main/bg_air_purify_v16_35.png);
+    -webkit-background-size: 360px;
+    background-size: 360px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.section_main.section_air_purify .bg_air_purify_v100 {
+    background: url(../../../images/main/bg_air_purify_v100.png);
+    -webkit-background-size: 360px;
+    background-size: 360px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.section_main.section_air_purify .bg_air_purify_v200 {
+    background: url(../../../images/main/bg_air_purify_v200.png);
+    -webkit-background-size: 360px;
+    background-size: 360px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.section_main.section_air_purify .area_air_status.good,
+.section_main.section_air_purify .area_air_status.error,
+.section_main.section_air_purify .area_air_status.loading {
+    background: url('../../../images/main/status/bg_good_air.png') 0 0 no-repeat;
+    -webkit-background-size: 204px;
+    background-size: 204px;
+}
+.section_main.section_air_purify .area_air_status.normal {
+    background: url('../../../images/main/status/bg_normal_air.png') 0 0 no-repeat;
+    -webkit-background-size: 204px;
+    background-size: 204px;
+}
+.section_main.section_air_purify .area_air_status.bad {
+    background: url('../../../images/main/status/bg_bad_air.png') 0 0 no-repeat;
+    -webkit-background-size: 204px;
+    background-size: 204px;
+}
+.section_main.section_air_purify .area_air_status.worse {
+    background: url('../../../images/main/status/bg_worse_air.png') 0 0 no-repeat;
+    -webkit-background-size: 204px;
+    background-size: 204px;
+}
+.section_main.section_air_purify .area_air_status.off {
+    background: url('../../../images/main/status/bg_off_air.png') 0 0 no-repeat;
+    -webkit-background-size: 204px;
+    background-size: 204px;
+}
+.section_main.section_air_purify .area_air_status.off .box_txt_status {
+    top: 63px;
+}
+.section_main.section_air_purify .area_air_status.off p:first-child {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 40px;
+    color: #777777;
+}
+.section_main.section_air_purify .area_air_status.off p:nth-child(2) {
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #c2c2c2;
+}
+.section_main.section_air_purify .area_air_status .box_logo {
+    width: 61px;
+    height: 18px;
+    position: absolute;
+    left: 72px;
+    bottom: 27px;
+}
+
+.section_main.section_air_purify .area_air_status.loading .box_message {
+    position: absolute;
+    top: 28px;
+    left: 56px;
+}
+.section_main.section_air_purify .area_air_status.loading .img_msg img {
+    width: 52px;
+    height: 65px;
+}
+.section_main.section_air_purify .area_air_status.loading p {
+    margin-top: 10px;
+    font-size: 2.3rem;
+    color: #50abff;
+    font-weight: bold;
+}
+.section_main.section_air_purify .area_air_status.error .box_message {
+    position: absolute;
+    top: 28px;
+    left: 36px;
+}
+.section_main.section_air_purify .area_air_status.error .img_msg img {
+    width: 54px;
+    height: 67px;
+}
+.section_main.section_air_purify .area_air_status.error p {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    color: #50abff;
+}
+.section_main.section_air_purify .area_air_status.error .error_msg {
+    position: absolute;
+    bottom: 29px;
+    left: 50px;
+    font-size: 1.8rem;
+    color: #777777;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.section_main.section_air_purify .area_air_status.error .error_msg span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section_main.section_air_purify .area_air_status .box_txt_status {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 100%;
+}
+.section_main.section_air_purify .area_air_status .current {
+    font-size: 3.2rem;
+    line-height: 38px;
+    font-weight: bold;
+}
+.section_main.section_air_purify .area_air_status.good .current {
+    color: #50abff;
+}
+.section_main.section_air_purify .area_air_status.normal .current {
+    color: #60c98f;
+}
+.section_main.section_air_purify .area_air_status.bad .current {
+    color: #f28458;
+}
+.section_main.section_air_purify .area_air_status.worse .current {
+    color: #f26358;
+}
+.section_main.section_air_purify .air_status {
+    color: #6f7883;
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+.section_main.section_air_purify .box_air {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+.section_main.section_air_purify .box_air div {
+    float: left;
+}
+.section_main.section_air_purify .box_air div:nth-child(2) {
+    text-align: left;
+    width: 25px;
+}
+
+.section_main.section_air_purify .box_air p {
+    font-size: 1.2rem;
+    color: #c2c2c2;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.section_main.section_air_purify .box_air .dust {
+    position: relative;
+    font-size: 1.6rem;
+    color: #4e555b;
+    margin-left: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+.section_main.section_air_purify .box_air_bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 52px;
+}
+.section_main.section_air_purify .box_air_bottom div {
+    display: inline-block;
+    width: 50px;
+    position: relative;
+}
+.section_main.section_air_purify .box_air_bottom .degree:after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 16px;
+    width: 1px;
+    height: 15px;
+    background: #d2d2d2;
+}
+.section_main.section_air_purify .box_air_bottom .degree p:nth-child(1):after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 1px;
+    right: 11px;
+    width: 4px;
+    height: 5px;
+    background: url(../../../images/common/sprite_weather.png) -125px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.section_main.section_air_purify .box_air_bottom div p:nth-child(1) {
+    text-align: center;
+    color: #4e555b;
+    font-size: 1.6rem;
+    position: relative;
+}
+.section_main.section_air_purify .box_air_bottom div p:nth-child(2) {
+    text-align: center;
+    color: #c2c2c2;
+    font-size: 1.2rem;
+
+}
+.section_main.section_air_purify .box_air_bottom div p span {
+    font-size: 1rem;
+    position: absolute;
+    right: 6px;
+    bottom: -1px;
+}
+.section_main.section_air_purify .box_air_purify_info {
+    width: 200px;
+    position: absolute;
+    top: 280px;
+    left: 14px;
+}
+.desktop .section_main.section_air_purify .box_air_purify_info {
+    top: 310px;
+    left: 44px;
+}
+
+.section_main.section_air_purify .box_air_purify_info .air_purify_info.col_3 {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+}
+.section_main.section_air_purify .box_air_purify_info .air_purify_info.col_2 {
+    width: 48%;
+    text-align: center;
+    display: inline-block;
+}
+.section_main.section_air_purify .air_purify_info .box_icon {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #eeeef0;
+    background: #eeeef0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin:0 auto;
+}
+.section_main.section_air_purify .air_purify_info p {
+    font-size: 1.2rem;
+    color: #a1a6ad;
+    line-height: 20px;
+}
+.desktop .section_main.section_air_purify .air_purify_info p {
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+.box_icon .sprite_air_purify {
+    margin-top: 9px;
+}
+.box_icon .sprite_air_purify.sprite_dp_change {
+    margin-top: 4px;
+}
+
+.box_icon .sprite_air_purify.sprite_wifi {
+    margin-top: 12px;
+}
+.box_icon .sprite_air_purify.sprite_ai {
+    margin-left: 4px;
+}
+
+.section_weather.section_weather_wide {
+    min-height: 100%;
+    background: #f0f3f5;
+}
+.desktop .section_weather.section_weather_wide {
+    padding: 22px 15px 0;
+    height: 400px;
+}
+
+.weather_contents {
+    display: inline-block;
+    width: 62px;
+    padding-left: 11px;
+    position: relative;
+    vertical-align: top;
+}
+.desktop .section_weather_wide .weather_contents {
+    width: 80px;
+}
+
+.weather_contents .box_air {
+    top: 30px;
+    left: 30px;
+}
+.section_weather.section_weather_wide .box_weather {
+    padding: 5px 0 0 5px;
+}
+.desktop .section_weather.section_weather_wide .box_weather {
+    width: 50%;
+    top: 10px;
+}
+
+.section_weather.section_weather_wide .box_weather:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 85px;
+    background: url(../../../images/page/bg_c1c1c1.png) top right repeat-y;
+    -webkit-background-size: 1px;
+    background-size: 1px;
+}
+.section_weather.section_weather_wide .box_weather .weather_img {
+    width: 74px;
+    height: 74px;
+    display: inline-block;
+}
+.section_weather.section_weather_wide .box_weather .weather_desc {
+    line-height: 20px;
+    padding-left: 0;
+}
+.desktop .section_weather.section_weather_wide .box_weather .weather_desc {
+    line-height: 25px;
+    padding-left: 0;
+    font-size: 2.5rem;
+}
+
+.section_weather.section_weather_wide .weather_desc + span {
+    font-size: 3rem;
+    color: #6f7883;
+    position: relative;
+    line-height: 30px;
+}
+.desktop .section_weather.section_weather_wide .weather_desc + span {
+    font-size: 3.5rem;
+
+    line-height: 40px;
+}
+
+.section_weather.section_weather_wide .weather_desc + span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: -10px;
+    width: 9px;
+    height: 8px;
+    background: url(../../../images/common/sprite_weather.png) -50px 0 no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 250px;
+}
+.section_weather.section_weather_wide .weather_etc {
+    font-size: 1.2rem;
+    color: #a1a6ad;
+}
+.desktop .section_weather.section_weather_wide .weather_etc {
+    font-size: 1.4rem;
+}
+
+.section_weather.section_weather_wide .weather_etc span {
+    font-size: 1.7rem;
+    color: #6f7883;
+    top: 1px;
+    position: relative;
+    padding-left: 3px;
+}
+.desktop .section_weather.section_weather_wide .weather_etc span {
+    font-size: 1.9rem;
+
+}
+
+.section_weather.section_weather_wide .weather_etc span strong {
+    position: absolute;
+    bottom: 0;
+    right: -9px;
+    font-size: 1rem;
+}
+.area_air_status {
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+}
+.desktop .section_weather_wide .area_air_status {
+    padding-top: 10px;
+}
+
+.area_air_status .box_air {
+    top: 2px;
+    left: 108px;
+}
+.area_air_status .box_air div {
+    display: block;
+}
+.section_weather .area_air_status .box_air > div p:nth-child(1) {
+    min-width: 60px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.section_weather .area_air_status .box_air_img {
+    width: 89px;
+    height: 89px;
+    display: inline-block;
+    position: relative;
+}
+.section_weather .area_air_status .box_air_img.air_good {
+    background: url('../../../images/main/status/bg_good_sm.png') 0 0 no-repeat;
+    -webkit-background-size: 89px;
+    background-size: 89px;
+}
+.section_weather .area_air_status .box_air_img.air_normal {
+    background: url('../../../images/main/status/bg_normal_sm.png') 0 0 no-repeat;
+    -webkit-background-size: 89px;
+    background-size: 89px;
+}
+.section_weather .area_air_status .box_air_img.air_bad {
+    background: url('../../../images/main/status/bg_bad_sm.png') 0 0 no-repeat;
+    -webkit-background-size: 89px;
+    background-size: 89px;
+}
+.section_weather .area_air_status .box_air_img.air_worse {
+    background: url('../../../images/main/status/bg_worse_sm.png') 0 0 no-repeat;
+    -webkit-background-size: 89px;
+    background-size: 89px;
+}
+.section_weather .area_air_status .box_air_img .air_info {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    padding-top: 16px;
+}
+.section_weather .area_air_status .box_air_img .air_value {
+    font-size: 1.8rem;
+    line-height: 24px;
+    font-weight: bold;
+}
+.section_weather .area_air_status .box_air_img.air_good .air_value {
+    color: #50abff;
+}
+.section_weather .area_air_status .box_air_img.air_normal .air_value {
+    color: #60c98f;
+}
+.section_weather .area_air_status .box_air_img.air_bad .air_value {
+    color: #f28458;
+}
+.section_weather .area_air_status .box_air_img.air_worse .air_value {
+    color: #f26358;
+}
+.section_weather .area_air_status .box_air_img .air_info p:nth-child(2) {
+    font-size: 1.2rem;
+    line-height: 18px;
+    font-weight: bold;
+    color: #6f7883;
+}
+.wrap_current_weather {
+    position: relative;
+    height: 135px;
+    padding-top: 22px;
+}
+.desktop .wrap_current_weather {
+    padding-top: 42px;
+    height: 175px;
+}
+
+.section_weather .box_day_weather {
+    background: #e8ebed;
+    padding:8px 0;
+    height: 135px;
+}
+.section_weather .box_day_weather li {
+    float: left;
+    border-right: 1px solid #d3d7db;
+    width: 14.2%;
+    /* 14.2 */
+
+}
+.section_weather .box_day_weather li:last-child {
+    border: 0;
+}
+.section_weather .box_day_weather li p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.section_weather .box_day_weather li .time {
+    color: #a1a6ad;
+    line-height: 30px;
+}
+.section_weather .box_day_weather li .time.current {
+    color: #4e555b;
+}
+.section_weather .box_day_weather li .rain_per {
+    color: #6fbaff;
+    font-weight: normal;
+    line-height: 20px;
+}
+.section_weather .box_day_weather li .degree {
+    color: #6f7883;
+    font-size: 1.3rem;
+    position: relative;
+    line-height: 20px;
+}
+
+.section_weather .box_day_weather li .weather_icon {
+    padding: 13px 0 3px;
+    text-align: center;
+    height: 45px;
+}
+.wrap_day_weather {
+    border-bottom: 1px solid #d7d7d8;
+    padding-bottom: 10px;
+}
+.desktop .wrap_day_weather {
+    border-bottom: 0;
+    padding:10px 0;
+}
+
+.wrap_week_weather {
+    position: relative;
+}
+.wrap_week_weather .week_title {
+    padding-left: 3px;
+    font-size: 1.3rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: #4e555b;
+}
+.desktop .wrap_week_weather .week_title {
+    padding-left: 3px;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.wrap_week_weather .week_title + span {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    font-size: 1.1rem;
+    color: #c2c2c2;
+}
+.desktop .wrap_week_weather .week_title + span {
+    top: 7px;
+}
+
+.section_weather .wrap_week_weather ul li {
+    border-bottom: 1px solid #dfe0e1;
+    height: 57px;
+    position: relative;
+}
+.desktop .section_weather .wrap_week_weather ul li {
+    height: 48px;
+}
+
+.section_weather .wrap_week_weather ul li:last-child {
+    border: 0;
+}
+.section_weather .wrap_week_weather ul li .weekday {
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    font-size: 1.6rem;
+    color: #4e555b;
+}
+.desktop .section_weather .wrap_week_weather ul li .weekday {
+    top: 16px;
+}
+
+.section_weather .wrap_week_weather ul li p {
+    float: left;
+    width: 33.3%;
+    line-height:56px;
+}
+.desktop .section_weather .wrap_week_weather ul li p {
+    line-height:47px;
+}
+
+.section_weather .wrap_week_weather ul li .day {
+    font-size: 1.3rem;
+    color: #a1a6ad;
+    padding-left: 40px;
+}
+.section_weather .wrap_week_weather ul li .sprite_weather {
+    vertical-align: middle;
+    position: relative;
+    left: 40px;
+    top: 0;
+}
+.section_weather .wrap_week_weather ul li .degree {
+    font-size: 1.6rem;
+    color: #4e555b;
+    padding-left: 35px;
+    float: right;
+}
+
+.desktop .section_main.section_oven.section_main_devision {
+    position: relative;
+    height: 400px;
+    background: #f3f2f3;
+    border-bottom: #ddddde 1px solid;
+}
+.desktop .section_oven .oven_info {
+    top: 60px;
+}

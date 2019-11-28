@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="pc/css/ui/ui.style.css"/>
+    <style>
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .area_contents {
+            padding: 10px 10px 80px;
+        }
+
+        .area_contents .sub_title {
+            padding: 0;
+        }
+
+        .table {
+            margin-bottom: 20px;
+        }
+
+        .table th,
+        .table td {
+            height: 30px;
+            border: 1px solid #e8e8e8;
+            text-align: center;
+        }
+
+        .table th {
+            font-weight: bold;
+        }
+
+        .table tr:nth-child(odd) td {
+            background: #f6f5f5;
+        }
+
+        .table td a {
+            color: #ed784d;
+        }
+
+        .table td {
+            font-size: 1.3rem;
+        }
+
+        .table tr td:nth-child(1) {
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        .sub_title h3 {
+            position: relative;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            padding-left: 15px;
+        }
+
+        .sub_title h3::before {
+            content: '■';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.8rem;
+            color: #767676;
+        }
+
+    </style>
+</head>
+<body>
+<div class="area_contents">
+    <div class="sub_title">
+        <h2>SK Magic</h2>
+    </div>
+
+
+    <h3>00 공통가이드 (폴더명 : 00_guide)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">가이드</td>
+            <td><a href="pc/views/00_guide/guide.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">디폴트 페이지</td>
+            <td><a href="pc/views/00_guide/default_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">팝업</td>
+            <td><a href="pc/views/00_guide/popup.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">전체팝업</td>
+            <td><a href="pc/views/00_guide/popup_page.html">link</a></td>
+            <td>-</td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+    <h3>01 냉온 정수기 (폴더명 : 01_purify)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 메인 냉온정수기</td>
+            <td><a href="pc/views/01_purify/main_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 냉정수기</td>
+            <td><a href="pc/views/01_purify/main01_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품 작동</td>
+            <td><a href="pc/views/01_purify/product_activate_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 관리 이력</td>
+            <td><a href="pc/views/01_purify/manage_history_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용자관리_기본</td>
+            <td><a href="pc/views/01_purify/user_default_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업_로딩</td>
+            <td><a href="pc/views/01_purify/popup_loading_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업_가전명수정</td>
+            <td><a href="pc/views/01_purify/popup_product_rename_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업_사용자추가</td>
+            <td><a href="pc/views/01_purify/popup_user_join_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 연결실패_마스터사용자</td>
+            <td><a href="pc/views/01_purify/error_master_user_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 연결실패_일반사용자</td>
+            <td><a href="pc/views/01_purify/error_user_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용설명</td>
+            <td><a href="pc/views/01_purify/user_manual_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 이력 및 알림</td>
+            <td><a href="pc/views/01_purify/history_alarm_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 이력 및 알림 없는 경우</td>
+            <td><a href="pc/views/01_purify/history_none_alarm_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 납부정보</td>
+            <td><a href="pc/views/01_purify/payment_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용통계</td>
+            <td><a href="pc/views/01_purify/use_statistic_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>02 슈퍼 미니정수기 (폴더명 : 02_super_mini_purify)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 메인 미니정수기</td>
+            <td><a href="pc/views/02_super_mini_purify/main_mini_purify_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업_체중입력</td>
+            <td><a href="pc/views/02_super_mini_purify/popup_weight_input_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업_지역설정</td>
+            <td><a href="pc/views/02_super_mini_purify/popup_local_setting_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 연결실패(날씨정보 표시불가)</td>
+            <td><a href="pc/views/02_super_mini_purify/error_mini_purify_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 이력 및 알림</td>
+            <td><a href="pc/views/02_super_mini_purify/history_alarm_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 푸쉬알림설정</td>
+            <td><a href="pc/views/02_super_mini_purify/setting_push_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용통계</td>
+            <td><a href="pc/views/02_super_mini_purify/use_statistic_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>03 가스레인지 (폴더명 : 03_gas_stove)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 메인 가스레인지</td>
+            <td><a href="pc/views/03_gas_stove/main_stove_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 인덕션 가스레인지</td>
+            <td><a href="pc/views/03_gas_stove/main_stove_induction_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 가스레인지01</td>
+            <td><a href="pc/views/03_gas_stove/main_stove_2_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용통계</td>
+            <td><a href="pc/views/03_gas_stove/user_statistic_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 타이머설정</td>
+            <td><a href="pc/views/03_gas_stove/popup_setting_timer_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 센서온도</td>
+            <td><a href="pc/views/03_gas_stove/graph_sensor_degree_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용설명</td>
+            <td><a href="pc/views/03_gas_stove/user_manual_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 가전등록 정보입력</td>
+            <td><a href="pc/views/03_gas_stove/register_appliance_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 설정</td>
+            <td><a href="pc/views/03_gas_stove/setting_push_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 셀렉트</td>
+            <td><a href="pc/views/03_gas_stove/popup_select_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>04 스팀 오븐 (폴더명 : 04_steam_oven)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 메인 - 기본</td>
+            <td><a href="pc/views/04_steam_oven/main_oven_default_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 - 청소중</td>
+            <td><a href="pc/views/04_steam_oven/main_oven_cleaning_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 - 요리중</td>
+            <td><a href="pc/views/04_steam_oven/main_oven_cooking_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 - 요리완료</td>
+            <td><a href="pc/views/04_steam_oven/main_oven_cooking_end_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 - 첫진입</td>
+            <td><a href="pc/views/04_steam_oven/main_oven_first_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 메인 - 수동요리 예열</td>
+            <td><a href="pc/views/04_steam_oven/main_oven_heating_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 오븐 청소</td>
+            <td><a href="pc/views/04_steam_oven/popup_oven_cleaning_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 요리 가이드</td>
+            <td><a href="pc/views/04_steam_oven/cook_guide_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 요리 가이드-자동요리</td>
+            <td><a href="pc/views/04_steam_oven/cook_guide_detail_auto_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 요리 가이드-수동요리</td>
+            <td><a href="pc/views/04_steam_oven/cook_guide_detail_manual_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 요리 가이드-나만의요리</td>
+            <td><a href="pc/views/04_steam_oven/cook_guide_detail_self_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용설명</td>
+            <td><a href="pc/views/04_steam_oven/user_self_manual_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용설명 상세</td>
+            <td><a href="pc/views/04_steam_oven/user_manual_detail_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] My 메뉴</td>
+            <td><a href="pc/views/04_steam_oven/my_menu_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용통계</td>
+            <td><a href="pc/views/04_steam_oven/user_statistic_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용통계 상세</td>
+            <td><a href="pc/views/04_steam_oven/user_statistic_detail_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 사용통계 상세</td>
+            <td><a href="pc/views/04_steam_oven/popup_statistic_detail_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 요리보온시간</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_heating_time_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 요리시간</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_cook_time_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 요리온도</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_cook_degree_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 발효/식품 건조시간</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_dry_time_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 요리시간 + 요리온도</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_time_degree_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 해동 중량설정</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_weight_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 전력 설정</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_power_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 해동</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_defrost_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 데우기</td>
+            <td><a href="pc/views/04_steam_oven/popup_setting_warm_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+    <h3>05 전기레인지 (폴더명 : 05_induction_range)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 메인 전기레인지</td>
+            <td><a href="pc/views/05_induction_range/main_induction_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 가전제품 등록</td>
+            <td><a href="pc/views/05_induction_range/register_appliances_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 가전제품 등록 리스트</td>
+            <td><a href="pc/views/05_induction_range/register_appliances_list_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+
+        <tr>
+            <td class="align_left">[PC] 가전제품 등록 step01</td>
+            <td><a href="pc/views/05_induction_range/register_wifi_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 가전제품 등록 step02</td>
+            <td><a href="pc/views/05_induction_range/register_ap_setting_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 가전제품 등록 step03</td>
+            <td><a href="pc/views/05_induction_range/register_ap_connect_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 가전제품 등록 step04</td>
+            <td><a href="pc/views/05_induction_range/register_name_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>06 가습기 (폴더명 : 06_humidify)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 메인</td>
+            <td><a href="pc/views/06_humidify/main_humidify_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동</td>
+            <td><a href="pc/views/06_humidify/product_activate_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 습도설정</td>
+            <td><a href="pc/views/06_humidify/popup_setting_humidify_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 무드램드 색상설정</td>
+            <td><a href="pc/views/06_humidify/popup_mode_color_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>07 슈퍼 청정기 (폴더명 : 07_super_air_purify)</h3>
+    <table class="table table_border table_align_center">
+        <colgroup>
+            <col style="width: 60%">
+            <col style="width: 13%">
+            <col style="width: 27%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>화면명</th>
+            <th>링크</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="align_left">[PC] 청정기 메인</td>
+            <td><a href="pc/views/07_super_air_purify/main_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 청정기 메인01</td>
+            <td><a href="pc/views/07_super_air_purify/main_air_purify_01_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동 V15</td>
+            <td><a href="pc/views/07_super_air_purify/product_activate_v15_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동 V16</td>
+            <td><a href="pc/views/07_super_air_purify/product_activate_v16_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동 mini</td>
+            <td><a href="pc/views/07_super_air_purify/product_activate_mini_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동 V35</td>
+            <td><a href="pc/views/07_super_air_purify/product_activate_v35_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동 V100</td>
+            <td><a href="pc/views/07_super_air_purify/product_activate_v100_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 제품작동 V200</td>
+            <td><a href="pc/views/07_super_air_purify/product_activate_v200_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] AI 설정</td>
+            <td><a href="pc/views/07_super_air_purify/setting_ai_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 위치 설정</td>
+            <td><a href="pc/views/07_super_air_purify/setting_location_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 청정예약</td>
+            <td><a href="pc/views/07_super_air_purify/setting_reservation_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 청정예약 추가</td>
+            <td><a href="pc/views/07_super_air_purify/add_reservation_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 청정예약 없는 경우</td>
+            <td><a href="pc/views/07_super_air_purify/setting_none_reservation_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 관리이력</td>
+            <td><a href="pc/views/07_super_air_purify/manage_history_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 납부정보</td>
+            <td><a href="pc/views/07_super_air_purify/payment_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 사용통계</td>
+            <td><a href="pc/views/07_super_air_purify/user_statistic_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="align_left">[PC] 팝업 시작시간 설정</td>
+            <td><a href="pc/views/07_super_air_purify/popup_setting_timer_pc.html">link</a></td>
+            <td>-</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

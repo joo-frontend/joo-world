@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Smart Air Manager</title>
+    <link rel="stylesheet" href="../css/ui/ui.style.css">
+</head>
+<body>
+<div class="wrap_header wrap_header_bd">
+    <h1>남정초등학교 1학년 1반</h1>
+    <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+    <input type="checkbox" class="icon_check check_class" checked>
+</div>
+<div class="wrap_contents wrap_contents_gray">
+    <div class="area_school_air bg_white">
+        <div class="slide_pager">
+            <p class="clearfix">
+                <span class="good focus"></span>
+                <span class="normal"></span>
+                <span class="bad"></span>
+                <span class="worse"></span>
+            </p>
+        </div>
+        <div class="slider">
+            <div class="box_slide">
+                <div class="winix_nike">
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-1 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status good">
+                        <div class="circle circle_none_dust">
+                            <p class="air">공기 상태</p>
+                            <p class="status">좋음</p>
+                           <!-- <p class="dust">초미세먼지</p>
+                            <p class="dust_num">10<em>㎍/㎥</em></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree">온도 27℃ / 습도 50%</p>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div class="winix_nike">
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-2 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status normal">
+                        <div class="circle circle_none_dust">
+                            <p class="air">공기 상태</p>
+                            <p class="status">보통</p>
+                         <!--   <p class="dust">초미세먼지</p>
+                            <p class="dust_num">12<em>㎍/㎥</em></p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree">온도 27℃ / 습도 50%</p>
+                </div>
+            </div>
+            <div class="box_slide">
+                <div class="winix_nike">
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">1-3 공기청정기</p>
+                    <!--
+                     good 좋음
+                     normal 보통
+                     bad 나쁨
+                     worse 매우나쁨
+                     -->
+                    <div class="circle_air_status worse">
+                        <div class="circle circle_none_dust">
+                            <p class="air">공기 상태</p>
+                            <p class="status">나쁨</p>
+                            <!--<p class="dust">초미세먼지</p>
+                            <p class="dust_num">20<em>㎍/㎥</em></p>-->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree">온도 27℃ / 습도 50%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area_box_list" data-makernm="{{makerNm}}">
+        <div class="box_card">
+            <p class="card_title title_alone">전원설정</p>
+            <input type="checkbox" class="icon_check toggle_lg">
+        </div>
+
+        <div class="box_card">
+            <p class="card_title title_set">모드 설정</p>
+            <div class="box_setting">
+                <ul  class="clearfix">
+                    <li class="focus"><a href="#"><span>수동</span></a></li>
+                    <li><a href="#"><span>자동</span></a></li>
+                    <li><a href="#"><span>수면</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title title_set">풍량 설정</p>
+            <div class="box_setting">
+                <ul class="clearfix">
+                    <li><a href="#"><span>약</span></a></li>
+                    <li class="focus"><a href="#"><span>중</span></a></li>
+                    <li><a href="#"><span>강</span></a></li>
+                    <li><a href="#"><span>터보</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title title_alone">공기정화<span>PLASMAWAVE</span></p>
+            <input type="checkbox" class="icon_check toggle_default">
+        </div>
+        <div class="box_card">
+            <p class="card_title">꺼짐 예약 </p>
+            <a href="#" class="set_desc">설정</a>
+            <!--<p class="time">오후<span>09:15</span></p>-->    <p class="desc_date"><span class="day"></span><span class="time">09:15</span></p>
+        </div>
+        <div class="box_card">
+            <p class="card_title">필터 사용량</p>
+            <ul class="set_list">
+                <li>
+                    <!--
+                    탈취/헤파 필터
+                    트루헤파필드
+                    -->
+                    <p class="filter_name">탈취/헤파 필터</p>
+                    <div class="box_filter_use">
+                        <!-- 사용량 span width percent로 조정 -->
+                        <p><span class="filter_use" style="width: 95%;"></span></p>
+                        <span class="filter_per">95%</span>
+                    </div>
+                </li>
+                <li class="none_border_bottom">
+                    <p>필터 구매하기</p>
+                    <span class="sprite sprite_common sprite_more">?</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box_card">
+            <p class="card_title"><a href="#">이력 및 알림 <span class="sprite sprite_common sprite_more">?</span></a></p>
+            <span class="sprite sprite_common sprite_new">new</span>
+            <!-- 알림 메세지 1줄일 경우 -->
+            <div class="alarm_txt" style="display: none;">
+                <p>[1-1 공기청정기]의 동작을 시작합니다.</p>
+                <p class="etc">오전 7:52</p>
+            </div>
+            <!-- 알림 메세지 2줄일 경우 -->
+            <div class="alarm_txt">
+                <p>[1-1 공기청정기] 오전 7시 30분에 전원 동작을 예약하였습니다.</p>
+                <p class="etc">오전 7:52</p>
+            </div>
+        </div>
+        <div class="box_card">
+            <p class="card_title"><a href="#">정보<span class="sprite sprite_common sprite_more">?</span></a></p>
+            <div class="info_product clearfix">
+                <div class="img">
+                    <img src="../images/default_img.png" alt=""></div>
+                <div class="info_desc">
+                    <p>위닉스 나이키 공기청정기</p>
+                    <p>1-1 공기청정기</p>
+                    <span>고객센터 1800-0212</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/lib/jquery-3.2.1.min.js"></script>
+<script src="../js/lib/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            adaptiveHeight:true,
+            pager: false
+        });
+    });
+</script>
+</body>
+</html>

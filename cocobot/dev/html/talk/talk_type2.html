@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>TALK</title>
+    <link rel="stylesheet" href="../../css/ui/ui.style.css">
+</head>
+<body>
+<div class="wrapper wrapper_talk">
+    <div class="wrap_header">
+        <ul class="clearfix header_menu">
+            <li><a href="#" class="sprite sprite_common sprite_header_menu_pick">픽.</a></li>
+            <li><a href="#" class="sprite sprite_common sprite_header_menu_tip">팁.</a></li>
+            <li class="active"><a href="#" class="sprite sprite_common sprite_header_menu_talk">톡.</a></li>
+        </ul>
+        <a href="#" class="header_btn_right"><i class="sprite sprite_common sprite_list "></i></a>
+    </div>
+
+    <!-- 아래 화장품 타입 선택 슬라이더("area_type_choice') 추가시
+     클래스 'wrap_bottom_type_choice' 추가-->
+    <div class="wrap_contents">
+        <p class="desc_date">2017년 09월 03일 일요일</p>
+        <ul class="area_bot_chat">
+            <p class="bot_img">이미지</p>
+            <li class="line first_line">
+                <p>찾으시는 <span>에센스/부스터</span>의 추천 타입을<br>
+                    선택해 주세요.</p>
+                <span class="desc_time">오후 03:33</span>
+            </li>
+        </ul>
+        <div class="slide_talk slide_swipe_list_talk">
+            <!-- (135px) * li 개수 = width  -->
+            <ul class="box_recommend" style="width: 405px;">
+                <li>
+                    <div>
+                        <p class="title">전체 제품</p>
+                        <p class="desc">전체 제품 중에서
+                            추천해 드려요.</p>
+                        <a href="#">선택</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">내 피부 타입</p>
+                        <p class="desc">내 피부 타입에 맞는
+                            제품 중에서 추천해
+                            드려요.</p>
+                        <a href="#">선택</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">신제품</p>
+                        <p class="desc">내 피부 타입에 맞는
+                            제품 중에서 추천해
+                            드려요.</p>
+                        <a href="#">선택</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slide_talk slide_swipe_list ">
+            <!-- width 값은 현재 슬라이드 수대로 설정되어있음-->
+            <ul class="clearfix thumbnail_list" style="width: 830px">
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="" alt="">
+                            <i class="sprite sprite_common sprite_icon_safe sprite_icon_safe_9"></i>
+                        </div>
+                        <div class="txt">
+                            <p class="thumbnail_title">설화수</p>
+                            <p class="thumbnail_desc">자정클렌징폼</p>
+                            <p class="thumbnail_desc_sm">120ml</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="" alt="">
+                            <i class="sprite sprite_common sprite_icon_safe sprite_icon_safe_7"></i>
+                        </div>
+                        <div class="txt">
+                            <p class="thumbnail_title">시드물</p>
+                            <p class="thumbnail_desc">마다가스카르 병풀<br>
+                                케어밀크필</p>
+                            <p class="thumbnail_desc_sm">80ml</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="" alt="">
+                            <i class="sprite sprite_common sprite_icon_safe sprite_icon_safe_7"></i>
+                        </div>
+                        <div class="txt">
+                            <p class="thumbnail_title">설화수</p>
+                            <p class="thumbnail_desc">자정클렌징폼</p>
+                            <p class="thumbnail_desc_sm">120ml</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="" alt="">
+                            <i class="sprite sprite_common sprite_icon_safe sprite_icon_safe_7"></i>
+                        </div>
+                        <div class="txt">
+                            <p class="thumbnail_title">설화수</p>
+                            <p class="thumbnail_desc">자정클렌징폼</p>
+                            <p class="thumbnail_desc_sm">120ml</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img">
+                            <img src="" alt="">
+                            <i class="sprite sprite_common sprite_icon_safe sprite_icon_safe_7"></i>
+                        </div>
+                        <div class="txt">
+                            <p class="thumbnail_title">이니스프리</p>
+                            <p class="thumbnail_desc">트루케어 시카<br>
+                                인테시브 수분 보충 밤</p>
+                            <p class="thumbnail_desc_sm">50ml</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide_more">+ 추천 제품 더보기</div>
+
+    </div>
+
+
+    <div class="wrap_chat_window">
+        <div class="box_chat_window">
+            <p class="link_more"><a href="#">more</a></p>
+            <textarea class="chat_window" row="1">화장품</textarea>
+            <!-- 채팅창 활성화시 클래스 'active'추가 -->
+            <p class="submit active"><a href="#"><span>전송</span></a></p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../js/lib/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.page.js"></script>
+
+</body>
+</html>

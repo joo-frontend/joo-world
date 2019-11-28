@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK School Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<section class="section_header">
+    <header>
+		<span class="logo">
+			<a href="#"><img src="../../../images/common/img_air_logo.png" alt="Smart Home"></a>
+		</span>
+        <div class="gnb">
+            <ul>
+                <li><a href="#">전국 공기 조회</a></li>
+                <li><a href="#">내 학교 관리</a></li>
+                <li class="active"><a href="#">통계 관리</a></li>
+            </ul>
+        </div>
+        <div class="myinfo">
+            <ul>
+                <li class="_on_dropdown"><a href="#">김두식<span>(광명초등학교)</span></a>
+                    <div class="drop_myinfo">
+                        <div class="info">
+                            <p class="txt_name">사용자</p>
+
+                            <p class="txt_email">aaa@sk.com</p>
+                        </div>
+                        <div class="info_btn clearfix">
+                            <a href="#" class="fl btn btn_setting">내 정보</a>
+                            <a href="#" class="fr btn btn_orange btn_signin">로그아웃</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+</section>
+<!-- section_contents -->
+<section class="section_contents clearfix">
+    <div class="wrap_path">
+        <a href="#">통계 관리</a> <span> &gt; </span> <a href="#">실외센서</a>
+
+    </div>
+
+    <!-- lnb -->
+    <div class="wrap_left">
+        <div class="area_lnb">
+            <div class="box_title">
+                <h2>전국 공기 조회</h2>
+            </div>
+            <ul>
+                <li class="active"><a href="#">실외센서</a></li>
+                <li><a href="#">실내센서</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //lnb -->
+
+    <!-- wrap_right -->
+    <div class="wrap_right">
+        <!-- wrap_header -->
+        <div class="wrap_header">
+            <div class="area_title">
+                <div class="layout">
+                    <div class="layout_left">
+                        <h2>실외센서</h2>
+                    </div>
+                    <div class="layout_right">
+                        <span class="current">[2017.11.30 18:20]</span>
+                        <a href="#" class="btn btn_gray">새로고침</a>
+                        <a href="#" class="btn btn_excel">다운로드</a>
+                    </div>
+                </div>
+            </div>
+            <div class="area_query">
+                <div class="layout">
+                    <div class="box_input none_margin_bottom">
+                        <label class="lb04">지역</label>
+                        <select class="select_box">
+                            <option>시/도</option>
+                            <option>서울특별시</option>
+                            <option>강원도</option>
+                        </select>
+                        <select class="select_box">
+                            <option>시/군/구</option>
+                            <option>강남구</option>
+                            <option>동작구</option>
+                        </select>
+                    </div>
+                    <div class="box_button">
+                        <a href="#" class="btn btn_orange">조회</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap_header -->
+
+        <!-- wrap_contents -->
+        <div class="wrap_contents">
+            <div class="tabs tabs_monitor">
+                <ul class="clearfix">
+                    <li class="active"><a href="#">미세먼지</a></li>
+                    <li class=""><a href="#">온도</a></li>
+                    <li class=""><a href="#">습도</a></li>
+                    <li class="last"><a href="#">초미세먼지</a></li>
+                </ul>
+            </div>
+            <div class="period_tab">
+                <ul class="clearfix">
+                    <li class="focus"><a href="#">DAY</a></li>
+                    <li><a href="#">WEEK</a></li>
+                    <li class="last"><a href="#">MONTH</a></li>
+                </ul>
+            </div>
+
+            <div class="box_graph">
+                <!-- 그래프 툴팁 -->
+                <!--  <div class="graph_tooltip type1">
+                      <p>95</p>
+                      <div></div>
+                  </div>
+                  <div class="graph_tooltip type2">
+                      <p>95</p>
+                      <div></div>
+                  </div>
+                  <div class="graph_tooltip type3">
+                      <p>95</p>
+                      <div></div>
+                  </div>-->
+
+                <div class="graph_y">
+                    <span>미세먼지<br>(㎍/㎥)</span>
+                </div>
+                <div class="graph_x">
+                    <span>(시)</span>
+                </div>
+                <div class="graph_legend">
+                    <ul class="clearfix">
+                        <li>
+                            <p><span style="background: #9f57f0;"></span>전국 학교 평균</p>
+                        </li>
+                        <li>
+                            <p><span style="background: #f9c728;"></span>지역 평균</p>
+                        </li>
+                        <li>
+                            <p><span style="background: #fb8f21;"></span>내 학교 평균</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box_color_bar" style="display: block;">
+                    <ul>
+                        <li class="worse">매우나쁨</li>
+                        <li class="bad">나쁨</li>
+                        <li class="normal">보통</li>
+                        <li class="good">좋음</li>
+                    </ul>
+                    <span class="color_bar"></span>
+                </div>
+                <div id="line_chart" class="graph_line"></div>
+                <div id="curve_chart" class=""></div>
+                <div class="pagination">
+                    <div>
+                        <span class="prev"><a href="#">이전</a></span>
+                        <span class="graph_date">10.12 (목)</span>
+                        <span class="next"><a href="#">다음</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="area_top_btn">
+                <span>학교 수 248</span>
+                <div class="box_select">
+                    <select class="select_box">
+                        <option>10개씩 보기</option>
+                        <option>20개씩 보기</option>
+                        <option>30개씩 보기</option>
+                        <option>40개씩 보기</option>
+                        <option>50개씩 보기</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <colgroup>
+                    <col style="width: 20%">
+                    <col style="width: 12%">
+                    <col style="width: 12%">
+                    <col style="width: 12%">
+                    <col style="width: 12%">
+                    <col style="width: 12%">
+                    <col style="width: 20%">
+
+                </colgroup>
+                <thead>
+                <tr>
+                    <th><a href="#" class="sort">학교</a></th>
+                    <th><a href="#" class="sort">실외공기</a></th>
+                    <th><a href="#" class="sort">온도 (℃)</a></th>
+                    <th><a href="#" class="sort">습도 (%)</a></th>
+                    <th><a href="#" class="sort">미세먼지 (㎍/㎥)</a></th>
+                    <th><a href="#" class="sort">초미세먼지 (㎍/㎥)</a></th>
+                    <th>업데이트 시간</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="select">
+                    <td>역삼초등학교</td>
+                    <td><span class="normal">보통</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="bad">나쁨</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="bad">나쁨</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="normal">보통</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="worse">매우나쁨</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="normal">보통</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="normal">보통</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="normal">보통</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="normal">보통</span></td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>26</td>
+                    <td>45</td>
+                    <td>11.11 10:00</td>
+                </tr>
+                <tr>
+                    <td>개명초등학교</td>
+                    <td><span class="good">좋음</span></td>
+                    <td>27</td>
+                    <td>20</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>11.11 10:00</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <!-- pagination -->
+            <div class="pagination">
+                <div>
+                    <!--<span class="prev"><a href="#">이전</a></span>-->
+                    <span class="number">
+						<em>1</em>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+					</span>
+                    <span class="next"><a href="#">다음</a></span>
+                </div>
+            </div>
+            <!-- //pagination -->
+        </div>
+        <!-- //wrap_contents -->
+    </div>
+    <!-- //wrap_right -->
+</section>
+<!-- //section_contents -->
+<section class="section_footer">
+    <div class="footer">
+        <div class="logo">
+            <a href="#"><img src="../../../images/common/logo_footer.png" alt="Smart Home SKT 스마트 계량기"></a>
+        </div>
+        <div class="box_footer">
+            <ul class="clearfix">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="copy">
+                <p>우편번호 : 100-999 서울특별시 중구 을지로 65(을지로 2가) SK T-타워 SK텔레콤(주)<span>|</span>대표이사/사장 : 장동현<span>|</span>사업자
+                    등록번호 : 104-81-37225<span>|</span>고객센터 : 1800-0161
+                    <a href="#">이메일문의</a></p>
+                <p>COPYRIGHTⓒSK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- jquery plugin -->
+<script type="text/javascript" src="../../js/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- ui library -->
+<script type="text/javascript" src="../../js/ui/ui.page.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        google.charts.load('current', {'packages': ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', '');
+            data.addColumn('number', '');
+            data.addColumn({type: 'number', role: 'tooltip'});
+            data.addColumn('number', '');
+            data.addColumn({type: 'number', role: 'tooltip'});
+            data.addColumn('number', '');
+            data.addColumn({type: 'number', role: 'tooltip'});
+
+            data.addRows([
+                [0, 70.8, 70.8, 47.8, 47.8, 61.8, 61.8],
+                [1, 80.8, 80.8, 37.8, 37.8, 41.8, 41.8],
+                [2, 69.5, 69.5, 30.9, 30.9, 32.4, 32.4],
+                [3, 57.3, 57.3, 35.4, 35.4, 23.1, 23.1],
+                [4, 18.8, 18.8, 11.7, 11.7, 20.5, 20.5],
+                [5, 37.6, 37.6, 14.9, 14.9, 19.4, 19.4],
+                [6, 13.6, 13.6, 8.8, 8.8, 10.7, 10.7],
+                [7, 32.3, 32.3, 7.6, 7.6, 11.6, 11.6],
+                [8, 29.2, 29.2, 12.3, 12.3, 17.6, 17.6],
+                [9, 42.9, 42.9, 19.9, 19.9, 14.8, 14.8],
+                [10, 30.9, 30.9, 12.8, 12.8, 17.6, 17.6],
+                [11, 47.9, 47.9, 35.3, 35.3, 24.7, 24.7],
+                [12, 28.6, 28.6, 38.4, 38.4, 29.2, 29.2],
+                [13, 29.3, 29.3, 24.8, 24.8, 27.6, 27.6],
+                [14, 29.2, 29.2, 24.2, 24.2, 27.4, 27.4],
+                [15, 41., 41.2, 46.2, 46.2, 40.4, 40.4],
+                [16, 50.2, 50.2, 47.2, 47.2, 71.4, 71.4],
+                [17, 56.2, 56.2, 30.2, 30.2, 32.4, 32.4],
+                [18, 67.2, 67.2, 35.2, 35.2, 41.4, 41.4],
+                [19, 76.2, 76.2, 39.2, 39.2, 53.4, 53.4],
+                [20, 57.2, 57.2, 49.2, 49.2, 45.4, 45.4],
+                [21, 69.5, 69.5, 41.6, 41.6, 54.4, 54.4]
+            ]);
+
+            var options = {
+                curveType: 'function',
+                legend: 'none',
+                /* color: ['red', '#994411'],*/
+                backgroundColor: "#fafafa",
+                chartArea: {width: "85%", height: "70%", right: '50'},
+                width: 920,
+                height: 370,
+                fontFamily: 'Nanum Square',
+                fontSize: 12,
+                hAxis: {
+                    baselineColor: 'transparent',
+                    gridlines: {
+                        count: 8,
+                        color: 'transparent'
+                    },
+                    viewWindow: {
+                        min: 0,
+                        max: 23
+                    },
+                    textStyle: {
+                        fontName: 'Nanum-Square'
+                    }
+                },
+                vAxis: {
+                    gridlines: {
+                        count: 6
+                    },
+                    viewWindow: {
+                        min: 0,
+                        max: 150
+                    },
+                    textStyle: {
+                        fontName: 'Nanum-Square'
+                    }
+                },
+                series: {
+                    0: {color: '#9f57f0'},
+                    1: {color: '#f9c728'},
+                    2: {color: '#fb8f21'}
+                },
+                tooltip: {isHtml: true}
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+            chart.draw(data, options);
+            /*new google.visualization.ColumnChart(document.getElementById('custom_html_content_div')).draw(dataTable, options);*/
+        }
+
+        /*
+                function createCustomHTMLContent(flagURL, totalGold, totalSilver, totalBronze) {
+                    return '<div style="background: #fb8f21;display:inline-block;position:absolute;z-index:200;border-radius:8px;padding:0 10px;height:30px;">'
+                        + '<p style="line-height:30px;color:#ffffff;font-size:15px;font-weight:700;">'
+                        + '</p>'
+                        + '<div style="border-right: 14px solid #fb8f21;display:block;width:0;height:0;position:absolute;bottom:-7px;left:-14px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg); -o-transform: rotate(45deg);transform: rotate(45deg);border-top: 14px solid transparent;border-left: 14px solid transparent;border-bottom: 14px solid transparent;">'
+                        + '</div>'
+                        + '</div>';
+                }*/
+
+    });
+    /*google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable
+        ([['X', 'Y', {'type': 'string', 'role': 'style'},{'type': 'string', 'role': 'annotation'}],
+            ["01", 24, null,null],
+            ["03", 24, null,null],
+            ["05", 19, 'point { size: 3; shape-type: circle; fill-color: #ffffff;stroke-color: #f67171;stroke-width:3}','2.79(kWh)'],
+            ["07", 26, null,null],
+            ["09", 59, 'point { size: 3; shape-type: circle; fill-color: #ffffff;stroke-color: #5bd298;stroke-width:3}','2.79(kWh)'],
+            ["11", 33, null,null],
+            ["13", 33, null,null],
+            ["15", 33, null,null],
+            ["17", 33, null,null],
+            ["19", 33, null,null],
+            ["21", 33, null,null],
+            ["23", 33, 'point { size: 3; shape-type: circle; fill-color: #ffffff;stroke-color: #42b4be;stroke-width:3}',null]
+        ]);
+        var options = {
+            annotations:{
+                stem: {
+                    color: 'transparent',
+                    length: 10
+                },
+                textStyle:{
+                    fontSize:13,
+                    color: '#5bd298'
+//                  auraColor: '#d799ae'
+                }
+
+            },
+            chart: {
+                subtitle: '(점)'
+            },
+            backgroundColor: 'transparent',
+            height: 370,
+            chartArea: { width: "95%", height: "60%",right:'0'},
+            colors: ['#42b4be', '#3ab4bf', '#000000'],
+            fontName: "SKBRixHeadM",
+            fontSize: 13,
+            vAxis: {
+                baselineColor: '#eeeff0',
+                gridlines:{
+                    color: '#eeeff0'
+                },
+                textStyle: {
+                    color: '#ababab'
+                },
+                dashStyle: 'dot',
+                // minValue: 0,
+                // maxValue: 100,
+                viewWindow: {
+                    min: 0,
+                    max: 100
+                },
+                // ticks: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+                ticks: [0, 20, 40, 60, 80, 100]
+            },
+            hAxis: {
+                textStyle: {
+                    color: '#000',
+                    fontSize: 14
+                },
+                viewWindow: {
+                    min: 0,
+                    max: 12
+                }
+            },
+            legend: {
+                position: "none"
+            },
+            pointSize: 0.1
+        };
+
+        function placeMarker(dataTable) {
+            var cli = this.getChartLayoutInterface();
+            var chartArea = cli.getChartAreaBoundingBox();
+            document.querySelector('.overlay-marker').style.top = Math.floor(cli.getYLocation(dataTable.getValue(11, 1))) + 5 + "px";
+            document.querySelector('.overlay-marker').style.left = Math.floor(cli.getXLocation(11)) + 34 + "px";
+            document.querySelector('.overlay-marker').style.display = "block";
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+        google.visualization.events.addListener(chart, 'ready', placeMarker.bind(chart, data));
+        chart.draw(data, options);
+    }*/
+</script>
+
+</body>
+</html>

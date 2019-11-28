@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">기기명</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+
+    <!-- section_product_activate -->
+    <section class="section_super_product_activate">
+        <div class="area_super_product_activate">
+            <div class="box_on_off col_5 clearfix">
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_iot" checked>
+                </div>
+                <div>
+                    <input type="checkbox" style="visibility: hidden">
+                </div>
+                <div>
+                    <input type="checkbox" style="visibility: hidden">
+                </div>
+                <div>
+                    <input type="checkbox" style="visibility: hidden">
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_lock">
+                </div>
+            </div>
+        </div>
+        <div class="area_super_product_activate">
+            <div class="box_on_off col_5 clearfix">
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_care">
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_onecup">
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_ml250" disabled>
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_ml550" checked>
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_continue">
+                </div>
+            </div>
+            <div class="box_on_off col_5 clearfix">
+                <div>
+                    <input type="checkbox" style="visibility: hidden">
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_water">
+                </div>
+                <div>
+                    <input type="checkbox" style="visibility: hidden">
+                </div>
+                <div>
+                    <input type="checkbox" class="toggle_super_purify super_hot">
+                    <ul>
+                        <li>온 수</li>
+                        <li>차</li>
+                        <li>미온/유아수</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="checkbox" style="visibility: hidden">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //section_product_activate -->
+
+    <!-- //section_set_warm -->
+    <section class=" section_super_set_warm">
+        <div class="area_set_warm">
+            <div>
+                <p>미온/유아수<br>온도</p>
+            </div>
+            <div>
+                <label for=""><input type="radio" name="set_warm" class="set_warm_radio warm_45" checked>
+                   </label>
+                <label for=""><input type="radio" name="set_warm" class="set_warm_radio warm_50">
+                   </label>
+                <label for=""><input type="radio" name="set_warm" class="set_warm_radio warm_55">
+                   </label>
+
+                <!--<p><span class="active">45º</span></p>
+                <p><span>50º</span></p>
+                <p><span>55º</span></p>-->
+            </div>
+        </div>
+    </section>
+    <!-- //section_set_warm -->
+
+    <section class="section_coke_sterilizing section_super_coke" style="display: block">
+        <div class="area_title">
+            <p>코크살균</p>
+        </div>
+
+        <!-- 진행하기 클래스: activate_start -->
+        <!-- 완료 클래스: activate_end -->
+        <div class="area_activate">
+            <div class="box_img">
+                <div class="box_remain_time">
+                    <p class="txt_remain">REMAIN TIME</p>
+                    <p class="txt_timer">00:00</p>
+                    <!-- button disabled 적용가능 -->
+                    <button>진행하기</button>
+                    <!--<button disabled>진행하기</button>-->
+                </div>
+
+                <div class="box_loading_image">
+                    <div class="product_active_loader"></div>
+                </div>
+
+            </div>
+            <div class="box_bottom_txt">
+                <p>지금은 코크 살균 대기 중입니다!</p>
+                <!--<p>지금은 코크 살균 진행 중입니다!</p>-->
+                <!--<p>코크 살균이 완료 되었습니다!</p>-->
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

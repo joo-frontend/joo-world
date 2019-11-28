@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK School Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="../../js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<section class="section_header">
+    <header>
+		<span class="logo">
+			<a href="#"><img src="../../images/common/img_air_logo.png" alt="Smart Home"></a>
+		</span>
+        <div class="gnb">
+            <ul>
+                <li><a href="#">전국 공기 조회</a></li>
+                <li><a href="#">내 학교 관리</a></li>
+                <li><a href="#">통계 관리</a></li>
+                <li class="active"><a href="#">관리자 Admin</a></li>
+            </ul>
+        </div>
+        <div class="myinfo">
+            <ul>
+                <li class="_on_dropdown"><a href="#">김두식<span>(광명초등학교)</span></a>
+                    <div class="drop_myinfo">
+                        <div class="info">
+                            <p class="txt_name">사용자</p>
+
+                            <p class="txt_email">aaa@sk.com</p>
+                        </div>
+                        <div class="info_btn clearfix">
+                            <a href="#" class="fl btn btn_setting">내 정보</a>
+                            <a href="#" class="fr btn btn_orange btn_signin">로그아웃</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+</section>
+<!-- section_contents -->
+<section class="section_contents clearfix">
+    <div class="wrap_path">
+        <a href="#">관리자 Admin</a> <span> &gt; </span> <a href="#">앱 버전 관리</a> <span> &gt; </span> <a href="#">편집</a>
+
+    </div>
+
+    <!-- lnb -->
+    <div class="wrap_left">
+        <div class="area_lnb">
+            <div class="box_title">
+                <h2>관리자 Admin</h2>
+            </div>
+            <ul>
+                <li><a href="#">학교 및 교육청 관리</a></li>
+                <li><a href="#">관리자 관리</a></li>
+                <li><a href="#">설치 장소 관리</a></li>
+                <li><a href="#">공지사항 관리</a></li>
+                <li class="active"><a href="#">앱 버전 관리</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //lnb -->
+
+    <!-- wrap_right -->
+    <div class="wrap_right">
+        <!-- wrap_header -->
+        <div class="wrap_header">
+            <div class="area_title none_margin_bottom">
+                <div class="layout">
+                    <div class="layout_left">
+                        <h2>앱 버전 등록</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="area_query area_query_center">
+                <div class="layout">
+                    <div class="box_input box_input_type2">
+                        <label class="lb02">플랫폼<em>*</em></label>
+                        <select class="select_box select_bg">
+                            <option>Android</option>
+                        </select>
+                    </div>
+                    <div class="box_input box_input_type2">
+                        <label class="lb02">버전<em>*</em></label>
+                        <input type="number" class="text_box text_box_xs text_bg" value="1">
+                        <span>-</span>
+                        <input type="number" class="text_box text_box_xs text_bg" value="0">
+                        <span>-</span>
+                        <input type="number" class="text_box text_box_xs text_bg" value="1">
+                    </div>
+                    <div class="box_input box_input_type2">
+                        <label class="lb02">업데이트 URL<em>*</em></label>
+                        <input type="text" class="text_box text_box_lg" value="https://play.google.com/store/apps/details?id=smartair">
+                    </div>
+                    <div class="box_input box_input_type2">
+                        <label class="lb02 lb_top">업데이트 공지<em>*</em></label>
+                        <textarea id="" cols="30" rows="10" value="앱이 최신버전으로 업그레이드 되었습니다"></textarea>
+                    </div>
+                    <div class="box_input box_input_type2">
+                        <label class="lb02">강제 업데이트</label>
+                        <label class=""><input type="radio" class="radio" checked>사용</label>
+                        <label class=""><input type="radio" class="radio">사용안함</label>
+                    </div>
+                    <div class="box_input box_input_type2 none_margin_bottom">
+                        <label class="lb02">사용 여부</label>
+                        <label class=""><input type="radio" class="radio" checked>사용</label>
+                        <label class=""><input type="radio" class="radio">사용안함</label>
+                    </div>
+                </div>
+            </div>
+            <!-- wrap_contents_btn -->
+            <div class="wrap_contents_btn">
+                <div class="area_btn">
+                    <a href="#" class="btn btn_lg btn_gray">취소</a>
+                    <a href="#" class="btn btn_lg btn_orange btn_disabled">등록</a>
+                </div>
+            </div>
+            <!-- //wrap_contents_btn -->
+        </div>
+        <!-- //wrap_header -->
+    </div>
+    <!-- //wrap_right -->
+</section>
+<!-- //section_contents -->
+<section class="section_footer">
+    <div class="footer">
+        <div class="logo">
+            <a href="#"><img src="../../images/common/logo_footer.png" alt="Smart Home SKT 스마트 계량기"></a>
+        </div>
+        <div class="box_footer">
+            <ul class="clearfix">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="copy">
+                <p>우편번호 : 100-999 서울특별시 중구 을지로 65(을지로 2가) SK T-타워 SK텔레콤(주)<span>|</span>대표이사/사장 : 장동현<span>|</span>사업자
+                    등록번호 : 104-81-37225<span>|</span>고객센터 : 1800-0161
+                    <a href="#">이메일문의</a></p>
+                <p>COPYRIGHTⓒSK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ui library -->
+<script type="text/javascript" src="../../js/ui/ui.util.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.common.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.page.js"></script>
+<script type="text/javascript" src="../../js/ui/ui.init.js"></script>
+<script>
+    /**
+     * 팝업열기 클래스 _popup_open
+     * 팝업열기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.showPopup('.popup01');
+
+    /**
+     * 팝업닫기 클래스 _popup_close
+     * 팝업 닫기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.closePopup('.popup01');
+</script>
+
+
+</body>
+</html>

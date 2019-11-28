@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>세대 및 검침일 관리 | SK LoRa Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="./../../admin_css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="./../../admin_js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<section class="section_header">
+    <header>
+		<span class="logo">
+			<a href="#"><img src="../../admin_images/common/@temp_logo.png" alt="Smart Home"></a>
+		</span>
+        <div class="gnb">
+            <ul>
+                <li><a href="#">전국 공기 조회</a></li>
+                <li class="active"><a href="#">내 학교 관리</a></li>
+                <li><a href="#">통계 관리</a></li>
+            </ul>
+        </div>
+
+    </header>
+</section>
+<!-- section_contents -->
+<section class="section_contents clearfix">
+    <div class="wrap_path">
+        <a href="#">내 학교 관리</a> <span> &gt; </span> <a href="#">기기 조회 및 관리</a>
+        <div class="myinfo">
+            <ul>
+                <li class="_on_dropdown"><a href="#">김두식<span>(광명초등학교)</span></a>
+                    <div class="drop_myinfo">
+                        <div class="info">
+                            <p class="txt_name">사용자</p>
+                            <p>힐스테이트 반포</p>
+                            <p class="txt_email">aaa@sk.com</p>
+                        </div>
+                        <div class="info_btn clearfix">
+                            <a href="#" class="fl btn btn_setting">내 정보</a>
+                            <a href="#" class="fr btn btn_orange btn_signin">로그아웃</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- lnb -->
+    <div class="wrap_left">
+        <div class="area_lnb">
+           <!-- <div class="box_title">
+                <h2>전국 공기 조회</h2>
+            </div>-->
+            <ul>
+                <li class="active"><a href="#">기기 조회 및 관리</a></li>
+                <li><a href="#">실시간 그룹 제어</a></li>
+                <li><a href="#">예약 및 조건 설정</a></li>
+                <li><a href="#">Push 관리</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //lnb -->
+
+    <!-- wrap_right -->
+    <div class="wrap_right">
+        <!-- wrap_header -->
+        <div class="wrap_header">
+            <div class="area_title">
+                <div class="layout">
+                    <div class="layout_left">
+                        <h2>기기 조회 및 관리</h2>
+                    </div>
+                    <div class="layout_right">
+                        <span class="current">[2017.11.30 18:20]</span>
+                        <a href="#" class="btn btn_gray">새로고침</a>
+                        <a href="#" class="btn btn_excel">엑셀 다운로드</a>
+                    </div>
+                </div>
+            </div>
+            <div class="area_info_outside">
+                <p>실외센서 <span>* 주변 관측소에서 제공받은 정보입니다.</span></p>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%">
+                        <col style="width: 20%">
+                        <col style="width: 20%">
+                        <col style="width: 20%">
+                        <col style="width: 20%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>실외공기</th>
+                        <th>온도 (℃)</th>
+                        <th>습도 (%)</th>
+                        <th>미세먼지 (㎍/㎥)</th>
+                        <th>초미세먼지 (㎍/㎥)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>보통</td>
+                        <td>26</td>
+                        <td>45</td>
+                        <td>20</td>
+                        <td>30</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="area_query">
+                <div class="layout">
+                    <div class="box_input">
+                        <label class="lb04">* 지역</label>
+                        <select title="호" style="width: 100px">
+                            <option>시/도</option>
+                            <option>서울특별시</option>
+                            <option>강원도</option>
+                        </select>
+                        <select title="호" style="width: 100px">
+                            <option>시/군/구</option>
+                            <option>강남구</option>
+                            <option>동작구</option>
+                        </select>
+                        <label class="lb05">* 학교명</label>
+                        <select title="동" style="width: 100px">
+                            <option>전체</option>
+                            <option>초등학교</option>
+                            <option>중학교</option>
+                        </select>
+                    </div>
+                    <div class="box_input">
+                        <label class="lb04">* 학년</label>
+                        <select title="동" style="width: 100px">
+                            <option>전체</option>
+                        </select>
+                        <label class="lb05">* 반/교실</label>
+                        <select title="동" style="width: 100px">
+                            <option>전체</option>
+                        </select>
+                        <label class="lb05">* 전원</label>
+                        <select title="동" style="width: 100px">
+                            <option>전체</option>
+                        </select>
+                    </div>
+                    <div class="box_button">
+                        <a href="#" class="btn btn_orange">조회</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //wrap_header -->
+
+        <!-- wrap_contents -->
+        <div class="wrap_contents">
+            <div class="tabs tabs_monitor">
+                <ul class="clearfix">
+                    <li class=""><a href="#">실내센서</a></li>
+                    <li class="active last"><a href="#">공기청정기</a></li>
+                </ul>
+                <div class="box_delete">
+                    <a href="#" class="btn btn_gray">삭제</a>
+                </div>
+            </div>
+            <div class="area_top_btn">
+                <span>기기 수 248</span>
+                <div class="box_select">
+                    <select title="보기" style="width: 130px">
+                        <option>15개씩 보기</option>
+                        <option>20개씩 보기</option>
+                        <option>30개씩 보기</option>
+                        <option>40개씩 보기</option>
+                        <option>50개씩 보기</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <colgroup>
+                    <col style="width: 4%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.43%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.33%">
+                    <col style="width: 8.43%">
+                    <col style="width: 8.5%">
+                    <col style="width: 4%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th><a href="#" class="sort">학년</a></th>
+                    <th><a href="#" class="sort">반/교실</a></th>
+                    <th><a href="#" class="sort">기기명</a></th>
+                    <th><a href="#" class="sort">온도 (℃)</a></th>
+                    <th><a href="#" class="sort">습도 (%)</a></th>
+                    <th><a href="#" class="sort">이산화탄소 (ppm)</a></th>
+                    <th><a href="#" class="sort">화학물질 (ppb)</a></th>
+                    <th><a href="#" class="sort">미세먼지 (㎍/㎥)</a></th>
+                    <th><a href="#" class="sort">초미세먼지 (㎍/㎥)</a></th>
+                    <th><a href="#" class="sort">종합점수</a></th>
+                    <th>설치일</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <td>1학년</td>
+                    <td>1반</td>
+                    <td>실내센서1</td>
+                    <td>26</td>
+                    <td>48</td>
+                    <td>602</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>65</td>
+                    <td>65</td>
+                    <td>2015-10-13</td>
+                    <td>아이콘</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <!-- pagination -->
+            <div class="pagination">
+                <div>
+                    <!--<span class="prev"><a href="#">이전</a></span>-->
+                    <span class="number">
+						<em>1</em>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+					</span>
+                    <span class="next"><a href="#">다음</a></span>
+                </div>
+            </div>
+            <!-- //pagination -->
+
+        </div>
+        <!-- //wrap_contents -->
+    </div>
+    <!-- //wrap_right -->
+</section>
+<!-- //section_contents -->
+<section class="section_footer">
+    <div class="footer">
+        <div class="logo">
+            <a href="#"><img src="../../admin_images/common/logo_footer.png" alt="Smart Home SKT 스마트 계량기"></a>
+        </div>
+        <div class="box_footer">
+            <ul class="clearfix">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="copy">
+                <p>우편번호 : 100-999 서울특별시 중구 을지로 65(을지로 2가) SK T-타워 SK텔레콤(주)<span>|</span>대표이사/사장 : 장동현<span>|</span>사업자
+                    등록번호 : 104-81-37225<span>|</span>고객센터 : 1800-0161
+                    <a href="#">이메일문의</a></p>
+                <p>COPYRIGHTⓒSK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--기기명 변경팝업-->
+<div class="dim_block popup01" style="display: block">
+    <div class="wrap_popup wrap_popup_change_date">
+        <div class="pop_header">
+            기기명 변경
+            <a href="#" class="btn_close _popup_close">
+                <img src="../../admin_images/common/img_pop_close.png" alt="X">
+            </a>
+        </div>
+        <div class="pop_contents">
+            <div class="box_date">
+                <span>- 기기명</span>
+                <label><input type="text" class="text_box text_box_lg" style="width: 170px" placeholder="실내센서 1"></label>
+            </div>
+        </div>
+
+        <div class="pop_btn">
+            <a href="#" class="btn btn_lg btn_gray">취소</a>
+            <a href="#" class="btn btn_lg btn_orange">저장</a>
+        </div>
+
+    </div>
+</div>
+<!--//기기명 변경팝업-->
+
+<!-- ui library -->
+<script type="text/javascript" src="./../../admin_js/ui/ui.util.js"></script>
+<script type="text/javascript" src="./../../admin_js/ui/ui.common.js"></script>
+<script type="text/javascript" src="./../../admin_js/ui/ui.page.js"></script>
+<script type="text/javascript" src="./../../admin_js/ui/ui.init.js"></script>
+<script>
+    /**
+     * 팝업열기 클래스 _popup_open
+     * 팝업열기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.showPopup('.popup01');
+
+    /**
+     * 팝업닫기 클래스 _popup_close
+     * 팝업 닫기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.closePopup('.popup01');
+</script>
+
+
+</body>
+</html>

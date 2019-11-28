@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+            <div class="title">슈퍼 가습 청정기 V200</div>
+            <a href="#" class="sprite sprite_common sprite_setting"></a>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+    <!-- section_sub_activate -->
+    <section class="section_sub_activate">
+        <!-- 전원 on 시 'active' 클래스 추가 -->
+        <div class="area_sub_activate active">
+            <ul class="box_air_purify_row">
+                <li class="col_02">
+                    <ul class="sub_box_row">
+                        <li class="col_02">
+                            <div class="row_03">
+                                <div class="box_icon lock">
+                                    <input type="checkbox" class="setting_air sprite_lock" checked>
+                                </div>
+                            </div>
+                            <div class="row_03">
+                                <div class="box_icon dp_change">
+                                    <!--
+                                    화면전환 on
+                                    sprite sprite_air_purify sprite_dp_change
+                                    화면전환 off
+                                    sprite sprite_air_purify sprite_dp_change_off
+                                    -->
+                                    <button class="sprite sprite_air_purify sprite_dp_change"></button>
+                                    <div class="pagination">
+                                        <span class="focus"></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row_03 none_bg_bottom">
+                                <input type="checkbox" class="setting_air air_speed">
+                            </div>
+                        </li>
+                        <li class="col_02 none_bg_right">
+                            <div class="row_03">
+                                <input type="checkbox" class="setting_air setting_txt" checked><label
+                                    class="air_value air_mode air_mode_sm">자동<br>모드</label>
+                            </div>
+                            <div class="row_03">
+                                <input type="checkbox" class="setting_air setting_txt"><label
+                                    class="air_value air_mode air_mode_sm">황사<br>모드</label>
+                            </div>
+                            <div class="row_03 none_bg_bottom">
+                                <input type="checkbox" class="setting_air setting_txt"><label
+                                    class="air_value air_mode air_mode_sm">취침<br>모드</label>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="col_02 none_bg_right">
+                    <div>
+
+                        <input type="checkbox" class="power" checked>
+                    </div>
+                </li>
+
+
+            </ul>
+            <ul class="box_air_purify_row">
+                <li class="col_02">
+                    <ul class="sub_box_row">
+                        <li class="col_02">
+                            <div class="row_02 row_lg"></div>
+                            <div class="row_02 row_sm none_bg_bottom">
+                                <input type="checkbox" class="setting_air humidity_power" checked>
+                            </div>
+
+                        </li>
+                        <li class="col_02 none_bg_right">
+                            <div class="row_03"> <input type="radio" name="setting_humidity" class="setting_air setting_radio_air humidity_60"></div>
+                            <div class="row_03"> <input type="radio" name="setting_humidity" class="setting_air setting_radio_air humidity_50" ></div>
+                            <div class="row_03 none_bg_bottom"> <input type="radio" name="setting_humidity" class="setting_air setting_radio_air humidity_40" checked></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col_02 none_bg_right">
+                    <ul class="sub_box_row">
+                        <li class="col_02">
+                             <div class="row_02 row_sm">
+                                <input type="radio" name="setting_wind"
+                                       class="setting_air setting_radio_air sprite_wind_strong" checked>
+                            </div>
+                            <div class="row_02 row_sm">
+                                <input type="radio" name="setting_wind"
+                                       class="setting_air setting_radio_air sprite_wind_middle">
+                            </div>
+                            <div class="row_02 row_sm none_bg_bottom">
+                                <input type="radio" name="setting_wind" class="setting_air setting_radio_air sprite_wind_weak"
+                                >
+                            </div>
+                        </li>
+                        <li class="col_02 none_bg_right">
+                            <div class="row_02 row_sm">
+                                <input type="radio" name="setting_hours" class="setting_air setting_txt">
+                                <label class="air_value hours"><span>8H</span></label>
+                            </div>
+                            <div class="row_02 row_sm">
+                                <input type="radio" name="setting_hours" class="setting_air setting_txt">
+                                <label class="air_value hours"><span>4H</span></label>
+                            </div>
+                            <div class="row_02 row_sm none_bg_bottom">
+                                <input type="radio" name="setting_hours" class="setting_air setting_txt" checked>
+                                <label class="air_value air_mode air_mode_sm"><span>2H<br>예약</span></label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- //section_sub_activate -->
+</div>
+<!-- //wrap_contents_area-->
+
+</body>
+</html>

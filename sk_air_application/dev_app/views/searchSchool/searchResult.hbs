@@ -1,0 +1,27 @@
+<ul class="search_result modify_area_pos _searchResultList">
+    {{#each schList}}
+    <li>
+        {{#checkSenList senYn}}
+            <a href="#" data-school-code="{{schCd}}" class="_detailLink">
+                <i class="sprite sprite_status sprite_air_mid {{airStateColor airGrd}}"></i>
+                <div>
+                    <span class="result_school school_name">{{{schNm}}}</span>
+                    <span class="ps_school">{{addr}}</span>
+                </div>
+                <span class="btn btn_round">상세<span class="sprite sprite_common sprite_btn_more">&gt;</span></span>
+            </a>
+        {{else}}
+            <a href="#" data-school-code="{{schCd}}">
+                <i class="sprite sprite_status sprite_air_mid {{airStateColor airGrd}}"></i>
+                <div>
+                    <span class="result_school school_name">{{{schNm}}}</span>
+                    <span class="ps_school">{{addr}}</span>
+                </div>
+                <span class="none_set">미설치</span>
+            </a>
+        {{/checkSenList}}
+    </li>
+    {{/each}}
+</ul>
+
+

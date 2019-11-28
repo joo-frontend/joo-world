@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Smart Air Manager</title>
+    <link rel="stylesheet" href="../css/ui/ui.style.css">
+</head>
+<body>
+<img src="../design/02-1_실내센서_상세_공기리포트.png" alt=""
+     style="position: absolute;top: 0;left: 0;width: 360px;opacity: 0.5;z-index:500;margin-top: -25px;">
+<div class="wrap_header wrap_header_bd">
+    <h1>공기리포트</h1>
+    <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+</div>
+
+
+<div class="wrap_contents">
+    <div class="tab_graph col_4" style="display: none;">
+        <ul class="clearfix">
+            <li class="focus"><a href="#">일간</a></li>
+            <li><a href="#">주간</a></li>
+            <li><a href="#">월간</a></li>
+            <li><a href="#">연간</a></li>
+        </ul>
+    </div>
+    <div class="tab_graph col_2">
+        <ul class="clearfix">
+            <li class="focus"><a href="#">일간</a></li>
+            <li><a href="#">주간</a></li>
+        </ul>
+    </div>
+    <div class="tab_dust">
+        <ul>
+            <li class="focus">
+                <a href="#">
+                    <span class="sprite sprite_icon_graph sprite_awair"></span>
+                    <p>어웨어<br>스코어</p>
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <span class="sprite sprite_icon_graph sprite_degree"></span>
+                    <p>온도</p>
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <span class="sprite sprite_icon_graph sprite_humidify"></span>
+                    <p>습도</p>
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <span class="sprite sprite_icon_graph sprite_co2"></span>
+                    <p>이산화탄소</p>
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <span class="sprite sprite_icon_graph sprite_voc"></span>
+                    <p>VOC</p>
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <span class="sprite sprite_icon_graph sprite_dust"></span>
+                    <p>미세먼지</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="box_score">
+        <p class="score_title">이 날의 평균</p>
+        <p class="score_desc"><span>85.5</span>/100</p>
+    </div>
+    <div class="img_temp">
+        <img src="../images/@temp_air_report_graph2.png" alt="" style="width: 100%;position: absolute;bottom: 0;">
+    </div>
+    <!-- <div class="area_day_graph">
+         <p class="box_day">오늘</p>
+     </div>-->
+</div>
+</body>
+</html>

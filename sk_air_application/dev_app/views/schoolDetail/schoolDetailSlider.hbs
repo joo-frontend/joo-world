@@ -1,0 +1,47 @@
+<div class="slider">
+    {{#each oDeviceInfo}}
+        <div class="box_slide {{dvcCd}}">
+            {{#deviceKindCode dvcKindCd}}
+                <!--공기청청기-->
+                <div>
+                    <p class="air_product">{{dvcKindNm}}</p>
+                    <p class="air_product_name">{{dvcNickNm}}</p>
+                    <div class="circle_air_status {{airStateColor fncInfo connStatYn}}">
+                        <div class="circle">
+                            <p class="air">{{fncNm}}</p>
+                            <p class="status">{{fncInfo}}</p>
+                            <p class="dust">초미세먼지</p>
+                            <p class="dust_num">{{isDataPreAbs pm25}}<em>㎍/㎥</em></p>
+                        </div>
+                    </div>
+                </div>
+            {{#lgDeviceCheck dvcCd}}
+                <div class="info_outside">
+                    <p class="outside">실내</p>
+                    <p class="degree">극초미세먼지 {{isDataPreAbs "" }}㎍/㎥ / 초미세먼지 {{isDataPreAbs "" }}㎍/㎥ /미세먼지 {{isDataPreAbs ""}}㎍/㎥</p>
+                </div>
+            {{else}}
+                <div class="info_outside">
+                    <p class="outside">실외</p>
+                    <p class="degree">온도 {{isDataPreAbs temp}}℃ / 습도 {{isDataPreAbs humi}}%</p>
+                </div>
+            {{/lgDeviceCheck }}
+            {{else}}
+                <!--실내센서-->
+                <div>
+                    <p class="air_product">{{dvcKindNm}}</p>
+                    <p class="air_product_name">{{dvcNickNm}}</p>
+                    <div class="circle_air_status {{airStateColor fncInfo connStatYn}}">
+                        <div class="circle circle_sensor">
+                            <p class="score">종합점수 <span id="pointFncVal">{{fncVal}}</span></p>
+                            <p class="status" id="diffStatus">{{fncInfo}}</p>
+                        </div>
+                    </div>
+                    <div class="box_btn">
+                        <button class="btn_report"><span class="sprite sprite_common sprite_icon_graph_statistic">아이콘</span>공기리포트</button>
+                    </div>
+                </div>
+            {{/deviceKindCode}}
+        </div>
+    {{/each}}
+</div>

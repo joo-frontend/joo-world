@@ -1,0 +1,251 @@
+@charset "UTF-8";
+body > div {
+    height: 100%;
+}
+
+/* header */
+.wrap_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    background: #ffffff;
+}
+
+.wrap_header.wrap_header_bd {
+    border-bottom: 1px solid #8e8e8e;
+}
+
+.wrap_header h1 {
+    position: relative;
+    line-height: 47px;
+    padding-left: 34px;
+    padding-top: 1px;
+    width: 100%;
+    padding-right: 60px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 49px;
+    /*letter-spacing: -2px;*/
+}
+.wrap_header.wrap_header_bd h1 {
+    padding-right: 40px;
+}
+.wrap_header h1 img {
+    display: inline-block;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+h1 .main_hidden {
+    color: #fff !important;
+    width: 90px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    height: 45px;
+}
+.wrap_header .box_title_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.wrap_header a.sprite {
+    position: absolute;
+    z-index: 100;
+}
+
+.wrap_header .sprite_back {
+    top: 16px;
+    left: 16px;
+}
+
+.wrap_header .sprite_side_menu {
+    top: 18px;
+    left: 12px;
+}
+
+.wrap_header .sprite_toggle_list {
+    top: 17px;
+    right: 12px;
+}
+
+.wrap_header .sprite_header_search {
+    top: 16px;
+    right: 57px;
+}
+
+.wrap_header .sprite_map {
+    top: 16px;
+    right: 12px;
+}
+
+.wrap_header .sprite_header_search:after {
+    content: '';
+    position: absolute;
+    right: -13px;
+    top: 2px;
+    background: #d6d6d6;
+    width: 1px;
+    height: 15px;
+}
+
+.wrap_header .sprite_back:active {
+    background-position: -25px 0;
+}
+
+.wrap_header .check_notice {
+    position: absolute;
+    top: 12px;
+    right: 11px;
+}
+
+.wrap_header .check_class {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+}
+
+/* 레이아웃 */
+.wrap_contents {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 51px;
+    overflow-y: auto;
+    z-index: 90;
+    /*padding-bottom: 36px;*/
+}
+
+.wrap_contents > div {
+    /* position: relative;*/
+    /*   height: 100%;*/
+}
+
+.wrap_contents .my_school_list {
+    height: 100%;
+}
+
+.wrap_main_map {
+    height: 100%;
+}
+
+.wrap_contents.wrap_contents_tap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 141px;
+    overflow-y: auto;
+    z-index: 90;
+    /*padding-bottom: 36px;*/
+}
+
+.wrap_contents.wrap_contents_gray {
+    background: #f0f0f0;
+}
+
+.wrap_contents .area_box_list {
+    padding: 15px;
+}
+
+/* 버튼 */
+.area_btn {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 17px 15px;
+}
+
+/* ios iphone X */
+/*.wrap_header {
+    padding-top: 20px; !* Status bar height on iOS 10 *!
+    padding-top: constant(safe-area-inset-top); !* Status bar height on iOS 11.0 *!
+    padding-top: env(safe-area-inset-top); !* Status bar height on iOS 11+ *!
+}*/
+
+/* ios7 */
+/*
+body:before{
+    display: block;
+    content: '';
+    height:20px;
+    top: 0;
+    background:rgba(0,0,0,0.8);
+    position:-webkit-sticky;
+    position:sticky;
+}*/
+
+/* 팝업 */
+.popup_dim {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+}
+.popup_dim:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.popup {
+    background: #ffffff;
+    width: 308px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+@media all and (max-width:320px) {
+    .popup {
+        width: 271px;
+    }
+}
+.popup.popup_full {
+    width: 305px;
+    background: transparent;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.popup.popup_full .popup_header h2 {
+    color: #f1a353;
+    font-size: 17px;
+    line-height: 40px;
+}
+.popup.popup_full .popup_contents {
+    padding-top: 10px;
+    min-height: 250px;
+}
+.popup.popup_full.popup_hours .popup_contents {
+    min-height: 320px;
+}
+
+.popup.popup_full .popup_contents .desc_time {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+.popup.popup_full .popup_footer .btn_group {
+    display: inline-block;
+}
+.popup.popup_full .popup_footer .btn_group button {
+    float: left;
+    margin-left: 15px;
+}
+.popup.popup_full .popup_footer .btn_group button:first-child {
+    margin-left: 0;
+}

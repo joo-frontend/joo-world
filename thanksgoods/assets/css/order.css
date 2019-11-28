@@ -1,0 +1,211 @@
+/* order */
+.order_section {
+    background: #f2f2f2;
+    position: relative;
+}
+.order_section:before {
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15.250em;
+    z-index: 1;
+}
+.order_section {
+    padding: 3.250em 20px 1em;
+}
+.order_detail_section {
+    padding: 0 20px 3.25em;
+    background: #f2f2f2;
+}
+.order_info_area {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    background: #ffffff;
+    padding: 2em 3.125em;
+}
+.order_detail_section .order_info_area {
+    margin: 0 auto 2em;
+}
+.title_order {
+    color: #02bdc7;
+    font-size: 0.875em;
+    margin-bottom: 1.643em;
+}
+.order_pd_info .info_title{
+    font-size: 0.875em;
+    color: #02bdc7;
+    font-weight: 400;
+    margin-bottom: 1.286em;
+}
+
+.order_pd_info .imgBox {
+    width: 7.143em;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1em;
+}
+.order_pd_info .imgBox img {
+    width: 100%;
+}
+.order_pd_info .infoBox {
+    width: calc(100% - 8.143em - 4px);
+    display: inline-block;
+    vertical-align: top;
+}
+.order_pd_info .pd_info {
+    font-size: 0.875em;
+    margin-bottom: 1.1em;
+    padding-bottom: 1.1em;
+    border-bottom: 1px solid #c6c6c6;
+}
+.order_pd_info .pd_info .name {
+    font-size: 1.143em;
+    margin: 0 0 0.8em 0;
+    display: block;
+    font-weight: 200;
+}
+.order_pd_info .pd_info .detail {
+    font-weight: 200;
+    margin-bottom: 0.7em;
+}
+.order_pd_info .pd_info .detail span {
+    font-weight: 400;
+    width: 6.2em;
+    display: inline-block;
+}
+.order_pd_info .pd_total .total {
+    color: #02bdc7;
+    font-size: 0.875em;
+    line-height: 3em;
+    padding: 0 0 0.7em;
+}
+.order_pd_info .pd_total .total span {
+    font-size: 3em;
+    float: right;
+    font-family: 'Rajdhani',sans-serif;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+.order_info_area .info_form_box  {
+    margin-bottom: 2.375em;
+}
+.order_info_area .info_form_box:last-child {
+    margin-bottom: 0;
+}
+.order_pd_info .signup_item {
+    margin-bottom: 0.95em;
+}
+.f_blue {
+    color: #02bdc7 !important;
+}
+.info_form_box .signup_item .form_signup {
+    width: 22em;
+}
+.info_form_box .chk_blue + .chk_shape {
+    margin-right: 0.2em;
+}
+.info_form_box .group_chk {
+    margin-right: 0.8em;
+}
+.info_form_box .group_chk.last {
+    margin-right: 0;
+}
+.same_person {
+    padding: 0 0 0.8em 6.886em;
+}
+.signup_item textarea {
+    width: 40.714em;
+    height: 9.5em;
+    resize: none;
+    border: 1px solid #c6c6c6;
+    padding: 1em;
+    font-size: 0.875em;
+    color: #424242;
+}
+.type_method {
+    border-bottom: 1px solid #c6c6c6;
+    padding-bottom: 1.2em;
+    margin-bottom: 1em;
+    font-size: 0.875em;
+}
+.type_method p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.6em;
+    color: #02bdc7;
+}
+.choice_method p {
+    display: inline-block;
+    margin-right: 1em;
+}
+.method_detail .method_box {
+    display: none;
+}
+.method_detail .method_box.active {
+    display: block;
+    padding-top: 1.3em;
+}
+.method_box .selectbox {
+    width: 14.857em;
+}
+.method_box .selectbox.selectbox_month {
+    width: 8.143em;
+    margin-top: 0;
+    font-size: 1em;
+    margin-left: 0.5em;
+    vertical-align: middle;
+}
+.more_method {
+    display: inline-block;
+    vertical-align: top;
+}
+.more_method p {
+    color: #424242;
+    font-size: 0.875em;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+.more_method p .textbox_member {
+    width: 14.857em;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+.order_agree {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3.125em;
+}
+.order_agree .chk_shape {
+    vertical-align: top;
+}
+.order_agree .chk_txt {
+    font-weight: 200;
+    font-size: 0.813em;
+    color: #424242;
+}
+.bottom_btn_group {
+    text-align: center;
+    padding: 3em 0 1em;
+}
+.bottom_btn_group button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 1.063em;
+    height: 3.118em;
+    width: 18.059em;
+    background: #02bdc7;
+}

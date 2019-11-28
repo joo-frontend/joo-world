@@ -1,0 +1,56 @@
+<div class="area_school_air bg_white">
+    <div class="slider">
+        {{#each outList}}
+        <div class="box_slide">
+            <div>
+                <!--<p class="update">Update by 12.10 13:30</p>-->
+                <p class="update">Update by {{uptDttm}}</p>
+                <div class="school_air">
+                    <span class="sprite sprite_status sprite_{{airStateColor airGrd}}_lg">?</span>
+                    <p class="name">{{senNm}}</p>
+                    <p class="air_status {{airStateColor airGrd}}">{{isDataPreAbs airGrd}}</p>
+                    {{#isOutlist senLoc}}
+                        <!-- 위치정보 제공시 -->
+                        <p class="position"><span class="sprite sprite_common sprite_position"></span>{{senLoc}}</p>
+                    {{else}}
+                        <!-- 위치정보 미제공시 -->
+                        <p class="position no_position">학교주변 관측소에서 제공 정보</p>
+                    {{/isOutlist}}
+                </div>
+                <ul class="info_air clearfix">
+                    <li>
+                        <p>미세먼지</p>
+                        <p>{{isDataPreAbs pm10}}<em>㎍/㎥</em></p>
+                    </li>
+                    <li>
+                        <p>초미세먼지</p>
+                        <p>{{isDataPreAbs pm25}}<em>㎍/㎥</em></p>
+                    </li>
+                    <li>
+                        <p>온습도</p>
+                        <p>{{isDataPreAbs temp}}<em>℃ /</em>{{isDataPreAbs humi}}<em>%</em></p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <p class="desc"><span class="sprite sprite_common sprite_alert"></span><em class="date_today"></em> 실외 수업이 가능한 상태입니다.</p>
+
+    <!--<div class="slide_pager">-->
+        <!--{{#each outList}}-->
+        <!--<a href="#" class="{{airStateColor airGrd}}"></a>-->
+        <!--{{/each}}-->
+    <!--</div>-->
+
+
+
+    <div class="slide_pager">
+        <span class="good focus"></span>
+        <span class="normal"></span>
+        <span class="bad"></span>
+        <span class="worse"></span>
+    </div>
+</div>

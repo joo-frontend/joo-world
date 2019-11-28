@@ -1,0 +1,8 @@
+<div class="box_card _power">
+    <p class="card_title title_alone">전원설정</p>
+    {{#each openDeviceList}}
+        {{#isPower fncCd}}
+            <input type="checkbox" class="icon_check toggle_lg" data-fncCd="{{fncCd}}"  data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="{{fncVal}}" {{isOn fncVal}}>
+        {{/isPower}}
+    {{/each}}
+</div>

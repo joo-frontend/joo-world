@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">매직 스팀오븐</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+    <!-- section_tab -->
+    <section class="section_tab">
+        <div class="tabs tabs_col3">
+            <ul class="clearfix">
+                <li><a href="#">월별</a></li>
+                <li class="active"><a href="#">년도별</a></li>
+                <li><a href="#">전체</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- //section_tab -->
+
+
+    <!-- section_statistic_title -->
+    <section class="section_statistic_title">
+        <div class="area_calendar">
+            <button class="sprite sprite_steam_oven sprtie_pre_blue"></button>
+            <span>2017년</span>
+            <button class="sprite sprite_steam_oven sprtie_next_blue"></button>
+        </div>
+        <div class="area_calendar_desc">
+            <p>• 기간 : 2016.01.01~2016.12.31</p>
+            <p>• 총 사용 시간 : 10일 05시간 30분</p>
+            <p>• 총 요리 횟수 : 100회</p>
+        </div>
+    </section>
+    <!-- //section_statistic_title -->
+
+    <section class="section_cook_graph">
+        <div class="area_cook_graph">
+            <p class="title"><span class="sprite sprite_steam_oven sprite_cook">?</span>요리별 Best</p>
+            <button>더보기<span class="sprite sprite_steam_oven sprite_cook_more"></span></button>
+            <div class="box_graph_img">
+                <!--<p class="none_graph">사용하신 내역이 없습니다.</p>-->
+                <!--<img src="../../../images/page/@temp_cook_graph_01.png" alt="">-->
+
+                <div class="graph_row">
+                    <div class="graph">
+                        <!--
+                         cook_repeat_1 그래프 30%일때
+                         cook_repeat_2 그래프 70%일때
+                         cook_repeat_3 그래프 100%일때
+                         -->
+                        <span class="cook_repeat_3" style="width: 100%"></span>
+                    </div>
+                    <div class="legend"><span>3회</span>통닭구이 감자 그라탕</div>
+                </div>
+
+                <div class="graph_row">
+                    <div class="graph">
+                        <span class="cook_repeat_2" style="width: 70%"></span>
+                    </div>
+                    <div class="legend"><span>2회</span>감자 그라탕</div>
+                </div>
+                <div class="graph_row">
+                    <div class="graph">
+                        <span class="cook_repeat_1" style="width: 30%"></span>
+                    </div>
+                    <div class="legend"><span>1회</span>오징어,쥐포구이</div>
+                </div>
+            </div>
+        </div>
+        <div class="area_cook_graph">
+            <p class="title"><span class="sprite sprite_steam_oven sprite_cook">?</span>모드별 Best</p>
+            <button>더보기<span class="sprite sprite_steam_oven sprite_cook_more"></span></button>
+            <div class="box_graph_img">
+                <p class="none_graph">사용하신 내역이 없습니다.</p>
+                <!--<img src="../../../images/page/@temp_cook_graph_02.png" alt="">-->
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- //wrap_contents_area-->
+</body>
+</html>

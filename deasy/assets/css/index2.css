@@ -1,0 +1,196 @@
+/*.consult_box:hover {
+    background-color: #377aef;
+}
+.consult_box2 {
+   !* background-color: #377aef;*!
+}
+.consult_box .title img.hover_on,
+.consult_box:hover .title img.hover_off {
+    display: none;
+}
+.consult_box:hover .title img.hover_on,
+.consult_box .title img.hover_off {
+    display: block;
+}*/
+/*
+.consult_box .title img {
+    display: none;
+}
+
+.consult_box:hover .consult_desc {
+    color: #fff;
+}
+.consult_box:hover .ani_here a {
+    color: #fff;
+}
+
+.consult_box:hover .out_line_item {
+    fill: none;
+    stroke: #fff;
+}
+.consult_box:hover .dotted_line_item {
+    fill: #fff;
+}
+
+.consult_box:hover .ani_here {
+    bottom: 120px;
+    right: 120px;
+    left: auto;
+}
+.consult_box:hover .title {
+    color: #fff;
+}
+.consult_box:hover .consult_desc span {
+    color: #fff;
+}
+*/
+.consult_box .title {
+    display: flex;
+    align-items: center;
+}
+.info_agency_box ,.info_tft_box {
+    position: relative;
+    margin-left: 10px;
+}
+
+
+.video_box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    z-index: 997;
+}
+.video_box video {
+    width: 100%;
+}
+.consult_box .subtitle ,
+.consult_box.consult_box2 .subtitle ,
+.consult_box.consult_box1 .subtitle {
+    display: none;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    font-style: normal;
+}
+.consult_box1 .subtitle {
+    color: #377AEF;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.6em;
+}
+.consult_box2 .subtitle {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+.consult_box:hover .subtitle {
+    display: inline-block;
+}
+.consult_box:hover .video_box {
+    display: block;
+}
+
+
+.info_tft_btn .info_helper {
+    display: none;
+}
+.info_tft_btn:hover .info_helper {
+    display: block;
+}
+
+.info_agency_btn .info_helper {
+    display: none;
+}
+.info_agency_btn:hover .info_helper {
+    display: block;
+}
+
+
+.click_menu ul {
+    /*display: flex;*/
+}
+.click_menu li {
+    display: block;
+    float: left;
+    padding: 3.2em 0 3.2em 4.960em;
+    width: 50%;
+    text-align: left;
+    font-size: 1.563rem;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 1;
+   /* background: #F7F7F7;
+    color: #377AEF;*/
+}
+.click_menu li:hover {
+    /*color: #fff;
+    background-color: #377AEF;*/
+}
+.agency_nav {
+    color: #377AEF;
+    background-color: #F7F7F7
+}
+.tft_nav {
+    color: #fff;
+    background-color: #377AEF;
+}
+
+/*main 변경 190412*/
+.mainPage .consult_box {
+    width: 100%;
+}
+.mainPage .click_menu li {
+    width: 100%;
+    text-align: center;
+    padding: 2.333em 0;
+    font-size: 1.875em;
+}
+.video_desc_img {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.video_desc_img img {
+    width: 42.688em;
+}
+.video_desc_img:before {
+    content: '';
+    position: absolute;
+    left: -10em;
+    top: -2em;
+    width: 14.688em;
+    height: 9.625em;
+    background: url("/assets/images/project_new/talk.png") 0 0 no-repeat;
+    -webkit-background-size: 14.688em 9.625em;
+    background-size: 14.688em 9.625em;
+}
+.type_project_wra.project_step1 {
+    padding: 4.938em 0 0;
+}
+.project_step1 .type_project_area .page_title_section {
+    width: 100%;
+    height: 100%;
+    max-width: 1610px;
+    padding: 10.313em 20px 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.btn_show_pf {
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 1.5em;
+    border-radius: 12px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: center;
+    background: #000;
+    font-size: 10px;
+    width: 76px;
+    height: 24px;
+    font-style: italic;
+}

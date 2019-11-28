@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+            <div class="title">매직 스스로 살균 가습기</div>
+            <a href="#" class="sprite sprite_common sprite_setting"></a>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+
+    <!-- section_main -->
+    <section class="section_main section_humidify">
+        <div class="bg bg_humidify">
+            <div class="area_title">
+                <div class="box_title">
+                    <h1>
+                    <span>매직 스스로 살균 가습기<button class="align_center sprite sprite_purify sprite_edit">
+
+                    </button></span>
+                    </h1>
+                </div>
+                <p>총 사용시간 06:59</p>
+                <p class="notice"><span class="sprite sprite_humidify sprite_notice">?</span>가습기에 물이 부족합니다.</p>
+            </div>
+
+            <!-- 습도 좋음 클래스 추가 'good'
+             습도 나쁨 클래스 추가 'bad'
+             습도 보통 클래스 추가 'normal'
+             -->
+            <div class="area_air_status good"  style="display: none;">
+                <div class="box_txt_status" >
+                    <p class="current">현재 습도</p>
+                    <p class="humidify_num">60<span>%</span></p>
+                </div>
+              <!--  <div class="box_humidify_info">
+                    <p>희망습도 <span>40</span>%</p>
+                </div>-->
+            </div>
+
+            <!-- 전원off 클래스 추가 'off' -->
+            <div class="area_air_status off">
+                <div class="box_txt_status">
+                    <p class="current">전원 OFF</p>
+                    <p class="humidify_num">제품이 꺼져있습니다</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="area_function_humidify">
+            <div class="box_mode">
+                <!-- 정지 클래스 추가 'stop'
+                 약 클래스 추가 'mild'
+                 중 클래스 추가 'moderate'
+                 강 클래스 추가 'intense'
+                 -->
+                <!-- 전원off시 p태그에 "disabled" 추가 -->
+                <p class="sprite sprite_humidify sprite_water intense disabled">?</p>
+                <span>수동/약</span>
+            </div>
+            <div class="box_mode">
+                <!-- 배터리 off시 클래스 추가 'off'
+                 배터리 30% 클래스 추가 'b_30'
+                 배터리 60% 클래스 추가 'b_60'
+                 배터리 100% 클래스 추가 'b_100'
+                 -->
+                <p class="sprite sprite_humidify sprite_battery off">?</p>
+                <span>0<em>%</em></span>
+            </div>
+            <div class="box_mode">
+                <!-- 타이머 off시 클래스 추가 'off'
+                     타이머 on시 클래스 추가 'on' -->
+                <p class="sprite sprite_humidify sprite_timer off">?</p>
+                <span>OFF</span>
+            </div>
+            <div class="box_mode">
+                <!-- uv off시 클래스 추가 'off'
+                     uv on시 클래스 추가 'on' -->
+                <p class="sprite sprite_humidify sprite_uv off">?</p>
+                <span>OFF</span>
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- //section_main -->
+
+
+</div>
+<!-- //wrap_contents_area-->
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="box_card _filterused">
+    <p class="card_title">필터 사용량</p>
+    <ul class="set_list">
+        {{#openDeviceList}}
+            {{#isHepaFilter fncCd}}
+                <li class="{{hiddenFilter fncVal}}">
+                    <p class="filter_name">{{replaceNm}}</p>
+                    {{{fncValCheck fncVal}}}
+                    <p><span class="filter_use" style="width: {{fncVal}}%;"></span></p>
+                    <span class="filter_per">{{remove fncVal}}%</span>
+                </li>
+            {{/isHepaFilter}}
+        {{/openDeviceList}}
+        <li class="none_border_bottom _filterbuyurl">
+            <a href="#" style="display: block;" data-link="{{filterBuyUrl}}">
+                <p>필터 구매하기</p>
+                <span class="sprite sprite_common sprite_more">?</span>
+            </a>
+        </li>
+    </ul>
+</div>

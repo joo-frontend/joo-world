@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">매직 스팀오븐</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+
+    <!-- section_main -->
+    <section class="section_main section_oven">
+        <div class="bg bg_oven">
+            <div class="area_title">
+                <div class="box_title">
+                    <h1>
+                    <span>My 스팀오븐<button class="align_center sprite sprite_purify sprite_edit">
+                    </button></span>
+                    </h1>
+                </div>
+                <p>
+                    <span class="sprite sprite_gas_stove sprite_use_time">?</span>청소 대기 중입니다.
+                </p>
+                <button class="btn_cleaning sprite sprite_steam_oven sprite_btn_cleaning" disabled></button>
+            </div>
+            <div class="range_badge disabled">
+                <p>레인지</p>
+            </div>
+
+            <div class="alarm_txt heating">
+                <!-- 예열중 일 때 -->
+               <!-- <div class="icon_heat"></div>
+                <p>예열중</p>-->
+                <!-- //예열중 일 때 -->
+
+
+                <!-- 예열 완료 일 때 -->
+                <p class="end_heating">예열 완료</p>
+                <p class="desc">내용물을 넣고 <br>‘요리하기’ 버튼을 눌러주세요</p>
+                <!-- //예열 완료 일 때 -->
+            </div>
+
+            <!-- 오븐청소중 -->
+            <div class="oven_info">
+                <p class="title">• 오븐 ▶ 수동요리</p>
+                <button class="oven_btn oven_btn_md">요리하기</button>
+                <div class="box_progress">
+                    <!-- 더보기 버튼 활성화 클래스 변경  'sprite_more' > 'sprite_more_disabled' -->
+                    <p class="progress_desc">09분:40초<button class="sprite sprite_steam_oven sprite_more">?</button></p>
+                    <p class="progress_desc">230˚C<button
+                                                     class="sprite sprite_steam_oven sprite_more_disabled" disabled>?</button></p>
+
+                    <div class="progress">
+
+                        <!-- 상태바 span 클래스 빼면 default(gray색상)
+                        순서대로 클래스 'orange1' ~ 'orange29' -->
+                        <span class=""></span><!--
+                    --><span class=""></span><!--
+                    --><span class="orange3"></span><!--
+                    --><span class="orange4"></span><!--
+                    --><span class="orange5"></span><!--
+                    --><span class="orange6"></span><!--
+                    --><span class="orange7"></span><!--
+                    --><span class="orange8"></span><!--
+                    --><span class="orange9"></span><!--
+                    --><span class="orange10"></span><!--
+                    --><span class="orange11"></span><!--
+                    --><span class="orange12"></span><!--
+                    --><span class="orange13"></span><!--
+                    --><span class="orange14"></span><!--
+                    --><span class="orange15"></span><!--
+                    --><span class="orange16"></span><!--
+                    --><span class="orange17"></span><!--
+                    --><span class="orange18"></span><!--
+                    --><span class="orange19"></span><!--
+                    --><span class="orange20"></span><!--
+                    --><span class="orange21"></span><!--
+                    --><span class="orange22"></span><!--
+                    --><span class="orange23"></span><!--
+                    --><span class="orange24"></span><!--
+                    --><span class="orange25"></span><!--
+                    --><span class="orange26"></span><!--
+                    --><span class="orange27"></span><!--
+                    --><span class="orange28"></span><!--
+                    --><span class="orange29"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //section_main -->
+
+
+    <!-- section_oven_bottom_menu -->
+    <section class="section_function section_toggle toggle_col_3">
+        <div class="area_toggle">
+            <input type="checkbox" class="toggle_oven oven_lock">
+            <label>LOCK</label>
+
+        </div>
+        <div class="area_toggle">
+            <input type="checkbox" class="toggle_oven brightness" checked>
+            <label>밝기</label>
+            <!-- stage 단계 클래스 추가 'stage01' ~ 'stage05' -->
+            <p class="sprite sprite_common sprite_stage stage03">?</p>
+        </div>
+        <div class="area_toggle">
+            <input type="checkbox" class="toggle_oven volume">
+            <label>볼륨</label>
+            <p class="sprite sprite_common sprite_stage">?</p>
+        </div>
+    </section>
+    <!-- //section_oven_bottom_menu -->
+</div>
+<!-- //wrap_contents_area-->
+
+</body>
+</html>

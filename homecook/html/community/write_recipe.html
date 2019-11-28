@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <meta property="og:title" content="US-HOME"/>
+    <meta property="og:description" content="US-HOME"/>
+    <meta name="description" content="US-HOME">
+    <meta property="og:site_name" content="US-HOME"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://US-HOME/images/kakao_thumbnail.jpg"/>
+    <meta property="og:url" content="URL입력"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="210"/>
+    <title>Homecook</title>
+    <link href="../../js/dropzone/dropzone.css" rel="stylesheet">
+    <link href="../../js/select2-develop/dist/css/select2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/cart.css">
+    <link rel="stylesheet" href="../../css/community.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <link rel="stylesheet" href="../../css/style180718.css">
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="wra">
+    <!--header-->
+    <div class="wra_header wra_header_white">
+        <div class="area_header">
+            <div class="box_logo"><a href="#"><img src="../../images/header/bi_culistory.png" alt=""></a></div>
+            <div class="box_gnb box_gnb_main">
+                <ul class="clearfix">
+                    <li class=""><a href="#">컬리스토리란?</a></li>
+                    <li><a href="#">컬리스토리 메뉴</a></li>
+                    <li><a href="#">에듀밀</a></li>
+                    <li><a href="#">주간레시피</a></li>
+                    <li class="m_community"><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+            <div class="box_gnb box_gnb_user">
+                <p class="lang_user"><select name="select_lang" class="selectbox_lang">
+                    <option value="lang_kor">한국어</option>
+                    <option value="lang_eng">영어</option>
+                </select></p>
+                <ul>
+                    <li class=""><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                </ul>
+            </div>
+            <div class="box_menu">
+                <a href="#" class="search"></a>
+                <a href="#" class="mypage"></a>
+                <a href="#" class="mycart"></a>
+            </div>
+        </div>
+    </div>
+    <!--search area-->
+    <div class="wra_search_active">
+        <p class="search_txt">키워드를 입력하세요</p>
+        <form action="">
+            <p class="serach_area">
+                <input type="text" class="search_txtbox" placeholder="검색어">
+                <button type="submit"></button>
+            </p>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="contents">
+            <div id="pageWriteRecipe" class="page_wra">
+                <div class="wra_commnunity_gnb">
+                    <ul>
+                        <li><a href="community_make.html">이렇게 만들어 봤어요!</a></li>
+                        <li class="focus"><a href="community_recipe.html">나만의 레시피 뽐내기</a></li>
+                        <li><a href="community_hotmenu.html">컬리스토리 HOT 메뉴</a></li>
+                        <li><a href="community_cookStudy.html">컬리스토리 요리탐구</a></li>
+                        <li><a href="community_place.html">이런데 가보셨나요?</a></li>
+                        <li><a href="community_idea.html">컬리스토리에게 바래요</a></li>
+                        <li><a href="community_tip.html">요리 꿀팁&노하우</a></li>
+                    </ul>
+                </div>
+                <div class="wra_write">
+                    <form>
+                        <div class="area_write_cate">
+                            <dl class="clearfix">
+                                <dt>작성자</dt>
+                                <dd><input type="text" class="textbox textbox_sm" name="writer_recipe"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>사진</dt>
+                                <dd>
+                                    <div action="/file-upload" class="dropzone" id="photo_recipe">
+                                        <div class="fallback">
+                                            <input name="file_recipe" type="file"/>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>제목</dt>
+                                <dd><input type="text" class="textbox" name="title_recipe"
+                                           placeholder="메뉴명 혹은 한줄설명을 입력하세요&nbsp;&nbsp;&nbsp; ex) 햄마늘파스타 or  햄마늘파스타 만들기 정말 쉬워요!">
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>한줄소개</dt>
+                                <dd><input type="text" class="textbox" name="intro_recipe"
+                                           placeholder="레시피에 관한 간단한 소개를 입력하세요&nbsp;&nbsp;&nbsp; ex) 햄과 마늘이 들어가 고소하면서도 담백한 맛의 햄마늘 파스타">
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>설명</dt>
+                                <dd>
+                                    <textarea class="txtbox_md" name="txt_desc_recipe"
+                                              placeholder="레시피에 대해 자유롭게 입력하세요"></textarea>
+                                </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>조리기준</dt>
+                                <dd><input type="text" class="textbox" name="cookPeople_recipe"
+                                           placeholder="조리기준을 입력하세요&nbsp;&nbsp;&nbsp; ex) 1인분, 2인분"></dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>조리시간</dt>
+                                <dd><input type="text" class="textbox" name="cookTime_recipe"
+                                           placeholder="조리시간을 입력하세요&nbsp;&nbsp;&nbsp; ex) 30분"></dd>
+                            </dl>
+                            <div class="search_food_box">
+                                <dl class="clearfix">
+                                    <dt>재료</dt>
+                                    <dd>
+                                        <div class="search_ingredient">
+                                            <select name="recipeIngredient1" class="form-control"
+                                                    id="ingredientSearch1">
+                                                <option value="empty" disabled selected>재료를 선택하세요</option>
+                                                <option value="recipe_ing1">소 다짐육</option>
+                                                <option value="recipe_ing2">고추장</option>
+                                                <option value="recipe_ing3">파슬리가루</option>
+                                            </select>
+                                        </div>
+                                        <div class="food_num">
+                                            <input type="text" class="textbox textbox_quantity"
+                                                   name="recipe_quatity_food_1" placeholder="갯수/용량">
+                                            <select name="selectbox_unit" class="selectbox selectbox_unit">
+                                                <option value="empty" disabled selected>단위</option>
+                                                <option value="unit_g">g</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <p class="add_box"><a href="#" class="add_item_btn">재료추가 <img
+                                        src="../../images/community/p16/p16_add.png" alt=""></a></p>
+                            </div>
+                            <div class="method_cook">
+                                <dl class="clearfix">
+                                    <dt>방법</dt>
+                                    <dd>
+                                        <div class="each_method">
+                                            <textarea class="textbox textbox_method" placeholder="방법을 단계별로 입력하세요"
+                                                      name="txt_method_recipe1"></textarea>
+                                            <div id="photo_method_recipe1" class="box_method_img">
+                                            </div>
+                                            <div class="box_add_photo">
+                                                <label for="method_recipe1" class="method_recipe1">
+                                                    <img src="../../images/community/p16/p16_camera_small.png" alt="">사진추가</label>
+                                                <input type="file" name="photo_method_recipe1" id="method_recipe1"/>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <p class="add_box"><a href="#" class="add_item_btn">방법 추가 <img
+                                        src="../../images/community/p16/p16_add.png" alt=""></a></p>
+
+                            </div>
+                        </div>
+                        <div class="area_kcal">
+                            <p class="total_kcal">칼로리<span><b>250</b>Kcal</span></p>
+                        </div>
+                        <div class="area_btn_write_group">
+                            <button type="button" class="btn_post_cancel">취소</button>
+                            <button type="submit" class="btn_post_register">등록</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="wra_footer">
+        <!--main-userlink-->
+        <div class="area_link_user">
+            <a href="#" class="move_user_center">FAQ</a>
+            <a href="#" class="move_user_center">1:1문의</a>
+            <a href="#" class="move_user_center">공지사항</a>
+        </div>
+        <div class="area_shop_info">
+            <ul>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_call.png" alt="">고객센터</span>
+                        <p><span>010.3336.4643</span><span>월-금  ㅣ  10:00 - 17:00</span><span>토·일·공휴일  ㅣ  휴무</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_mail.png" alt="">E-mail</span>
+                        <p><span>jskang402@gmail.com</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="shop_info"><img src="../../images/footer/bottom_bank.png" alt="">입금정보</span>
+                        <p><span>하나은행 316-910028-80205</span><span>예금주 : (주)홈쿡</span></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="area_footer">
+            <div class="footer_link">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="footer_desc">
+                <p>상호명 : 농업회사법인 누리(주) <span></span>대표 : 강주석<span></span>개인정보관리책임자 : 강주석<br>
+                    전화 : 010-3336-4643<span></span>이메일 : jskang402@gmail.com<span></span>회사 이메일 :
+                    NU***@**********<span></span>사업자등록번호 : 263-87-00956<br>
+                    주소 : 전라북도 익산시 왕국면 동촌제길 110 식품벤처센터 F동 348호
+                <p>Copyright ⓒ 2016 컬리스토리 All right reserved. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/previewImg.js"></script>
+<script src="../../js/select2-develop/dist/js/select2.min.js"></script>
+<script src="../../js/dropzone/dropzone.js"></script>
+<script src="../../js/script.js"></script>
+<script>
+    /*dropzone*/
+    $('#photo_recipe').dropzone({
+        thumbnailWidth: null,
+        thumbnailHeight: 134,
+        uploadMultiple: false,
+    });
+    $(document).ready(function () {
+        $.uploadPreview({
+            input_field: "#method_recipe1",
+            preview_box: "#photo_method_recipe1",
+            label_field: ".method_recipe1"
+        });
+    });
+
+    /*select search*/
+    $("#ingredientSearch1").select2({
+    });
+
+    function recipeComponent(index) {
+        $(".search_food_box dl").append("<dd>"
+            + "<div class='search_ingredient'>"
+            + "<select name='recipeIngredient"+index+"' class='form-control' id='ingredientSearch"+index+"'>"
+            + "<option value='empty' disabled selected>재료를 선택하세요</option>"
+            + "<option value='recipe_ing1'>소 다짐육</option>"
+            + "<option value='recipe_ing2'>고추장</option>"
+            + "<option value='recipe_ing3'>파슬리가루</option>"
+            + "</select>"
+            + "</div>"
+            + "<div class='food_num'>"
+            + "<input type='text' class='textbox textbox_quantity' name='recipe_quatity_food_" + index + "' placeholder='갯수/용량'>"
+            + "<select name='selectbox_unit' class='selectbox selectbox_unit'>"
+            + "<option value='empty' disabled selected>단위</option>"
+            + "<option value='unit_g'>g</option>"
+            + "</select>"
+            + "</div>"
+            + "</dd>");
+    };
+    $(".search_food_box .add_item_btn").click(function () {
+        var numI = $(this).parents(".search_food_box").find("dd").length +1;
+        recipeComponent(numI)
+
+        var numIO = $(".search_food_box dd").length+1;
+        for (i=1; i<=numIO; i++) {
+            $("#ingredientSearch"+i).select2({
+                placeholder: "재료를 선택하세요"
+            });
+        }
+        return false;
+    });
+
+    /*방법*/
+    function recipeM(index) {
+        $(".method_cook dl").append("<dd>"
+            +"<div class='each_method'>"
+            +"<textarea class='textbox textbox_method' placeholder='방법을 단계별로 입력하세요'\n"
+            +"name='txt_method_recipe"+index+"'></textarea>"
+            +"<div id='photo_method_recipe"+index+"' class='box_method_img'></div>"
+            +"<div class=\"box_add_photo\">"
+            +"<label for='method_recipe"+index+"' class='method_recipe"+index+"'>"
+            +"<img src='../../images/community/p16/p16_camera_small.png' alt=''>사진추가</label>\n"
+            +"<input type='file' name='photo_method_recipe"+index+"' id='method_recipe"+index+"'/>\n"
+            +"</div>\n" +
+            "</div>\n" +
+            "</dd>");
+    };
+    $(".method_cook .add_item_btn").click(function () {
+        var numM = $(this).parents(".method_cook").find("dd").length +1;
+        recipeM(numM)
+
+        var numMO = $(".method_cook dd").length+1;
+        for (j=1; j<=numMO; j++) {
+            $.uploadPreview({
+                input_field: "#method_recipe"+j,
+                preview_box: "#photo_method_recipe"+j,
+                label_field: ".method_recipe"+j
+            });
+        }
+        $(".textbox_method").keyup(function() {
+            var textI = $(this);
+            if($(this).val().length > 0){
+                textI.parents(".each_method").find(".box_add_photo").show();
+                textI.parents(".each_method").find(".box_method_img").show();
+                $(this).css("height","10.333em");
+            }else {
+                textI.parents(".each_method").find(".box_add_photo").hide();
+                textI.parents(".each_method").find(".box_method_img").hide();
+                $(this).css("height","3.933em");
+            }
+        });
+        return false;
+    });
+</script>
+</body>
+</html>

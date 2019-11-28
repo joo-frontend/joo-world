@@ -1,0 +1,100 @@
+<!--<div class="slider">-->
+    <!--<div class="box_slide">-->
+        <!--<div>-->
+            <!--<p class="air_product">공기청정기</p>-->
+            <!--<p class="air_product_name">1-1 공기청정기</p>-->
+
+            <!--<div class="circle_air_status good">-->
+                <!--<div class="circle">-->
+                    <!--<p class="air">공기 상태</p>-->
+                    <!--<p class="status">좋음</p>-->
+                    <!--<p class="dust">초미세먼지</p>-->
+                    <!--<p class="dust_num">10<em>㎍/㎥</em></p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="info_outside">-->
+                <!--<p class="outside">실외</p>-->
+                <!--<p class="degree">온도 27℃ / 습도 50%</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="box_slide">-->
+        <!--<div>-->
+            <!--<p class="air_product">공기청정기</p>-->
+            <!--<p class="air_product_name">1-1 공기청정기</p>-->
+
+            <!--<div class="circle_air_status good">-->
+                <!--<div class="circle">-->
+                    <!--<p class="air">공기 상태</p>-->
+                    <!--<p class="status">좋음</p>-->
+                    <!--<p class="dust">초미세먼지</p>-->
+                    <!--<p class="dust_num">10<em>㎍/㎥</em></p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="info_outside">-->
+                <!--<p class="outside">실외</p>-->
+                <!--<p class="degree">온도 27℃ / 습도 50%</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="box_slide">-->
+        <!--<div>-->
+            <!--<p class="air_product">공기청정기</p>-->
+            <!--<p class="air_product_name">1-1 공기청정기</p>-->
+
+            <!--<div class="circle_air_status good">-->
+                <!--<div class="circle">-->
+                    <!--<p class="air">공기 상태</p>-->
+                    <!--<p class="status">좋음</p>-->
+                    <!--<p class="dust">초미세먼지</p>-->
+                    <!--<p class="dust_num">10<em>㎍/㎥</em></p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="info_outside">-->
+                <!--<p class="outside">실외</p>-->
+                <!--<p class="degree">온도 27℃ / 습도 50%</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+<div class="slider">
+    {{#each userDeviceList}}
+        <div class="box_slide">
+            {{#deviceKindCode dvcKindCd}}
+                <div class="{{dvcCd}}">
+                    <p class="air_product">공기청정기</p>
+                    <p class="air_product_name">{{senNm}}</p>
+                    <div class="circle_air_status {{airStateColor airGrd}}">
+                        <div class="circle">
+                            <p class="air">공기 상태</p>
+                            <p class="status">{{airGrd}}</p>
+                            <p class="dust">초미세먼지</p>
+                            <p class="dust_num">{{pm25}}<em>㎍/㎥</em></p>
+                        </div>
+                    </div>
+                    <div class="info_outside">
+                        <p class="outside">실외</p>
+                        <p class="degree">온도 {{temp}}℃ / 습도 {{humi}}%</p>
+                    </div>
+                </div>
+            {{else}}
+                <div class="{{dvcCd}}">
+                    <p class="air_product">실내센서</p>
+                    <p class="air_product_name">1-1 실내센서</p>
+                    <div class="circle_air_status good">
+                        <div class="circle circle_sensor">
+                            <p class="score">종합점수 85</p>
+                            <p class="status">좋음</p>
+                        </div>
+                    </div>
+                    <div class="box_btn">
+                        <button class="btn_report"><span class="sprite sprite_common sprite_icon_graph_statistic">아이콘</span>공기리포트
+                        </button>
+                    </div>
+                </div>
+            {{/deviceKindCode}}
+        </div>
+    {{/each}}
+</div>

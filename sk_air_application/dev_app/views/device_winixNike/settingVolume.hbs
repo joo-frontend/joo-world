@@ -1,0 +1,16 @@
+<div class="box_card _volume">
+    <p class="card_title title_set">풍량 설정</p>
+    <div class="box_setting">
+        {{#each openDeviceList}}
+            {{#isVolume fncCd}}
+                <ul class="clearfix">
+                    <li data-fncCd="{{fncCd}}"  data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="01" class="{{isSameFocus fncVal '01'}}"><a href="#"><span>강풍</span></a></li>
+                    <li data-fncCd="{{fncCd}}"  data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="02" class="{{isSameFocus fncVal '02'}}"><a href="#"><span>중풍</span></a></li>
+                    <li data-fncCd="{{fncCd}}"  data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="03" class="{{isSameFocus fncVal '03'}}"><a href="#"><span>약풍</span></a></li>
+                    <li data-fncCd="{{fncCd}}"  data-dvcCd="{{../dvcCd}}" data-rtnDvcId="{{rtnDvcId}}" data-fncVal="05" class="{{isSameFocus fncVal '05'}}"><a href="#"><span>터보</span></a></li>
+                </ul>
+            {{/isVolume}}
+        {{/each}}
+
+    </div>
+</div>

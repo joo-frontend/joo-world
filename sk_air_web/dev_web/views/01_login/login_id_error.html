@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK School Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="./../../css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="./../../js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<section class="section_header">
+    <header>
+		<span class="logo">
+			<a href="#"><img src="../../images/common/img_air_logo.png" alt="Smart Home"></a>
+		</span>
+    </header>
+</section>
+
+<!-- section_contents -->
+<section class="section_contents section_login">
+    <div class="wrap_login">
+        <div class="area_top">
+            <div class="area_top">
+                <img src="../../images/page/img_login_title.png"
+                     alt="SKT 스마트 계량기에 오신것을 환영합니다! LoRa Portal을 통하여 아파트 전력량을 효율적으로 관리해보세요.">
+            </div>
+        </div>
+
+        <div class="area_mid">
+            <!-- 에러일때 box_error 클래스 추가 -->
+            <div class="box_field box_error">
+                <input type="text" class="text_box text_box_lg" value="air_manager@sk.com">
+            </div>
+
+            <!-- 제공된 아이디 형식이 아닐 경우 -->
+            <p class="txt_warning">입력하신 아이디 형식이 올바르지 않습니다.</p>
+            <!-- 아이디를 입력하지 않고 로그인 클릭시 -->
+           <!-- <p class="txt_warning">아이디를 입력해 주세요.</p>-->
+
+            <div class="box_field last">
+                <input type="password" class="text_box text_box text_box_lg" placeholder="비밀번호">
+            </div>
+
+            <div class="box_field box_login_btn">
+                <a href="#" class="btn btn_lg btn_orange none_radius" style="width: 100%">로그인</a>
+            </div>
+
+            <div class="box_link">
+                <ul class="clearfix">
+                    <li class="l01"><label><input type="checkbox" class="checkbox">아이디 저장</label></li>
+                    <li class="l02"><a href="#">회원가입</a></li>
+                    <li class="l03"><a href="#">아이디/비밀번호 찾기</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- //section_contents -->
+<section class="section_footer">
+    <div class="footer">
+        <div class="logo">../
+            <a href="#"><img src="../../images/common/logo_footer.png" alt="Smart Home SKT 스마트 계량기"></a>
+        </div>
+        <div class="box_footer">
+            <ul class="clearfix">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="copy">
+                <p>우편번호 : 100-999 서울특별시 중구 을지로 65(을지로 2가) SK T-타워 SK텔레콤(주)<span>|</span>대표이사/사장 : 장동현<span>|</span>사업자
+                    등록번호 : 104-81-37225<span>|</span>고객센터 : 1800-0161
+                    <a href="#">이메일문의</a></p>
+                <p>COPYRIGHTⓒSK TELECOM CO., LTD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ui library -->
+<script type="text/javascript" src="./../../js/ui/ui.util.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.common.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.page.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.init.js"></script>
+</body>
+</html>

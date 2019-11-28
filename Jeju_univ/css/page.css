@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* 공지사항 */
+.area_title.notice {
+    border-bottom: 5px solid #00fcff;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+
+.area_title.notice span {
+    font-size: 30px;
+    line-height: 44px;
+    color: rgba(256, 256, 256, 0.5);
+    display: block;
+}
+
+.area_title.notice p {
+    font-size: 60px;
+    margin-bottom: 24px;
+    line-height: 90px;
+    letter-spacing: 3px;
+}
+
+.area_title.notice .icon_txt {
+    display: inline-block;
+    background: url('../images/sprite_common.png') 0 0 no-repeat;
+    width: 21px;
+    height: 41px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+    position: relative;
+    top: -12px;
+}
+
+.area_title.notice .icon_txt.close {
+    background-position: -50px 0;
+    top: 12px;
+}
+
+.area_notice {
+    overflow-y: hidden;
+    height: 648px;
+}
+
+.area_notice p {
+    line-height: 50px;
+    margin-bottom: 46px;
+}
+.area_notice p:last-child {
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+/* 메모보드 */
+ul {
+}
+ul li {
+    padding: 43px 0;
+    border-bottom: 3px solid rgba(256, 256, 256, 0.05);
+}
+
+ul li:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+ul li span {
+    display: inline-block;
+    line-height: 54px;
+    vertical-align: middle;
+}
+
+ul li span:first-child {
+    width: 280px;
+    padding-left: 28px;
+    color: #00fcff;
+    font-size: 48px;
+}
+
+ul li span:last-child {
+    font-size: 45px;
+    max-width: 1450px;
+    word-break: keep-all;
+}
+
+/* 분실물 보드 */
+.box_list {
+    float: left;
+    width: 50%;
+    padding-top: 48px;
+}
+
+.box_list .title {
+    margin-bottom: 36px;
+}
+.box_list ul {
+
+}
+.box_list:first-child {
+    padding-right: 30px;
+}
+
+.box_list:last-child {
+    padding-left: 60px;
+}
+
+.box_list li span:first-child {
+    width: 270px;
+}
+
+.box_list.green_list li span:first-child {
+    color: #1ddda0;
+}
+
+.box_list li span:last-child {
+    max-width: 550px;
+}
+
+/* 열람실 이용 현황 */
+.floor {
+    float: left;
+    padding-top: 80px;
+}
+
+.floor .title {
+    margin-bottom: 25px;
+    min-width: 590px;
+    max-width:610px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.floor.floor_sm {
+    width: 34%;
+}
+
+.floor.floor_md {
+    width: 50%;
+    padding-top: 48px;
+}
+
+.floor.floor_lg {
+    width: 66%;
+    float: right;
+}
+.floor:nth-child(odd) {
+    padding-right: 60px;
+}
+.floor:nth-child(even) {
+    padding-left: 60px;
+}
+.floor.floor_lg {
+    padding-left: 67px;
+}
+.floor .box_graph {
+    float: left;
+    text-align: center;
+}
+
+.floor.floor_sm .box_graph {
+    width: 50%;
+}
+
+.floor.floor_md .box_graph {
+    width: 33.3%;
+}
+
+.floor.floor_lg .box_graph {
+    width: 25%;
+}
+
+.floor .box_graph img {
+    width: 200px;
+}
+
+.floor .box_graph span {
+    display: block;
+    font-size: 34px;
+    max-width:280px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.floor .box_graph .graph {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #1c2437;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.floor .box_graph .graph h3 {
+    position: relative;
+    top: 64px;
+}
+.floor .box_graph .graph h2 {
+    color: #a9abb0;
+    font-size: 26px;
+    position: relative;
+    top: 50px;
+}
+.floor .box_graph .graph h2 strong {
+    color: #24beff;
+}
+.floor .box_graph .graph canvas {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px !important;
+    height: 200px !important;
+}
+/* 도서관 이용현황 */
+.area_today_use {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+}
+.area_today_use:last-child {
+    padding-left: 60px;
+}
+.area_today_use .title {
+    margin-bottom: 47px;
+}
+.area_today_use .desc_use {
+    font-size: 48px;
+    margin-bottom: 53px;
+
+}
+.area_today_use .desc_use strong {
+    font-size: 150px;
+    line-height: 175px;
+    display: inline-block;
+    margin-right: 18px;
+    max-width: 760px;
+    overflow: hidden;
+}
+.area_today_use .desc_use span {
+    vertical-align: top;
+    position: relative;
+    top: 91px;
+}
+.area_today_use .graph_title {
+    padding-left: 50px;
+    position: relative;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.area_today_use .graph_title .sprite {
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.area_today_use .graph_title .sprite.sprite_book {
+    top: 4px;
+}
+
+.area_today_use .box_graph {
+    padding-top: 30px;
+    padding-right: 105px;
+}
+.area_today_use .box_graph img {
+    width: 740px;
+}
+
+/* 2017_11_28 강지환 추가 */
+.wrap_memo_board {
+    padding: 0 0 60px;
+    height: 868px;
+    overflow-y: hidden;
+}
+.wrap_lost_article {
+    height: 730px;
+    overflow-y: hidden;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">슈퍼청정기</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+
+    <!-- section_main -->
+    <section class="section_main section_air_purify">
+        <!-- 청정기 기기별 배경 이미지 변경
+         v15  <div class="bg bg_air_purify_v15">
+         v16,v36  <div class="bg bg_air_purify_v16_35">
+         v100 <div class="bg bg_air_purify_v100">
+         v200 <div class="bg bg_air_purify_v200">
+         mini <div class="bg bg_air_purify_mini">
+         v32,v35 <div class="bg bg_air_purify_v32_35">
+         -->
+        <div class="bg bg_air_purify_v32_35">
+            <div class="area_title">
+                <div class="box_title">
+                    <h1>
+                    <span>미니청정기 V09<button class="align_center sprite sprite_purify sprite_edit">
+                    </button></span>
+                    </h1>
+                </div>
+            </div>
+            <!-- 공기 좋음 클래스 추가 'good'
+                         공기 나쁨 클래스 추가 'bad'
+                         공기 매우나쁨 클래스 추가 'worse'
+                         공기 보통 클래스 추가 'normal'
+                         -->
+            <div class="area_air_status good">
+                <div class="box_txt_status">
+                    <p class="current">좋음</p>
+                    <p class="air_status">실내 공기상태</p>
+                </div>
+                <div class="box_air">
+                    <div>
+                        <p>미세먼지</p>
+                        <p>초미세먼지</p>
+                    </div>
+                    <div>
+                        <p class="dust">24</p>
+                        <p class="dust">7</p>
+                    </div>
+                </div>
+                <div class="box_air_bottom">
+                    <div class="degree">
+                        <p>25<span>C</span></p>
+                        <p>온도</p>
+                    </div>
+                    <div>
+                        <p>40<span>%</span></p>
+                        <p>습도</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box_air_purify_info">
+                <div class="air_purify_info col_3">
+                    <!-- wifi 3단계
+                    sprite_wifi wifi_off 비활성상태
+                    sprite_wifi wifi_01 약
+                    sprite_wifi wifi_02 중
+                    sprite_wifi wifi_03 강
+                    -->
+                    <p class="box_icon"><span class="sprite sprite_air_purify sprite_wifi wifi_02"></span></p>
+                    <p>Wi-Fi</p>
+                </div>
+                <div class="air_purify_info col_3">
+                    <!-- 냄새 5단계
+                    sprite_smell smell_01 : 비활성상태
+                    sprite_smell smell_02 : 1단계
+                    sprite_smell smell_03 : 2단계
+                    sprite_smell smell_04 : 3단계
+                    sprite_smell smell_05 : 4단계
+                    -->
+                    <p class="box_icon"><span class="sprite sprite_air_purify sprite_smell smell_03"></span></p>
+                    <p>냄새</p>
+                </div>
+                <div class="air_purify_info col_3">
+                    <!-- 급수 2단계
+                     sprite_waterworks_on
+                     sprite_waterworks_off
+                     -->
+                    <p class="box_icon"><span class="sprite sprite_air_purify sprite_waterworks_on"></span></p>
+                    <p>급수</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- //section_main -->
+
+    <!-- section_weather -->
+    <section class="section_weather section_weather_wide">
+        <div class="box_section_title">
+        <span>서울특별시 영등포구
+            <button class="align_center sprite sprite_weather sprite_position">
+
+            </button>
+            </span>
+            <p>Update 16.03.27 12:00</p>
+        </div>
+        <div class="wrap_current_weather">
+            <div class="box_weather">
+                <div class="weather_img"><img src="../../../images/main/weather/lg_sun.png" alt=""></div>
+                <div class="weather_contents">
+                    <p class="weather_desc">맑음</p>
+                    <span>26</span>
+                    <p class="weather_etc">습도<span>20<strong>%</strong></span></p>
+                </div>
+            </div>
+            <div class="area_air_status">
+                <!-- 공기상태
+                 좋음 box_air_img air_good
+                 보통 box_air_img air_normal
+                 나쁨 box_air_img air_bad
+                 매우나쁨 box_air_img air_worse
+                 -->
+                <div class="box_air_img air_worse">
+                    <div class="air_info">
+                        <p class="air_value">매우나쁨</p>
+                        <p>실외 공기</p>
+                    </div>
+                </div>
+                <div class="box_air">
+                    <div>
+                        <p>미세먼지</p>
+                        <p class="dust">152</p>
+                    </div>
+                    <div>
+                        <p>초미세먼지</p>
+                        <p class="dust">107</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_day_weather">
+            <ul class="box_day_weather">
+                <li>
+                    <p class="time current">지금</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_sun_sm">맑음</span></p>
+                    <p class="rain_per">-</p>
+                    <p class="degree">26º</p>
+                </li>
+                <li>
+                    <p class="time">15시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_cloud_sm">구름</span></p>
+                    <p class="rain_per">12%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">18시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_sun_cloud_sm">해구름</span></p>
+                    <p class="rain_per">20%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">21시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_cloud_sm">구름</span></p>
+                    <p class="rain_per">30%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">00시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_mist_sm">안개</span></p>
+                    <p class="rain_per">5%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">00시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_mist_sm">안개</span></p>
+                    <p class="rain_per">5%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">00시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_mist_sm">안개</span></p>
+                    <p class="rain_per">5%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">00시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_mist_sm">안개</span></p>
+                    <p class="rain_per">5%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">00시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_mist_sm">안개</span></p>
+                    <p class="rain_per">5%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">03시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_night_sun_sm">밤 맑음</span></p>
+                    <p class="rain_per">0%</p>
+                    <p class="degree">25º</p>
+                </li>
+                <li>
+                    <p class="time">06시</p>
+                    <p class="weather_icon"><span class="sprite sprite_weather sprite_night_sun_sm">밤 맑음</span></p>
+                    <p class="rain_per">5%</p>
+                    <p class="degree">22º</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="wrap_week_weather">
+            <p class="week_title">주간날씨</p>
+            <span>오전 5:00 발표</span>
+            <ul>
+                <li>
+                    <span class="weekday">일</span>
+                    <p class="day">오늘</p>
+                    <p><span class="sprite sprite_weather sprite_sun_sm">맑음</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+                <li>
+                    <span class="weekday">월</span>
+                    <p class="day">내일</p>
+                    <p><span class="sprite sprite_weather sprite_sun_cloud_sm">구름조금</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+                <li>
+                    <span class="weekday">화</span>
+                    <p class="day">03.29</p>
+                    <p><span class="sprite sprite_weather sprite_rain_snow_sun_sm">구름조금</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+                <li>
+                    <span class="weekday">수</span>
+                    <p class="day">03.30</p>
+                    <p><span class="sprite sprite_weather sprite_rain_sm">비</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+                <li>
+                    <span class="weekday">목</span>
+                    <p class="day">03.31</p>
+                    <p><span class="sprite sprite_weather sprite_cloud_sm">구름</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+                <li>
+                    <span class="weekday">금</span>
+                    <p class="day">04.01</p>
+                    <p><span class="sprite sprite_weather sprite_sun_cloud_sm">구름조금</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+                <li>
+                    <span class="weekday">토</span>
+                    <p class="day">04.02</p>
+                    <p><span class="sprite sprite_weather sprite_sun_cloud_sm">구름조금</span></p>
+                    <p class="degree">25º / 27º</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- //section_weather -->
+
+</div>
+<!-- //wrap_contents_area-->
+</body>
+</html>

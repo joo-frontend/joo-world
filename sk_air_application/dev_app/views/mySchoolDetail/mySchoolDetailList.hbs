@@ -1,0 +1,87 @@
+<ul class="area_grade_list _fnAccordionMenu">
+	{{#each clsList}}
+		{{#isClass lv}}
+			<!--9학년일 경우-->
+			<li class="current">
+				<a href="#" class="grade">{{cls}} <i class="sprite sprite_common sprite_arrow"></i></a>
+				<div class="box_class">
+					<ul class="list_class">
+						<li>
+							<p class="class">{{cls}}<input type="checkbox" id="{{userSchId}}" class="icon_check check_class _registerMySchool" data-school-id="{{../schCd}}" data-lv="{{lv}}" data-cls="{{cls}}"></p>
+							<ul id="deviceList" class="deviceList">
+								{{#each senList}}
+									<li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+										<a href="#" class="_moveToDetail" data-class="{{../lv}}학년 {{../cls}}반" data-lv="{{../lv}}"  data-cls="{{../cls}}" data-dvcid="{{dvcId}}" data-schCd="{{../../../../schCd}}"
+										   onclick="App.view.mySchoolDetail.setSchoolLvClass(this.getAttribute('data-lv'), this.getAttribute('data-cls'))">
+											<span class="sprite sprite_common sprite_sensor"></span>{{senNm}}
+
+												<span class="air_status {{airStateColor airGrd connStatYn}}"><i class="sprite sprite_common sprite_circle {{airCircleColor airGrd connStatYn}}"></i>{{ responseAirGrd airGrd connStatYn}}</span>
+
+										</a>
+									</li>
+								{{/each}}
+								{{#each clnList}}
+									<li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+										<a href="#" class="_moveToDetail" data-class="{{../lv}}학년 {{../cls}}반" data-lv="{{../lv}}"  data-cls="{{../cls}}" data-dvcid="{{dvcId}}" data-schCd="{{../../../../schCd}}"
+										   onclick="App.view.mySchoolDetail.setSchoolLvClass(this.getAttribute('data-lv'), this.getAttribute('data-cls'))">
+											<span class="sprite sprite_common sprite_air_sensor"></span>{{senNm}}
+
+												<span class="air_status {{airStateColor airGrd connStatYn}}"><i class="sprite sprite_common sprite_circle {{airCircleColor airGrd connStatYn}}"></i>{{responseAirGrd airGrd connStatYn}}</span>
+										</a>
+
+									</li>
+								{{/each}}
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</li>
+		{{/isClass}}
+		{{#if @first}}
+			<!--if(level&&class)-->
+			{{#each ../lvList}}
+				{{#each this}}
+					{{#if @first}}
+					<li class="current">
+						<a href="#" class="grade">{{lv}}학년 {{dvcId}}  <i class="sprite sprite_common sprite_arrow"></i></a>
+					{{/if}}
+					<div class="box_class">
+						<ul class="list_class">
+							<li>
+								<p class="class">{{lv}}학년 {{cls}}반 <input type="checkbox" id="{{userSchId}}" class="icon_check check_class _registerMySchool" data-school-id="{{../schCd}}" data-lv="{{lv}}" data-cls="{{cls}}"></p>
+
+								<ul id="deviceList" class="deviceList">
+									{{#each senList}}
+										<li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+											<a href="#" class="_moveToDetail" data-class="{{../lv}}학년 {{../cls}}반" data-lv="{{../lv}}"  data-cls="{{../cls}}" data-dvcid="{{dvcId}}" data-schCd="{{../../../../schCd}}"
+                                               onclick="App.view.mySchoolDetail.setSchoolLvClass(this.getAttribute('data-lv'), this.getAttribute('data-cls'))">
+												<span class="sprite sprite_common sprite_sensor"></span>{{senNm}}
+
+													<span class="air_status {{airStateColor airGrd connStatYn}}"><i class="sprite sprite_common sprite_circle {{airCircleColor airGrd connStatYn}}"></i>{{responseAirGrd airGrd connStatYn}}</span>
+
+											</a>
+										</li>
+									{{/each}}
+									{{#each clnList}}
+										<li data-dvcid="{{dvcId}}" data-senNm="{{senNm}}">
+											<a href="#" class="_moveToDetail" data-class="{{../lv}}학년 {{../cls}}반" data-lv="{{../lv}}"  data-cls="{{../cls}}" data-dvcid="{{dvcId}}"  data-schCd="{{../../../../schCd}}"
+                                               onclick="App.view.mySchoolDetail.setSchoolLvClass(this.getAttribute('data-lv'), this.getAttribute('data-cls'))">
+												<span class="sprite sprite_common sprite_air_sensor"></span>{{senNm}}
+
+													<span class="air_status {{airStateColor airGrd connStatYn}}"><i class="sprite sprite_common sprite_circle {{airCircleColor airGrd connStatYn}}"></i>{{responseAirGrd airGrd connStatYn}}</span>
+
+											</a>
+										</li>
+									{{/each}}
+								</ul>
+							</li>
+						</ul>
+					</div>
+				{{/each}}
+
+			{{/each}}
+		{{/if}}
+	</li>
+
+	{{/each}}
+</ul>

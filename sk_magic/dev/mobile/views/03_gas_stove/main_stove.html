@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">슈퍼쿡 가스레인지</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li class="active"><a href="#"><span>상태표시</span></a></li>
+                    <li><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+
+</div>
+<!-- //wrap_header_area -->
+
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+    <!-- section_main -->
+    <section class="section_main section_stove">
+        <div class="bg bg_stove">
+            <div class="area_title">
+                <div class="box_title">
+                    <h1>
+                    <span>My 가스레인지 <button class="align_center sprite sprite_purify sprite_edit">
+
+                    </button></span>
+                    </h1>
+                </div>
+                <p><span class="sprite sprite_gas_stove sprite_use_time">?</span> 연속 사용시간 23:14</p>
+            </div>
+        </div>
+        <div class="area_gas_status clearfix">
+            <div>
+                <div class="stove_btn">
+                    <input type="checkbox" class="toggle_gas_lock stove_off">
+                    <!-- 체크박스 checked시 OFF -> ON 으로 변경되어야 함 -->
+                    <p>대버너(좌)<span>OFF</span></p>
+                </div>
+
+            </div>
+            <div>
+                <div class="stove_btn">
+                    <input type="checkbox" class="toggle_gas_lock stove_off">
+                    <p>소버너<span>OFF</span></p>
+                </div>
+            </div>
+            <div>
+                <div class="stove_btn">
+                    <input type="checkbox" class="toggle_gas_lock stove_off">
+                    <p>대버너(우)<span>OFF</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- 툴팁 위치 right 수치로 이동 -->
+        <div class="tooltip_stove" style="right: 38px;">
+            5분 후 꺼짐
+        </div>
+    </section>
+    <!-- //section_main -->
+
+    <!-- section_toggle -->
+    <section class="section_function section_toggle toggle_col_2">
+        <div class="area_toggle">
+            <input type="checkbox" name="gas_lock" class="toggle_gas_btn gas_lock">
+            <label for="gas_lock">LOCK</label>
+        </div>
+        <div class="area_toggle">
+            <input type="checkbox" name="gas_off" class="toggle_gas_btn gas_off">
+            <label for="gas_off">버너 OFF</label>
+        </div>
+    </section>
+    <!-- //section_toggle -->
+
+    <!-- section_timer -->
+    <section class="section_timer">
+        <p class="timer_title"><span class="sprite sprite_gas_stove sprite_timer"></span>타이머</p>
+        <div class="area_timer">
+            <!-- 타이머 OFF시 box_timer에 class 추가 'timer_off' -->
+            <div class="box_timer">
+                <span>대버너(좌)</span>
+                <button class="setting">설정</button>
+                <button class="time_box">06:02</button>
+            </div>
+            <div class="box_timer timer_off">
+                <span>소버너</span>
+                <button class="setting">설정</button>
+                <button class="time_box">OFF</button>
+            </div>
+            <div class="box_timer">
+                <span>대버너(우)</span>
+                <button class="setting">설정</button>
+                <button class="time_box">06:02</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- //section_timer -->
+
+</div>
+<!-- //wrap_contents_area-->
+</body>
+</html>

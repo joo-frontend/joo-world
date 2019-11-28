@@ -1,0 +1,37 @@
+{
+  "en": {
+    "tabMenu": {
+      "status": "Status",
+      "control": "Control",
+      "statsList": "StatsList",
+      "useWay": "UseWay",
+      "actionList": "ActionList",
+      "userList": "UserList"
+    }
+  },
+  "ja": {
+    "tabMenu": {
+      "status": "状態照会",
+      "control": "製品の動作",
+      "statsList": "使用統計情報",
+      "useWay": "使用方法",
+      "actionList": "履歴と通知",
+      "userList": "ユーザーの管理",
+      "test": "通常動作中です。"
+    }
+  },
+  "ko": {
+    "tabMenu": {
+      "status": "상태표시",
+      "control": "제품작동",
+      "statsList": "사용통계",
+      "useWay": "사용설명",
+      "actionList": "이력 및 알림",
+      "userList": "사용자 관리"
+    },
+    "dialog": {
+      "networkError": "네트워크에 접속할 수 없습니다.",
+      "buttonClose": "닫기"
+    }
+  }
+}

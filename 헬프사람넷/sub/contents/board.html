@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <title>헬프사람넷</title>
+    <!--swiper-->
+    <link rel="stylesheet" href="../../assets/js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!--js-->
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="wra">
+    <div class="header_wra">
+        <div class="header_area">
+            <a href="../../index.html" class="logo"><img src="http://www.placehold.it/82X28" alt=""></a>
+            <ul class="gnb clearfix">
+                <li class="focus"><a href="../contents/board.html">희</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">노</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">애</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">락</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="../customer/notice.html">고객센터</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="search_header">
+                    <input type="text" class="textbox_round" name="mainSearch">
+                    <input type="button" class="btn_search">
+                </div>
+                <!--login 전    'login_type'class에 'active'추가-->
+                <div class="login_type ">
+                    <div class="member_access">
+                        <a href="../member/login.html">로그인</a>
+                        <a href="../member/signup.html">회원가입</a>
+                    </div>
+                </div>
+                <!--login 후    'login_type'class에 'active'추가-->
+                <div class="login_type active">
+                    <div class="box_login_menu">
+                        <!--프로필 사진 클릭시 focus class 추가-->
+                        <div class="my_p">
+                            <img src="../../assets/images/main/user4_noprofileimage.png" alt="">
+                        </div>
+                        <ul class="sub_menu">
+                            <li><a href="../mypage/my_question.html" class="myM">마이페이지</a></li>
+                            <li><a href="#" class="logoutM">로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="board_wra">
+            <div class="board_qna_area">
+                <div class="board_qna_title">
+                    <p class="title"><span>무엇이 궁금하신가요?</span> 무엇이든 물어보세요!</p>
+                    <p class="wrtie_btn">
+                        <a href="board_write.html" class="write_q"><img class="hover_off" src="../../assets/images/main/write_on.png" alt=""><img class="hover_on" src="../../assets/images/main/write_off.png" alt="">질문작성</a>
+                    </p>
+                    <ul class="cate_box cate_box_type2 clearfix">
+                        <li class="focus"><a href="#">건강</a></li>
+                        <li><a href="#">창업·취업</a></li>
+                        <li><a href="#">교육</a></li>
+                        <li><a href="#">금융(노후대책)</a></li>
+                        <li><a href="#">쇼핑</a></li>
+                        <li><a href="#">레저·여가</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main_board_area">
+                <ul class="cate_mainBoard clearfix">
+                    <li class="focus"><a href="#">TOP 10</a></li>
+                    <li><a href="#">마감임박</a></li>
+                </ul>
+                <div class="slide_board">
+                    <div class="swiper-container boardMain_slide">
+                        <div class="swiper-wrapper" >
+                            <div class="swiper-slide">
+                                <div class=""><p class="num_board">01</p></div>
+                                <div class="profile_board">
+                                    <a href="#" class="pf_img"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                    alt=""></a>
+                                    <a href="#" class="name">kyj</a>
+                                    <div class="info_board">
+                                        <p class="show">263</p>
+                                        <p class="comments">10</p>
+                                    </div>
+                                </div>
+                                <div class="detail_board">
+                                    <div class="reward_point">
+                                        <p class="img_box"><img src="../../assets/images/main/point.png" alt=""></p>
+                                        <p class="reward_title">보상 포인트</p>
+                                        <p class="point">2,000P</p>
+                                    </div>
+                                    <div class="state_board">
+                                        <p class="img_box img_box2"><img src="../../assets/images/main/expert_small.png" alt=""></p>
+                                        <p class="answer">전문가 답변</p>
+                                        <p class="state_waiting">답변대기</p>
+                                    </div>
+                                </div>
+                                <div class="text_board">
+                                    <a href="board_detail_all.html">안녕하세요. 24살 여성입니다<br>
+                                        저는 항공사 대졸채용, 지상직학원을 통해서가 아닌 잡코리아에서 일본공항 취업 글을 보고 서류통과해서 면접에 합격하여 11월 초에 일본 공항에서
+                                        일을 하게되었습니다</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=""><p class="num_board">02</p></div>
+                                <div class="profile_board">
+                                    <a href="#" class="pf_img"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                    alt=""></a>
+                                    <a href="#" class="name">kyj</a>
+                                    <div class="info_board">
+                                        <p class="show">263</p>
+                                        <p class="comments">10</p>
+                                    </div>
+                                </div>
+                                <div class="detail_board">
+                                    <div class="reward_point">
+                                        <p class="img_box"><img src="../../assets/images/main/point.png" alt=""></p>
+                                        <p class="reward_title">보상 포인트</p>
+                                        <p class="point">2,000P</p>
+                                    </div>
+                                    <div class="state_board">
+                                        <p class="img_box img_box2"><img src="../../assets/images/main/expert_small.png" alt=""></p>
+                                        <p class="answer">전문가 답변</p>
+                                        <p class="state_waiting">답변대기</p>
+                                    </div>
+                                </div>
+                                <div class="text_board">
+                                    <a href="board_detail_all.html">안녕하세요. 24살 여성입니다<br>
+                                        저는 항공사 대졸채용, 지상직학원을 통해서가 아닌 잡코리아에서 일본공항 취업 글을 보고 서류통과해서 면접에 합격하여 11월 초에 일본 공항에서
+                                        일을 하게되었습니다</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=""><p class="num_board">03</p></div>
+                                <div class="profile_board">
+                                    <a href="#" class="pf_img"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                    alt=""></a>
+                                    <a href="#" class="name">kyj</a>
+                                    <div class="info_board">
+                                        <p class="show">263</p>
+                                        <p class="comments">10</p>
+                                    </div>
+                                </div>
+                                <div class="detail_board">
+                                    <div class="reward_point">
+                                        <p class="img_box"><img src="../../assets/images/main/point.png" alt=""></p>
+                                        <p class="reward_title">보상 포인트</p>
+                                        <p class="point">2,000P</p>
+                                    </div>
+                                    <div class="state_board">
+                                        <p class="img_box img_box2"><img src="../../assets/images/main/expert_small.png" alt=""></p>
+                                        <p class="answer">전문가 답변</p>
+                                        <p class="state_waiting">답변대기</p>
+                                    </div>
+                                </div>
+                                <div class="text_board">
+                                    <a href="board_detail_all.html">안녕하세요. 24살 여성입니다<br>
+                                        저는 항공사 대졸채용, 지상직학원을 통해서가 아닌 잡코리아에서 일본공항 취업 글을 보고 서류통과해서 면접에 합격하여 11월 초에 일본 공항에서
+                                        일을 하게되었습니다</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=""><p class="num_board">04</p></div>
+                                <div class="profile_board">
+                                    <a href="#" class="pf_img"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                    alt=""></a>
+                                    <a href="#" class="name">korean1234korean667korean</a>
+                                    <div class="info_board">
+                                        <p class="show">263</p>
+                                        <p class="comments">10</p>
+                                    </div>
+                                </div>
+                                <div class="detail_board">
+                                    <div class="reward_point">
+                                        <p class="img_box"><img src="../../assets/images/main/point.png" alt=""></p>
+                                        <p class="reward_title">보상 포인트</p>
+                                        <p class="point">2,000P</p>
+                                    </div>
+                                    <div class="state_board">
+                                        <p class="img_box img_box2"><img src="../../assets/images/main/expert_small.png" alt=""></p>
+                                        <p class="answer">전문가 답변</p>
+                                        <p class="state_waiting">답변대기</p>
+                                    </div>
+                                </div>
+                                <div class="text_board">
+                                    <a href="board_detail_all.html">안녕하세요. 24살 여성입니다 안녕하세요24살 여성입니다 안녕하세요. 24살 여성입니다 안녕하세요. 24살 여성입니다
+                                        저는 항공사 대졸채용, 지상직학원을 통해서가 아닌 잡코리아에서 일본공항 취업 글을 보고 서류통과해서 면접에 합격하여 11월 초에 일본 공항에서
+                                        일을 하게되었습니다</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=""><p class="num_board">04</p></div>
+                                <div class="profile_board">
+                                    <a href="#" class="pf_img"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                    alt=""></a>
+                                    <a href="#" class="name">hihi</a>
+                                    <div class="info_board">
+                                        <p class="show">263</p>
+                                        <p class="comments">10</p>
+                                    </div>
+                                </div>
+                                <div class="detail_board">
+                                    <div class="reward_point">
+                                        <p class="img_box"><img src="../../assets/images/main/point.png" alt=""></p>
+                                        <p class="reward_title">보상 포인트</p>
+                                        <p class="point">2,000P</p>
+                                    </div>
+                                    <div class="state_board">
+                                        <p class="img_box img_box2"><img src="../../assets/images/main/expert_small.png" alt=""></p>
+                                        <p class="answer">전문가 답변</p>
+                                        <p class="state_waiting">답변대기</p>
+                                    </div>
+                                </div>
+                                <div class="text_board">
+                                    <a href="board_detail_all.html">안녕하세요.
+                                        저는 항공사 대졸채용, 지상직학원을 통해서가 아닌 잡코리아에서 일본공항 취업 글을 보고 서류통과해서 면접에 합격하여 11월 초에 일본 공항에서
+                                        일을 하게되었습니다</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class=""><p class="num_board">04</p></div>
+                                <div class="profile_board">
+                                    <a href="#" class="pf_img"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                    alt=""></a>
+                                    <a href="#" class="name">hihi</a>
+                                    <div class="info_board">
+                                        <p class="show">263</p>
+                                        <p class="comments">10</p>
+                                    </div>
+                                </div>
+                                <div class="detail_board">
+                                    <div class="reward_point">
+                                        <p class="img_box"><img src="../../assets/images/main/point.png" alt=""></p>
+                                        <p class="reward_title">보상 포인트</p>
+                                        <p class="point">2,000P</p>
+                                    </div>
+                                    <div class="state_board">
+                                        <p class="img_box img_box2"><img src="../../assets/images/main/expert_small.png" alt=""></p>
+                                        <p class="answer">전문가 답변</p>
+                                        <p class="state_waiting">답변대기</p>
+                                    </div>
+                                </div>
+                                <div class="text_board">
+                                    <a href="board_detail_all.html">안녕하세요. 24살 여성입니다 안녕하세요. 24살 여성입니다 안녕하세요. 24살 여성입니다
+                                        저는 항공사 대졸채용, 지상직학원을 통해서가 아닌 잡코리아에서 일본공항 취업 글을 보고 서류통과해서 면접에 합격하여 11월 초에 일본 공항에서
+                                        일을 하게되었습니다</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev arrow_round"></div>
+                        <div class="swiper-button-next arrow_round"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="board_qna_area">
+
+                <div class="board_list">
+                    <div class="open_board_type">
+                        <a href="#" class="expert active">전문가만 참여 가능</a>
+                        <p class="bar"></p>
+                        <a href="#" class="all">모두 참여 가능</a>
+                    </div>
+                    <div class="list_order_box">
+                        <div class="order_type">
+                            <a class="focus" href="#">인기순</a>
+                            <p class="bar"></p>
+                            <a href="#">최신순</a>
+                            <p class="bar"></p>
+                            <a href="#">높은 보상순</a>
+                        </div>
+                    </div>
+                    <div class="list_contents_box">
+                        <table>
+                            <colgroup>
+                                <col width="5%">
+                                <col width="13%">
+                                <col width="45%">
+                                <col width="10%">
+                                <col width="8%">
+                                <col width="14%">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td class="lock"><img src="../../assets/images/main/lock_on.png" alt=""></td>
+                                <td class="pf_person">
+                                    <a href="#" class="img_box"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                     alt=""></a>
+                                    <a href="#">kjeu</a>
+                                </td>
+                                <td><a href="board_detail_expert.html">취업고민이 있습니다. 도와주세요</a></td>
+                                <td class="info_board">
+                                    <!-- <p class="comments">10</p>-->
+                                    <p class="show">263</p>
+                                </td>
+                                <td class="point">2,000P</td>
+                                <td class="answer">
+                                    <p><img src="../../assets/images/main/expert_small.png" alt="">전문가 답변 <span
+                                            class="">답변대기</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lock"><img src="../../assets/images/main/unlock_off.png" alt=""></td>
+                                <td class="pf_person">
+                                    <a href="#" class="img_box"><img src="../../assets/images/main/user4_noprofileimage.png"
+                                                                     alt=""></a>
+                                    <a href="#">kjeu</a>
+                                </td>
+                                <td><a href="board_detail_all.html">취업고민이 있습니다. 도와주세요</a></td>
+                                <td class="info_board">
+                                    <p class="comments">10</p>
+                                    <p class="show">263</p>
+                                </td>
+                                <td class="point">2,000P</td>
+                                <td class="answer">
+                                    <p><img src="../../assets/images/main/expert_small.png" alt="">전문가 답변 <span class="end">답변완료</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <a href="#" class="prev"><img src="../../assets/images/main/navigation_back.png" alt=""></a>
+                            <ul>
+                                <li class="focus"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <a href="#" class="next"><img src="../../assets/images/main/navigation_next.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_wra">
+            <div class="customer_area">
+                <div class="customer_box">
+                    <a href="../customer/faq.html">FAQ</a>
+                    <a href="../customer/ask.html">1:1문의</a>
+                    <a href="../customer/term.html">개인정보취급방침</a>
+                    <a href="../customer/term.html">이용약관</a>
+                </div>
+            </div>
+            <div class="company_area">
+                <a href="../../index.html" class="logo_ft"><img src="http://www.placehold.it/70X70" alt=""></a>
+                <div class="info_com">
+                    <div class="">
+                        <p class="ele_com"><span>회사명</span>헬프사람넷</p>
+                        <p class="ele_com"><span>주소</span>경기도 성남시 판교로 1111</p>
+                    </div>
+                    <div>
+                        <p class="ele_com"><span>대표</span>조현철</p>
+                        <p class="ele_com"><span>대표번호</span>010-9897-2003</p>
+                    </div>
+                    <div>
+                        <p class="ele_com"><span>사업자등록번호</span>000-000-0000</p>
+                        <p class="ele_com"><span>이메일</span>zhc2000@naver.com</p>
+                    </div>
+                    <p class="copyright">COPYRIGHT ⓒ 헬프사람넷. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/swiper-4.3.3/dist/js/swiper.min.js"></script>
+<script src="../../assets/js/script.js"></script>
+<script>
+    var swiper = new Swiper('.boardMain_slide', {
+        spaceBetween: 30,
+       /* loop: true,*/
+        slidesPerView: 4,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+
+</script>
+</body>
+</html>

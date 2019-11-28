@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">-->
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+    <title>SK Smart Air Manager</title>
+    <link rel="stylesheet" href="../css/ui/ui.style.css">
+</head>
+<body>
+
+<div class="wrap_header">
+    <h1><a href="#"><img src="../images/img_logo.png" alt=""></a></h1>
+    <a href="#" class="sprite sprite_common sprite_side_menu">서브메뉴</a>
+    <div class="box_title_icon">
+        <a href="search.html" class="sprite sprite_common sprite_header_search">검색</a>
+        <a href="local_list.html" class="sprite sprite_common sprite_toggle_list">리스트</a>
+    </div>
+</div>
+
+<div class="wrap_contents">
+    <div class="list_title">
+        <p>내 학교</p>
+        <a href="all_map_list.html" class="btn btn_round"><span class="sprite sprite_common sprite_all_list">?</span>전체학교</a>
+    </div>
+    <div class="list_school_card">
+        <ul class="card_school">
+            <li>
+                <div>
+                    <span class="school_name">남정초등학교</span>
+                    <div>
+                        <p class="school_title">3학년 2반</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="sprite sprite_common sprite_sensor">?</i>
+                                    실내센서 3-2
+                                    <!-- 상태 클래스
+                                    좋음 good
+                                    보통 normal
+                                    나쁨 bad
+                                    매우나쁨 worse
+                                    -->
+                                    <p class="no_respond">미응답</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="sprite sprite_common sprite_air_sensor">?</i>
+                                    위닉스 공기청정기 3-
+                                    <p class="normal">보통</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="school_air">
+                    <i class="sprite sprite_status sprite_air_mid good">?</i>
+                    <!-- 상태 클래스
+                         좋음 good
+                         보통 normal
+                         나쁨 bad
+                         매우나쁨 worse
+                     -->
+                    <p class="status good">좋음</p>
+                    <p class="air_dust">
+                        미세먼지<span class="air_num">20</span><span class="place"><em
+                            class="sprite sprite_common sprite_position"></em>운동장</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="school_name">남정초등학교</span>
+                    <div>
+                        <p class="school_title">6학년 5반</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="sprite sprite_common sprite_sensor">?</i>
+                                    실내센서 1-5
+                                    <!-- 상태 클래스
+                                     좋음 good
+                                     보통 normal
+                                     나쁨 bad
+                                     매우나쁨 worse
+                                     -->
+                                    <p class="harm">중오염</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="sprite sprite_common sprite_air_sensor">?</i>
+                                    공기청정기 1-5
+                                    <p class="worse">매우나쁨</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="school_air">
+                            <i class="sprite sprite_status sprite_air_mid bad">?</i>
+                            <!-- 상태 클래스
+                                 좋음 good
+                                 보통 normal
+                                 나쁨 bad
+                                 매우나쁨 worse
+                             -->
+                            <p class="status bad">나쁨</p>
+                            <p class="air_dust">
+                                미세먼지<span class="air_num">30</span><span class="none_place">※학교 주변 관측소 제공 정보</span>
+                            </p>
+                        </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../js/lib/jquery-3.2.1.min.js"></script>
+<script src="../js/ui/ui.page.js"></script>
+<script>
+    var schoolData = {
+        "schList": [{
+            "schNm": "가석초등학교",
+            "schCd": "a123",
+            "lat": 132.453,
+            "lon": 1212.23232,
+            "outSenLoc": "실외센서 설치정보1",
+            "pm10": "20",
+            "airGrd": "1",
+            "lv": "1",
+            "cls": "3",
+            "clsCd": "E308DEF",
+            "senList": [{"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {
+                "dvcId": "AVC-300",
+                "senNm": "센서요",
+                "airGrd": "2"
+            }, {"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {"dvcId": "AVC-300", "senNm": "센서요", "airGrd": "2"}],
+            "clnList": [{"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {
+                "dvcId": "AVC-300",
+                "senNm": "센서요",
+                "airGrd": "2"
+            }, {"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {"dvcId": "AVC-300", "senNm": "센서요", "airGrd": "2"}]
+        }, {
+            "schNm": "석남초등학교",
+            "schCd": "B343",
+            "lat": 132.4131,
+            "lon": 1212.84315,
+            "outSenLoc": "실외센서 설치정보2",
+            "pm10": "45",
+            "airGrd": "2",
+            "lv": "3",
+            "cls": "4",
+            "clsCd": "E84DEF",
+            "senList": [{"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {
+                "dvcId": "AVC-300",
+                "senNm": "센서요",
+                "airGrd": "2"
+            }, {"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {"dvcId": "AVC-300", "senNm": "센서요", "airGrd": "2"}],
+            "clnList": [{"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {
+                "dvcId": "AVC-300",
+                "senNm": "센서요",
+                "airGrd": "2"
+            }, {"dvcId": "AVC-100", "senNm": "센서", "airGrd": "3"}, {"dvcId": "AVC-300", "senNm": "센서요", "airGrd": "2"}]
+        }]
+    }
+    var airGrd;
+    var circleBlueIcon = '<i class="sprite sprite_status sprite_air_mid good"></i><p class="status good">좋음</p>';
+    var circleGreenIcon = '<i class="sprite sprite_status sprite_air_mid normal"></i><p class="status normal">보통</p>';
+    var circleYellowIcon = '<i class="sprite sprite_status sprite_air_mid bad"></i><p class="status bad">나쁨</p>';
+    var circleRedIcon = '<i class="sprite sprite_status sprite_air_mid worse"></i><p class="status worse">매우나쁨</p>';
+
+    function _fnAirState() {
+        switch (schoolData.schList[i].airGrd) {
+            case "1" :
+                airGrd = circleBlueIcon;
+                break;
+            case "2" :
+                airGrd = circleGreenIcon;
+                break;
+            case "3" :
+                airGrd = circleYellowIcon;
+                break;
+            case "4" :
+                airGrd = circleRedIcon;
+                break;
+        }
+    }
+
+    var colorIcon;
+    var radiusBlueIcon = '<p class="good">좋음</p>';
+    var radiusGreenIcon = '<p class="normal">보통</p>';
+    var radiusYellowIcon = '<p class="bad">나쁨</p>';
+    var radiusRedIcon = '<p class="worse">매우나쁨</p>';
+
+    for (var i = 0; i < schoolData.schList.length; i++) {
+        _fnAirState();
+
+        // 센서 for 문
+        var welSensList = '';
+        for (var j = 0; j < schoolData.schList[i].senList.length; j++) {
+            switch (schoolData.schList[i].clnList[j].airGrd) {
+                case "1" :
+                    colorIcon = radiusBlueIcon;
+                    break;
+                case "2" :
+                    colorIcon = radiusGreenIcon;
+                    break;
+                case "3" :
+                    colorIcon = radiusYellowIcon;
+                    break;
+                case "4" :
+                    colorIcon = radiusRedIcon;
+                    break;
+            }
+
+            welSensList = welSensList + '<li><a href="#"><i class="sprite sprite_common sprite_sensor"></i>' + schoolData.schList[i].senList[j].senNm + schoolData.schList[i].senList[j].dvcId + colorIcon + '</a></li>'
+        }
+
+        // 공기청정기 for 문
+        var welCleanerList = '';
+        for (var j = 0; j < schoolData.schList[i].senList.length; j++) {
+            switch (schoolData.schList[i].senList[j].airGrd) {
+                case "1" :
+                    colorIcon = radiusBlueIcon;
+                    break;
+                case "2" :
+                    colorIcon = radiusGreenIcon;
+                    break;
+                case "3" :
+                    colorIcon = radiusYellowIcon;
+                    break;
+                case "4" :
+                    colorIcon = radiusRedIcon;
+                    break;
+            }
+
+            welCleanerList = welCleanerList + '<li><a href="#"><i class="sprite sprite_common sprite_air_sensor"></i>' + schoolData.schList[i].clnList[j].senNm + schoolData.schList[i].clnList[j].dvcId + colorIcon + '</a></li>'
+        }
+
+        var sAirInfo = "";
+        if (schoolData.schList[i].outSenLoc !== "") {
+            sAirInfo = sAirInfo + '<span class="place"><em class="sprite sprite_common sprite_position"></em>' + schoolData.schList[i].outSenLoc + '</span>'
+        } else {
+            sAirInfo = sAirInfo + '<span class="none_place">※학교 주변 관측소 제공 정보</span>'
+        }
+
+        var welSchoolCard = '<li><span class="school_name">' + '' + schoolData.schList[i].schNm + '</span><p class="school_title">' + schoolData.schList[i].lv + '학년' + schoolData.schList[i].cls + '반</p>' +
+            '<ul>' +
+            welSensList +
+            welCleanerList +
+            '</ul>' +
+            '<div class="school_air">' + airGrd +
+            '<p class="air_dust">미세먼지<span class="air_num">' + schoolData.schList[i].pm10 + '</span>' + sAirInfo + '</p></div></li>'
+        $('.card_school').append(welSchoolCard);
+    }
+</script>
+</body>
+</html>

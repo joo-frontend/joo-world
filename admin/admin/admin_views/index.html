@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>페이지목록 | SKT School App Admin</title>
+	<link href="./../admin_css/ui/ui.style.css" rel="stylesheet" type='text/css'>
+	<style type="text/css">
+
+		body {
+			background: #edeef2;
+		}
+
+		h3.title {
+			font-weight: bold;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+		.wrap_header .header {
+			width:940px;
+			margin: 0 auto;
+		}
+
+		.wrap_header {
+			background: #fff;
+			height: 90px;
+		}
+
+		.table thead th {
+			font-weight: 700;
+			border-bottom: #9d9d9d 2px solid;
+		}
+
+		.table td {
+			height: 40px;
+			border-bottom: #ddd 1px solid;
+			text-align: center;
+		}
+		.table td:first-child {
+			text-align: left;
+			padding: 0 12px;
+		}
+
+		.table td a {
+			color: green;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		.O {
+			color: green;
+		}
+
+		.X {
+			color: gray;
+		}
+
+	</style>
+	<script type="text/javascript" src="./../admin_js/jquery/jquery-1.11.2.min.js"></script>
+
+</head>
+<body>
+<div class="wrap_header">
+	<div class="header">
+		<div class="logo">
+			<img src="./../admin_images/common/@temp_logo.png" alt="">
+		</div>
+	</div>
+</div>
+<div class="wrap_contents">
+	<div class="section_contents">
+		<!--contents-->
+
+		<h3 class="title">Service Admin</h3>
+
+		<div>
+			<table class="table">
+				<colgroup>
+					<col style="width: 40%;">
+					<col style="width: 10%;">
+					<col style="width: 10%;">
+					<col style="width: 10%;">
+					<col style="width: 10%;">
+					<col style="width: 20%;">
+				</colgroup>
+				<thead>
+				<tr>
+					<th>화면명</th>
+					<th>디자인</th>
+					<th>퍼블리싱</th>
+					<th>디자인 적용여부</th>
+					<th>Link</th>
+					<th>비고</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>페이지 가이드</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="../admin_views/page_guide.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>전국 공기 조회 > 전국 학교 조회</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="../admin_views/page/school_map.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>전국 공기 조회 > 전국 학교 목록</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="../admin_views/page/school_list.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>전국 공기 조회 > 전국 학교 목록 : 목록 없을 때</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="../admin_views/page/school_no_list.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 기기 조회 및 관리 : 실내센서</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/device_sensor_management.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 기기 조회 및 관리 : 실내센서 목록 없을 때</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/device_sensor_management_none_list.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ㄴ 팝업 기기명 변경</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/popup_rename_device.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ㄴ 팝업 기기명 변경 : 취소버튼 선택시</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/popup_rename_device_cancel.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ㄴ 팝업 기기명 변경 : 저장버튼 선택시</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/popup_rename_device_save.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 기기 조회 및 관리 : 공기청정기</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/device_air_management.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 기기 조회 및 관리 > 기기제어 이력 : 공기청정기</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/device_air_history.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 실시간 그룹제어 : 그룹제어</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/control_group.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 실시간 그룹제어 : 선택제어</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/control_choice.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ㄴ 팝업 알림 : 학급 선택 안하고 제어 했을 때</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/popup_none_control.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ㄴ 팝업 제어 : 실시간 제어</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/popup_control.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 예약 및 조건 설정 : 기본설정 목록</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/setting_default.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 예약 및 조건 설정 : 조건설정 목록</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/setting_option.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 예약 및 조건 설정 : 기본설정</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/setting_register_default.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > 예약 및 조건 설정 : 조건설정</td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/setting_register_option.html">Link</a></td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>내 학교 관리 > Push 관리 : Push 발송 </td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/push_send.html">Link</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 학교 관리 > Push 관리 : Push 발송 이력 </td>
+					<td class="O">X</td>
+					<td class="O">O</td>
+					<td class="O">X</td>
+					<td><a href="page/push_history.html">Link</a></td>
+					<td></td>
+				</tr>
+
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

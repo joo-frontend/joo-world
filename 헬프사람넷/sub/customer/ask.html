@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="canonical" href="URL입력">
+    <title>헬프사람넷</title>
+    <!--swiper-->
+    <link rel="stylesheet" href="../../assets/js/swiper-4.3.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!--js-->
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+</head>
+<body>
+
+<div class="wra">
+    <div class="header_wra">
+        <div class="header_area">
+            <a href="../../index.html" class="logo"><img src="http://www.placehold.it/82X28" alt=""></a>
+            <ul class="gnb clearfix">
+                <li class=""><a href="../contents/board.html">희</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">노</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">애</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contents/board.html">락</a>
+                    <ul class="sub_menu">
+                        <li><a href="../contents/board.html">건강</a></li>
+                        <li><a href="../contents/board.html">일자리(창업,취업)</a></li>
+                        <li><a href="../contents/board.html">교육</a></li>
+                        <li><a href="../contents/board.html">금융(노후대책)</a></li>
+                        <li><a href="../contents/board.html">쇼핑</a></li>
+                        <li><a href="../contents/board.html">레저·여가</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">즐길거리</a></li>
+                <li class="focus"><a href="../customer/notice.html" >고객센터</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="search_header">
+                    <input type="text" class="textbox_round" name="mainSearch">
+                    <input type="button" class="btn_search">
+                </div>
+                <!--login 전    'login_type'class에 'active'추가-->
+                <div class="login_type ">
+                    <div class="member_access">
+                        <a href="../member/login.html">로그인</a>
+                        <a href="../member/signup.html">회원가입</a>
+                    </div>
+                </div>
+                <!--login 후    'login_type'class에 'active'추가-->
+                <div class="login_type active">
+                    <div class="box_login_menu">
+                        <!--프로필 사진 클릭시 focus class 추가-->
+                        <div class="my_p">
+                            <img src="../../assets/images/main/user4_noprofileimage.png" alt="">
+                        </div>
+                        <ul class="sub_menu">
+                            <li><a href="../mypage/my_question.html" class="myM">마이페이지</a></li>
+                            <li><a href="#" class="logoutM">로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="customer_wra">
+            <div class="gnb_customer">
+                <ul class="clearfix">
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li class="focus"><a href="ask.html">1:1 문의</a></li>
+                    <li><a href="level.html">레벨안내</a></li>
+                    <li><a href="term.html">이용약관·개인정보취급방침</a></li>
+                </ul>
+            </div>
+            <div class="board_wrtie_area">
+                <form>
+                    <div class="write_ask">
+                        <div class="each_write">
+                            <div class="lb"><p>문의 분류</p></div>
+                            <div class="form_contents">
+                                <select name="selectboxCateAsk" class="selectbox">
+                                    <option value="" selected disabled>카테고리 선택</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="each_write">
+                           <div class="lb"><p>제목</p></div>
+                            <div class="form_contents">
+                                <input type="text" name="askTitle" class="textbox" placeholder="제목을 입력하세요">
+                            </div>
+                        </div>
+                        <div class="each_write">
+                            <div class="lb"><p>내용</p></div>
+                            <div class="form_contents">
+                                <textarea name="txtbox_write" name="askCotents" class="txtbox_write" placeholder="내용을 입력하세요"></textarea>
+                            </div>
+                        </div>
+                        <div class="each_write">
+                            <div class="lb"><p>이메일</p></div>
+                            <div class="form_contents">
+                                <input type="email" name="askMail" class="textbox" placeholder="답변을 받을 이메일 주소를 입력하세요">
+                            </div>
+                        </div>
+                        <div class="btn_group_right">
+                            <button class="btn_send">보내기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footer_wra">
+            <div class="customer_area">
+                <div class="customer_box">
+                    <a href="../customer/faq.html">FAQ</a>
+                    <a href="../customer/ask.html">1:1문의</a>
+                    <a href="../customer/term.html">개인정보취급방침</a>
+                    <a href="../customer/term.html">이용약관</a>
+                </div>
+            </div>
+            <div class="company_area">
+                <a href="../../index.html" class="logo_ft"><img src="http://www.placehold.it/70X70" alt=""></a>
+                <div class="info_com">
+                    <div class="">
+                        <p class="ele_com"><span>회사명</span>헬프사람넷</p>
+                        <p class="ele_com"><span>주소</span>경기도 성남시 판교로 1111</p>
+                    </div>
+                    <div>
+                        <p class="ele_com"><span>대표</span>조현철</p>
+                        <p class="ele_com"><span>대표번호</span>010-9897-2003</p>
+                    </div>
+                    <div>
+                        <p class="ele_com"><span>사업자등록번호</span>000-000-0000</p>
+                        <p class="ele_com"><span>이메일</span>zhc2000@naver.com</p>
+                    </div>
+                    <p class="copyright">COPYRIGHT ⓒ 헬프사람넷. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/swiper-4.3.3/dist/js/swiper.min.js"></script>
+<script src="../../assets/js/script.js"></script>
+</body>
+</html>

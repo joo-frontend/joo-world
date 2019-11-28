@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="93324907-bf0c-46fa-9fe8-9d5911c9680d" name="thanksgoods" url="http://thanksgoods.dkbrothers.co.kr">
+        <fileTransfer host="thanksgoods.dkbrothers.co.kr" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

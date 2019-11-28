@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Jeju univ</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <script src="../../js/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/lib/Chart.bundle.js"></script>
+
+</head>
+<body>
+<!--<img src="../../psd/열람실.png" alt="" style="position: absolute;top: 0;left: 0;opacity: 0.5;">-->
+<div class="wrap">
+    <div class="wrap_header">
+        <h1 class="box_logo"><a href="notice.html"><img src="../../images/logo.png" alt=""></a></h1>
+        <h2>열람실 이용 현황</h2>
+        <p>2017-11-17</p>
+    </div>
+    <div class="wrap_contents clearfix">
+        <div class="floor floor_md">
+            <p class="title">1F 열람실</p>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>80%</h3>
+                    <h2><strong>32</strong>/40</h2>
+                    <canvas id="donut1" width="200" height="200"></canvas>
+                </div>
+                <span>정보검색존</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>50%</h3>
+                    <h2><strong>09</strong>/18</h2>
+                    <canvas id="donut2" width="200" height="200"></canvas>
+                </div>
+                <span>DVD ZONE</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>17%</h3>
+                    <h2><strong>04</strong>/24</h2>
+                    <canvas id="donut3" width="200" height="200"></canvas>
+                </div>
+                <span>노트북 열람실</span>
+            </div>
+        </div>
+        <div class="floor floor_md">
+            <p class="title green">2F 열람실</p>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>100%</h3>
+                    <h2><strong>12</strong>/12</h2>
+                    <canvas id="donut4" width="200" height="200"></canvas>
+                </div>
+                <span>스마트 열람실A</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>33%</h3>
+                    <h2><strong>13</strong>/40</h2>
+                    <canvas id="donut5" width="200" height="200"></canvas>
+                </div>
+                <span>스마트 열람실B</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>94%</h3>
+                    <h2><strong>16</strong>/17</h2>
+                    <canvas id="donut6" width="200" height="200"></canvas>
+                </div>
+                <span>최대글자수여덟글</span>
+            </div>
+        </div>
+        <div class="floor floor_sm">
+            <p class="title purple">2F 그룹 스터디룸,개인 캐럴</p>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>83%</h3>
+                    <h2><strong>15</strong>/18</h2>
+                    <canvas id="donut7" width="200" height="200"></canvas>
+                </div>
+                <span>그룹 스터디룸</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>60%</h3>
+                    <h2><strong>24</strong>/40</h2>
+                    <canvas id="donut8" width="200" height="200"></canvas>
+                </div>
+                <span>개인 캐럴</span>
+            </div>
+        </div>
+        <div class="floor floor_lg">
+            <p class="title pink">3F 열람실</p>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>60%</h3>
+                    <h2><strong>06</strong>/12</h2>
+                    <canvas id="donut9" width="200" height="200"></canvas>
+                </div>
+                <span>스마트 열람실A</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>100%</h3>
+                    <h2><strong>12</strong>/12</h2>
+                    <canvas id="donut10" width="200" height="200"></canvas>
+                </div>
+                <span>스마트 열람실B</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>33%</h3>
+                    <h2><strong>13</strong>/40</h2>
+                    <canvas id="donut11" width="200" height="200"></canvas>
+                </div>
+                <span>스마트 열람실C</span>
+            </div>
+            <div class="box_graph">
+                <div class="graph">
+                    <h3>50%</h3>
+                    <h2><strong>09</strong>/17</h2>
+                    <canvas id="donut12" width="200" height="200"></canvas>
+                </div>
+                <span>스마트 열람실D</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    //정보검색존
+    var ctx1 = document.getElementById('donut1').getContext('2d');
+    var skyblue_gradient1 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient1.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient1.addColorStop(1, 'rgb(0,108,255)');
+    data1 = ['32', '8'];
+
+    donutData = {
+        datasets: [{
+            label: "1",
+            backgroundColor: [skyblue_gradient1, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient1, "transparent"],
+            borderWidth: 0,
+            data: data1
+        }]
+    };
+    window.BarChart = new Chart(ctx1, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+
+    //DVD ZONE
+    var ctx2 = document.getElementById('donut2').getContext('2d');
+    var skyblue_gradient2 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient2.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient2.addColorStop(1, 'rgb(0,108,255)');
+    data2 = ['9', '9'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient2, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient2, "transparent"],
+            borderWidth: 0,
+            data: data2
+        }]
+    };
+    window.BarChart = new Chart(ctx2, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //NoteBook
+    var ctx3 = document.getElementById('donut3').getContext('2d');
+    var skyblue_gradient3 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient3.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient3.addColorStop(1, 'rgb(0,108,255)');
+    data3 = ['4', '20'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient3, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient3, "transparent"],
+            borderWidth: 0,
+            data: data3
+        }]
+    };
+    window.BarChart = new Chart(ctx3, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartA
+    var ctx4 = document.getElementById('donut4').getContext('2d');
+    var skyblue_gradient4 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient4.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient4.addColorStop(1, 'rgb(0,108,255)');
+    data4 = ['12', '0'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient4, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient4, "transparent"],
+            borderWidth: 0,
+            data: data4
+        }]
+    };
+    window.BarChart = new Chart(ctx4, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartB
+    var ctx5 = document.getElementById('donut5').getContext('2d');
+    var skyblue_gradient5 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient5.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient5.addColorStop(1, 'rgb(0,108,255)');
+    data5 = ['13', '37'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient5, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient5, "transparent"],
+            borderWidth: 0,
+            data: data5
+        }]
+    };
+    window.BarChart = new Chart(ctx5, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartC
+    var ctx6 = document.getElementById('donut6').getContext('2d');
+    var skyblue_gradient6 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient6.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient6.addColorStop(1, 'rgb(0,108,255)');
+    data6 = ['16', '1'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient6, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient6, "transparent"],
+            borderWidth: 0,
+            data: data6
+        }]
+    };
+    window.BarChart = new Chart(ctx6, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //GropuStudy
+    var ctx7 = document.getElementById('donut7').getContext('2d');
+    var skyblue_gradient7 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient7.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient7.addColorStop(1, 'rgb(0,108,255)');
+    data7 = ['15', '3'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient7, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient7, "transparent"],
+            borderWidth: 0,
+            data: data7
+        }]
+    };
+    window.BarChart = new Chart(ctx7, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //personal
+    var ctx8 = document.getElementById('donut8').getContext('2d');
+    var skyblue_gradient8 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient8.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient8.addColorStop(1, 'rgb(0,108,255)');
+    data8 = ['24', '16'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient8, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient8, "transparent"],
+            borderWidth: 0,
+            data: data8
+        }]
+    };
+    window.BarChart = new Chart(ctx8, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartA
+    var ctx9 = document.getElementById('donut9').getContext('2d');
+    var skyblue_gradient9 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient9.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient9.addColorStop(1, 'rgb(0,108,255)');
+    data9 = ['6', '6'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient9, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient9, "transparent"],
+            borderWidth: 0,
+            data: data9
+        }]
+    };
+    window.BarChart = new Chart(ctx9, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartB
+    var ctx10 = document.getElementById('donut10').getContext('2d');
+    var skyblue_gradient10 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient10.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient10.addColorStop(1, 'rgb(0,108,255)');
+    data10 = ['12', '0'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient10, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient10, "transparent"],
+            borderWidth: 0,
+            data: data10
+        }]
+    };
+    window.BarChart = new Chart(ctx10, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartC
+    var ctx11 = document.getElementById('donut11').getContext('2d');
+    var skyblue_gradient11 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient11.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient11.addColorStop(1, 'rgb(0,108,255)');
+    data11 = ['13', '27'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient11, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient11, "transparent"],
+            borderWidth: 0,
+            data: data11
+        }]
+    };
+    window.BarChart = new Chart(ctx11, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+    //SmartC
+    var ctx12 = document.getElementById('donut12').getContext('2d');
+    var skyblue_gradient12 = ctx1.createLinearGradient(0, 0, 0, 400);
+    skyblue_gradient12.addColorStop(0, 'rgb(36,191,255)');
+    skyblue_gradient12.addColorStop(1, 'rgb(0,108,255)');
+    data12 = ['9', '8'];
+
+    donutData = {
+        datasets: [{
+            label: "2",
+            backgroundColor: [skyblue_gradient12, "transparent"],
+            hoverBackgroundColor: [skyblue_gradient12, "transparent"],
+            borderWidth: 0,
+            data: data12
+        }]
+    };
+    window.BarChart = new Chart(ctx12, {
+        type: 'doughnut',
+        data: donutData,
+        options: {
+            cutoutPercentage: 85,
+            title: {
+                display: false
+            },
+            legend: {
+                display: false
+            },
+            tooltips: {
+                enabled:false
+            }
+        }
+    });
+</script>
+</body>
+</html>

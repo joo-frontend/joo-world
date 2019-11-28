@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Smart Air Manager</title>
+    <style>
+        .area {
+            fill: #f6f7f9;
+        }
+        .dot, .dot2 {
+            fill: #7a7a7a;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<script src="../../js/lib/jquery-3.2.1.min.js"></script>
+<script src="../../js/lib/d3.min.js"></script>
+<script>
+    // 2. Use the margin convention practice
+    var margin = {top: 50, right: 10, bottom: 50, left: 20}
+        , width = 600 - margin.left - margin.right // Use the window's width
+        , height = 400 - margin.top - margin.bottom; // Use the window's height
+
+    /* // The number of datapoints
+     var n = 23;*/
+
+    // 5. X scale will use the index of our data
+    var xScale = d3.scaleLinear()
+        .domain([0, 23]) // input
+        .rangeRound([0, width]); // output
+
+    // 6. Y scale will use the randomly generate number
+    var yScale = d3.scaleLinear()
+        .domain([0, 200]) // input
+        .rangeRound([height, 0]); // output
+    /*var dataset = [{x:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+        y:[55,80,70,50,55,68,80,70,50,44,70,75,98,88,74,50,80,60,40,88,70,50,55]},
+        {x:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+            y:[65,70,70,50,55,68,80,50,50,44,60,85,90,88,74,50,80,60]}];*/
+    var dataset = [{
+        x: 0,
+        y: 55
+    }, {
+        x: 1,
+        y: 67
+    }, {
+        x: 2,
+        y: 49
+    }, {
+        x: 3,
+        y: 40
+    }, {
+        x: 4,
+        y: 51
+    }, {
+        x: 5,
+        y: 60
+    },{x:6,y:78},{x:7,y:95},{x:8,y:78},{x:9,y:65},{x:10,y:45},{x:11,y:59},{x:12,y:44},{x:13,y:69},{x:14,y:82},{x:15,y:88},{x:16,y:90},{x:17,y:81}
+        ,{x:18,y:73},{x:19,y:58},{x:20,y:78},{x:21,y:55},{x:22,y:60},{x:23,y:53}];
+var dataset2 = [{x:0,y:60},{x:1,y:50},{x:2,y:70},{x:3,y:66},{x:4,y:58},{x:5,y:84},{x:6,y:88},{x:7,y:70},{x:8,y:80},{x:9,y:59},{x:10,y:94},{x:11,y:60},{x:12,y:55},
+    {x:13,y:49},{x:14,y:67},{x:15,y:75},{x:16,y:89},{x:17,y:91}];
+
+    // 7. d3's line generator
+    var line = d3.line()
+        .x(function (d, i) {
+            return xScale(i);
+        }) // set the x values for the line generator
+        .y(function (d) {
+            return yScale(d.y);
+        }) // set the y values for the line generator
+        .curve(d3.curveMonotoneX) // apply smoothing to the line
+
+    //area
+    var area = d3.area()
+        .x(function (d, i) {
+            return xScale(i);
+        }) // set the x values for the line generator
+        .y0(function(d) { return y(d.y0); })
+        .y(function (d) {
+            return yScale(d.y);
+        }) // set the y values for the line generator
+        .curve(d3.curveMonotoneX)
+
+    // 8. An array of objects of length N. Each object has key -> value pair, the key being "y" and the value is a random number
+    /*var dataset = d3.range(n).map(function(d) { return {"y": d3.randomUniform(200)() } })*/
+
+    // 1. Add the SVG to the page and employ #2
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+    /*x.domain(d3.extent(data, function(d) { return d; }));
+    y.domain([0, d3.max(data, function(d) { return d.close; })]);
+
+    // line color
+    svg.append("linearGradient")
+        .attr("id", "temperature-gradient")
+        .attr("gradientUnits", "userSpaceOnUse")
+        .attr("x1", 0).attr("y1", y(0))
+        .attr("x2", 0).attr("y2", y(200))
+        .selectAll("stop")
+        .data([
+            {offset: "0%", color: "#e03e3a"},
+            {offset: "25%", color: "#e03e3a"},
+            {offset: "25%", color: "#ff9f3e"},
+            {offset: "50%", color: "#ff9f3e"},
+            {offset: "50%", color: "#5cc37e"},
+            {offset: "75%", color: "#5cc37e"},
+            {offset: "75%", color: "#4aa6ec"},
+            {offset: "100%", color: "#4aa6ec"}
+        ])
+        .enter().append("stop")
+        .attr("offset", (d) => d.offset)
+    .attr("stop-color", (d) => d.color);*/
+
+    // 3. Call the x axis in a group tag
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(xScale)); // Create an axis component with d3.axisBottom
+
+    // 4. Call the y axis in a group tag
+    svg.append("g")
+        .attr("class", "y axis");
+    // Create an axis component with d3.axisLeft
+
+    // 9. Append the path, bind the data, and call the line generator
+    svg.append("path")
+        .datum(dataset) // 10. Binds data to the line
+        .attr("class", "area") // Assign a class for styling
+        .style("stroke", "#ddd")
+        .style("stroke-width", "2")
+        .style("stroke-dasharray", "2,5")
+        .attr("fill", "#f6f7f9")
+        .attr("d", area); // 11. Calls the line generator
+
+    // line chart2
+    svg.append("path")
+        .datum(dataset2) // 10. Binds data to the line
+        .style("stroke", "#71afab")
+        .style("stroke-width", "2")
+        .attr("fill", "none")
+        .attr("class", "line") // Assign a class for styling
+        .attr("d", line); // 11. Calls the line generator
+
+    // 12. Appends a circle for each datapoint
+    /*svg.selectAll(".dot")
+        .data(dataset)
+        .enter().append("svg:circle") // Uses the enter().append() method
+        .attr("class", "dot") // Assign a class for styling
+        /!*.attr("cy", function (d) {
+            return yScale(d.y)
+        })*!/
+        .attr("cx", function (d, i) {
+            return xScale(3)
+        })
+        .attr("cy", function(d) { return yScale(40) })
+        .attr("cx", function (d, i) {
+            return xScale(7)
+        })
+        .attr("cy", function(d) { return yScale(95) })
+            .attr("r", 3);
+    //*/
+    //어제 그래프
+    svg.selectAll(".dot")
+        .data(dataset)
+        .enter().append("svg:circle")
+        .attr("class", "dot")
+        .attr("cx", function (d, i) {
+            return xScale(3)
+        })
+        .attr("cy", function(d) { return yScale(40) })
+        .attr("r", 3);
+    svg.selectAll(".dot2")
+        .data(dataset)
+        .enter().append("svg:circle")
+        .attr("class", "dot2")
+        .attr("cx", function (d, i) {
+            return xScale(7)
+        })
+        .attr("cy", function(d) { return yScale(95) })
+        .attr("r", 3);
+
+    //오늘 그래프
+    svg.selectAll(".dot3")
+        .data(dataset2)
+        .enter().append("svg:circle")
+        .attr("class", "dot3")
+        .attr("cx", function (d, i) {
+            return xScale(13)
+        })
+        .attr("cy", function(d) { return yScale(49) })
+        .attr("r", 3);
+
+    svg.selectAll(".dot4")
+        .data(dataset2)
+        .enter().append("svg:circle")
+        .attr("class", "dot4")
+        .attr("cx", function (d, i) {
+            return xScale(10)
+        })
+        .attr("cy", function(d) { return yScale(94) })
+        .attr("r", 3);
+</script>
+</body>
+
+</html>

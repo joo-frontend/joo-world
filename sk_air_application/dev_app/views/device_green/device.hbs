@@ -1,0 +1,16 @@
+<div class="area_school_air bg_white">
+    <div id="airInfo"></div>
+    <div id="airChart"></div>
+</div>
+
+<div class="area_box_list" data-makernm="{{makerNm}}">
+    {{#each openDeviceList}}
+        {{#isMode fncCd}}
+            <div id="mode"></div>
+        {{/isMode}}
+    {{/each}}
+    {{#isAlarm actMsg}}
+        <div id="alarm"></div>
+    {{/isAlarm }}
+    <div id="infomation"></div>
+</div>

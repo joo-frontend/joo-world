@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Device EUI 등록 | SK LoRa Admin</title>
+    <!-- UI css -->
+    <link rel="stylesheet" type="text/css" href="./../../css/ui/ui.style.css"/>
+    <!-- jquery plugin -->
+    <script type="text/javascript" src="./../../js/jquery/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+
+<!--미승인 팝업-->
+<div class="dim_block popup01" style="display: block">
+    <div class="wrap_popup wrap_popup_unsign">
+        <div class="pop_header">
+           <h1>미 승인 안내</h1>
+        </div>
+        <div class="pop_contents">
+            <p class="box_icon">
+                <img src="../../images/common/icon_unsign.png" alt="">
+            </p>
+            <p class="txt">
+                아이디가 아직 승인 처리되지 않아 스쿨앱 서비스를 이용하실 수 없습니다.<br>
+                승인 완료 후 사용 부탁 드립니다.
+            </p>
+        </div>
+        <div class="pop_btn">
+            <a href="#" class="btn btn_lg btn_orange">확인</a>
+        </div>
+    </div>
+</div>
+<!--//미승인 팝업-->
+
+
+<!-- ui library -->
+<script type="text/javascript" src="./../../js/ui/ui.util.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.common.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.page.js"></script>
+<script type="text/javascript" src="./../../js/ui/ui.init.js"></script>
+<script>
+    /**
+     * 팝업열기 클래스 _popup_open
+     * 팝업열기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.showPopup('.popup01');
+    //uiPage.showPopup('.popup02');
+
+    /**
+     * 팝업닫기 클래스 _popup_close
+     * 팝업 닫기 콜백
+     * uiPage.showPopup(해당 팝업 class);
+     */
+    //uiPage.closePopup('.popup01');
+    //uiPage.closePopup('.popup02');
+</script>
+</body>
+</html>

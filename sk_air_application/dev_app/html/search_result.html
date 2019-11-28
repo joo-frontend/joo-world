@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Smart Air Manager</title>
+    <link rel="stylesheet" href="../css/ui/ui.style.css">
+</head>
+<body>
+<img src="../design/01-6-2_검색_결과.png" alt="" style="position: absolute;top: 0;left: 0;width: 360px;opacity: 0.5;z-index:500;margin-top: -25px;">
+<div class="wrap_header wrap_header_bd">
+    <h1>학교 검색</h1>
+    <a href="#" class="sprite sprite_common sprite_back">뒤로</a>
+</div>
+<div class="wrap_contents">
+    <div class="area_search active">
+        <div class="search_box">
+            <input type="text" class="text_box acitve" value="한강">
+            <button class="btn btn_search">
+                <span class="sprite sprite_common sprite_search">검색아이콘</span>
+            </button>
+            <!-- input박스 활성화시 나타남 (x아이콘) -->
+            <a href="#" class="sprite sprite_common sprite_delete">지우기</a>
+        </div>
+    </div>
+    <ul class="search_result">
+        <li>
+            <a href="#"><i class="sprite sprite_status sprite_air_mid good">?</i>
+                <span class="result_school"><em>한강</em>초등학교</span><span class="ps_school">서울 용산구</span></a>
+            <button class="btn btn_round">상세<span class="sprite sprite_common sprite_btn_more">&gt;</span></button>
+        </li>
+        <li>
+            <a href="#">
+                <i class="sprite sprite_status sprite_air_mid normal">?</i>
+                <span class="result_school"><em>한강</em>진초등학교</span><span class="ps_school">서울 용산구</span></a>
+            <button class="btn btn_round">상세<span class="sprite sprite_common sprite_btn_more">&gt;</span></button>
+        </li>
+        <li>
+            <a href="#"> <i class="sprite sprite_status sprite_air_mid bad">?</i>
+                <span class="result_school"><em>한강</em>남초등학교</span><span class="ps_school">서울 용산구</span></a>
+            <button class="btn btn_round">상세<span class="sprite sprite_common sprite_btn_more">&gt;</span></button>
+        </li>
+        <li>
+            <a href="#"> <i class="sprite sprite_status sprite_air_mid worse">?</i>
+                <span class="result_school"><em>한강</em>북초등학교</span><span class="ps_school">서울 용산구</span>
+                <span class="none_set">미설치</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

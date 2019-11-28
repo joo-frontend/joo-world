@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+<!-- section_header -->
+<section class="section_header">
+    <header>
+        <button class="sprite sprite_common sprite_back">뒤로</button>
+        <div class="title">매직 스팀오븐</div>
+        <button class="sprite sprite_common sprite_setting"></button>
+    </header>
+</section>
+<!-- //section_header -->
+
+<!-- section_menu -->
+<section class="section_menu">
+    <div class="area_menu">
+        <div class="moving">
+            <ul class="clearfix">
+                <li class="active"><a href="#"><span>상태표시</span></a></li>
+                <li><a href="#"><span>제품작동</span></a></li>
+                <li><a href="#"><span>사용통계</span></a></li>
+                <li><a href="#"><span>사용설명</span></a></li>
+                <li><a href="#"><span>관리이력</span></a></li>
+                <li><a href="#"><span>납부정보</span></a></li>
+                <li><a href="#"><span>이력 및 알림</span></a></li>
+                <li><a href="#"><span>사용자 관리</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //section_menu -->
+</div>
+<!-- //wrap_header_area -->
+
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+<!-- section_tab -->
+<section class="section_tab">
+    <div class="tabs tabs_col3">
+        <ul class="clearfix">
+            <li class="active"><a href="#">최근 요리</a></li>
+            <li><a href="#">즐겨찾기</a></li>
+            <li><a href="#">나만의 요리</a></li>
+        </ul>
+    </div>
+</section>
+<!-- //section_tab -->
+
+<!-- my_menu의 최근요리, 즐겨찾기 -->
+<!-- section_my_menu -->
+<section class="section_my_menu">
+    <ul>
+        <li class="delete">
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <p>전체 선택</p>
+            <button class="btn btn_md btn_dark_gray">삭제</button>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle" checked></label>
+            <div class="my_cook"><p>01. 통닭구이</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook"><p>오븐 (수동요리)</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle" checked></label>
+            <div class="my_cook"><p>레인지 (데우기)</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle" checked></label>
+            <div class="my_cook"><p>나만의 요리 01</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook"><p>127. 보온</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook"><p>해동 (육류)</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+
+    </ul>
+</section>
+<!-- //section_my_menu -->
+
+
+<!-- my_menu의 나만의 요리
+ 최근요리,즐겨찾기에서 ul에 my_list 클래스 추가 그리고 div.my_cook에 p태그 한줄 추가-->
+<!-- section_my_menu -->
+<section class="section_my_menu" style="display: none;">
+    <ul class="my_list">
+        <li class="delete">
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <p>전체 선택</p>
+            <button class="btn btn_md btn_dark_gray" disabled>삭제</button>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook">
+                <p>통닭구이 2인분</p>
+                <p>나만의 요리 05</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook"><p>통닭구이 3인분</p>
+                <p>나만의 요리 04</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook"><p>크리스피치킨샐러드 2인분</p>
+                <p>나만의 요리 04</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+        <li>
+            <label><input type="checkbox" class="checkbox_circle"></label>
+            <div class="my_cook"><p>비스코티 3분 추가 </p>
+                <p>나만의 요리 04</p></div>
+            <span class="day">2017.05.12</span>
+        </li>
+    </ul>
+</section>
+<!-- //section_my_menu -->
+
+<!-- 요리한 내역이 없는경우 -->
+<!-- section_none_my_menu -->
+<section class="section_none_menu" style="display: none;">
+    <div class="area_none_menu">
+        <div class="img"></div>
+        <p>최근 요리하신 내역이 없습니다.</p>
+    </div>
+</section>
+<!-- //section_none_my_menu -->
+
+</div>
+<!-- //wrap_contents_area-->
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>SK Magic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/ui/ui.style.css"/>
+</head>
+<body>
+<!-- wrap_header_area -->
+<div class="wrap_header_area">
+
+    <!-- section_header -->
+    <section class="section_header">
+        <header>
+            <button class="sprite sprite_common sprite_back">뒤로</button>
+            <div class="title">슈퍼아이스 냉온정얼음</div>
+            <button class="sprite sprite_common sprite_setting"></button>
+        </header>
+    </section>
+    <!-- //section_header -->
+
+    <!-- section_menu -->
+    <section class="section_menu">
+        <div class="area_menu">
+            <div class="moving">
+                <ul class="clearfix">
+                    <li><a href="#"><span>상태표시</span></a></li>
+                    <li class="active"><a href="#"><span>제품작동</span></a></li>
+                    <li><a href="#"><span>사용통계</span></a></li>
+                    <li><a href="#"><span>사용설명</span></a></li>
+                    <li><a href="#"><span>관리이력</span></a></li>
+                    <li><a href="#"><span>납부정보</span></a></li>
+                    <li><a href="#"><span>이력 및 알림</span></a></li>
+                    <li><a href="#"><span>사용자 관리</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //section_menu -->
+
+</div>
+<!-- //wrap_header_area -->
+
+<!-- wrap_contents_area -->
+<div class="wrap_contents_area">
+    <section class="section_super_ice_activity clearfix">
+        <div class="wrap_left">
+            <div class="row_md">
+                <img src="../../../images/common/logo_sk_magic.png" alt="">
+            </div>
+            <div class="row">
+                <div class="area_activate">
+                    <div>
+                        <ul>
+                            <!--
+                            디폴트 class : 없음
+                            활성 class : focus
+                            비활성 class : disabled
+                            -->
+                            <li class="focus">대</li>
+                            <li class="">소</li>
+                        </ul>
+                        <label>얼음크기</label>
+                        <input type="checkbox" class="toggle_super_purify super_ice" checked></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="area_activate">
+                    <div>
+                        <p>미온/유아수 온도</p>
+                        <div class="box_warm_radio">
+                            <input type="radio" name="warm_super" class="set_warm_radio_sm dg_45">
+                            <input type="radio" name="warm_super" class="set_warm_radio_sm dg_50">
+                            <input type="radio" name="warm_super" class="set_warm_radio_sm dg_55"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_right">
+            <div class="row">
+                <div class="area_activate">
+                    <div><label>IOT케어</label> <input type="checkbox" class="toggle_super_purify super_ice_iot"></div>
+                    <div><label><span>출수/코크/아이스</span>UV안심케어</label> <input type="checkbox" class="toggle_super_purify super_ice_care"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="area_activate">
+                    <div>
+                        <ul>
+                            <li class="">커피</li>
+                            <li class="focus">차</li>
+                            <li class="disabled"><span>미온/유아수</span></li>
+                        </ul>
+                        <label>온수</label> <input type="checkbox" class="toggle_super_purify super_ice_hot" checked></div>
+                    <div><label>연속</label> <input type="checkbox" class="toggle_super_purify super_ice_continue" disabled></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="area_activate">
+                    <div><label>정수</label> <input type="checkbox" class="toggle_super_purify super_ice_water"></div>
+                    <div><label>550ml</label> <input type="checkbox" class="toggle_super_purify super_ice_cup550" checked></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="area_activate">
+                    <div><label>냉수</label> <input type="checkbox" class="toggle_super_purify super_ice"></div>
+                    <div><label>한컵</label> <input type="checkbox" class="toggle_super_purify super_ice_onecup"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section_coke_sterilizing section_ice_coke clearfix">
+        <!-- 진행하기 클래스: activate_start -->
+        <!-- 완료 클래스: activate_end -->
+        <div class="area_activate activate_start">
+            <p class="title">코크 살균</p>
+            <div class="box_img">
+                <div class="box_remain_time">
+                    <p class="txt_remain">REMAIN TIME</p>
+                    <p class="txt_timer">00:00</p>
+                    <button disabled>진행하기</button>
+                </div>
+                <div class="box_loading_image">
+                    <div class="status_loading">
+                        <img src="../../../images/page/img_coke_sm.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_txt">
+                <!--<p>지금은 코크 살균 대기 중입니다!</p>-->
+                <p>지금은 코크 살균 진행 중입니다!</p>
+                <!--<p>코크 살균이 완료 되었습니다!</p>-->
+            </div>
+        </div>
+        <!-- 진행하기 클래스: activate_start -->
+        <!-- 완료 클래스: activate_end -->
+        <div class="area_activate ">
+            <p class="title">아이스룸 살균</p>
+            <div class="box_img">
+                <div class="box_remain_time">
+                    <p class="txt_remain">REMAIN TIME</p>
+                    <p class="txt_timer">00:00</p>
+                    <button>진행하기</button>
+                </div>
+                <div class="box_loading_image">
+                    <div class="status_loading">
+                        <img src="../../../images/main/img_coke_sm.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_txt">
+                <p>지금은 아이스룸 살균 대기 중입니다!</p>
+                <!--<p>지금은 아이스룸 살균 진행 중입니다!</p>-->
+                <!--<p>아이스룸 살균이 완료 되었습니다!</p>-->
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- //wrap_contents_area-->
+
+</body>
+</html>
