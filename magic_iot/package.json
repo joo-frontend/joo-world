@@ -18,7 +18,7 @@
     "bootstrap-vue": "^1.0.0-beta.7",
     "es6-object-assign": "^1.1.0",
     "es6-promise": "^4.1.1",
-    "moment": "^2.19.1",
+    "moment": "^2.29.4",
     "sockjs-client": "^1.1.4",
     "stomp": "^0.1.1",
     "stompjs": "^2.3.3",
